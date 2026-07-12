@@ -30,7 +30,6 @@
     overflow: hidden;
   }
 
-  /* Sidebar */
   aside {
     width: var(--sidebar-w);
     min-width: var(--sidebar-w);
@@ -65,11 +64,11 @@
     text-transform: uppercase;
     letter-spacing: .5px;
     color: var(--text-muted);
-    padding: 12px 20px 6px;
+    padding: 14px 20px 6px;
   }
   .file-link {
     display: block;
-    padding: 7px 20px;
+    padding: 7px 20px 7px 24px;
     font-size: 13px;
     color: var(--text);
     text-decoration: none;
@@ -92,7 +91,6 @@
     font-weight: 400;
   }
 
-  /* Main content */
   main {
     flex: 1;
     overflow-y: auto;
@@ -122,6 +120,7 @@
   }
   .tag-ticker { background: var(--tag-bg); color: var(--tag-text); }
   .tag-note  { background: var(--tag-bg2); color: var(--tag-text2); }
+  .tag-sector { background: #ecfdf5; color: #065f46; }
 
   .content {
     padding: 32px 40px;
@@ -136,7 +135,6 @@
   .content .welcome h2 { font-size: 22px; color: var(--text); margin-bottom: 8px; }
   .content .welcome p { font-size: 14px; }
 
-  /* Markdown rendered styles */
   .content h1 { font-size: 26px; margin: 0 0 8px; font-weight: 700; }
   .content h2 { font-size: 19px; margin: 28px 0 10px; font-weight: 600; border-bottom: 1px solid var(--border); padding-bottom: 4px; }
   .content h3 { font-size: 16px; margin: 20px 0 8px; font-weight: 600; }
@@ -206,7 +204,7 @@
   <div class="toolbar" id="toolbar" style="display:none">
     <span class="breadcrumb" id="breadcrumb"></span>
     <span class="tag tag-ticker" id="tag-ticker" style="display:none"></span>
-    <span class="tag tag-note" id="tag-note" style="display:none"></span>
+    <span class="tag tag-sector" id="tag-sector" style="display:none"></span>
   </div>
   <div class="content" id="content">
     <div class="welcome">
@@ -217,84 +215,116 @@
 </main>
 
 <script>
-const FILES = [
-  { path: "research/PLTR/2026-07-11_PLTR_buyside-memo.md", title: "Palantir (PLTR) Buy-Side Memo", ticker: "PLTR", type: "research", date: "2026-07-11" },
-  { path: "research/PLTR/2026-07-12_PLTR_chronicle.md", title: "Palantir 编年史 (2003–2026)", ticker: "PLTR", type: "research", date: "2026-07-12" },
-  { path: "research/RKLB/2026-07-11_RKLB_buyside-memo.md", title: "Rocket Lab (RKLB) Buy-Side Memo", ticker: "RKLB", type: "research", date: "2026-07-11" },
-  { path: "research/RKLB/2026-07-12_RKLB_corporate-chronicle.md", title: "RKLB 公司编年史", ticker: "RKLB", type: "research", date: "2026-07-12" },
-  { path: "research/RKLB/2026-07-12_RKLB_investment-audit.md", title: "RKLB 买入持有投资审计", ticker: "RKLB", type: "research", date: "2026-07-12" },
-  { path: "research/RKLB/2026-07-12_Peter-Beck_biography.md", title: "彼得·贝克传", ticker: "RKLB", type: "research", date: "2026-07-12" },
-  { path: "notes/2026-07-11_space-economy-moat.md", title: "太空经济价值链护城河分析", ticker: null, type: "note", date: "2026-07-11" },
-  { path: "notes/2026-07-12_space-economy-deep-research.md", title: "太空经济上市企业深度产业链研究", ticker: null, type: "note", date: "2026-07-12" },
-  { path: "notes/2026-07-12_space-economy-vision.md", title: "太空经济成熟后的世界：一个设想", ticker: null, type: "note", date: "2026-07-12" },
-  { path: "notes/2026-07-12_space-industry-investment-report.md", title: "全球太空产业投研报告", ticker: null, type: "note", date: "2026-07-12" },
-];
+// structure: category → group → files
+const TREE = {
+  research: {
+    PLTR: [
+      { path: "research/PLTR/2026-07-11_PLTR_buyside-memo.md", title: "Buy-Side Memo", date: "2026-07-11" },
+      { path: "research/PLTR/2026-07-12_PLTR_chronicle.md", title: "编年史 (2003–2026)", date: "2026-07-12" },
+    ],
+    RKLB: [
+      { path: "research/RKLB/2026-07-11_RKLB_buyside-memo.md", title: "Buy-Side Memo", date: "2026-07-11" },
+      { path: "research/RKLB/2026-07-12_RKLB_corporate-chronicle.md", title: "公司编年史", date: "2026-07-12" },
+      { path: "research/RKLB/2026-07-12_RKLB_investment-audit.md", title: "买入持有投资审计", date: "2026-07-12" },
+      { path: "research/RKLB/2026-07-12_Peter-Beck_biography.md", title: "彼得·贝克传", date: "2026-07-12" },
+    ],
+  },
+  notes: {
+    space: [
+      { path: "notes/space/2026-07-11_space-economy-moat.md", title: "太空经济价值链护城河分析", date: "2026-07-11" },
+      { path: "notes/space/2026-07-12_space-economy-deep-research.md", title: "太空经济上市企业深度产业链研究", date: "2026-07-12" },
+      { path: "notes/space/2026-07-12_space-economy-vision.md", title: "太空经济成熟后的世界：一个设想", date: "2026-07-12" },
+      { path: "notes/space/2026-07-12_space-industry-investment-report.md", title: "全球太空产业投研报告", date: "2026-07-12" },
+    ],
+  },
+};
 
-document.getElementById("file-count").textContent = FILES.length;
+// Count total files
+let total = 0;
+for (const cat of Object.values(TREE))
+  for (const files of Object.values(cat))
+    total += files.length;
+document.getElementById("file-count").textContent = total;
 
 // Build sidebar
 const nav = document.getElementById("sidebar-nav");
-const groups = { research: "Research · 个股研究", note: "Notes · 行业笔记" };
-for (const [type, label] of Object.entries(groups)) {
-  const section = document.createElement("div");
-  section.className = "section-title";
-  section.textContent = label;
-  nav.appendChild(section);
-  FILES.filter(f => f.type === type).forEach((f, i) => {
-    const a = document.createElement("a");
-    a.className = "file-link";
-    a.innerHTML = `${f.title}<span class="meta">${f.date}${f.ticker ? ' · ' + f.ticker : ''}</span>`;
-    a.dataset.path = f.path;
-    a.addEventListener("click", (e) => { e.preventDefault(); loadFile(f); });
-    nav.appendChild(a);
-  });
+
+const CAT_LABELS = { research: "📊 个股研究", notes: "📝 行业笔记" };
+
+for (const [catKey, catLabel] of Object.entries(CAT_LABELS)) {
+  const catDiv = document.createElement("div");
+  catDiv.className = "section-title";
+  catDiv.textContent = catLabel;
+  nav.appendChild(catDiv);
+
+  for (const [group, files] of Object.entries(TREE[catKey])) {
+    const groupDiv = document.createElement("div");
+    groupDiv.className = "section-title";
+    groupDiv.style.cssText = "font-size:12px;padding-top:2px;padding-left:32px;color:#57534e;";
+    groupDiv.textContent = catKey === "research" ? `🏷 ${group}` : `🌌 ${group === "space" ? "太空产业" : group}`;
+    nav.appendChild(groupDiv);
+
+    files.forEach(f => {
+      const a = document.createElement("a");
+      a.className = "file-link";
+      a.innerHTML = `${f.title}<span class="meta">${f.date}</span>`;
+      a.dataset.path = f.path;
+      a.dataset.ticker = catKey === "research" ? group : null;
+      a.dataset.sector = catKey === "notes" ? group : null;
+      a.addEventListener("click", (e) => { e.preventDefault(); loadFile(a); });
+      nav.appendChild(a);
+    });
+  }
 }
 
-// Also render RKLB HTML directly
+// HTML files: RKLB memo
 (function() {
-  const section = document.createElement("div");
-  section.className = "section-title";
-  section.textContent = "HTML · 直接查看";
-  nav.appendChild(section);
+  const div = document.createElement("div");
+  div.className = "section-title";
+  div.textContent = "🌐 直接查看";
+  nav.appendChild(div);
   const a = document.createElement("a");
   a.className = "file-link";
-  a.innerHTML = 'RKLB Buy-Side Memo (HTML)<span class="meta">2026-07-11 · RKLB</span>';
+  a.innerHTML = 'RKLB Buy-Side Memo (HTML)<span class="meta">2026-07-11</span>';
   a.href = "research/RKLB/2026-07-11_RKLB_buyside-memo.html";
   a.target = "_blank";
   nav.appendChild(a);
 })();
 
-async function loadFile(file) {
+async function loadFile(el) {
   const content = document.getElementById("content");
   const toolbar = document.getElementById("toolbar");
   content.innerHTML = '<div class="loading">加载中…</div>';
 
-  // Highlight active
-  document.querySelectorAll(".file-link").forEach(el => el.classList.remove("active"));
-  document.querySelector(`[data-path="${file.path}"]`)?.classList.add("active");
+  document.querySelectorAll(".file-link").forEach(e => e.classList.remove("active"));
+  el.classList.add("active");
 
   toolbar.style.display = "flex";
-  document.getElementById("breadcrumb").innerHTML = file.path.replace(/\//g, " / ");
+  document.getElementById("breadcrumb").innerHTML = el.dataset.path.replace(/\//g, " / ");
+
   const tagTicker = document.getElementById("tag-ticker");
-  const tagNote = document.getElementById("tag-note");
-  if (file.ticker) {
+  const tagSector = document.getElementById("tag-sector");
+
+  if (el.dataset.ticker) {
     tagTicker.style.display = "inline";
-    tagTicker.textContent = file.ticker;
-    tagNote.style.display = "none";
+    tagTicker.textContent = el.dataset.ticker;
+    tagSector.style.display = "none";
+  } else if (el.dataset.sector) {
+    tagTicker.style.display = "none";
+    tagSector.style.display = "inline";
+    tagSector.textContent = el.dataset.sector === "space" ? "太空产业" : el.dataset.sector;
   } else {
     tagTicker.style.display = "none";
-    tagNote.style.display = "inline";
-    tagNote.textContent = "笔记";
+    tagSector.style.display = "none";
   }
 
   try {
-    const resp = await fetch(file.path);
+    const resp = await fetch(el.dataset.path);
     if (!resp.ok) throw new Error("Not found");
     const md = await resp.text();
-    const html = marked.parse(md);
-    content.innerHTML = html;
+    content.innerHTML = marked.parse(md);
   } catch (e) {
-    content.innerHTML = `<div class="welcome"><p style="color:#dc2626">加载失败: ${file.path}</p></div>`;
+    content.innerHTML = `<div class="welcome"><p style="color:#dc2626">加载失败: ${el.dataset.path}</p></div>`;
   }
 }
 </script>
