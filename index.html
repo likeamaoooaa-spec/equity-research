@@ -7,203 +7,273 @@
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 <script src="tree-data.js"></script>
 <style>
+  /* ========================================================
+     Buy-Side Equity Research — 温润排版风格
+     ======================================================== */
   :root {
-    --bg: #fafaf9; --card-bg: #fff; --border: #e7e5e4;
-    --text: #1c1917; --text-muted: #78716c; --accent: #0ea5e9;
-    --tag-bg: #f0f9ff; --tag-text: #0369a1;
-    --sidebar-w: 340px; --topbar-h: 48px;
-  }
-  * { margin:0; padding:0; box-sizing:border-box; }
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans SC", sans-serif;
-    background: var(--bg); color: var(--text);
-    display: flex; height: 100vh; overflow: hidden;
+    --bg-main: #fdfcf8;
+    --bg-sidebar: #f5f4ef;
+    --border: #e6e4df;
+    --text-main: #242220;
+    --text-muted: #73716d;
+    --accent: #da7756;
+    --accent-bg: rgba(218, 119, 86, 0.06);
+    --accent-hover: rgba(218, 119, 86, 0.12);
+    --font-ui: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --font-serif: "Charter", "Bitstream Charter", "Sitka Text", Cambria, Georgia, "Noto Serif SC", "Songti SC", serif;
+    --sidebar-w: 300px;
+    --topbar-h: 56px;
   }
 
-  /* ── Sidebar ── */
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    font-family: var(--font-ui);
+    background: var(--bg-main); color: var(--text-main);
+    display: flex; height: 100vh; overflow: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ── 侧边栏 (PC端常驻) ── */
   aside {
     width: var(--sidebar-w); min-width: var(--sidebar-w); z-index: 100;
-    background: var(--card-bg); border-right: 1px solid var(--border);
+    background: var(--bg-sidebar);
+    border-right: 1px solid var(--border);
     display: flex; flex-direction: column; flex-shrink: 0;
-    transition: transform .3s ease;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
   aside .sidebar-inner { display:flex; flex-direction:column; overflow:hidden; flex:1; }
   aside header {
-    padding: 14px 18px; border-bottom: 1px solid var(--border); flex-shrink: 0;
+    padding: 24px 20px 16px;
+    border-bottom: 1px solid var(--border);
+    flex-shrink: 0;
   }
-  aside header h1 { font-size: 17px; font-weight: 700; margin-bottom: 2px; }
-  aside header p { font-size: 11px; color: var(--text-muted); }
-  aside nav { flex:1; overflow-y:auto; padding: 4px 0; -webkit-overflow-scrolling: touch; }
+  aside header h1 {
+    font-family: var(--font-serif);
+    font-size: 20px; font-weight: 600;
+    margin-bottom: 4px; color: var(--text-main);
+  }
+  aside header p { font-size: 12px; color: var(--text-muted); }
+  aside nav { flex:1; overflow-y:auto; padding: 12px 0; -webkit-overflow-scrolling: touch; }
 
-  /* ── Tree ── */
+  /* ── 目录树 ── */
   .tree-toggle {
-    display: flex; align-items: center; gap: 4px; width: 100%;
-    padding: 6px 18px; font-size: 11px; font-weight: 600;
-    text-transform: uppercase; letter-spacing: .4px;
+    display: flex; align-items: center; gap: 8px; width: 100%;
+    padding: 10px 20px; font-size: 12.5px; font-weight: 500;
     color: var(--text-muted); cursor: pointer; user-select: none;
-    border: none; background: none; text-align: left; transition: color .12s;
+    border: none; background: none; text-align: left;
+    letter-spacing: .3px; transition: color .15s;
   }
-  .tree-toggle:hover { color: var(--text); }
+  .tree-toggle:hover { color: var(--text-main); }
   .tree-toggle .arrow {
-    display: inline-block; font-size: 10px; width: 12px;
-    transition: transform .15s; flex-shrink: 0; line-height: 1;
+    display: inline-block; font-size: 9px; width: 12px;
+    transition: transform .2s ease; flex-shrink: 0; color: #a3a19d;
   }
   .tree-toggle.collapsed .arrow { transform: rotate(-90deg); }
   .tree-children { overflow: hidden; max-height: 0; }
   .tree-children.expanded { max-height: 9999px; }
 
   .file-link {
-    display: block; padding: 6px 18px 6px 32px;
-    font-size: 13px; color: var(--text); text-decoration: none;
-    border-left: 3px solid transparent; cursor: pointer;
-    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
-    transition: background .12s, border-color .12s; line-height: 1.4;
+    display: flex; flex-direction: column;
+    padding: 8px 12px; margin: 2px 16px;
+    font-size: 13.5px; color: var(--text-main); text-decoration: none;
+    border-radius: 6px; cursor: pointer; transition: all .15s ease;
+    line-height: 1.4;
   }
-  .file-link:hover { background: #f5f5f4; }
+  .file-link:hover { background: rgba(0,0,0,0.04); }
   .file-link.active {
-    background: #f0f9ff; border-left-color: var(--accent);
-    color: #0369a1; font-weight: 500;
+    background: var(--accent-bg); color: var(--accent);
+    font-weight: 500;
   }
   .file-link .meta {
-    display: block; font-size: 10px; color: var(--text-muted); font-weight: 400;
+    font-size: 11px; color: var(--text-muted); margin-top: 2px;
+    font-weight: 400;
   }
 
-  /* ── Overlay (mobile) ── */
+  /* ── 移动端遮罩 ── */
   .sidebar-overlay {
     position: fixed; top:0; left:0; right:0; bottom:0;
-    background: rgba(0,0,0,.35); z-index: 99; display: none;
+    background: rgba(36, 34, 32, 0.4); z-index: 99; display: none;
+    backdrop-filter: blur(2px); transition: opacity 0.3s;
   }
   .sidebar-overlay.show { display: block; }
 
-  /* ── Topbar (mobile) ── */
+  /* ── 移动端顶栏 ── */
   .topbar {
     display: none; height: var(--topbar-h); min-height: var(--topbar-h);
-    background: var(--card-bg); border-bottom: 1px solid var(--border);
-    align-items: center; padding: 0 12px; gap: 10px; flex-shrink: 0;
+    background: var(--bg-main); border-bottom: 1px solid var(--border);
+    align-items: center; padding: 0 16px; gap: 16px; flex-shrink: 0;
+    position: sticky; top: 0; z-index: 90;
   }
   .topbar .hamburger {
     background: none; border: none; cursor: pointer; padding: 4px;
-    display: flex; flex-direction: column; gap: 3px; width: 24px;
+    display: flex; flex-direction: column; gap: 4px; width: 24px;
   }
   .topbar .hamburger span {
-    display: block; height: 2px; background: var(--text); border-radius: 2px; transition: .2s;
+    display: block; height: 2px; background: var(--text-main);
+    border-radius: 2px; transition: .2s;
   }
-  .topbar .title { font-size: 14px; font-weight: 600; flex: 1; }
-  .topbar .tag { font-size: 10px; padding: 2px 7px; border-radius: 10px; font-weight: 500; background: var(--tag-bg); color: var(--tag-text); display: none; }
+  .topbar .title { font-family: var(--font-serif); font-size: 17px; font-weight: 600; flex: 1; color: var(--text-main); }
 
-  /* ── Main ── */
+  /* ── 主内容区 ── */
   main {
     flex: 1; overflow-y: auto; display: flex; flex-direction: column;
     -webkit-overflow-scrolling: touch; min-width: 0;
   }
   main .toolbar {
-    padding: 10px 28px; border-bottom: 1px solid var(--border);
-    background: var(--card-bg); display: flex; align-items: center; gap: 12px; flex-shrink: 0;
+    padding: 16px 48px; position: sticky; top: 0; z-index: 10;
+    background: rgba(253, 252, 248, 0.95); backdrop-filter: blur(8px);
+    display: flex; align-items: center; gap: 16px; flex-shrink: 0;
   }
-  main .toolbar .breadcrumb { font-size: 12px; color: var(--text-muted); }
-  main .toolbar .tag-ticker {
-    font-size: 10px; padding: 2px 7px; border-radius: 10px; font-weight: 500;
-    background: var(--tag-bg); color: var(--tag-text); display: none;
-  }
+  .breadcrumb { font-size: 13px; color: var(--text-muted); }
 
-  .content { padding: 28px 36px; max-width: 820px; flex:1; width: 100%; }
-  .welcome { text-align:center; padding:80px 20px; color:var(--text-muted); }
-  .welcome h2 { font-size:22px; color:var(--text); margin-bottom:8px; }
+  .content {
+    padding: 20px 48px 80px; max-width: 740px; flex:1; width: 100%;
+    font-family: var(--font-serif);
+  }
+  .content.loading-state {
+    font-family: var(--font-ui);
+  }
+  .welcome {
+    text-align:center; padding:80px 20px; color:var(--text-muted);
+    font-family: var(--font-ui);
+  }
+  .welcome h2 { font-size:22px; color:var(--text-main); margin-bottom:8px; }
   .welcome p { font-size:14px; }
+  .loading {
+    text-align: center; padding: 60px 20px;
+    color: var(--text-muted); font-family: var(--font-ui); font-size: 14px;
+  }
 
-  /* ── Markdown Content ── */
-  .content h1 { font-size:26px; margin:0 0 8px; font-weight:700; }
-  .content h2 { font-size:19px; margin:28px 0 10px; font-weight:600; border-bottom:1px solid var(--border); padding-bottom:4px; }
-  .content h3 { font-size:16px; margin:20px 0 8px; font-weight:600; }
-  .content p { font-size:14.5px; line-height:1.75; margin:8px 0; }
+  /* ── Markdown 排版 ── */
+  .content img { max-width: 100%; height: auto; border-radius: 4px; margin: 16px 0; }
+  .content h1 {
+    font-size: 28px; margin: 0 0 8px; font-weight: 600;
+    line-height: 1.3; color: var(--text-main);
+  }
+  .content h2 {
+    font-size: 20px; margin: 36px 0 12px; font-weight: 600;
+    border-bottom: 1px solid var(--border); padding-bottom: 6px;
+    color: var(--text-main);
+  }
+  .content h3 {
+    font-size: 17px; margin: 24px 0 8px; font-weight: 600;
+    color: var(--text-main);
+  }
+  .content h4 {
+    font-size: 15px; margin: 20px 0 6px; font-weight: 600;
+    color: var(--text-muted);
+  }
+  .content p { line-height: 1.75; margin: 0 0 14px; font-size: 16px; }
+  .content a { color: var(--accent); text-decoration: none; border-bottom: 1px solid rgba(218,119,86,0.3); }
+  .content a:hover { border-bottom-color: var(--accent); }
   .content blockquote {
-    border-left:3px solid var(--accent); padding:6px 16px; margin:12px 0;
-    color:var(--text-muted); font-size:14px; background:#f8fafc; border-radius:0 6px 6px 0;
+    margin: 20px 0; padding: 12px 20px;
+    border-left: 3px solid var(--accent);
+    background: rgba(218,119,86,0.04);
+    color: var(--text-muted); font-style: italic;
   }
-  .content ul, .content ol { padding-left:22px; margin:8px 0; }
-  .content li { font-size:14px; line-height:1.7; }
-  .content code { background:#f1f5f9; padding:2px 6px; border-radius:4px; font-size:13px; }
+  .content blockquote p { margin: 0; }
+  .content ul, .content ol {
+    padding-left: 24px; margin: 12px 0;
+    line-height: 1.75; font-size: 16px;
+  }
+  .content li { margin-bottom: 4px; }
+  .content li > ul, .content li > ol { margin: 4px 0; }
+  .content code {
+    font-family: var(--font-ui); font-size: 14px;
+    background: rgba(0,0,0,0.05); padding: 2px 6px; border-radius: 4px;
+    color: var(--text-main);
+  }
   .content pre {
-    background:#1e293b; color:#e2e8f0; padding:16px; border-radius:8px;
-    overflow-x:auto; margin:12px 0; font-size:13px; line-height:1.5;
+    background: #242220; color: #f5f4ef; padding: 20px; border-radius: 8px;
+    overflow-x: auto; margin: 24px 0; font-size: 14px; line-height: 1.6;
+    font-family: var(--font-ui);
   }
-  .content pre code { background:none; padding:0; color:inherit; }
+  .content pre code {
+    background: none; padding: 0; color: inherit; border-radius: 0;
+  }
   .content table {
-    border-collapse:collapse; width:100%; margin:12px 0; font-size:13px;
-    display:block; overflow-x:auto; -webkit-overflow-scrolling:touch;
+    border-collapse: collapse; width: 100%; margin: 32px 0;
+    font-size: 14.5px; font-family: var(--font-ui);
+    overflow-x: auto; display: block;
   }
-  .content th, .content td { border:1px solid var(--border); padding:6px 10px; text-align:left; white-space:nowrap; }
-  .content th { background:#f8fafc; font-weight:600; }
-  .content hr { border:none; border-top:1px solid var(--border); margin:20px 0; }
-  .content a { color:var(--accent); }
-  .content img { max-width:100%; height:auto; }
-  .loading { color:var(--text-muted); font-size:14px; padding:40px; text-align:center; }
+  .content th, .content td {
+    border: 1px solid var(--border); padding: 10px 14px;
+    text-align: left; white-space: nowrap;
+  }
+  .content th {
+    background: var(--bg-sidebar); font-weight: 600;
+    color: var(--text-muted); font-size: 12px;
+    text-transform: uppercase; letter-spacing: .5px;
+  }
+  .content td { color: var(--text-main); font-size: 14px; }
+  .content hr {
+    margin: 36px 0; border: none; border-top: 1px solid var(--border);
+  }
+  .content strong { font-weight: 600; color: var(--text-main); }
+  .content em { color: var(--text-muted); }
+  .content .math { overflow-x: auto; }
 
-  /* ── Mobile (≤768px) ── */
-  @media (max-width:768px) {
+  /* ── 响应式 ── */
+  @media (max-width: 900px) {
+    .content { padding: 16px 20px 60px; max-width: 100%; }
+    .content h1 { font-size: 24px; }
+    .content h2 { font-size: 18px; }
+    .content p { font-size: 15px; }
+    main .toolbar { padding: 12px 20px; }
+  }
+  @media (max-width: 700px) {
     body { flex-direction: column; }
     aside {
       position: fixed; top: 0; left: 0; bottom: 0;
-      width: 300px; min-width: 300px; z-index: 100;
-      transform: translateX(-100%);
-      box-shadow: 2px 0 12px rgba(0,0,0,.15);
+      transform: translateX(-100%); width: 280px; min-width: 280px;
+      box-shadow: 2px 0 24px rgba(0,0,0,0.15);
     }
     aside.open { transform: translateX(0); }
     .topbar { display: flex; }
     main .toolbar { display: none; }
-    main .content { padding: 16px 18px; max-width: 100%; }
-    .content h1 { font-size: 22px; }
-    .content h2 { font-size: 17px; }
-    .content h3 { font-size: 15px; }
-    .content p, .content li { font-size: 14px; line-height: 1.7; }
-    .content table { font-size: 12px; }
-    .content th, .content td { padding: 4px 8px; }
-    .content blockquote { font-size: 13px; padding: 6px 12px; }
+    .content { padding: 20px 16px 60px; }
+    .tree-toggle { padding: 10px 16px; }
+    .file-link { margin: 2px 12px; }
   }
 </style>
 </head>
 <body>
 
-<!-- Mobile top bar -->
-<div class="topbar" id="topbar">
-  <button class="hamburger" id="hamburger" aria-label="Menu">
-    <span></span><span></span><span></span>
-  </button>
-  <span class="title" id="mobile-title">Equity Research</span>
-  <span class="tag" id="mobile-tag"></span>
-</div>
-
-<!-- Sidebar overlay -->
-<div class="sidebar-overlay" id="sidebar-overlay"></div>
-
-<!-- Sidebar -->
+<!-- ── Sidebar ── -->
 <aside>
   <div class="sidebar-inner">
-  <header>
-    <h1>Equity Research</h1>
-    <p>投资研究笔记 · <span id="file-count"></span> 篇</p>
-  </header>
-  <nav id="sidebar-nav"></nav>
+    <header>
+      <h1>Equity Research</h1>
+      <p id="file-count-line"><span id="file-count">0</span> 份研究报告</p>
+    </header>
+    <nav id="sidebar-nav"></nav>
   </div>
 </aside>
+<div class="sidebar-overlay" id="sidebar-overlay"></div>
 
-<!-- Main content -->
+<!-- ── Mobile Top Bar ── -->
+<div class="topbar">
+  <button class="hamburger" id="hamburger">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="title" id="mobile-title">Equity Research</div>
+</div>
+
+<!-- ── Main Content ── -->
 <main>
-  <div class="toolbar" id="toolbar">
-    <span class="breadcrumb" id="breadcrumb"></span>
-    <span class="tag tag-ticker" id="tag-ticker" style="display:none"></span>
+  <div class="toolbar" id="toolbar" style="display:none">
+    <div class="breadcrumb" id="breadcrumb"></div>
   </div>
-  <div class="content" id="content">
-    <div class="welcome">
-      <h2>投资研究笔记</h2>
-      <p>点击左侧目录展开并选择一篇报告查看</p>
-      <p style="margin-top:8px;"><small>新增文件后运行 <code>python3 build_tree.py</code> 即可自动更新导航</small></p>
-    </div>
+  <div class="content welcome" id="content">
+    <h2>Equity Research</h2>
+    <p>选择左侧研究报告开始阅读</p>
+    <p style="font-size:12px;margin-top:4px;">Buy-Side · Fundamental · Long-Term</p>
   </div>
 </main>
 
 <script>
-// Use auto-generated TREE_DATA from tree-data.js
+// ── Globals ──
 const TREE = typeof TREE_DATA !== 'undefined' ? TREE_DATA : {};
 
 // ── Count files ──
@@ -216,7 +286,7 @@ document.getElementById("file-count").textContent = total;
 // ── localStorage ──
 function storageKey(name) { return "eq-tree-" + encodeURIComponent(name); }
 
-// ── Mobile sidebar toggle ──
+// ── Mobile sidebar ──
 const aside = document.querySelector("aside");
 const overlay = document.getElementById("sidebar-overlay");
 const hamburger = document.getElementById("hamburger");
@@ -267,7 +337,7 @@ function createTree() {
       const grpToggle = document.createElement("button");
       grpToggle.className = "tree-toggle" + (grpCollapsed ? " collapsed" : "");
       grpToggle.style.cssText = "padding-left:32px;";
-      grpToggle.innerHTML = '<span class="arrow">▼</span>🏷 ' + groupName;
+      grpToggle.innerHTML = '<span class="arrow">▼</span>' + groupName;
       grpToggle.addEventListener("click", () => {
         grpToggle.classList.toggle("collapsed");
         grpChildren.classList.toggle("expanded");
@@ -299,6 +369,7 @@ createTree();
 async function loadFile(el) {
   const content = document.getElementById("content");
   const toolbar = document.getElementById("toolbar");
+  content.className = "content loading-state";
   content.innerHTML = '<div class="loading">加载中…</div>';
 
   document.querySelectorAll(".file-link").forEach(e => e.classList.remove("active"));
@@ -307,27 +378,20 @@ async function loadFile(el) {
   toolbar.style.display = "flex";
   document.getElementById("breadcrumb").innerHTML = el.dataset.path.replace(/\//g, " / ");
 
-  const dTag = document.getElementById("tag-ticker");
-  const mTag = document.getElementById("mobile-tag");
   const mTitle = document.getElementById("mobile-title");
-
-  if (el.dataset.ticker && el.dataset.ticker !== "undefined") {
-    dTag.style.display = "inline"; dTag.textContent = el.dataset.ticker;
-    mTag.style.display = "inline"; mTag.textContent = el.dataset.ticker;
-  } else {
-    dTag.style.display = "none";
-    mTag.style.display = "none";
-  }
   mTitle.textContent = el.textContent.trim().split("\n")[0] || "Equity Research";
 
   try {
     const resp = await fetch(el.dataset.path);
     if (!resp.ok) throw new Error("Not found");
-    content.innerHTML = marked.parse(await resp.text());
+    const md = await resp.text();
+    content.className = "content";
+    content.innerHTML = marked.parse(md);
     content.scrollTop = 0;
     window.scrollTo({ top: 0, behavior: "smooth" });
   } catch (e) {
-    content.innerHTML = `<div class="welcome"><p style="color:#dc2626">加载失败: ${el.dataset.path}</p></div>`;
+    content.className = "content welcome";
+    content.innerHTML = `<h2>加载失败</h2><p style="color:#dc2626">${el.dataset.path}</p>`;
   }
 }
 </script>
