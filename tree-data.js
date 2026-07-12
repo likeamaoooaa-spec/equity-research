@@ -40,6 +40,14 @@ const TREE_DATA = {
         "date": "2026-07-12",
         "ticker": "RKLB"
       }
+    ],
+    "WOLF": [
+      {
+        "path": "research/WOLF/2026-07-12_WOLF_bayesian-intrinsic-growth.md",
+        "title": "WOLF bayesian intrinsic growth",
+        "date": "2026-07-12",
+        "ticker": "WOLF"
+      }
     ]
   },
   "📝 行业笔记": {
