@@ -2,55 +2,125 @@
 """Scan repo directories and generate tree-data.js for index.html.
 
 Run: python3 build_tree.py
+
+Auto-discovers:
+- research/[TICKER]/*.md     → 个股研究 (grouped by ticker)
+- notes/*/*.md               → 行业笔记 (subdirs with "日报" get their own category)
 """
 import os, re, json
 from pathlib import Path
 
 ROOT = Path(__file__).parent.resolve()
 
-# Mapping: directory path -> (category label, group-aggregation strategy)
-# Strategy "ticker" → group by ticker subdir, enable ticker tag
-# Strategy "dirname" → group by parent directory name
-# Strategy "annual" → group by year from filename date
-CATEGORY_MAP = [
-    ("research",                "📊 个股研究",   "ticker"),
-    ("notes/space",             "📝 行业笔记",   "dirname"),
-    ("notes/美股收盘日报",       "📰 美股收盘日报", "annual"),
-]
 
 def extract_date_and_title(filepath: str) -> tuple:
-    """Extract date (YYYY-MM-DD) and display title from filename."""
+    """Extract date (YYYY-MM-DD) and display title from filename.
+
+    Patterns:
+    1. 2026-07-11_PLTR_buyside-memo       → (2026-07-11, "PLTR buyside memo")
+    2. 美股收盘日报_2026-07-10              → (2026-07-10, "美股收盘日报")
+    3. 2026-07-12 bare date                → (2026-07-12, "2026-07-12 bare date")
+    """
     stem = Path(filepath).stem
-    # Try to extract date prefix YYYY-MM-DD or YYYY-MM-DD_
+
+    # Pattern 1: date prefix  YYYY-MM-DD_...
     m = re.match(r"(\d{4}-\d{2}-\d{2})_(.+)", stem)
     if m:
         return m.group(1), m.group(2).replace("_", " ").replace("-", " ")
+
+    # Pattern 2: prefix_date  suffix_YYYY-MM-DD
+    m = re.match(r"(.+?)_(\d{4}-\d{2}-\d{2})$", stem)
+    if m:
+        return m.group(2), m.group(1).replace("_", " ").replace("-", " ")
+
+    # Pattern 3: bare date somewhere in filename
     m = re.match(r"(\d{4}-\d{2}-\d{2})", stem)
     if m:
         return m.group(1), stem
+
     return None, stem.replace("_", " ").replace("-", " ")
 
+
 def ticker_from_dir(dirname: str) -> str:
-    """Extract ticker from directory name (e.g., PLTR, RKLB)."""
     return dirname.upper()
+
+
+def sector_label(dirname: str) -> str:
+    name_map = {
+        "space": "太空产业",
+        "semiconductor": "半导体",
+        "ai": "人工智能",
+        "energy": "能源",
+        "biotech": "生物科技",
+        "fintech": "金融科技",
+    }
+    return name_map.get(dirname, dirname)
+
+
+def is_daily_report_dir(dirname: str) -> bool:
+    return "日报" in dirname
+
 
 def build_tree():
     tree = {}
 
-    for rel_dir, cat_label, strategy in CATEGORY_MAP:
-        cat_dir = ROOT / rel_dir
-        if not cat_dir.exists():
-            continue
+    # ── 1. 个股研究：research/[TICKER]/*.md ──
+    research_dir = ROOT / "research"
+    if research_dir.exists():
+        cat_label = "📊 个股研究"
+        tree[cat_label] = {}
+        for ticker_dir in sorted(research_dir.iterdir()):
+            if not ticker_dir.is_dir() or ticker_dir.name.startswith("."):
+                continue
+            ticker = ticker_from_dir(ticker_dir.name)
+            files = []
+            for md in sorted(ticker_dir.glob("*.md")):
+                date, title = extract_date_and_title(str(md))
+                files.append({
+                    "path": str(md.relative_to(ROOT)),
+                    "title": title,
+                    "date": date,
+                    "ticker": ticker,
+                })
+            if files:
+                tree[cat_label][ticker] = files
 
-        if cat_label not in tree:
-            tree[cat_label] = {}
+    # ── 2. 行业笔记 & 日报：notes/ 下自动发现所有子目录 ──
+    notes_dir = ROOT / "notes"
+    if notes_dir.exists():
+        notes_cat = "📝 行业笔记"
+        tree[notes_cat] = {}
 
-        if strategy == "ticker":
-            # research/PLTR/*.md → group by ticker subdir
-            for sub in sorted(cat_dir.iterdir()):
-                if not sub.is_dir() or sub.name.startswith("."):
-                    continue
-                ticker = ticker_from_dir(sub.name)
+        for sub in sorted(notes_dir.iterdir()):
+            if not sub.is_dir() or sub.name.startswith("."):
+                continue
+
+            if is_daily_report_dir(sub.name):
+                # Daily reports get their own top-level category, grouped by year-month
+                report_cat = f"📰 {sub.name}"
+                files_by_ym = {}
+                for md in sorted(sub.glob("*.md")):
+                    date, title = extract_date_and_title(str(md))
+                    if date:
+                        parts = date.split("-")
+                        ym_key = f"{parts[0]}年{parts[1]}月"
+                    else:
+                        import datetime
+                        mtime = datetime.datetime.fromtimestamp(md.stat().st_mtime)
+                        ym_key = f"{mtime.year}年{mtime.month}月"
+                    if ym_key not in files_by_ym:
+                        files_by_ym[ym_key] = []
+                    files_by_ym[ym_key].append({
+                        "path": str(md.relative_to(ROOT)),
+                        "title": title,
+                        "date": date,
+                    })
+                for ym in sorted(files_by_ym.keys(), reverse=True):
+                    tree[report_cat] = tree.get(report_cat, {})
+                    tree[report_cat][ym] = files_by_ym[ym]
+            else:
+                # Regular sector notes
+                group_name = sector_label(sub.name)
                 files = []
                 for md in sorted(sub.glob("*.md")):
                     date, title = extract_date_and_title(str(md))
@@ -58,59 +128,22 @@ def build_tree():
                         "path": str(md.relative_to(ROOT)),
                         "title": title,
                         "date": date,
-                        "ticker": ticker,
                     })
                 if files:
-                    tree[cat_label][ticker] = files
+                    tree[notes_cat][group_name] = files
 
-        elif strategy == "dirname":
-            # notes/space/*.md → group by "太空产业"
-            group_name = cat_dir.name
-            # Friendly display name mapping
-            name_map = {"space": "太空产业"}
-            display_name = name_map.get(group_name, group_name)
-            files = []
-            for md in sorted(cat_dir.glob("*.md")):
-                date, title = extract_date_and_title(str(md))
-                files.append({
-                    "path": str(md.relative_to(ROOT)),
-                    "title": title,
-                    "date": date,
-                })
-            if files:
-                tree[cat_label][display_name] = files
-
-        elif strategy == "annual":
-            # notes/美股收盘日报/*.md → group by year from filename date
-            files_by_year = {}
-            for md in sorted(cat_dir.glob("*.md")):
-                date, title = extract_date_and_title(str(md))
-                if date:
-                    parts = date.split("-")
-                    year_key = f"{parts[0]}年{parts[1]}月"
-                else:
-                    # Fallback: use file modification time
-                    import datetime
-                    mtime = datetime.datetime.fromtimestamp(md.stat().st_mtime)
-                    year_key = f"{mtime.year}年{mtime.month}月"
-                if year_key not in files_by_year:
-                    files_by_year[year_key] = []
-                files_by_year[year_key].append({
-                    "path": str(md.relative_to(ROOT)),
-                    "title": title,
-                    "date": date,
-                })
-            # Sort groups by year-month descending
-            for key in sorted(files_by_year.keys(), reverse=True):
-                tree[cat_label][key] = files_by_year[key]
+        # Remove empty notes category
+        if not tree[notes_cat]:
+            del tree[notes_cat]
 
     return tree
 
+
 def generate_js(tree: dict) -> str:
-    """Generate tree-data.js content."""
     js = "// Auto-generated by build_tree.py. Do not edit manually.\n"
     js += f"const TREE_DATA = {json.dumps(tree, ensure_ascii=False, indent=2)};\n"
     return js
+
 
 def main():
     tree = build_tree()
@@ -118,7 +151,6 @@ def main():
     output_path = ROOT / "tree-data.js"
     output_path.write_text(js, encoding="utf-8")
 
-    # Count files
     count = 0
     for cat in tree.values():
         for files in cat.values():

@@ -6,13 +6,6 @@
 .DS_Store
 Thumbs.db
 
-# Data files (gitignored if large)
-data/*
-!data/RKLB/
-!data/RKLB/*.html
-*.xlsx
-*.csv
-
 # Temporary files
 *.tmp
 *.swp

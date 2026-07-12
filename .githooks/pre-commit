@@ -1,0 +1,24 @@
+#!/bin/bash
+# Auto-regenerate tree-data.js before every commit
+# This hook ensures the sidebar navigation is always up-to-date.
+
+set -e
+
+SCRIPT_DIR="$(cd "$(dirname "$0")/.." && pwd)"
+cd "$SCRIPT_DIR"
+
+# Check if any .md files in research/, notes/ are staged or modified
+STAGED=$(git diff --cached --name-only -- 'research/*.md' 'research/**/*.md' 'notes/**/*.md' 2>/dev/null)
+UNSTAGED=$(git diff --name-only -- 'research/*.md' 'research/**/*.md' 'notes/**/*.md' 2>/dev/null)
+
+if [ -z "$STAGED" ] && [ -z "$UNSTAGED" ]; then
+    exit 0
+fi
+
+echo "🔍 Detected .md changes in research/ or notes/ — regenerating tree-data.js..."
+python3 build_tree.py
+
+# Stage the updated tree-data.js
+git add tree-data.js
+
+echo "✅ tree-data.js regenerated and staged."
