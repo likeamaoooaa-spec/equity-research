@@ -73,8 +73,8 @@
   .tree-children.expanded { max-height: 9999px; }
 
   .file-link {
-    display: flex; flex-direction: column;
-    padding: 8px 12px; margin: 2px 16px;
+    display: flex; align-items: center; gap: 8px;
+    padding: 7px 12px; margin: 2px 16px;
     font-size: 13.5px; color: var(--text-main); text-decoration: none;
     border-radius: 6px; cursor: pointer; transition: all .15s ease;
     line-height: 1.4;
@@ -84,9 +84,11 @@
     background: var(--accent-bg); color: var(--accent);
     font-weight: 500;
   }
-  .file-link .meta {
-    font-size: 11px; color: var(--text-muted); margin-top: 2px;
-    font-weight: 400;
+  .file-link .title-part { flex: 1; }
+  .file-link .ticker-badge {
+    font-size: 10px; font-weight: 600; letter-spacing: .5px;
+    color: var(--text-muted); background: rgba(0,0,0,0.06);
+    padding: 1px 6px; border-radius: 4px; flex-shrink: 0;
   }
 
   /* ── 移动端遮罩 ── */
@@ -353,11 +355,23 @@ function createTree() {
       files.forEach(f => {
         const a = document.createElement("a");
         a.className = "file-link";
-        a.innerHTML = `${f.title}<span class="meta">${f.date}</span>`;
         a.dataset.path = f.path;
-        const ticker = f.ticker || "";
-        a.dataset.ticker = ticker;
+        a.dataset.ticker = f.ticker || "";
         a.addEventListener("click", (e) => { e.preventDefault(); loadFile(a); closeSidebar(); });
+
+        // Title + optional ticker badge
+        const titleSpan = document.createElement("span");
+        titleSpan.className = "title-part";
+        titleSpan.textContent = f.title;
+        a.appendChild(titleSpan);
+
+        if (f.ticker) {
+          const badge = document.createElement("span");
+          badge.className = "ticker-badge";
+          badge.textContent = f.ticker;
+          a.appendChild(badge);
+        }
+
         grpChildren.appendChild(a);
       });
     });
@@ -379,7 +393,7 @@ async function loadFile(el) {
   document.getElementById("breadcrumb").innerHTML = el.dataset.path.replace(/\//g, " / ");
 
   const mTitle = document.getElementById("mobile-title");
-  mTitle.textContent = el.textContent.trim().split("\n")[0] || "Equity Research";
+  mTitle.textContent = el.querySelector(".title-part")?.textContent || "Equity Research";
 
   try {
     const resp = await fetch(el.dataset.path);

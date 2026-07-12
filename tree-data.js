@@ -3,48 +3,48 @@ const TREE_DATA = {
   "📊 个股研究": {
     "PLTR": [
       {
-        "path": "research/PLTR/2026-07-11_PLTR_buyside-memo.md",
-        "title": "PLTR buyside memo",
+        "path": "research/PLTR/2026-07-11_buyside-memo.md",
+        "title": "buyside memo",
         "date": "2026-07-11",
         "ticker": "PLTR"
       },
       {
-        "path": "research/PLTR/2026-07-12_PLTR_chronicle.md",
-        "title": "PLTR chronicle",
+        "path": "research/PLTR/2026-07-12_chronicle.md",
+        "title": "chronicle",
         "date": "2026-07-12",
         "ticker": "PLTR"
       }
     ],
     "RKLB": [
       {
-        "path": "research/RKLB/2026-07-11_RKLB_buyside-memo.md",
-        "title": "RKLB buyside memo",
+        "path": "research/RKLB/2026-07-11_buyside-memo.md",
+        "title": "buyside memo",
         "date": "2026-07-11",
         "ticker": "RKLB"
       },
       {
-        "path": "research/RKLB/2026-07-12_Peter-Beck_biography.md",
-        "title": "Peter Beck biography",
+        "path": "research/RKLB/2026-07-12_biography.md",
+        "title": "biography",
         "date": "2026-07-12",
         "ticker": "RKLB"
       },
       {
-        "path": "research/RKLB/2026-07-12_RKLB_corporate-chronicle.md",
-        "title": "RKLB corporate chronicle",
+        "path": "research/RKLB/2026-07-12_corporate-chronicle.md",
+        "title": "corporate chronicle",
         "date": "2026-07-12",
         "ticker": "RKLB"
       },
       {
-        "path": "research/RKLB/2026-07-12_RKLB_investment-audit.md",
-        "title": "RKLB investment audit",
+        "path": "research/RKLB/2026-07-12_investment-audit.md",
+        "title": "investment audit",
         "date": "2026-07-12",
         "ticker": "RKLB"
       }
     ],
     "WOLF": [
       {
-        "path": "research/WOLF/2026-07-12_WOLF_bayesian-intrinsic-growth.md",
-        "title": "WOLF bayesian intrinsic growth",
+        "path": "research/WOLF/2026-07-12_bayesian-intrinsic-growth.md",
+        "title": "bayesian intrinsic growth",
         "date": "2026-07-12",
         "ticker": "WOLF"
       }
