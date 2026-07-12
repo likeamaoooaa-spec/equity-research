@@ -19,7 +19,6 @@
     display: flex; height: 100vh; overflow: hidden;
   }
 
-  /* Sidebar */
   aside {
     width: var(--sidebar-w); min-width: var(--sidebar-w);
     background: var(--card-bg); border-right: 1px solid var(--border);
@@ -32,7 +31,6 @@
   aside header p { font-size: 11px; color: var(--text-muted); }
   aside nav { flex:1; overflow-y:auto; padding: 4px 0; }
 
-  /* Tree styles */
   .tree-group { margin: 0; }
   .tree-toggle {
     display: flex; align-items: center; gap: 4px;
@@ -49,8 +47,8 @@
     transition: transform .15s; flex-shrink: 0;
   }
   .tree-toggle.collapsed .arrow { transform: rotate(-90deg); }
-  .tree-children { overflow: hidden; transition: max-height .2s ease; }
-  .tree-children.collapsed { max-height: 0 !important; }
+  .tree-children { overflow: hidden; transition: max-height .25s ease; max-height: 0; }
+  .tree-children.expanded { max-height: none; }
 
   .file-link {
     display: block; padding: 5px 18px 5px 32px;
@@ -67,7 +65,6 @@
     display: block; font-size: 10px; color: var(--text-muted); font-weight: 400;
   }
 
-  /* Main content */
   main {
     flex: 1; overflow-y: auto; display: flex; flex-direction: column;
   }
@@ -134,7 +131,7 @@
   <div class="content" id="content">
     <div class="welcome">
       <h2>投资研究笔记</h2>
-      <p>从左侧选择一篇报告查看</p>
+      <p>点击左侧目录展开并选择一篇报告查看</p>
     </div>
   </div>
 </main>
@@ -170,79 +167,68 @@ for (const cat of Object.values(TREE))
     total += files.length;
 document.getElementById("file-count").textContent = total;
 
-// Restore sidebar state from localStorage
-function storageKey(name) { return "tree-" + name.replace(/\s+/g, "-"); }
-function isCollapsed(name) {
-  const v = localStorage.getItem(storageKey(name));
-  return v === "collapsed";
-}
+// localStorage helpers
+function storageKey(name) { return "eq-tree-" + encodeURIComponent(name); }
 
 const nav = document.getElementById("sidebar-nav");
 
-// Build tree
-Object.entries(TREE).forEach(([catName, catGroups]) => {
-  // Category toggle
-  const catToggle = document.createElement("button");
-  catToggle.className = "tree-toggle" + (isCollapsed(catName) ? " collapsed" : "");
-  catToggle.innerHTML = '<span class="arrow">▼</span>' + catName;
-  catToggle.addEventListener("click", () => {
-    catToggle.classList.toggle("collapsed");
-    localStorage.setItem(storageKey(catName), catToggle.classList.contains("collapsed") ? "collapsed" : "expanded");
-    updateChildrenHeight(catChildren);
-  });
-  nav.appendChild(catToggle);
+function createTree() {
+  Object.entries(TREE).forEach(([catName, catGroups]) => {
+    const grpKeyPrefix = catName;
+    const savedCat = localStorage.getItem(storageKey(catName));
+    const catCollapsed = savedCat === null ? true : savedCat === "collapsed";
 
-  const catChildren = document.createElement("div");
-  catChildren.className = "tree-children" + (isCollapsed(catName) ? " collapsed" : "");
-  nav.appendChild(catChildren);
-
-  Object.entries(catGroups).forEach(([groupName, files]) => {
-    // Group toggle
-    const grpToggle = document.createElement("button");
-    const grpKey = catName + "||" + groupName;
-    grpToggle.className = "tree-toggle" + (isCollapsed(grpKey) ? " collapsed" : "");
-    grpToggle.style.cssText = "padding-left:32px;";
-    grpToggle.innerHTML = '<span class="arrow">▼</span>🏷 ' + groupName;
-    grpToggle.addEventListener("click", () => {
-      grpToggle.classList.toggle("collapsed");
-      localStorage.setItem(storageKey(grpKey), grpToggle.classList.contains("collapsed") ? "collapsed" : "expanded");
-      updateChildrenHeight(grpChildren);
+    // Category toggle
+    const catToggle = document.createElement("button");
+    catToggle.className = "tree-toggle" + (catCollapsed ? " collapsed" : "");
+    catToggle.innerHTML = '<span class="arrow">▼</span>' + catName;
+    catToggle.addEventListener("click", () => {
+      catToggle.classList.toggle("collapsed");
+      catChildren.classList.toggle("expanded");
+      localStorage.setItem(storageKey(catName),
+        catToggle.classList.contains("collapsed") ? "collapsed" : "expanded");
     });
-    catChildren.appendChild(grpToggle);
+    nav.appendChild(catToggle);
 
-    const grpChildren = document.createElement("div");
-    grpChildren.className = "tree-children" + (isCollapsed(grpKey) ? " collapsed" : "");
-    catChildren.appendChild(grpChildren);
+    const catChildren = document.createElement("div");
+    catChildren.className = "tree-children" + (catCollapsed ? "" : " expanded");
+    nav.appendChild(catChildren);
 
-    files.forEach(f => {
-      const a = document.createElement("a");
-      a.className = "file-link";
-      a.innerHTML = `${f.title}<span class="meta">${f.date}</span>`;
-      a.dataset.path = f.path;
-      a.dataset.ticker = Object.keys(TREE["📊 个股研究"]).includes(groupName) ? groupName : "";
-      a.addEventListener("click", (e) => { e.preventDefault(); loadFile(a); });
-      grpChildren.appendChild(a);
+    Object.entries(catGroups).forEach(([groupName, files]) => {
+      const grpKey = grpKeyPrefix + "||" + groupName;
+      const savedGrp = localStorage.getItem(storageKey(grpKey));
+      const grpCollapsed = savedGrp === null ? true : savedGrp === "collapsed";
+
+      const grpToggle = document.createElement("button");
+      grpToggle.className = "tree-toggle" + (grpCollapsed ? " collapsed" : "");
+      grpToggle.style.cssText = "padding-left:32px;";
+      grpToggle.innerHTML = '<span class="arrow">▼</span>🏷 ' + groupName;
+      grpToggle.addEventListener("click", () => {
+        grpToggle.classList.toggle("collapsed");
+        grpChildren.classList.toggle("expanded");
+        localStorage.setItem(storageKey(grpKey),
+          grpToggle.classList.contains("collapsed") ? "collapsed" : "expanded");
+      });
+      catChildren.appendChild(grpToggle);
+
+      const grpChildren = document.createElement("div");
+      grpChildren.className = "tree-children" + (grpCollapsed ? "" : " expanded");
+      catChildren.appendChild(grpChildren);
+
+      files.forEach(f => {
+        const a = document.createElement("a");
+        a.className = "file-link";
+        a.innerHTML = `${f.title}<span class="meta">${f.date}</span>`;
+        a.dataset.path = f.path;
+        a.dataset.ticker = Object.keys(TREE["📊 个股研究"]).includes(groupName) ? groupName : "";
+        a.addEventListener("click", (e) => { e.preventDefault(); loadFile(a); });
+        grpChildren.appendChild(a);
+      });
     });
-    // Set initial height
-    updateChildrenHeight(grpChildren);
   });
-  updateChildrenHeight(catChildren);
-});
-
-function updateChildrenHeight(el) {
-  if (el.classList.contains("collapsed")) {
-    el.style.maxHeight = "0px";
-  } else {
-    el.style.maxHeight = el.scrollHeight + "px";
-  }
 }
 
-// Recalculate heights on resize
-window.addEventListener("resize", () => {
-  document.querySelectorAll(".tree-children:not(.collapsed)").forEach(el => {
-    el.style.maxHeight = el.scrollHeight + "px";
-  });
-});
+createTree();
 
 async function loadFile(el) {
   const content = document.getElementById("content");
