@@ -7,7 +7,9 @@
 Thumbs.db
 
 # Data files (gitignored if large)
-data/
+data/*
+!data/RKLB/
+!data/RKLB/*.html
 *.xlsx
 *.csv
 
