@@ -22,3 +22,4 @@ config/
 
 # Agent instruction files (only keep root AGENTS.md if needed, else all)
 .agents/
+AGENTS.md
