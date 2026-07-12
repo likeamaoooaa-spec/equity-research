@@ -1,0 +1,18 @@
+# Codex / AI agent internal config
+.codex/
+.agents/
+
+# OS noise
+.DS_Store
+Thumbs.db
+
+# Data files (gitignored if large)
+data/
+*.xlsx
+*.csv
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+*~
