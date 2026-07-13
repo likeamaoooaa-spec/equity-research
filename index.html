@@ -162,8 +162,51 @@
     flex: 1;
     min-width: 0;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
   }
+
+  /* ── 大纲 TOC ── */
+  .toc-sidebar {
+    display: none;
+    width: 220px;
+    min-width: 220px;
+    position: sticky;
+    top: 90px;
+    height: fit-content;
+    max-height: calc(100vh - 120px);
+    overflow-y: auto;
+    padding-right: 20px;
+    margin-top: 20px;
+    font-family: var(--font-ui);
+  }
+  @media (min-width: 1300px) {
+    .toc-sidebar { display: block; }
+  }
+  .toc-title {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+  }
+  .toc-link {
+    display: block;
+    font-size: 13px;
+    color: var(--text-muted);
+    text-decoration: none;
+    margin-bottom: 8px;
+    line-height: 1.4;
+    transition: color 0.2s, transform 0.2s;
+  }
+  .toc-link:hover, .toc-link.active {
+    color: var(--accent);
+    transform: translateX(2px);
+  }
+  .toc-h2 { font-weight: 500; }
+  .toc-h3 { padding-left: 12px; font-size: 12.5px; }
+  .toc-h4 { padding-left: 24px; font-size: 12px; }
 
   .content {
     padding: 20px 48px 40px; max-width: 740px; width: 100%;
@@ -492,6 +535,7 @@
   
   <div class="reading-area">
     <div class="content-wrapper">
+      <div class="toc-sidebar" id="toc-sidebar"></div>
       <div class="content welcome" id="content">
         <h2>Equity Research</h2>
         <p>选择左侧研究报告开始阅读</p>
@@ -629,6 +673,30 @@ async function loadFile(el) {
     const md = await resp.text();
     content.className = "content";
     content.innerHTML = marked.parse(md);
+    
+    // 自动生成大纲 TOC
+    const tocSidebar = document.getElementById('toc-sidebar');
+    if (tocSidebar) {
+      tocSidebar.innerHTML = '<div class="toc-title">Contents</div>';
+      const headings = content.querySelectorAll('h2, h3, h4');
+      if (headings.length > 0) {
+        headings.forEach((h, i) => {
+          if (!h.id) h.id = 'heading-' + i;
+          const a = document.createElement('a');
+          a.className = 'toc-link toc-' + h.tagName.toLowerCase();
+          a.href = '#' + h.id;
+          a.textContent = h.textContent;
+          a.addEventListener('click', (e) => {
+            e.preventDefault();
+            h.scrollIntoView({ behavior: 'smooth' });
+          });
+          tocSidebar.appendChild(a);
+        });
+      } else {
+        tocSidebar.innerHTML = '';
+      }
+    }
+    
     content.scrollTop = 0;
     window.scrollTo({ top: 0, behavior: "smooth" });
 
