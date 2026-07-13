@@ -713,7 +713,7 @@ const DB = {
   async get(path) {
     const { data, error } = await supabase
       .from('annotations')
-      .select('*')
+      .select('*, replies(*)')
       .eq('path', path)
       .order('created_at', { ascending: true });
     if (error) { console.error('Supabase error', error); return []; }
@@ -724,6 +724,12 @@ const DB = {
       .from('annotations')
       .insert([{ path, quote, text, author }]);
     if (error) { console.error('Supabase insert error', error); }
+  },
+  async addReply(annotation_id, text, author) {
+    const { error } = await supabase
+      .from('replies')
+      .insert([{ annotation_id, text, author }]);
+    if (error) { console.error('Supabase insert reply error', error); }
   }
 };
 
@@ -758,7 +764,68 @@ function renderCommentCard(markEl, comment) {
       <div style="font-size:11px; color:var(--text-muted); margin-left:auto;">${new Date(comment.created_at).toLocaleDateString()}</div>
     </div>
     <div class="annotation-popover-body">${marked.parse(comment.text)}</div>
+    <div class="replies-container"></div>
+    <div class="reply-action-bar" style="margin-top: 12px; border-top: 1px solid rgba(255,255,255,0.4); padding-top: 8px;">
+      <button class="btn-text reply-btn" style="color: var(--accent); background: none; border: none; font-size: 12px; cursor: pointer; font-weight: 500;">回复 (Reply)</button>
+    </div>
   `;
+  
+  const repliesContainer = card.querySelector('.replies-container');
+  if (comment.replies && comment.replies.length > 0) {
+    comment.replies.sort((a,b) => new Date(a.created_at) - new Date(b.created_at));
+    let html = '';
+    comment.replies.forEach(r => {
+      html += `
+        <div class="reply-item" style="margin-top: 12px; padding-left: 12px; border-left: 2px solid rgba(99, 102, 241, 0.2);">
+          <div style="font-size: 11px; color: var(--text-muted); margin-bottom: 2px;">
+            <strong>${r.author || '读者'}</strong> · ${new Date(r.created_at).toLocaleDateString()}
+          </div>
+          <div class="annotation-popover-body" style="font-size: 13px;">${marked.parse(r.text)}</div>
+        </div>
+      `;
+    });
+    repliesContainer.innerHTML = html;
+  }
+
+  const replyBtn = card.querySelector('.reply-btn');
+  replyBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    if (card.querySelector('.reply-input-area')) return;
+    
+    const inputArea = document.createElement('div');
+    inputArea.className = 'reply-input-area';
+    inputArea.style.marginTop = '12px';
+    inputArea.innerHTML = `
+      <textarea class="annotation-textarea" placeholder="写下你的回复..." style="min-height: 50px; margin-bottom: 8px;"></textarea>
+      <div class="annotation-actions">
+        <button class="btn btn-cancel cancel-reply-btn">取消</button>
+        <button class="btn btn-primary submit-reply-btn">提交</button>
+      </div>
+    `;
+    card.appendChild(inputArea);
+    
+    inputArea.querySelector('.cancel-reply-btn').addEventListener('click', (ev) => {
+      ev.stopPropagation();
+      inputArea.remove();
+    });
+    
+    const submitBtn = inputArea.querySelector('.submit-reply-btn');
+    submitBtn.addEventListener('click', async (ev) => {
+      ev.stopPropagation();
+      const ta = inputArea.querySelector('textarea');
+      const text = ta.value.trim();
+      if (text) {
+        submitBtn.disabled = true;
+        submitBtn.textContent = '提交中...';
+        await DB.addReply(comment.id, text, '读者');
+        
+        const currentFile = document.querySelector('.file-link.active');
+        if (currentFile) {
+          await loadAnnotations(currentFile.dataset.path);
+        }
+      }
+    });
+  });
   
   // 悬停联动
   card.addEventListener('mouseenter', () => markEl.classList.add('active'));
