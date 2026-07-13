@@ -4,23 +4,26 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>Equity Research</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 <script src="tree-data.js"></script>
 <style>
   /* ========================================================
-     Buy-Side Equity Research — 温润排版风格
+     Buy-Side Equity Research — Glassmorphism 风格
      ======================================================== */
   :root {
     --bg-main: #fdfcf8;
-    --bg-sidebar: #f5f4ef;
-    --border: #e6e4df;
-    --text-main: #242220;
-    --text-muted: #73716d;
-    --accent: #da7756;
-    --accent-bg: rgba(218, 119, 86, 0.06);
-    --accent-hover: rgba(218, 119, 86, 0.12);
-    --font-ui: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --bg-sidebar: rgba(255, 255, 255, 0.45);
+    --border: rgba(255, 255, 255, 0.6);
+    --text-main: #1f2937;
+    --text-muted: #6b7280;
+    --accent: #6366f1;
+    --accent-bg: rgba(99, 102, 241, 0.1);
+    --accent-hover: rgba(99, 102, 241, 0.15);
+    --font-ui: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     --font-serif: "Charter", "Bitstream Charter", "Sitka Text", Cambria, Georgia, "Noto Serif SC", "Songti SC", serif;
+    --glass-shadow: 0 8px 32px rgba(31, 38, 135, 0.05);
+    --glass-blur: blur(16px);
     --sidebar-w: 300px;
     --topbar-h: 56px;
   }
@@ -28,7 +31,13 @@
   * { margin:0; padding:0; box-sizing:border-box; }
   body {
     font-family: var(--font-ui);
-    background: var(--bg-main); color: var(--text-main);
+    background-color: #f8fafc;
+    background-image: 
+      radial-gradient(circle at 15% 50%, rgba(239,246,255,0.8), transparent 25%),
+      radial-gradient(circle at 85% 30%, rgba(243,232,255,0.8), transparent 25%),
+      linear-gradient(to right bottom, #fdfbfb, #f3f4f6);
+    background-attachment: fixed;
+    color: var(--text-main);
     display: flex; height: 100vh; overflow: hidden;
     -webkit-font-smoothing: antialiased;
   }
@@ -37,7 +46,10 @@
   aside {
     width: var(--sidebar-w); min-width: var(--sidebar-w); z-index: 100;
     background: var(--bg-sidebar);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
     border-right: 1px solid var(--border);
+    box-shadow: 1px 0 24px rgba(0,0,0,0.02);
     display: flex; flex-direction: column; flex-shrink: 0;
     transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -76,13 +88,21 @@
     display: flex; align-items: center; gap: 8px;
     padding: 7px 12px; margin: 2px 16px;
     font-size: 13.5px; color: var(--text-main); text-decoration: none;
-    border-radius: 6px; cursor: pointer; transition: all .15s ease;
+    border-radius: 8px; cursor: pointer; transition: all .2s ease;
     line-height: 1.4;
+    border: 1px solid transparent;
   }
-  .file-link:hover { background: rgba(0,0,0,0.04); }
+  .file-link:hover { 
+    background: rgba(255,255,255,0.6); 
+    border: 1px solid rgba(255,255,255,0.8);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03); 
+    transform: translateY(-1px); 
+  }
   .file-link.active {
     background: var(--accent-bg); color: var(--accent);
-    font-weight: 500;
+    font-weight: 600;
+    border: 1px solid rgba(99, 102, 241, 0.2);
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,0.5);
   }
   .file-link .title-part { flex: 1; }
   .file-link .ticker-badge {
@@ -123,7 +143,10 @@
   }
   main .toolbar {
     padding: 16px 48px; position: sticky; top: 0; z-index: 10;
-    background: rgba(253, 252, 248, 0.95); backdrop-filter: blur(8px);
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    border-bottom: 1px solid var(--border);
     display: flex; align-items: center; gap: 16px; flex-shrink: 0;
   }
   .breadcrumb { font-size: 13px; color: var(--text-muted); }
@@ -145,6 +168,11 @@
   .content {
     padding: 20px 48px 40px; max-width: 740px; width: 100%;
     font-family: var(--font-serif);
+    animation: fadeIn 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
   }
   .content.loading-state {
     font-family: var(--font-ui);
@@ -258,45 +286,52 @@
   .annotation-card {
     position: absolute;
     width: calc(100% - 24px);
-    background: var(--bg-main);
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    box-shadow: var(--glass-shadow);
     padding: 16px;
     font-family: var(--font-ui);
     box-sizing: border-box;
-    transition: box-shadow 0.2s, border-color 0.2s, transform 0.2s;
+    transition: box-shadow 0.3s, border-color 0.3s, transform 0.3s, background 0.3s;
     cursor: pointer;
-    animation: popIn 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation: popIn 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
   .annotation-card:hover, .annotation-card.active {
-    border-color: #c9c7c1;
-    box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+    background: rgba(255, 255, 255, 0.85);
+    border-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 12px 32px rgba(31, 38, 135, 0.1);
+    transform: translateY(-2px);
     z-index: 5;
   }
   .annotation-card.input-mode {
     cursor: default;
+    background: rgba(255, 255, 255, 0.9);
     border-color: var(--accent);
-    box-shadow: 0 4px 16px rgba(218, 119, 86, 0.15);
+    box-shadow: 0 8px 32px rgba(99, 102, 241, 0.15);
     z-index: 10;
   }
   .annotation-textarea {
     width: 100%;
     border: 1px solid var(--border);
-    border-radius: 6px;
-    padding: 8px;
+    border-radius: 8px;
+    padding: 10px;
     font-family: var(--font-ui);
     font-size: 14px;
     resize: vertical;
     min-height: 80px;
     margin-bottom: 12px;
     outline: none;
-    background: #faf9f5;
+    background: rgba(255, 255, 255, 0.5);
+    transition: background 0.2s, border-color 0.2s;
     box-sizing: border-box;
   }
   .annotation-textarea:focus {
     border-color: var(--accent);
     background: #fff;
+    box-shadow: 0 0 0 3px var(--accent-bg);
   }
   .annotation-actions {
     display: flex;
