@@ -386,7 +386,45 @@ function createTree() {
 
 createTree();
 
-async function loadFile(el) {
+// 初始加载检查 URL 参数
+window.addEventListener("DOMContentLoaded", () => {
+  const params = new URLSearchParams(window.location.search);
+  const fileParam = params.get("file");
+  if (fileParam) {
+    // 尝试找到对应的菜单项并高亮，同时加载
+    const link = document.querySelector(`.file-link[data-path="${fileParam}"]`);
+    if (link) {
+      loadFile(link, true);
+    } else {
+      // 找不到链接时构造一个虚拟 element
+      const dummyEl = document.createElement("a");
+      dummyEl.dataset.path = fileParam;
+      dummyEl.innerHTML = `<span class="title-part">${fileParam.split('/').pop()}</span>`;
+      loadFile(dummyEl, true);
+    }
+  }
+});
+
+window.addEventListener("popstate", (e) => {
+  if (e.state && e.state.path) {
+    const link = document.querySelector(`.file-link[data-path="${e.state.path}"]`);
+    if (link) loadFile(link, true);
+  } else {
+    // 回到主页
+    const content = document.getElementById("content");
+    content.className = "content welcome";
+    content.innerHTML = `
+      <h2>Equity Research</h2>
+      <p>选择左侧研究报告开始阅读</p>
+      <p style="font-size:12px;margin-top:4px;">Buy-Side · Fundamental · Long-Term</p>
+    `;
+    document.getElementById("toolbar").style.display = "none";
+    document.getElementById("comments-container").innerHTML = "";
+    document.querySelectorAll(".file-link").forEach(e => e.classList.remove("active"));
+  }
+});
+
+async function loadFile(el, skipPushState = false) {
   const content = document.getElementById("content");
   const toolbar = document.getElementById("toolbar");
   content.className = "content loading-state";
@@ -400,6 +438,11 @@ async function loadFile(el) {
 
   const mTitle = document.getElementById("mobile-title");
   mTitle.textContent = el.querySelector(".title-part")?.textContent || "Equity Research";
+
+  if (!skipPushState) {
+    const newUrl = window.location.pathname + "?file=" + encodeURIComponent(el.dataset.path);
+    window.history.pushState({path: el.dataset.path}, '', newUrl);
+  }
 
   try {
     const resp = await fetch(el.dataset.path);
@@ -428,5 +471,10 @@ async function loadFile(el) {
   }
 }
 </script>
+<!-- 引入 Hypothesis 以支持选中文本的内联评论 (Medium 风格) -->
+<script type="application/json" class="js-hypothesis-config">
+  {"showHighlights": true}
+</script>
+<script src="https://hypothes.is/embed.js" async></script>
 </body>
 </html>
