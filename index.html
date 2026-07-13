@@ -216,9 +216,14 @@
   .content em { color: var(--text-muted); }
   .content .math { overflow-x: auto; }
 
+  .comments-container {
+    max-width: 740px; width: 100%; padding: 0 48px 80px;
+  }
+
   /* ── 响应式 ── */
   @media (max-width: 900px) {
     .content { padding: 16px 20px 60px; max-width: 100%; }
+    .comments-container { padding: 0 20px 60px; max-width: 100%; }
     .content h1 { font-size: 24px; }
     .content h2 { font-size: 18px; }
     .content p { font-size: 15px; }
@@ -272,6 +277,7 @@
     <p>选择左侧研究报告开始阅读</p>
     <p style="font-size:12px;margin-top:4px;">Buy-Side · Fundamental · Long-Term</p>
   </div>
+  <div id="comments-container" class="comments-container"></div>
 </main>
 
 <script>
@@ -403,9 +409,22 @@ async function loadFile(el) {
     content.innerHTML = marked.parse(md);
     content.scrollTop = 0;
     window.scrollTo({ top: 0, behavior: "smooth" });
+
+    // 加载评论区 (基于 Utterances)
+    const commentsContainer = document.getElementById("comments-container");
+    commentsContainer.innerHTML = "";
+    const script = document.createElement("script");
+    script.src = "https://utteranc.es/client.js";
+    script.setAttribute("repo", "likeamaoooaa-spec/equity-research");
+    script.setAttribute("issue-term", el.dataset.path);
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("crossorigin", "anonymous");
+    script.async = true;
+    commentsContainer.appendChild(script);
   } catch (e) {
     content.className = "content welcome";
     content.innerHTML = `<h2>加载失败</h2><p style="color:#dc2626">${el.dataset.path}</p>`;
+    document.getElementById("comments-container").innerHTML = "";
   }
 }
 </script>
