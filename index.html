@@ -258,10 +258,6 @@
   .content em { color: var(--text-muted); }
   .content .math { overflow-x: auto; }
 
-  .comments-container {
-    max-width: 740px; width: 100%; padding: 0 48px 80px;
-  }
-
   /* ── Acrobat 高亮与右侧卡片 ── */
   .annotation-highlight {
     background-color: rgba(255, 212, 0, 0.35);
@@ -501,7 +497,6 @@
         <p>选择左侧研究报告开始阅读</p>
         <p style="font-size:12px;margin-top:4px;">Buy-Side · Fundamental · Long-Term</p>
       </div>
-      <div id="comments-container" class="comments-container"></div>
     </div>
     <aside class="annotations-sidebar" id="annotations-sidebar"></aside>
   </div>
@@ -637,24 +632,11 @@ async function loadFile(el) {
     content.scrollTop = 0;
     window.scrollTo({ top: 0, behavior: "smooth" });
 
-    // 加载评论区 (基于 Utterances)
-    const commentsContainer = document.getElementById("comments-container");
-    commentsContainer.innerHTML = "";
-    const script = document.createElement("script");
-    script.src = "https://utteranc.es/client.js";
-    script.setAttribute("repo", "likeamaoooaa-spec/equity-research");
-    script.setAttribute("issue-term", el.dataset.path);
-    script.setAttribute("theme", "github-light");
-    script.setAttribute("crossorigin", "anonymous");
-    script.async = true;
-    commentsContainer.appendChild(script);
-
     // 异步拉取真实数据库中的内联批注
     loadAnnotations(el.dataset.path);
   } catch (e) {
     content.className = "content welcome";
     content.innerHTML = `<h2>加载失败</h2><p style="color:#dc2626">${el.dataset.path}</p>`;
-    document.getElementById("comments-container").innerHTML = "";
   }
 }
 
