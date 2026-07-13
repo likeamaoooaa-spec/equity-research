@@ -45,7 +45,7 @@
     -webkit-font-smoothing: antialiased;
   }
 
-  /* ── 左侧导航栏 (PC端常驻) ── */
+  /* ── 左侧导航栏 (PC端可折叠) ── */
   #left-sidebar {
     width: var(--sidebar-w); min-width: var(--sidebar-w); z-index: 100;
     background: var(--bg-sidebar);
@@ -54,13 +54,29 @@
     border-right: 1px solid var(--border);
     box-shadow: 1px 0 24px rgba(0,0,0,0.02);
     display: flex; flex-direction: column; flex-shrink: 0;
-    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: width 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+                min-width 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+                transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
   }
-  #left-sidebar .sidebar-inner { display:flex; flex-direction:column; overflow:hidden; flex:1; }
+  #left-sidebar.collapsed {
+    width: 0; min-width: 0;
+    border-right: none;
+  }
+  #left-sidebar.collapsed .sidebar-inner { opacity: 0; pointer-events: none; }
+  #left-sidebar .sidebar-inner {
+    display:flex; flex-direction:column; overflow:hidden; flex:1;
+    transition: opacity 0.2s ease;
+  }
   #left-sidebar header {
     padding: 24px 20px 16px;
     border-bottom: 1px solid var(--border);
     flex-shrink: 0;
+    display: flex; flex-direction: column;
+    position: relative;
+  }
+  .sidebar-header-row {
+    display: flex; align-items: center; justify-content: space-between;
   }
   #left-sidebar header h1 {
     font-family: var(--font-serif);
@@ -68,6 +84,35 @@
     margin-bottom: 4px; color: var(--text-main);
   }
   #left-sidebar header p { font-size: 12px; color: var(--text-muted); }
+  .sidebar-collapse-btn {
+    background: none; border: none; cursor: pointer;
+    width: 28px; height: 28px; border-radius: 6px;
+    display: flex; align-items: center; justify-content: center;
+    color: var(--text-muted); transition: all 0.2s;
+    flex-shrink: 0;
+  }
+  .sidebar-collapse-btn:hover {
+    background: rgba(0,0,0,0.06); color: var(--text-main);
+  }
+  /* 浮动展开按钮 */
+  .sidebar-expand-btn {
+    position: fixed; top: 16px; left: 16px; z-index: 101;
+    width: 36px; height: 36px; border-radius: 10px;
+    background: var(--bg-sidebar);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    border: 1px solid var(--border);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    cursor: pointer;
+    display: none; align-items: center; justify-content: center;
+    color: var(--text-muted);
+    transition: all 0.2s;
+  }
+  .sidebar-expand-btn:hover {
+    background: rgba(255,255,255,0.8); color: var(--text-main);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+  }
+  .sidebar-expand-btn.show { display: flex; }
   #left-sidebar nav { flex:1; overflow-y:auto; padding: 12px 0; -webkit-overflow-scrolling: touch; }
 
   /* ── 目录树 ── */
@@ -153,7 +198,16 @@
     border-bottom: 1px solid var(--border);
     display: flex; align-items: center; gap: 16px; flex-shrink: 0;
   }
-  .breadcrumb { font-size: 13px; color: var(--text-muted); }
+  .breadcrumb { font-size: 13px; color: var(--text-muted); flex: 1; }
+  .toolbar-btn {
+    background: none; border: 1px solid var(--border); cursor: pointer;
+    padding: 5px 10px; border-radius: 6px;
+    font-size: 12px; font-weight: 500; font-family: var(--font-ui);
+    color: var(--text-muted); display: flex; align-items: center; gap: 5px;
+    transition: all 0.2s; white-space: nowrap;
+  }
+  .toolbar-btn:hover { background: rgba(255,255,255,0.6); color: var(--text-main); }
+  .toolbar-btn.active { background: var(--accent-bg); color: var(--accent); border-color: rgba(99,102,241,0.3); }
 
   .reading-area {
     display: flex;
@@ -167,25 +221,34 @@
     min-width: 0;
     display: flex;
     flex-direction: row;
+    position: relative;
   }
 
-  /* ── 大纲 TOC ── */
-  .toc-sidebar {
+  /* ── 大纲 TOC (浮动面板) ── */
+  .toc-panel {
     display: none;
-    width: 180px;
-    min-width: 180px;
-    position: sticky;
-    top: 90px;
-    height: fit-content;
-    max-height: calc(100vh - 120px);
+    position: absolute;
+    top: 0; right: 0;
+    width: 240px;
+    max-height: calc(100vh - 160px);
     overflow-y: auto;
-    padding-right: 16px;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    box-shadow: 0 12px 40px rgba(0,0,0,0.08);
+    padding: 16px;
     margin-top: 20px;
-    margin-left: 16px;
+    margin-right: 16px;
     font-family: var(--font-ui);
+    z-index: 20;
+    animation: tocSlideIn 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
   }
-  @media (min-width: 1450px) {
-    .toc-sidebar { display: block; }
+  .toc-panel.show { display: block; }
+  @keyframes tocSlideIn {
+    from { opacity: 0; transform: translateY(-8px) scale(0.97); }
+    to { opacity: 1; transform: translateY(0) scale(1); }
   }
   .toc-title {
     font-size: 11px;
@@ -210,7 +273,6 @@
   }
   .toc-h2 { font-weight: 500; }
   .toc-h3 { padding-left: 12px; font-size: 12.5px; }
-  .toc-h4 { padding-left: 24px; font-size: 12px; }
 
   .content {
     padding: 20px 48px 40px; max-width: 740px; width: 100%;
@@ -542,12 +604,20 @@
 <aside id="left-sidebar">
   <div class="sidebar-inner">
     <header>
-      <h1>Equity Research</h1>
+      <div class="sidebar-header-row">
+        <h1>Equity Research</h1>
+        <button class="sidebar-collapse-btn" id="sidebar-collapse-btn" title="收起侧栏">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="11 17 6 12 11 7"></polyline><polyline points="18 17 13 12 18 7"></polyline></svg>
+        </button>
+      </div>
       <p id="file-count-line"><span id="file-count">0</span> 份研究报告</p>
     </header>
     <nav id="sidebar-nav"></nav>
   </div>
 </aside>
+<button class="sidebar-expand-btn" id="sidebar-expand-btn" title="展开侧栏">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="13 17 18 12 13 7"></polyline><polyline points="6 17 11 12 6 7"></polyline></svg>
+</button>
 <div class="sidebar-overlay" id="sidebar-overlay"></div>
 
 <!-- ── Mobile Top Bar ── -->
@@ -568,11 +638,15 @@
 
   <div class="toolbar" id="toolbar" style="display:none">
     <div class="breadcrumb" id="breadcrumb"></div>
+    <button class="toolbar-btn" id="toc-toggle-btn" title="目录大纲">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+      目录
+    </button>
   </div>
   
   <div class="reading-area">
     <div class="content-wrapper">
-      <div class="toc-sidebar" id="toc-sidebar"></div>
+      <div class="toc-panel" id="toc-panel"></div>
       <div class="content welcome" id="content">
         <h2>Equity Research</h2>
         <p class="tagline">独立 · 深度 · 长期主义</p>
@@ -599,20 +673,58 @@ document.getElementById("file-count").textContent = total;
 // ── localStorage ──
 function storageKey(name) { return "eq-tree-" + encodeURIComponent(name); }
 
-// ── Mobile sidebar ──
+// ── Sidebar collapse/expand ──
 const sidebar = document.getElementById("left-sidebar");
 const overlay = document.getElementById("sidebar-overlay");
 const hamburger = document.getElementById("hamburger");
+const collapseBtn = document.getElementById("sidebar-collapse-btn");
+const expandBtn = document.getElementById("sidebar-expand-btn");
+
+// Restore sidebar collapsed state
+if (localStorage.getItem('eq-sidebar-collapsed') === 'true') {
+  sidebar.classList.add('collapsed');
+  expandBtn.classList.add('show');
+}
 
 function closeSidebar() {
   sidebar.classList.remove("open");
   overlay.classList.remove("show");
 }
+function collapseSidebar() {
+  sidebar.classList.add('collapsed');
+  expandBtn.classList.add('show');
+  localStorage.setItem('eq-sidebar-collapsed', 'true');
+}
+function expandSidebar() {
+  sidebar.classList.remove('collapsed');
+  expandBtn.classList.remove('show');
+  localStorage.setItem('eq-sidebar-collapsed', 'false');
+}
+
+collapseBtn.addEventListener('click', collapseSidebar);
+expandBtn.addEventListener('click', expandSidebar);
 hamburger.addEventListener("click", () => {
   sidebar.classList.toggle("open");
   overlay.classList.toggle("show");
 });
 overlay.addEventListener("click", closeSidebar);
+
+// ── TOC toggle ──
+const tocToggleBtn = document.getElementById('toc-toggle-btn');
+const tocPanel = document.getElementById('toc-panel');
+
+tocToggleBtn.addEventListener('click', (e) => {
+  e.stopPropagation();
+  const isOpen = tocPanel.classList.toggle('show');
+  tocToggleBtn.classList.toggle('active', isOpen);
+});
+// Close TOC when clicking outside
+document.addEventListener('click', (e) => {
+  if (!tocPanel.contains(e.target) && e.target !== tocToggleBtn && !tocToggleBtn.contains(e.target)) {
+    tocPanel.classList.remove('show');
+    tocToggleBtn.classList.remove('active');
+  }
+});
 
 // ── Build tree ──
 const nav = document.getElementById("sidebar-nav");
@@ -728,10 +840,10 @@ async function loadFile(el) {
       wrapper.appendChild(table);
     });
     
-    // 自动生成大纲 TOC
-    const tocSidebar = document.getElementById('toc-sidebar');
-    if (tocSidebar) {
-      tocSidebar.innerHTML = '<div class="toc-title">Contents</div>';
+    // 自动生成大纲 TOC (浮动面板)
+    const tocPanelEl = document.getElementById('toc-panel');
+    if (tocPanelEl) {
+      tocPanelEl.innerHTML = '<div class="toc-title">Contents</div>';
       const headings = content.querySelectorAll('h2, h3');
       if (headings.length > 0) {
         headings.forEach((h, i) => {
@@ -743,11 +855,13 @@ async function loadFile(el) {
           a.addEventListener('click', (e) => {
             e.preventDefault();
             h.scrollIntoView({ behavior: 'smooth' });
+            tocPanelEl.classList.remove('show');
+            tocToggleBtn.classList.remove('active');
           });
-          tocSidebar.appendChild(a);
+          tocPanelEl.appendChild(a);
         });
       } else {
-        tocSidebar.innerHTML = '';
+        tocPanelEl.innerHTML = '';
       }
     }
     
