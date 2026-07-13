@@ -472,7 +472,7 @@
   </div>
 </main>
 
-<script>
+<script type="module">
 // ── Globals ──
 const TREE = typeof TREE_DATA !== 'undefined' ? TREE_DATA : {};
 
@@ -614,8 +614,8 @@ async function loadFile(el) {
     script.async = true;
     commentsContainer.appendChild(script);
 
-    // 加载基于本地存储的右侧边栏批注 (模拟无服务端数据库)
-    loadLocalAnnotations(el.dataset.path);
+    // 异步拉取真实数据库中的内联批注
+    loadAnnotations(el.dataset.path);
   } catch (e) {
     content.className = "content welcome";
     content.innerHTML = `<h2>加载失败</h2><p style="color:#dc2626">${el.dataset.path}</p>`;
@@ -685,23 +685,36 @@ floatingBtn.addEventListener('click', () => {
   }
 });
 
-// ── 模拟后端数据库 (基于 localStorage) ──
+import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm';
+
+const supabaseUrl = 'https://ddhlcxsyryfsyjdswxkp.supabase.co';
+const supabaseKey = 'sb_publishable_1hA038g0-fMBXjHn-hoyxA_jqoAY-pA';
+const supabase = createClient(supabaseUrl, supabaseKey);
+
+// ── 真实 Supabase 数据库引擎 ──
 const DB = {
-  get(path) {
-    return JSON.parse(localStorage.getItem('mock_db_' + path) || '[]');
+  async get(path) {
+    const { data, error } = await supabase
+      .from('annotations')
+      .select('*')
+      .eq('path', path)
+      .order('created_at', { ascending: true });
+    if (error) { console.error('Supabase error', error); return []; }
+    return data || [];
   },
-  add(path, quote, text, author) {
-    const data = this.get(path);
-    data.push({ id: Date.now(), quote, text, author, time: new Date().toISOString() });
-    localStorage.setItem('mock_db_' + path, JSON.stringify(data));
+  async add(path, quote, text, author) {
+    const { error } = await supabase
+      .from('annotations')
+      .insert([{ path, quote, text, author }]);
+    if (error) { console.error('Supabase insert error', error); }
   }
 };
 
 // ── 渲染侧边栏批注 ──
-function loadLocalAnnotations(path) {
+async function loadAnnotations(path) {
   const sidebar = document.getElementById('annotations-sidebar');
   sidebar.innerHTML = ''; // 清空
-  const comments = DB.get(path);
+  const comments = await DB.get(path);
   
   comments.forEach(comment => {
     const mark = highlightTextInDOM(document.getElementById('content'), comment.quote, comment);
@@ -724,8 +737,8 @@ function renderCommentCard(markEl, comment) {
   
   card.innerHTML = `
     <div class="annotation-popover-header">
-      <div class="annotation-popover-author">${comment.author}</div>
-      <div style="font-size:11px; color:var(--text-muted); margin-left:auto;">${new Date(comment.time).toLocaleDateString()}</div>
+      <div class="annotation-popover-author">${comment.author || '读者'}</div>
+      <div style="font-size:11px; color:var(--text-muted); margin-left:auto;">${new Date(comment.created_at).toLocaleDateString()}</div>
     </div>
     <div class="annotation-popover-body">${marked.parse(comment.text)}</div>
   `;
@@ -762,17 +775,21 @@ function showInputCard(quoteText, topPos, range) {
     card.remove();
   });
   
-  card.querySelector('.btn-primary').addEventListener('click', () => {
+  const submitBtn = card.querySelector('.btn-primary');
+  submitBtn.addEventListener('click', async () => {
     const text = textarea.value.trim();
     if (text) {
+      submitBtn.disabled = true;
+      submitBtn.textContent = '提交中...';
+      
       const currentFile = document.querySelector('.file-link.active');
       const path = currentFile ? currentFile.dataset.path : 'unknown';
       
-      const author = "读者 (Mock)"; 
-      DB.add(path, quoteText, text, author);
+      const author = "读者"; 
+      await DB.add(path, quoteText, text, author);
       
       card.remove();
-      loadLocalAnnotations(path); // 重新加载以渲染新的高亮和卡片
+      await loadAnnotations(path); // 从云端重新拉取并渲染
     }
   });
 }
