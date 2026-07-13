@@ -120,7 +120,6 @@
   main {
     flex: 1; overflow-y: auto; display: flex; flex-direction: column;
     -webkit-overflow-scrolling: touch; min-width: 0;
-    position: relative; /* 为绝对定位的弹窗提供相对参考 */
   }
   main .toolbar {
     padding: 16px 48px; position: sticky; top: 0; z-index: 10;
@@ -129,8 +128,22 @@
   }
   .breadcrumb { font-size: 13px; color: var(--text-muted); }
 
+  .reading-area {
+    display: flex;
+    flex: 1;
+    max-width: 1100px;
+    width: 100%;
+    position: relative;
+  }
+  .content-wrapper {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
   .content {
-    padding: 20px 48px 80px; max-width: 740px; flex:1; width: 100%;
+    padding: 20px 48px 40px; max-width: 740px; width: 100%;
     font-family: var(--font-serif);
   }
   .content.loading-state {
@@ -221,7 +234,7 @@
     max-width: 740px; width: 100%; padding: 0 48px 80px;
   }
 
-  /* ── Acrobat 高亮与气泡 ── */
+  /* ── Acrobat 高亮与右侧卡片 ── */
   .annotation-highlight {
     background-color: rgba(255, 212, 0, 0.35);
     cursor: pointer;
@@ -234,37 +247,82 @@
     background-color: rgba(255, 212, 0, 0.6);
   }
 
-  .annotation-popover {
+  .annotations-sidebar {
+    width: 320px;
+    flex-shrink: 0;
+    position: relative;
+    padding: 20px 24px 80px 0;
+    display: none; /* 移动端隐藏 */
+  }
+  
+  .annotation-card {
     position: absolute;
-    display: none;
-    width: 280px;
+    width: calc(100% - 24px);
     background: var(--bg-main);
     border: 1px solid var(--border);
     border-radius: 8px;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
-    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
     padding: 16px;
     font-family: var(--font-ui);
+    box-sizing: border-box;
+    transition: box-shadow 0.2s, border-color 0.2s, transform 0.2s;
+    cursor: pointer;
     animation: popIn 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
-  .annotation-popover.show {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+  .annotation-card:hover, .annotation-card.active {
+    border-color: #c9c7c1;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+    z-index: 5;
   }
+  .annotation-card.input-mode {
+    cursor: default;
+    border-color: var(--accent);
+    box-shadow: 0 4px 16px rgba(218, 119, 86, 0.15);
+    z-index: 10;
+  }
+  .annotation-textarea {
+    width: 100%;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 8px;
+    font-family: var(--font-ui);
+    font-size: 14px;
+    resize: vertical;
+    min-height: 80px;
+    margin-bottom: 12px;
+    outline: none;
+    background: #faf9f5;
+    box-sizing: border-box;
+  }
+  .annotation-textarea:focus {
+    border-color: var(--accent);
+    background: #fff;
+  }
+  .annotation-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+  }
+  .btn {
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    font-family: var(--font-ui);
+  }
+  .btn-primary { background: var(--text-main); color: var(--bg-main); }
+  .btn-cancel { background: transparent; color: var(--text-muted); }
+
   .annotation-popover-header {
     display: flex;
     align-items: center;
     gap: 8px;
-  }
-  .annotation-popover-avatar {
-    width: 28px;
-    height: 28px;
-    border-radius: 14px;
-    background: #eee;
+    margin-bottom: 8px;
   }
   .annotation-popover-author {
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 600;
     color: var(--text-main);
   }
@@ -273,13 +331,8 @@
     color: var(--text-muted);
     line-height: 1.6;
   }
-  .annotation-popover-body p {
-    font-size: 14px;
-    margin: 0 0 8px;
-  }
-  .annotation-popover-body p:last-child {
-    margin: 0;
-  }
+  .annotation-popover-body p { margin: 0 0 8px; }
+  .annotation-popover-body p:last-child { margin: 0; }
 
   /* ── 悬浮评论与 Toast ── */
   .floating-comment-btn {
@@ -342,8 +395,14 @@
   }
 
   /* ── 响应式 ── */
+  @media (min-width: 1100px) {
+    .annotations-sidebar { display: block; }
+  }
+  @media (max-width: 1100px) {
+    .reading-area { justify-content: center; }
+  }
   @media (max-width: 900px) {
-    .content { padding: 16px 20px 60px; max-width: 100%; }
+    .content { padding: 16px 20px 40px; max-width: 100%; }
     .comments-container { padding: 0 20px 60px; max-width: 100%; }
     .content h1 { font-size: 24px; }
     .content h2 { font-size: 18px; }
@@ -399,20 +458,17 @@
   <div class="toolbar" id="toolbar" style="display:none">
     <div class="breadcrumb" id="breadcrumb"></div>
   </div>
-  <div class="content welcome" id="content">
-    <h2>Equity Research</h2>
-    <p>选择左侧研究报告开始阅读</p>
-    <p style="font-size:12px;margin-top:4px;">Buy-Side · Fundamental · Long-Term</p>
-  </div>
-  <div id="comments-container" class="comments-container"></div>
   
-  <!-- ── 悬浮批注卡片 (Acrobat 风格) ── -->
-  <div id="annotation-popover" class="annotation-popover">
-    <div class="annotation-popover-header">
-      <img id="ap-avatar" class="annotation-popover-avatar" src="" alt="avatar">
-      <div id="ap-author" class="annotation-popover-author">User</div>
+  <div class="reading-area">
+    <div class="content-wrapper">
+      <div class="content welcome" id="content">
+        <h2>Equity Research</h2>
+        <p>选择左侧研究报告开始阅读</p>
+        <p style="font-size:12px;margin-top:4px;">Buy-Side · Fundamental · Long-Term</p>
+      </div>
+      <div id="comments-container" class="comments-container"></div>
     </div>
-    <div id="ap-body" class="annotation-popover-body">Comment text</div>
+    <aside class="annotations-sidebar" id="annotations-sidebar"></aside>
   </div>
 </main>
 
@@ -558,8 +614,8 @@ async function loadFile(el) {
     script.async = true;
     commentsContainer.appendChild(script);
 
-    // 异步拉取并渲染 Acrobat 高亮批注
-    loadAnnotations(el.dataset.path);
+    // 加载基于本地存储的右侧边栏批注 (模拟无服务端数据库)
+    loadLocalAnnotations(el.dataset.path);
   } catch (e) {
     content.className = "content welcome";
     content.innerHTML = `<h2>加载失败</h2><p style="color:#dc2626">${el.dataset.path}</p>`;
@@ -601,75 +657,122 @@ floatingBtn.addEventListener('click', () => {
   const selection = window.getSelection();
   const text = selection.toString().trim();
   if (text) {
-    const quote = `> ${text}\n\n`;
+    const range = selection.getRangeAt(0);
+    const markRect = range.getBoundingClientRect();
+    const sidebar = document.getElementById('annotations-sidebar');
     
-    navigator.clipboard.writeText(quote).then(() => {
-      // 弹出 Toast 提示
-      toast.classList.add('show');
-      setTimeout(() => toast.classList.remove('show'), 3000);
-      
-      // 平滑滚动到底部评论区
-      const commentsContainer = document.getElementById('comments-container');
-      commentsContainer.scrollIntoView({ behavior: 'smooth' });
-      
-      floatingBtn.classList.remove('show');
-      selection.removeAllRanges();
-    });
+    // 如果屏幕不够宽，回退到原逻辑
+    if (window.innerWidth < 1100) {
+      const quote = `> ${text}\n\n`;
+      navigator.clipboard.writeText(quote).then(() => {
+        toast.classList.add('show');
+        setTimeout(() => toast.classList.remove('show'), 3000);
+        document.getElementById('comments-container').scrollIntoView({ behavior: 'smooth' });
+        floatingBtn.classList.remove('show');
+        selection.removeAllRanges();
+      });
+      return;
+    }
+
+    const sidebarRect = sidebar.getBoundingClientRect();
+    // 计算基于 sidebar 内部的绝对 Y 坐标
+    const topPos = markRect.top - sidebarRect.top + sidebar.scrollTop;
+    
+    showInputCard(text, topPos, range);
+    
+    floatingBtn.classList.remove('show');
+    selection.removeAllRanges();
   }
 });
 
-// ── 异步批注渲染引擎 ──
-async function loadAnnotations(path) {
-  const cacheKey = "issue-" + path;
-  let issueNumber = localStorage.getItem(cacheKey);
-
-  if (!issueNumber) {
-    try {
-      const q = encodeURIComponent(`repo:likeamaoooaa-spec/equity-research in:title "${path}"`);
-      const searchResp = await fetch(`https://api.github.com/search/issues?q=${q}`);
-      const searchData = await searchResp.json();
-      
-      if (searchData.items && searchData.items.length > 0) {
-        const issue = searchData.items.find(i => i.title === path);
-        if (issue) {
-          issueNumber = issue.number;
-          localStorage.setItem(cacheKey, issueNumber);
-        }
-      }
-    } catch(e) { console.error("Search API error", e); }
+// ── 模拟后端数据库 (基于 localStorage) ──
+const DB = {
+  get(path) {
+    return JSON.parse(localStorage.getItem('mock_db_' + path) || '[]');
+  },
+  add(path, quote, text, author) {
+    const data = this.get(path);
+    data.push({ id: Date.now(), quote, text, author, time: new Date().toISOString() });
+    localStorage.setItem('mock_db_' + path, JSON.stringify(data));
   }
+};
 
-  if (issueNumber) {
-    try {
-      const commentsResp = await fetch(`https://api.github.com/repos/likeamaoooaa-spec/equity-research/issues/${issueNumber}/comments`);
-      const comments = await commentsResp.json();
-      
-      if (Array.isArray(comments)) {
-        processCommentsForAnnotations(comments);
-      }
-    } catch(e) { console.error("Comments API error", e); }
-  }
+// ── 渲染侧边栏批注 ──
+function loadLocalAnnotations(path) {
+  const sidebar = document.getElementById('annotations-sidebar');
+  sidebar.innerHTML = ''; // 清空
+  const comments = DB.get(path);
+  
+  comments.forEach(comment => {
+    const mark = highlightTextInDOM(document.getElementById('content'), comment.quote, comment);
+    if (mark) {
+      renderCommentCard(mark, comment);
+    }
+  });
 }
 
-function processCommentsForAnnotations(comments) {
-  comments.forEach(comment => {
-    const body = comment.body;
-    // 匹配 Markdown 引用块
-    const blockquotes = body.match(/^>[\s\S]*?(?=\n\n|\n$|$)/gm);
-    if (blockquotes) {
-      blockquotes.forEach(bq => {
-        let quoteText = bq.replace(/^>\s?/gm, '').trim();
-        // 简化多余换行符进行匹配
-        quoteText = quoteText.replace(/\n/g, ' '); 
-        if (quoteText.length > 5) {
-          const commentData = {
-            author: comment.user.login,
-            avatar: comment.user.avatar_url,
-            text: body.replace(bq, '').trim() // 剥离引用的纯评论内容
-          };
-          highlightTextInDOM(document.getElementById('content'), quoteText, commentData);
-        }
-      });
+function renderCommentCard(markEl, comment) {
+  const sidebar = document.getElementById('annotations-sidebar');
+  const card = document.createElement('div');
+  card.className = 'annotation-card';
+  
+  const sidebarRect = sidebar.getBoundingClientRect();
+  const markRect = markEl.getBoundingClientRect();
+  const topPos = markRect.top - sidebarRect.top + sidebar.scrollTop; 
+  
+  card.style.top = topPos + 'px';
+  
+  card.innerHTML = `
+    <div class="annotation-popover-header">
+      <div class="annotation-popover-author">${comment.author}</div>
+      <div style="font-size:11px; color:var(--text-muted); margin-left:auto;">${new Date(comment.time).toLocaleDateString()}</div>
+    </div>
+    <div class="annotation-popover-body">${marked.parse(comment.text)}</div>
+  `;
+  
+  // 悬停联动
+  card.addEventListener('mouseenter', () => markEl.classList.add('active'));
+  card.addEventListener('mouseleave', () => markEl.classList.remove('active'));
+  markEl.addEventListener('mouseenter', () => card.classList.add('active'));
+  markEl.addEventListener('mouseleave', () => card.classList.remove('active'));
+  
+  sidebar.appendChild(card);
+}
+
+function showInputCard(quoteText, topPos, range) {
+  const sidebar = document.getElementById('annotations-sidebar');
+  const card = document.createElement('div');
+  card.className = 'annotation-card input-mode';
+  card.style.top = topPos + 'px';
+  
+  card.innerHTML = `
+    <div style="font-size:12px; color:var(--text-muted); margin-bottom:8px; border-left:2px solid var(--accent); padding-left:8px; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden;">${quoteText}</div>
+    <textarea class="annotation-textarea" placeholder="输入你的评论... (存入本地 Mock DB)"></textarea>
+    <div class="annotation-actions">
+      <button class="btn btn-cancel">取消</button>
+      <button class="btn btn-primary">提交</button>
+    </div>
+  `;
+  
+  sidebar.appendChild(card);
+  const textarea = card.querySelector('textarea');
+  textarea.focus();
+  
+  card.querySelector('.btn-cancel').addEventListener('click', () => {
+    card.remove();
+  });
+  
+  card.querySelector('.btn-primary').addEventListener('click', () => {
+    const text = textarea.value.trim();
+    if (text) {
+      const currentFile = document.querySelector('.file-link.active');
+      const path = currentFile ? currentFile.dataset.path : 'unknown';
+      
+      const author = "读者 (Mock)"; 
+      DB.add(path, quoteText, text, author);
+      
+      card.remove();
+      loadLocalAnnotations(path); // 重新加载以渲染新的高亮和卡片
     }
   });
 }
@@ -685,7 +788,6 @@ function highlightTextInDOM(root, searchStr, commentData) {
     }
   }
 
-  // 简易精确单节点文本匹配方案，应对静态博客场景 80/20 够用且安全
   for (let node of nodes) {
     const nodeText = node.nodeValue;
     const index = nodeText.indexOf(searchStr);
@@ -697,55 +799,18 @@ function highlightTextInDOM(root, searchStr, commentData) {
       const mark = document.createElement('mark');
       mark.className = 'annotation-highlight';
       mark.textContent = match;
-      mark.dataset.author = commentData.author;
-      mark.dataset.avatar = commentData.avatar;
-      mark.dataset.body = encodeURIComponent(commentData.text || '（仅高亮标记）');
-      mark.addEventListener('click', (e) => { e.stopPropagation(); showPopover(mark); });
 
       const parent = node.parentNode;
       if (before) parent.insertBefore(document.createTextNode(before), node);
       parent.insertBefore(mark, node);
       if (after) parent.insertBefore(document.createTextNode(after), node);
       parent.removeChild(node);
-      break; 
+      
+      return mark;
     }
   }
+  return null;
 }
-
-// ── 批注悬浮弹窗 UI 控制 ──
-const popover = document.getElementById('annotation-popover');
-function showPopover(markEl) {
-  document.querySelectorAll('.annotation-highlight.active').forEach(el => el.classList.remove('active'));
-  markEl.classList.add('active');
-  
-  document.getElementById('ap-avatar').src = markEl.dataset.avatar;
-  document.getElementById('ap-author').textContent = markEl.dataset.author;
-  document.getElementById('ap-body').innerHTML = marked.parse(decodeURIComponent(markEl.dataset.body));
-  
-  popover.classList.add('show');
-  
-  const rect = markEl.getBoundingClientRect();
-  const mainEl = document.querySelector('main');
-  const mainRect = mainEl.getBoundingClientRect();
-  
-  let topPos = rect.top - mainRect.top + mainEl.scrollTop + rect.height + 8;
-  let leftPos = rect.left - mainRect.left + mainEl.scrollLeft;
-  
-  // 防止弹窗超出右侧边界
-  if (leftPos + 280 > mainEl.scrollWidth) {
-    leftPos = mainEl.scrollWidth - 300;
-  }
-  
-  popover.style.top = topPos + 'px';
-  popover.style.left = Math.max(20, leftPos) + 'px';
-}
-
-document.addEventListener('click', (e) => {
-  if (!popover.contains(e.target) && !e.target.classList.contains('annotation-highlight')) {
-    popover.classList.remove('show');
-    document.querySelectorAll('.annotation-highlight.active').forEach(el => el.classList.remove('active'));
-  }
-});
 </script>
 </body>
 </html>
