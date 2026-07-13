@@ -99,64 +99,128 @@
   }
   .drawer.open { transform: translateX(0); }
   .drawer-header {
-    padding: 20px 20px 14px;
-    border-bottom: 1px solid var(--border-light);
-    display: flex; align-items: center; justify-content: space-between;
+    padding: 16px 16px 0;
     flex-shrink: 0;
   }
+  .drawer-header-top {
+    display: flex; align-items: center; justify-content: space-between;
+    margin-bottom: 12px;
+  }
   .drawer-header h2 {
-    font-family: var(--font-serif); font-size: 18px; font-weight: 700;
+    font-family: var(--font-serif); font-size: 17px; font-weight: 700;
   }
   .drawer-header .count {
     font-size: 12px; color: var(--text-tertiary); font-weight: 400;
   }
   .drawer-close {
     background: none; border: none; cursor: pointer;
-    width: 32px; height: 32px; border-radius: var(--radius);
+    width: 30px; height: 30px; border-radius: var(--radius);
     display: flex; align-items: center; justify-content: center;
     color: var(--text-tertiary); transition: all 0.15s;
   }
   .drawer-close:hover { background: var(--bg-hover); color: var(--text); }
+  .drawer-search {
+    width: 100%; padding: 8px 12px 8px 32px;
+    border: 1px solid var(--border); border-radius: 8px;
+    font-size: 13px; font-family: var(--font-sans);
+    outline: none; background: var(--bg-page);
+    color: var(--text); transition: all 0.15s;
+    margin-bottom: 8px;
+  }
+  .drawer-search:focus { border-color: var(--accent); background: var(--bg); box-shadow: 0 0 0 3px var(--accent-bg); }
+  .drawer-search-wrap {
+    position: relative;
+  }
+  .drawer-search-icon {
+    position: absolute; left: 10px; top: 50%; transform: translateY(-50%);
+    color: var(--text-tertiary); pointer-events: none;
+  }
   .drawer-nav {
-    flex: 1; overflow-y: auto; padding: 8px 0;
+    flex: 1; overflow-y: auto; padding: 4px 0;
     -webkit-overflow-scrolling: touch;
   }
 
   /* ── 文件树 ── */
-  .tree-toggle {
-    display: flex; align-items: center; gap: 6px; width: 100%;
-    padding: 9px 20px; font-size: 13px; font-weight: 600;
-    color: var(--text-secondary); cursor: pointer; user-select: none;
-    border: none; background: none; text-align: left;
-    letter-spacing: 0.2px; transition: color 0.15s;
-  }
-  .tree-toggle:hover { color: var(--text); }
-  .tree-toggle .arrow {
-    display: inline-block; font-size: 8px; width: 10px;
-    transition: transform 0.2s ease; flex-shrink: 0;
+  .tree-category {
+    padding: 16px 16px 6px;
+    font-size: 11px; font-weight: 600;
     color: var(--text-tertiary);
+    text-transform: uppercase; letter-spacing: 0.8px;
+    display: flex; align-items: center; gap: 6px;
   }
-  .tree-toggle.collapsed .arrow { transform: rotate(-90deg); }
-  .tree-toggle-nested { padding-left: 34px !important; font-weight: 500; }
+  .tree-category:not(:first-child) {
+    margin-top: 8px;
+    border-top: 1px solid var(--border-light);
+    padding-top: 20px;
+  }
+  .tree-group {
+    display: flex; align-items: center; gap: 6px; width: 100%;
+    padding: 8px 16px; font-size: 14px; font-weight: 600;
+    color: var(--text); cursor: pointer; user-select: none;
+    border: none; background: none; text-align: left;
+    transition: all 0.12s;
+  }
+  .tree-group:hover { background: var(--bg-hover); }
+  .tree-group .arrow {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 16px; height: 16px;
+    font-size: 10px; flex-shrink: 0;
+    color: var(--text-tertiary);
+    transition: transform 0.2s ease;
+  }
+  .tree-group.collapsed .arrow { transform: rotate(-90deg); }
+  .tree-group-name { flex: 1; }
+  .tree-group-count {
+    font-size: 11px; font-weight: 500;
+    color: var(--text-tertiary);
+    background: var(--bg-page);
+    padding: 1px 7px; border-radius: 10px;
+    min-width: 20px; text-align: center;
+  }
   .tree-children { overflow: hidden; display: none; }
   .tree-children.expanded { display: block; }
 
   .file-link {
-    display: flex; align-items: center; gap: 8px;
-    padding: 8px 16px; margin: 1px 8px;
-    font-size: 14px; color: var(--text); text-decoration: none;
+    display: flex; align-items: flex-start; gap: 10px;
+    padding: 8px 12px 8px 16px; margin: 1px 8px;
+    font-size: 13px; color: var(--text); text-decoration: none;
     border-radius: 6px; cursor: pointer; transition: all 0.12s;
-    line-height: 1.45;
+    line-height: 1.4; position: relative;
   }
   .file-link:hover { background: var(--bg-hover); }
   .file-link.active {
-    background: var(--accent-bg); color: var(--accent); font-weight: 500;
+    background: var(--accent-bg); color: var(--accent);
   }
-  .file-link .title-part { flex: 1; }
-  .file-link .ticker-badge {
-    font-size: 10px; font-weight: 600; letter-spacing: 0.5px;
-    color: var(--accent); background: var(--accent-bg);
-    padding: 2px 6px; border-radius: 4px; flex-shrink: 0;
+  .file-link.active .file-icon { color: var(--accent); }
+  .file-link.active .file-date { color: var(--accent); opacity: 0.7; }
+  .file-icon {
+    font-size: 15px; flex-shrink: 0;
+    width: 20px; text-align: center;
+    margin-top: 1px;
+  }
+  .file-info { flex: 1; min-width: 0; }
+  .file-title {
+    font-weight: 500; display: block;
+    overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  }
+  .file-meta {
+    display: flex; align-items: center; gap: 6px;
+    margin-top: 2px;
+  }
+  .file-date {
+    font-size: 11px; color: var(--text-tertiary);
+  }
+  .file-type-tag {
+    font-size: 10px; font-weight: 500; letter-spacing: 0.3px;
+    padding: 1px 5px; border-radius: 3px;
+    background: var(--bg-page); color: var(--text-tertiary);
+  }
+  .file-link.active .file-type-tag {
+    background: rgba(26,115,232,0.1); color: var(--accent);
+  }
+  .tree-empty {
+    padding: 32px 16px; text-align: center;
+    color: var(--text-tertiary); font-size: 13px;
   }
 
   /* ── 主布局 ── */
@@ -478,10 +542,16 @@
 <div class="drawer-overlay" id="drawer-overlay"></div>
 <aside class="drawer" id="drawer">
   <div class="drawer-header">
-    <h2>Equity Research <span class="count" id="file-count-label">· <span id="file-count">0</span> 篇</span></h2>
-    <button class="drawer-close" id="drawer-close">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-    </button>
+    <div class="drawer-header-top">
+      <h2>Research <span class="count" id="file-count-label">· <span id="file-count">0</span> 篇</span></h2>
+      <button class="drawer-close" id="drawer-close">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <div class="drawer-search-wrap">
+      <svg class="drawer-search-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input class="drawer-search" id="drawer-search" type="text" placeholder="搜索报告…">
+    </div>
   </div>
   <nav class="drawer-nav" id="sidebar-nav"></nav>
 </aside>
@@ -534,13 +604,48 @@ document.getElementById("file-count").textContent = total;
 // ── localStorage ──
 function storageKey(name) { return "eq-tree-" + encodeURIComponent(name); }
 
+// ── Type icons ──
+const TYPE_ICONS = {
+  'buyside memo': '📋', 'memo': '📋',
+  'chronicle': '📜', 'corporate chronicle': '📜',
+  'biography': '👤',
+  'investment audit': '🔍', 'audit': '🔍',
+  'bayesian intrinsic growth': '📐', 'valuation': '📐',
+  'deep research': '🔬',
+  'moat': '🏰', 'vision': '🔭',
+  'investment report': '📊',
+  '日报': '📰',
+};
+function getTypeIcon(title) {
+  const t = title.toLowerCase();
+  for (const [key, icon] of Object.entries(TYPE_ICONS)) {
+    if (t.includes(key)) return icon;
+  }
+  return '📄';
+}
+function getTypeTag(title) {
+  const t = title.toLowerCase();
+  if (t.includes('buyside') || t.includes('memo')) return 'MEMO';
+  if (t.includes('chronicle')) return 'CHRONICLE';
+  if (t.includes('biography')) return 'BIO';
+  if (t.includes('audit')) return 'AUDIT';
+  if (t.includes('bayesian') || t.includes('valuation')) return 'VALUATION';
+  if (t.includes('日报')) return '日报';
+  if (t.includes('deep research') || t.includes('report')) return 'RESEARCH';
+  return '';
+}
+
 // ── Drawer ──
 const drawer = document.getElementById("drawer");
 const drawerOverlay = document.getElementById("drawer-overlay");
 const menuBtn = document.getElementById("menu-btn");
 const drawerClose = document.getElementById("drawer-close");
+const drawerSearch = document.getElementById("drawer-search");
 
-function openDrawer() { drawer.classList.add("open"); drawerOverlay.classList.add("show"); }
+function openDrawer() {
+  drawer.classList.add("open"); drawerOverlay.classList.add("show");
+  setTimeout(() => drawerSearch.focus(), 300);
+}
 function closeDrawer() { drawer.classList.remove("open"); drawerOverlay.classList.remove("show"); }
 menuBtn.addEventListener("click", openDrawer);
 drawerClose.addEventListener("click", closeDrawer);
@@ -566,74 +671,134 @@ document.addEventListener('click', (e) => {
 const nav = document.getElementById("sidebar-nav");
 
 function createTree() {
+  nav.innerHTML = '';
   if (Object.keys(TREE).length === 0) {
-    nav.innerHTML = '<div style="padding:18px;font-size:13px;color:var(--text-tertiary);">暂无数据<br><small>请运行 python3 build_tree.py</small></div>';
+    nav.innerHTML = '<div class="tree-empty">暂无数据<br><small>请运行 python3 build_tree.py</small></div>';
     return;
   }
   Object.entries(TREE).forEach(([catName, catGroups]) => {
-    const savedCat = localStorage.getItem(storageKey(catName));
-    const catCollapsed = savedCat === null ? false : savedCat === "collapsed";
-
-    const catToggle = document.createElement("button");
-    catToggle.className = "tree-toggle" + (catCollapsed ? " collapsed" : "");
-    catToggle.innerHTML = '<span class="arrow">▼</span>' + catName;
-    catToggle.addEventListener("click", () => {
-      catToggle.classList.toggle("collapsed");
-      catChildren.classList.toggle("expanded");
-      localStorage.setItem(storageKey(catName),
-        catToggle.classList.contains("collapsed") ? "collapsed" : "expanded");
-    });
-    nav.appendChild(catToggle);
-
-    const catChildren = document.createElement("div");
-    catChildren.className = "tree-children" + (catCollapsed ? "" : " expanded");
-    nav.appendChild(catChildren);
+    // Category label
+    const catLabel = document.createElement('div');
+    catLabel.className = 'tree-category';
+    catLabel.textContent = catName;
+    nav.appendChild(catLabel);
 
     Object.entries(catGroups).forEach(([groupName, files]) => {
-      const grpKey = catName + "||" + groupName;
+      const grpKey = catName + '||' + groupName;
       const savedGrp = localStorage.getItem(storageKey(grpKey));
-      const grpCollapsed = savedGrp === null ? false : savedGrp === "collapsed";
+      const grpCollapsed = savedGrp === null ? false : savedGrp === 'collapsed';
 
-      const grpToggle = document.createElement("button");
-      grpToggle.className = "tree-toggle" + (grpCollapsed ? " collapsed" : "");
-      grpToggle.classList.add('tree-toggle-nested');
-      grpToggle.innerHTML = '<span class="arrow">▼</span>' + groupName;
-      grpToggle.addEventListener("click", () => {
-        grpToggle.classList.toggle("collapsed");
-        grpChildren.classList.toggle("expanded");
+      // Group header
+      const grpToggle = document.createElement('button');
+      grpToggle.className = 'tree-group' + (grpCollapsed ? ' collapsed' : '');
+      grpToggle.innerHTML = `
+        <span class="arrow">▾</span>
+        <span class="tree-group-name">${groupName}</span>
+        <span class="tree-group-count">${files.length}</span>
+      `;
+      grpToggle.addEventListener('click', () => {
+        grpToggle.classList.toggle('collapsed');
+        grpChildren.classList.toggle('expanded');
         localStorage.setItem(storageKey(grpKey),
-          grpToggle.classList.contains("collapsed") ? "collapsed" : "expanded");
+          grpToggle.classList.contains('collapsed') ? 'collapsed' : 'expanded');
       });
-      catChildren.appendChild(grpToggle);
+      nav.appendChild(grpToggle);
 
-      const grpChildren = document.createElement("div");
-      grpChildren.className = "tree-children" + (grpCollapsed ? "" : " expanded");
-      catChildren.appendChild(grpChildren);
+      const grpChildren = document.createElement('div');
+      grpChildren.className = 'tree-children' + (grpCollapsed ? '' : ' expanded');
+      nav.appendChild(grpChildren);
 
       files.forEach(f => {
-        const a = document.createElement("a");
-        a.className = "file-link";
+        const a = document.createElement('a');
+        a.className = 'file-link';
         a.dataset.path = f.path;
-        a.dataset.ticker = f.ticker || "";
-        a.addEventListener("click", (e) => { e.preventDefault(); loadFile(a); closeDrawer(); });
+        a.dataset.ticker = f.ticker || '';
+        a.dataset.searchText = (f.title + ' ' + (f.ticker || '') + ' ' + (f.date || '')).toLowerCase();
+        a.addEventListener('click', (e) => { e.preventDefault(); loadFile(a); closeDrawer(); });
 
-        const titleSpan = document.createElement("span");
-        titleSpan.className = "title-part";
-        titleSpan.textContent = f.title;
-        a.appendChild(titleSpan);
+        const icon = document.createElement('span');
+        icon.className = 'file-icon';
+        icon.textContent = getTypeIcon(f.title);
+        a.appendChild(icon);
 
-        if (f.ticker) {
-          const badge = document.createElement("span");
-          badge.className = "ticker-badge";
-          badge.textContent = f.ticker;
-          a.appendChild(badge);
+        const info = document.createElement('div');
+        info.className = 'file-info';
+
+        const title = document.createElement('span');
+        title.className = 'file-title';
+        title.textContent = f.title;
+        info.appendChild(title);
+
+        const meta = document.createElement('div');
+        meta.className = 'file-meta';
+        if (f.date) {
+          const date = document.createElement('span');
+          date.className = 'file-date';
+          date.textContent = f.date;
+          meta.appendChild(date);
         }
+        const typeTag = getTypeTag(f.title);
+        if (typeTag) {
+          const tag = document.createElement('span');
+          tag.className = 'file-type-tag';
+          tag.textContent = typeTag;
+          meta.appendChild(tag);
+        }
+        info.appendChild(meta);
+        a.appendChild(info);
+
         grpChildren.appendChild(a);
       });
     });
   });
 }
 createTree();
+
+// ── Search filter ──
+drawerSearch.addEventListener('input', () => {
+  const q = drawerSearch.value.trim().toLowerCase();
+  const links = nav.querySelectorAll('.file-link');
+  const groups = nav.querySelectorAll('.tree-group');
+  const categories = nav.querySelectorAll('.tree-category');
+
+  if (!q) {
+    // Reset: show everything, restore collapse state
+    links.forEach(l => l.style.display = '');
+    groups.forEach(g => g.style.display = '');
+    categories.forEach(c => c.style.display = '');
+    nav.querySelectorAll('.tree-children').forEach(c => {
+      // Restore from localStorage
+      c.style.display = '';
+    });
+    return;
+  }
+
+  // Filter
+  links.forEach(l => {
+    const match = l.dataset.searchText.includes(q);
+    l.style.display = match ? '' : 'none';
+  });
+  // Show parent groups that have visible children
+  nav.querySelectorAll('.tree-children').forEach(c => {
+    const hasVisible = [...c.querySelectorAll('.file-link')].some(l => l.style.display !== 'none');
+    c.style.display = hasVisible ? 'block' : 'none';
+    // Also show/hide the group toggle before it
+    const prev = c.previousElementSibling;
+    if (prev && prev.classList.contains('tree-group')) {
+      prev.style.display = hasVisible ? '' : 'none';
+    }
+  });
+  // Show/hide categories based on whether any groups below are visible
+  categories.forEach(c => {
+    let next = c.nextElementSibling;
+    let anyVisible = false;
+    while (next && !next.classList.contains('tree-category')) {
+      if (next.classList.contains('tree-group') && next.style.display !== 'none') anyVisible = true;
+      next = next.nextElementSibling;
+    }
+    c.style.display = anyVisible ? '' : 'none';
+  });
+});
 
 // ── Load file ──
 async function loadFile(el) {
