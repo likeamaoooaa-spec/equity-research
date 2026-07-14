@@ -6,6 +6,8 @@ source: https://roic.ai/quote/RKLB/transcripts/2023-year/3-quarter
 downloaded: 2026-07-14
 ---
 
+
+
 Peter Beck
 
 Thanks, Colin and welcome everybody for joining us.Today’s presentation we will go over our key business accomplishments for the third quarter of 2023 as well as further achievements we have made since the end of the quarter.

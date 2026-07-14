@@ -6,100 +6,7 @@ source: https://roic.ai/quote/RKLB/transcripts/2025-year/3-quarter
 downloaded: 2026-07-14
 ---
 
-*   Solutions
-*   [API Docs](https://roic.ai/api)
-*   [MCP](https://roic.ai/api/mcp)
-*   [Pricing](https://roic.ai/pricing)
-*   [Discord](https://discord.gg/paJKM97rU7)
-*   Resources
-
-
-Company Search
-
-⌘K
-
-Toggle theme
-
-Toggle theme Login Sign up
-
-2.   •
-
-[Industrials](https://roic.ai/quote/RKLB/transcripts/2025-year/3-quarter#)
-3.   •
-
-[Aerospace & Defense](https://roic.ai/quote/RKLB/transcripts/2025-year/3-quarter#)
-
-![Image 1: Rocket Lab USA, Inc.](https://www.roic.ai/image-stock/rklb.webp)
-
-# Rocket Lab USA, Inc.
-
-RKLB
-
-Alerts
-
-RKLB Rocket Lab USA, Inc.![Image 2: US flag](https://react-circle-flags.pages.dev/us.svg)NASDAQ Capital Market
-
-Alerts
-
-76.73
-
-USD
-
--4.31
-
-- -
-
-44.42B Market Cap
-
-[Summary](https://roic.ai/quote/RKLB)[Financials](https://roic.ai/quote/RKLB/financials)[Ratios](https://roic.ai/quote/RKLB/ratios)[Transcripts](https://roic.ai/quote/RKLB/transcripts)[Charts](https://roic.ai/quote/RKLB/charts)[Classic View](https://roic.ai/quote/RKLB/classic)[Statistics](https://roic.ai/quote/RKLB/statistics)[Stock Splits](https://roic.ai/quote/RKLB/stock-splits)
-
-## Earnings Call Transcripts
-
-### 2026
-
-*   [1 Quarter May 8](https://roic.ai/quote/RKLB/transcripts/2026-year/1-quarter)  
-
-### 2025
-
-*   [4 Quarter Feb 27](https://roic.ai/quote/RKLB/transcripts/2025-year/4-quarter)  
-*   [3 Quarter Nov 10](https://roic.ai/quote/RKLB/transcripts/2025-year/3-quarter)  
-*   [2 Quarter Aug 7](https://roic.ai/quote/RKLB/transcripts/2025-year/2-quarter)  
-*   [1 Quarter May 8](https://roic.ai/quote/RKLB/transcripts/2025-year/1-quarter)  
-
-### 2024
-
-*   [4 Quarter Feb 27](https://roic.ai/quote/RKLB/transcripts/2024-year/4-quarter)  
-*   [3 Quarter Nov 12](https://roic.ai/quote/RKLB/transcripts/2024-year/3-quarter)  
-*   [2 Quarter Aug 8](https://roic.ai/quote/RKLB/transcripts/2024-year/2-quarter)  
-*   [1 Quarter May 6](https://roic.ai/quote/RKLB/transcripts/2024-year/1-quarter)  
-
-### 2023
-
-*   [4 Quarter Feb 27](https://roic.ai/quote/RKLB/transcripts/2023-year/4-quarter)  
-*   [3 Quarter Nov 9](https://roic.ai/quote/RKLB/transcripts/2023-year/3-quarter)  
-*   [2 Quarter Aug 8](https://roic.ai/quote/RKLB/transcripts/2023-year/2-quarter)  
-*   [1 Quarter May 10](https://roic.ai/quote/RKLB/transcripts/2023-year/1-quarter)  
-
-### 2022
-
-*   [4 Quarter Feb 28](https://roic.ai/quote/RKLB/transcripts/2022-year/4-quarter)  
-*   [3 Quarter Nov 10](https://roic.ai/quote/RKLB/transcripts/2022-year/3-quarter)  
-*   [2 Quarter Aug 11](https://roic.ai/quote/RKLB/transcripts/2022-year/2-quarter)  
-*   [1 Quarter May 16](https://roic.ai/quote/RKLB/transcripts/2022-year/1-quarter)  
-
-### 2021
-
-*   [4 Quarter Mar 1](https://roic.ai/quote/RKLB/transcripts/2021-year/4-quarter)  
-*   [3 Quarter Nov 15](https://roic.ai/quote/RKLB/transcripts/2021-year/3-quarter)  
-*   [2 Quarter Sep 8](https://roic.ai/quote/RKLB/transcripts/2021-year/2-quarter)  
-
-Open Transcript List
-
 # Q3 FY2025 · Earnings Call Transcript November 10, 2025
-
-[API](https://roic.ai/api/docs/earnings-calls/transcript "View API documentation")[ChatGPT](https://roic.ai/connectors/chatgpt "Use this data in ChatGPT")Google Sheets
-
-O
 
 Operator
 
@@ -114,8 +21,6 @@ To withdraw your question, please press star then 2.Please note this event is be
 I would now like to turn the conference over to Murielle Baker.Director of Corporate and Launch Communications.
 
 Please go ahead.
-
-M
 
 Murielle Baker
 
@@ -136,8 +41,6 @@ Our speakers today are Rocket Lab USA, Inc.founder and chief executive officer, 
 They will be discussing key business highlights, including updates on our launch and space systems programs.We will discuss financial highlights and outlook before we finish by taking questions.
 
 So with that, let me turn the call over to Peter Beck.
-
-P
 
 Peter Beck
 
@@ -315,8 +218,6 @@ Thanks, Pete.Third quarter 2025 revenue was a record $155 million coming in at t
 
 This strong performance was driven by significant contributions from both our business segments.
 
-A
-
 Adam Spice
 
 Sequentially, revenue increased by 7.3% underscoring the continued momentum across the business.Our Space Systems segment delivered $114.2 million in revenue in the quarter, reflecting a sequential increase of 16.7%.
@@ -355,13 +256,9 @@ Representing an increase of 42 from the prior quarter majority of those coming f
 
 Up 174 heads from the prior quarter.Turning to cash.
 
-M
-
 Murielle Baker
 
 Purchase of property
-
-A
 
 Adam Spice
 
@@ -373,13 +270,9 @@ As we invest in testing, production scaling, infrastructure expansion.GAAP EPS f
 
 The sequential improvement to GAAP EPS is mostly attributable to the $41 million tax benefit we recorded during the third quarter.Which is due to the partial release of the valuation allowance against corporate deferred tax assets.
 
-M
-
 Murielle Baker
 
 As a result of acquiring an equal amount of deferred tax liabilities,
-
-A
 
 Adam Spice
 
@@ -411,13 +304,9 @@ We expect fourth quarter adjusted EBITDA loss range between $23 million and $29 
 
 Driven by ongoing investments in Neutron development and scaling production.This excludes any potential offsetting effects from financing under our ETF facility.
 
-M
-
 Murielle Baker
 
 And with that, we'll hand the call over to the operator for questions.
-
-O
 
 Operator
 
@@ -429,8 +318,6 @@ At this time, we will pause momentarily to assemble our roster.The first questio
 
 Please go ahead.
 
-R
-
 Ryan Koontz
 
 Great.Thank you.
@@ -438,8 +325,6 @@ Great.Thank you.
 Really nice to see the strong bookings and backlog jump there for launch.Really impressive.
 
 Sounds like a lot of that was international.Any particular color you can share on, you know, the use cases, versus government, anything you can share as far as what's really driving that pickup in backlog and how you feel about it, you know, going forward over the next few quarters?
-
-P
 
 Peter Beck
 
@@ -449,15 +334,11 @@ Yeah.So it's a bit of both.
 
 So strong commercial bookings, but also, you know, for the first time, we see, you know, space agencies who typically, you know, use their own sovereign capabilities, but you know, Electron is really the only vehicle of its kind in operation in the world right now.So it was very, very promising to see space agencies now, you know, kind of standardizing on the Electron as a platform.
 
-R
-
 Ryan Koontz
 
 For sure.That's great.
 
 And how are you feeling about supply chain relative to meeting that kind of demand for Electron at this point?
-
-P
 
 Peter Beck
 
@@ -465,15 +346,11 @@ Electron's like 90% plus built in-house.So, you know, we don't see too many chal
 
 You know, the factory that we built here was ultimately designed to build 52 rockets a year.And so, you know, I think we'll be fine.
 
-R
-
 Ryan Koontz
 
 That's great.Maybe one last one just to wrap up just to clarify what Adam said about launch gross margins.
 
 There were a couple of onetime events there.Any color you can share with us on that, Adam?
-
-A
 
 Adam Spice
 
@@ -485,21 +362,15 @@ So we now have a nice in that business where you have point in time and over tim
 
 The fact that you've got typically higher, ASPs, you've got, you know, I would say along with that now, you've got a little bit more stability, I would say, or predictability to revenue contribution from that given the fact that some are gonna be point in time, but some are gonna be overtime, and that overtime allows a little bit more of a I would say, like, a little bit more predictability and I think it's a healthy place to be.
 
-R
-
 Ryan Koontz
 
 That's great.Appreciate the questions.
 
 Thank you.
 
-O
-
 Operator
 
 The next question comes from Andres Sheppard with Cantor Fitzgerald.Please go ahead.
-
-A
 
 Andres Sheppard
 
@@ -514,8 +385,6 @@ Just wondering if that's on track or unchanged?And then also on the FDA tranche 
 If awarded, that would be the largest contract, I think, awarded in company history.So curious on your thoughts there.
 
 Thank you.
-
-A
 
 Adam Spice
 
@@ -535,15 +404,11 @@ And you're right.The timing has been a little bit delayed due to the government 
 
 I think we've all seen recently that there's signs that perhaps we could be coming to an end of that shutdown, which I think would be great to get that momentum back in the awarding of those types of contracts.But I'll turn over to Pete in regards to confidence in that win.
 
-P
-
 Peter Beck
 
 I think you've said it well, Adam.I mean, I think, you know, we've put ourselves in a really strong position as a prime contractor on those awards especially with some of our acquisitions.
 
 So we're feeling good, and you know, we just need the government to come back and finish off that last little piece.But, no, I think we're feeling good, Andres.
-
-A
 
 Andres Sheppard
 
@@ -553,15 +418,11 @@ And maybe just as quick follow-up on, Neutron.With the first launch now, targete
 
 Or is there perhaps a change to that cadence as well?Thank you.
 
-P
-
 Peter Beck
 
 Yeah.The way we think about that cadence is it's you know, the clock starts for the next one from the first one.
 
 So depending on the, you know, the first flight, think of it as like a twelve-month kind of rate from there.But maybe, Adam, if you yeah, any different views.
-
-A
 
 Adam Spice
 
@@ -575,21 +436,15 @@ Over its manufacturing period.So the communicated cadence was, you know, one tes
 
 So I would say that you know, depending how early we get the test launch off in 2026 will dictate whether or not we get as Pete said, we kinda complete the next three missions in a twelve-month window.That would fall within that
 
-A
-
 Andres Sheppard
 
 Wonderful.Very helpful, and, congrats again.
 
 I'll pass it on.
 
-O
-
 Operator
 
 The next question comes from Edison Yu from Deutsche Bank.Please go ahead.
-
-E
 
 Edison Yu
 
@@ -598,8 +453,6 @@ Hey, good afternoon.Wanted to ask about the future constellation.
 I know it's quite a long-term question.But there's been a lot of activity in some operators around Spectrum.
 
 And I'm curious what's your thinking about the value of Spectrum in your kind of calculus for any type of future constellation?
-
-P
 
 Peter Beck
 
@@ -611,8 +464,6 @@ But, you know, look, Rocket Lab USA, Inc.is not gonna go out and buy billions of
 
 That's for sure.
 
-A
-
 Adam Spice
 
 This is Adam.Sorry.
@@ -621,37 +472,25 @@ I got dropped.Some unfortunate conference call dropped me.
 
 So don't know if did I did I answer your question fully?Andres, on the launch cadence?
 
-E
-
 Edison Yu
 
 Eight was actually Edison on now.
-
-P
 
 Peter Beck
 
 Yeah.We just
 
-E
-
 Edison Yu
 
 Okay.Thank you.
-
-P
 
 Peter Beck
 
 Nice to see that you got dropped out in this time and not me.
 
-A
-
 Adam Spice
 
 It's not just me today, for sure.Yep.
-
-E
 
 Edison Yu
 
@@ -661,8 +500,6 @@ I'm sure everyone has seen you know, NASA.We got Isaac Mann, you know, seemingly
 
 Do you see increased opportunities in this type of changeover around whether it's moon, Mars, space, and what do you think those incremental opportunities could potentially come from?
 
-P
-
 Peter Beck
 
 Short answer is yes.I think if you know, if Jared is cemented as the NASA administrator, I think if you look at Jared's approach to how he believes NASA should be run and the role that commercial entities like Rocket Lab USA, Inc.
@@ -671,13 +508,9 @@ will play, I think that bodes very well for the way that we operate and the valu
 
 Great.Thank you.
 
-O
-
 Operator
 
 The next question comes from Gautam Khanna with TD Cowen.Please go ahead.
-
-G
 
 Gautam Khanna
 
@@ -686,8 +519,6 @@ Yeah.Thanks.
 Good afternoon, guys.I was wondering if you could elaborate on how soon after Neutron arrives at the complex realistically it can launch?
 
 Does it is there a minimum interval of time and then, you know, what sort of explains that whatever that range might be?
-
-P
 
 Peter Beck
 
@@ -703,19 +534,13 @@ So look, we know a lot more when we have a vehicle on the pad.We know even more 
 
 After hot fire if that's a successful campaign and we're happy with what we see, then the turnaround to launch after that point's pretty quick.
 
-G
-
 Gautam Khanna
 
 Okay.And I was curious also maybe I missed it, but the cumulative catch-up adjustment or the onetime, how large was it?
 
-G
-
 Gautam Khanna
 
 In the quarter?
-
-A
 
 Adam Spice
 
@@ -726,8 +551,6 @@ I'm not sure if you can maybe sorry.I got dropped again from the call from my pr
 I yeah, I think you mentioned in the remarks that there was a well, I know in the Q, it says there's a revenue adjustment of net $10 million favorable in the quarter.Wanted to know I think you described the EBITDA margins were lifted by a contract closeout of some sort.
 
 I was just curious if you could quantify how large that was?
-
-A
 
 Adam Spice
 
@@ -741,19 +564,13 @@ Right?So I think those are really kind of the two prior things.
 
 But when you look forward to into Q4, given our, the guidance that we've provided, you know, even with those things not recurring, in Q4, you still see our gross margins improving.So you can just see that, you know, yes, that was kind of a unique dynamic in the transition from q to Q2 to Q3, but from Q3 to Q4 without those unique events, we still show gross margin strength and growth sequentially.
 
-G
-
 Gautam Khanna
 
 Thanks very much, guys.Appreciate it.
 
-O
-
 Operator
 
 The next question comes from Erik Rasmussen with Stifel.Please go ahead.
-
-E
 
 Erik Rasmussen
 
@@ -764,8 +581,6 @@ I wanted to just on Neutron, I totally understand.Peter, and the team, you guys 
 You're not looking at an iterative process and having things blow up.So that's great.
 
 And that's you you always operate it that way, but I wanted to see, though, with this latest push out, you know, what does that do from a timing perspective for things like the NSSL and other things that you might have been looking at that Neutron would obviously be is geared towards.
-
-P
 
 Peter Beck
 
@@ -783,8 +598,6 @@ We need to have a flight under our belt, a successful flight under our belt befo
 
 And, you know, we've been very careful, and I think there's been a lot of conversation previously about you know, booking Neutron and making sure that we can deliver for our customers So, you know, long story short, we're not letting anybody down here, Erik.We're in a good spot.
 
-E
-
 Erik Rasmussen
 
 Great.And maybe just my follow-up question here.
@@ -794,8 +607,6 @@ You know, you closed the Geos acquisition.Mine Eric is soon to soon to soon to c
 But with Geos, are you seeing you know, traction in expanding the footprint in national security and defense?I mean, that was part of the reason.
 
 But what are you seeing?Now that you've closed the deal?
-
-P
 
 Peter Beck
 
@@ -811,27 +622,19 @@ So no, it's been incredibly important.And also just now being a payload provider
 
 Rather than just talking about how you can provide a bus or a component or something.We're really in mission formulation territory.
 
-E
-
 Erik Rasmussen
 
 Great.Thanks, and good luck with the Neutron development.
 
-O
-
 Operator
 
 The next question comes from Michael Leshock with KeyBanc Capital Markets.Please go ahead.
-
-M
 
 Michael Leshock
 
 Hey, good afternoon, everyone.I wanted to ask on Archimedes side I know you're constantly testing and iterating the engine.
 
 But how close are you to having a finalized design that meets all the performance requirements and ready for first flight And then secondly, given your production cadence, I think you previously said a new engine was coming off the line every eleven days or so.How quickly can you ramp production of the engine to have nine Archimedes for the first stage of Neutron's debut launch?
-
-P
 
 Peter Beck
 
@@ -851,8 +654,6 @@ And some of the more interesting tests, you know, just extra long durations to t
 
 They just take time.Like, there's just no substitute for just burning.
 
-M
-
 Michael Leshock
 
 Okay.Great.
@@ -860,8 +661,6 @@ Okay.Great.
 And then sticking with Neutron, is that original budget for Neutron of $250 million to $300 million is that still intact given the updating timing of Neutron's first launch?And you'd said you're near peak Neutron spending just any way to frame how much you've spent so far or what's left to go?
 
 Thanks.
-
-A
 
 Adam Spice
 
@@ -881,21 +680,15 @@ So right now, again, we're looking at around $360 million exiting 2025.So, again
 
 And this, of course, it'll a bit.Launch as well.
 
-M
-
 Michael Leshock
 
 Yep.Thank you.
 
 I appreciate it.
 
-O
-
 Operator
 
 The next question comes from Suji Desilva with ROTH Capital.Please go ahead.
-
-S
 
 Suji Desilva
 
@@ -903,15 +696,11 @@ Hi, Pete.Hi, Adam.
 
 Congrats on the strong backlog build here.On the Electron launches, you gave some sense of pricing, but any noticing on the trend in the size of the number of launches, maybe if not now into 26 or if you're trying to extend those or is that fairly stable?
 
-P
-
 Peter Beck
 
 Hey, CJ.I don't know if Adam, if you if you got that one, but I struggle to see you on that one.
 
 Yeah.Suji broke up.
-
-S
 
 Suji Desilva
 
@@ -921,15 +710,11 @@ Just any observations on the Lectron launches, the deals in terms of number of l
 
 In the next few quarters?Or is it pretty stable?
 
-P
-
 Peter Beck
 
 You know, I think when we talk to customers, as you can see in the last quarter, it's generally not sort of one launch You know, we see folks locking in their launch capacity and buying lots of launches in one hit.We're we never try and let a customer down or leave a customer on the pad, so we map production with launch demand very well.
 
 But, you know, and that that isn't been a problem to date.But, no, we just continue to see just growth in the demand for the product.
-
-A
 
 Adam Spice
 
@@ -943,8 +728,6 @@ And those have come, I would say, more like Electron originally did, where kinda
 
 I think that's you know, again, that's something that we're looking forward to.So I think, you know, that would be a very helpful indicator that the longevity of that Haste business and the and the ultimate scaling of it.
 
-S
-
 Suji Desilva
 
 Okay.Helpful, Adam.
@@ -955,31 +738,21 @@ Is there a sense that maybe among the targets that consolidation and being part 
 
 Now, among m and a discussions?
 
-P
-
 Peter Beck
 
 Yeah.I think you're seeing it in a few different places both on the larger scale, but also I think we're seeing it also on some of the smaller scale stuff as well is I think it's a difficult environment to scale in, and there hasn't really been too many great companies that other companies want to join And as I think I mentioned on the call, we're becoming the de facto go-to guys if you want to, you know, really scale your products and the opportunities that you have in front of
-
-S
 
 Suji Desilva
 
 Okay.You do Thanks, Pete.
 
-A
-
 Adam Spice
 
 No worries.Thanks, Sujit.
 
-O
-
 Operator
 
 The next question comes from Andre Madrid with BTIG.Please go ahead.
-
-A
 
 Andre Madrid
 
@@ -991,15 +764,11 @@ This was at more of a a DOW level.But seeing that, and then you called it out, y
 
 I mean, if things don't get resolved this evening, which hopefully they do, I mean, when does the shutdown pose a significant risk to your internal '26 outlook and beyond?
 
-A
-
 Adam Spice
 
 What?I can okay.
 
 Go ahead, Pete.
-
-P
 
 Peter Beck
 
@@ -1015,8 +784,6 @@ The end of last week.So right now, it doesn't really I think there's gonna be an
 
 So it's hard, you know, no one's got a crystal ball for kind of what happens know, with this they bring the government back and kind of where they reprioritize their dollars.But yeah, I think we've been very fortunate so far that we've really not felt any significant impact from the shutdown to date.
 
-A
-
 Andre Madrid
 
 Got it.Got it.
@@ -1024,8 +791,6 @@ Got it.Got it.
 That's helpful.And oh, go ahead.
 
 Sorry.I didn't mean to cut you off.
-
-P
 
 Peter Beck
 
@@ -1035,8 +800,6 @@ It's expanding.So, you know, it's an important program.
 
 So as far as, like, the need for the program, it's that's not getting smaller.
 
-A
-
 Andre Madrid
 
 Got it.Got it.
@@ -1045,19 +808,13 @@ That's fair.I'll leave it for one.
 
 Thanks, guys.
 
-P
-
 Peter Beck
 
 Thanks, Andre.
 
-O
-
 Operator
 
 The next question comes from Jeffrey Van Rhee with Craig Hallum.Please go ahead.
-
-J
 
 Jeffrey Van Rhee
 
@@ -1067,13 +824,9 @@ The Andy, on the on the margin, gross margins for Q4 and the guide, it looks lik
 
 Which side of the business you're expecting that sequential increase?And then any sort of even inklings as to maybe revisions on what you think target gross margins might be for either of those two segments?
 
-P
-
 Peter Beck
 
 Yeah.So, you know,
-
-A
 
 Adam Spice
 
@@ -1109,8 +862,6 @@ Got it.Got it.
 
 Very helpful.Last one then on space systems.
 
-J
-
 Jeffrey Van Rhee
 
 The can you talk about the pipeline?Obviously, tranche two, tranche three are big needle movers.
@@ -1118,8 +869,6 @@ The can you talk about the pipeline?Obviously, tranche two, tranche three are bi
 But what's the next layer beneath that like?Like, how many, you know, 8 figure, 9 figure deals?
 
 Just some semblance of what the distribution of deal sizes that are later stage in the pipeline would be helpful.Thanks.
-
-P
 
 Peter Beck
 
@@ -1141,29 +890,21 @@ And, you know, they've all all met or exceeded the, you know, the Pete stretch g
 
 You know, they're obviously important needle moving, but just the underlying business and just continuing to drive that growth in all the business units.And the underlying business is equally as important.
 
-J
-
 Jeffrey Van Rhee
 
 Got it.Got it.
 
 Congrats on the great performance.Thanks.
 
-O
-
 Operator
 
 The next question comes from Anthony Valentini with Goldman Sachs.Please go ahead.
-
-A
 
 Anthony Valentini
 
 Hey, guys.Thanks for getting me on.
 
 Just a quick clarification question on the backlog and Neutron Is there anything in the backlog today for Neutron?Or is it zero?
-
-A
 
 Adam Spice
 
@@ -1173,8 +914,6 @@ There are two fully priced missions in the backlog right now for Neutron.There's
 
 But we don't have that in backlog because we don't do that until we've actually added the payloads into the manifest.And, again, we've got a primary customer, but not on that third cusp on that third launch, we've not put any in the backlog yet.
 
-A
-
 Anthony Valentini
 
 Okay.That's helpful.
@@ -1182,8 +921,6 @@ Okay.That's helpful.
 Is there a way to think through, you know, how that backlog Neutron specifically ramps up?Like does that happen once you guys do that first R and D launch?
 
 Or is it a certain number of successful launches?Just historically, and, like, what you guys know about the industry, like, how does that start to flow through?
-
-P
 
 Peter Beck
 
@@ -1201,8 +938,6 @@ In a number of these contracts.But also you know, that you know, we want to make
 
 And we're just not gonna do that.
 
-A
-
 Anthony Valentini
 
 Right.Okay.
@@ -1212,8 +947,6 @@ That makes a ton of sense.And then last one for you, Peter.
 As I'm thinking through the opportunity set, on the Tranche three transport layer and just looking back at the previous tranches, there's competition from the defense prime, and some of these new space tech companies, including yourself.I'm curious how you think through the differentiators for Rocket Lab USA, Inc.
 
 and when you guys are presenting to the customer, what you think really separates you from the rest of the group?
-
-P
 
 Peter Beck
 
@@ -1231,19 +964,13 @@ And also, finally, there's a set of requirements, and then there's how you go ab
 
 We just have such a war chest of technologies that we can bring to bear to provide solutions to meet everybody's requirements and then some.That I think, you know, it puts us in a really strong position.
 
-A
-
 Anthony Valentini
 
 Great.Thank you so much for the, the thoughtful response.
 
-P
-
 Peter Beck
 
 Of course.
-
-O
 
 Operator
 
@@ -1254,8 +981,6 @@ Please go ahead.Okay.
 Good evening, everyone.Peter, Adam, from your commentary from our previous question, I mean, it sounds like you're not going to go out there and go buy a spectrum.
 
 So first question, is that a fair assessment of your statement earlier?And also second to that, you know, with over a billion dollars in liquidity, and, you know, with the broader and deeper capability set in space systems, What's your priority for m and a?
-
-P
 
 Peter Beck
 
@@ -1269,8 +994,6 @@ And really drive the missions.And look, we're always looking at big needle movin
 
 And you know, we always look for things that we think, you know, have a step change in either the scale or other elements of the company.So you know, that's the way we look about you know, that's the way we think about it.
 
-K
-
 Kristine T. Liwag
 
 It's been super helpful.And, look, you know, when you look out into the market, you know, it's hard not to see what's SpaceX is doing in terms of their path towards that end to end, you know, space and recent So when you look at your portfolio today, I mean, it looks like you're kinda marching in a similar direction.
@@ -1278,8 +1001,6 @@ It's been super helpful.And, look, you know, when you look out into the market, 
 With your Flatellite product set too, and now you've got, you know, these additional payloads.Where do you see your role in terms of that industry?
 
 You know, do you at some point, wanna own your own consolation and be able to sell more of that as a service.How do we think about where you are in this journey And, you know, what does the exit look like?
-
-P
 
 Peter Beck
 
@@ -1293,19 +1014,13 @@ I mean, we've got two going to Mars here shortly.So if you, you know, wanna talk
 
 So I think from an engineering perspective and a component perspective, all of those kind of bases are loaded.And we'll be very strategic about how we think about the next step, which would be building our own constellation and whether we're providing services or infrastructure, I think, is yet to be determined.
 
-K
-
 Kristine T. Liwag
 
 Great.Thank you very much.
 
-O
-
 Operator
 
 The next question comes from Peter Arment with Baird.Please go ahead.
-
-P
 
 Peter Arment
 
@@ -1315,8 +1030,6 @@ On Electron, of the demand environment.I think you've previously talked about th
 
 I was wondering if that still kind of holds just given the uplift that we've seen tied to kind of all the national security launches and kind of what's going to be expected with Golden Dome and additional testing if there's upward bias to that and it certainly seems like it.Thanks.
 
-P
-
 Peter Beck
 
 Yeah.Hi, Peter.
@@ -1324,8 +1037,6 @@ Yeah.Hi, Peter.
 I mean, look, I think that's fair.If depending on how quickly and what scale Golden Dome grows to, think we're in a very strong position to provide critical services there.
 
 And, you know, we see nothing but upward trajectory in both government, taste, and commercial launches for that product.
-
-P
 
 Peter Arment
 
@@ -1335,8 +1046,6 @@ For the comments on the Archimedes, the testing that you've been doing.Could you
 
 Is that much different in terms of the rate that you did originally with the retrofits around Electron?Thanks.
 
-P
-
 Peter Beck
 
 Yeah.It is.
@@ -1345,19 +1054,13 @@ It is at a much, much higher intensity and rate because for Rutherford, we only 
 
 So it's like twice the amount of environments, twice the amount of run box.And twice the amount of qualification.
 
-P
-
 Peter Arment
 
 Appreciate the color.Thanks, guys.
 
-O
-
 Operator
 
 This concludes our question and answer session.I would like to turn the conference back over to Peter Beck for any closing remarks.
-
-P
 
 Peter Beck
 
@@ -1377,40 +1080,8 @@ And, look, I just personally also want to thank Matt for backing us from the beg
 
 We look forward to sharing more exciting news and updates with you there.And thanks for joining us That wraps up today's call, and we look forward to speaking with you again soon and sharing some more progress at Rocket Lab USA, Inc.
 
-O
-
 Operator
 
 The conference has now concluded.Thank you for attending today's presentation.
 
 You may now disconnect.
-
-## Footer
-
-Stock research and financial data for fundamental investors. Decades of statements, transcripts and metrics, one API.
-
-Found an error or have an idea?[support@roic.ai](mailto:support@roic.ai)
-
-### Product
-
-*   [Financial Data API](https://roic.ai/financial-data-api)
-*   [API reference](https://roic.ai/api/docs)
-*   [Pricing](https://roic.ai/pricing)
-*   [Knowledge Base](https://roic.ai/knowledge-base)
-*   [Status](https://status.roic.ai/)
-
-### Developers
-
-*   [Getting started](https://roic.ai/api/docs/getting-started)
-*   [Authentication](https://roic.ai/api/docs/authentication)
-*   [Changelog](https://roic.ai/api/docs/changelog)
-
-### Company
-
-*   [About](https://roic.ai/about)
-*   [Blog](https://roic.ai/blog)
-*   [FAQ](https://roic.ai/faq)
-
-© 2026 Roic AI, Inc. Financial data and stock API.
-
-[Privacy Policy](https://roic.ai/policy)[Terms](https://roic.ai/tos)

@@ -6,7 +6,7 @@ source: https://roic.ai/quote/RKLB/transcripts/2024-year/1-quarter
 downloaded: 2026-07-14
 ---
 
-O
+
 
 Operator
 
@@ -14,15 +14,11 @@ Good day, everyone, and welcome to the Rocket Labs First Quarter 2021 Financial 
 
 Please go ahead, ma'am.
 
-M
-
 Murielle Baker
 
 Thank you.Hello, everyone.
 
 We're glad to have you join us for today's conference call to discuss Rocket Lab's First Quarter 2024 financial results.Before we begin the call, I'd like to remind you that our remarks may contain forward-looking statements that relate to the future performance of the company, and these statements are intended to qualify for the safe harbor protection from liability established by the Private Securities Litigation Reform Act.
-
-M
 
 Murielle Baker
 
@@ -38,15 +34,11 @@ Our presenters today are Rocket Lab, Founder and Chief Executive, Peter Beck; an
 
 And now let me turn the call over to Mr.Beck.
 
-P
-
 Peter Beck
 
 Thank you, Maria, and thank you, everybody, for joining us today.We've got a lot of great achievements and milestones to share on our start to the year, not the least of which is executing a record number of launches and Space Systems growth that delivered a record total revenue of $93 million in the quarter, up 55% quarter-over-quarter and 69% year-over-year.
 
 Adam will talk through the rest of the details of our financial results for the first quarter before covering the financial outlook for Q2 2024.After that, we'll take some questions and finish today's call with the near-term conferences we'll be attending.
-
-P
 
 Peter Beck
 
@@ -214,15 +206,11 @@ Construction is really moving nicely along in vision, which is great to see.
 
 So that wraps up the business highlights for 2024 so far.So from here, I'll hand it over to Adam to take us through the financial updates.
 
-A
-
 Adam Spice
 
 Great.Thanks, Pete.
 
 First quarter 2024 revenue was $92.8 million, which was towards the low end of our prior guidance range, reflecting significant year-on-year growth of 69% and sequential growth of 55%, driven by strong contribution from both business segments.Our Launch Services segment delivered revenue of $32.7 million in the quarter from 4 launches, in line with guidance of $32 million to $33 million representing sequential growth of 287%, driven by a return to normal launch operations after Q4 was impacted by our September anomaly.
-
-A
 
 Adam Spice
 
@@ -286,21 +274,15 @@ We expect second quarter GAAP and non-GAAP net interest expense to be $1 million
 
 And with that, we'll hand the call over to the operator for questions.
 
-O
-
 Operator
 
 [Operator Instructions].And we'll go first to Erik Rasmussen from Stifel.
-
-E
 
 Erik Rasmussen
 
 Maybe just on Neutron.You obviously made a lot of significant progress as the number of milestones in the Archimedes being the latest, I guess, a major one, but you are pushing that out by at least 6 months.
 
 Is it mostly on the engine side, sort of the conservatism there?And sort of what can pull that time line in or even push that out further?
-
-P
 
 Peter Beck
 
@@ -310,13 +292,9 @@ So -- and look, we learned a lot building that engine and getting it to the stan
 
 And market programs are notoriously difficult to kind of plan.And I think a lot of people see the rocket, but they don't see all of the tremendous amount of infrastructure around it that it takes to bring a rocket to fruition.
 
-P
-
 Peter Beck
 
 So there's a lot going on in the program as you saw in some of the materials.But really, the engine is always certainly for us, the driver for the program.
-
-E
 
 Erik Rasmussen
 
@@ -324,15 +302,11 @@ Okay.And then what would you say then because it was the first call it, we'll ca
 
 Could there be -- if you do get in the middle of the year, could you actually then -- what do you think the time line would be for you to start to -- and assuming that's a successful launch, what do you think the time line could be sort of matching what you previously said maybe 3 following that R&D the following year and then 5 of the other year.Is that still the right way of thinking about new...
 
-P
-
 Peter Beck
 
 Yes...Yes, totally it is.
 
 We've played this game before, and sort of the 135 is the right way to think about it.And I think that certainly, as we're building capability and in some cases, stock that's exactly how we're planning it still.
-
-E
 
 Erik Rasmussen
 
@@ -342,8 +316,6 @@ It sounds like there's some changes in customers in the Manifest and that obviou
 
 Where do you think that number could wind up?And could you actually even hit 22 for the year, still?
 
-P
-
 Peter Beck
 
 Yes.Look, I mean, we had the sort of 22 emissions booked this year.
@@ -351,8 +323,6 @@ Yes.Look, I mean, we had the sort of 22 emissions booked this year.
 And as I mentioned on the call that it's literally a game of benefits [indiscernible] and people move out.Very really as people move to the left, but that does occasionally happen.
 
 We have a bunch of folks that come in at the last minute.
-
-P
 
 Peter Beck
 
@@ -364,15 +334,11 @@ So will -- we actually end up at the end of the year is kind of in the hands of 
 
 And none of these missions go away, are they just sort of move around and some will move into other quarters and some will move into next year.
 
-E
-
 Erik Rasmussen
 
 Great.Well, and then maybe just last on the MBA contract, it seems like this program and revenue recognition is kicking in.
 
 Maybe just help us understand the revenue trajectory and contribution or maybe the weighting as we sort of progress through this year.
-
-A
 
 Adam Spice
 
@@ -380,21 +346,15 @@ Yes, I can take that one, Pete.So Erik, yes, to your point, we are in now the me
 
 And it will be, I would say, kind of you think about it kind of peaking probably in the -- kind of in the Q3 period, maybe shifts to Q4.And then we'll also start to see more meaningful contribution from the FDA contract that we announced early this year.
 
-A
-
 Adam Spice
 
 So I think we've kind of managed to have things land in such a way where you don't have kind of a risk of a big drop off as the MDA contract kind of comes to conclusion because we've got a contract that's more than 3x larger kind of following it in the wings, if you will.So I think that, again, our plan is to still see that almost all of the remaining contract value recognized in the 2024 time period.
 
 And there is an operating contract, a SOC that goes along with this NDA Globalstar agreement, but that's relatively small in the grand scheme of things with regards to the total contract value of roughly $150 million.
 
-O
-
 Operator
 
 And next up is Andre Sheppard, Cantor Fitzgerald.
-
-A
 
 Andres Sheppard-Slinger
 
@@ -404,15 +364,11 @@ Obviously, congratulations on the Archimedes engine build.You're now targeting t
 
 With now targeting first launch earlier than middle of 2025, can you just maybe help us -- just remind us what are the other big milestones between the Hotwire engine and the launch.
 
-P
-
 Peter Beck
 
 Yes, sure.Thanks, Andre.
 
 So we've always said look for concrete on the ground at Wallops and in the test sites, look for large stage tanks and things like that and look for fire.And those things remain kind of the same things that I'd be looking for.
-
-P
 
 Peter Beck
 
@@ -421,8 +377,6 @@ So yes, getting something -- getting a pad built is a huge program and everythin
 And then I think the other thing I'd be tracking is like making sure that we continue to build components for other launches.So not a one and done kind of a thing, it's like making sure that there's a bunch of other engines coming off the production line and more teams and structures and things like that.
 
 So that's sort of certainly something that we're focused on is making sure we keep the machine primed with all the components needed to not just get one launch way, but stand up a commercial service.
-
-A
 
 Andres Sheppard-Slinger
 
@@ -436,15 +390,11 @@ And definitely remind us...okay.
 
 That's okay.Great.
 
-A
-
 Andres Sheppard-Slinger
 
 And then just remind us.So with that liquidity on hand, what is the run rate expected?
 
 Or how are you thinking about that?
-
-A
 
 Adam Spice
 
@@ -453,8 +403,6 @@ With a run rate a runway.I think that the -- we raised a significant amount of c
 And as we've stated, it was really all about providing inorganic growth optionality for us.And we do continue to see significant opportunities out there.
 
 I would say the deal pipeline that we're managing at this point is probably as full as it's been in really the last couple of years as far as potential actionable targets for us.So I think the timing on raising that, the funds was probably pretty ideal.
-
-A
 
 Adam Spice
 
@@ -465,8 +413,6 @@ We're -- given where we're at in the program, we feel like we're still very much
 We've had some support from various partners that have brought capital to the table as well.So I think that, again, we feel very good about our ability to scale our Space Systems business, continue to scale Electron, get neutron the pad with the capital that we had pre-convertible, and we continue to look for options to deploy that convertible proceeds to inorganic means.
 
 So -- and I think that right now, we feel really good about where we're at from a liquidity perspective, and we really don't see the need right now to think about anything beyond that.
-
-A
 
 Andres Sheppard-Slinger
 
@@ -480,13 +426,9 @@ Okay, that's helpful.Congrats on the quarter.
 
 I'll pass it on.
 
-O
-
 Operator
 
 Next question comes from Jason Gursky, Citi.
-
-J
 
 Jason Gursky
 
@@ -496,8 +438,6 @@ You mentioned you had some learnings there.Hope maybe you kind of share some of 
 
 Just kind of give us a flavor of what went wrong here?
 
-P
-
 Peter Beck
 
 So no like major issue, not -- we didn't run up against a wall and had to solve something majorly technically.But I mean, kind of as I mentioned on the call, like the point here is not to just make fire.
@@ -505,8 +445,6 @@ So no like major issue, not -- we didn't run up against a wall and had to solve 
 The point here is to roll into production.And there are a number of kind of new processes and actually even new materials that we developed for our committees.
 
 And those are all intended to support production at a different time, we go into much more detail about some of the manufacturing methods we've used for the combustion chambers and things like that.
-
-P
 
 Peter Beck
 
@@ -522,8 +460,6 @@ But an engine on the scale is certainly as an extra element to that.
 
 I mean you can't just pick up a pump volume and bolder on the engineer to get a crane to put the portfolio on -- so it -- everything is just such a larger scale that it makes it more difficult.So yes, not like one big staggering thing, just a whole bunch of stuff that just sort of adds up.
 
-J
-
 Jason Gursky
 
 Yes.Okay.
@@ -532,8 +468,6 @@ That makes good sense.And then do you have a sense of like you build buffer or c
 
 How much kind of contingency do you have in that?
 
-P
-
 Peter Beck
 
 Well, as I mentioned before, we won greenlight schedules at Rocket lab.So in an engineering program, especially one of that scale, it's almost impossible to build sensible engineering buffer and because you never really know the elements that are going to cause your problem.
@@ -541,8 +475,6 @@ Well, as I mentioned before, we won greenlight schedules at Rocket lab.So in an 
 You've got some inklings and you paired some areas.But if you walk into a room full of the engineers and ask them to add buffer in their schedule, then come back in 2040.
 
 That's just kind of the way it rolls.
-
-P
 
 Peter Beck
 
@@ -554,15 +486,11 @@ So there are some challenges with the vehicle of the scale.But -- and I always c
 
 That's why there's only a few of us in the world that are pulled it off.But the way we run our schedules are informed by experience and what we've learned in the past, but we always run them very aggressively and very ambitiously.
 
-J
-
 Jason Gursky
 
 Okay.And then maybe just a quick update on the demand for Neutron, and you talked earlier on the call about this 135 schedule from a launch cadence perspective.
 
 But maybe you can just kind of give us an update on over the last 3 months, which you've been hearing from potential customers there and whether 135 is just going to be scratching the surface?Or can give us an update on what your view of the market is there.
-
-P
 
 Peter Beck
 
@@ -572,8 +500,6 @@ And we continue to have really good, robust discussions with our customers.But I
 
 And we maintain the fact that what we want to do is bring a launch vehicle to market that's ready to go and into a market that is a great need rather than do a whole bunch of early adopter pricing and deals that don't have any teeth.
 
-P
-
 Peter Beck
 
 So it's fair to say that the interactions with customers over the last quarter have certainly strengthened and we maintain that we happy to entertain normal kind of deals where it's 10% down nonrefundable and normal kind of LSAs.But the reality is that people want to see a real rocket before they make such large commitments.
@@ -581,8 +507,6 @@ So it's fair to say that the interactions with customers over the last quarter h
 And the same goes for us.We want -- if we sell a whole bunch of launch because most customers aren't looking to buy one, they're looking to buy mini that we don't commit to a customer that ultimately doesn't turn up in the pay because with electron, you can see the challenges that also causes is a reality of the space business.
 
 So we're looking at them and they're looking at us.
-
-J
 
 Jason Gursky
 
@@ -594,15 +518,11 @@ And then, Adam, just one quick one for you.The comment that you made on backlog 
 
 Was that a reference to all of the backlog?Or was that just to the launch business?
 
-J
-
 Jason Gursky
 
 And then as maybe just a quick follow-on to this backlog question.What are your guys' expectations or goals here as far as book-to-bill is concerned for 2024 and kind of going forward in any given year?
 
 I know these awards can be pretty lumpy, and you've just built up some nice backlog here, but investors are certainly going to be focused on book-to-bill going forward.So just kind of update us on what the overall pipeline looks like and whether we can year in, year out of this new base that you've got here that book-to-bill to exceed 1.
-
-A
 
 Adam Spice
 
@@ -615,8 +535,6 @@ So it's not specific to launch, horsepase system.So it's a total business.
 And as far as the book-to-bill target, now you're right, of course, everybody -- we need to see a book-to-bill greater than 1, just given kind of what our growth aspirations are.I think that when you see that we've got backlog over $1 billion against a street consensus number that's obviously significantly lower than that.
 
 We've got quite a bit of ability to grow significantly based off of just the backlog that we have in place.
-
-A
 
 Adam Spice
 
@@ -636,13 +554,9 @@ And then I believe you'll see similar things as far as program size and then aga
 
 So I think that you're right, it's right for people to expect a book to bill greater than 1.I have no concerns similar to Pete said that's of the things that I sit up at night worrying about, that's also not one of them.
 
-O
-
 Operator
 
 The next question is from Matt Akers wells Fargo.
-
-M
 
 Matthew Akers
 
@@ -650,15 +564,11 @@ Thanks for -- I guess you talked a little bit about reusability and putting the 
 
 If that launch is successful, how fast you could start to see some of the cost benefits of doing that on a wider scale?
 
-A
-
 Adam Spice
 
 Yes.Thanks, Matt.
 
 So I mean, our focus this year has just been on production.And although the reusability program for electron has made good kind of strides and milestones, really just rolling the vehicles off the end of the production line has been our focus.
-
-A
 
 Adam Spice
 
@@ -666,33 +576,23 @@ Reasonable vehicles, they still have developments in the aspects of them that ma
 
 If this goes well, then it becomes much more of a standardized thing we can kind of roll this into being a much more usual part of what you see with electron launches.
 
-M
-
 Matthew Akers
 
 Okay.Great.
 
 And I guess just one more just thoughts on latest on Solero margins and how you're making progress on, I think, the 30% margin target there.
 
-A
-
 Adam Spice
 
 I can take it .
-
-P
 
 Peter Beck
 
 Yes.Yes.
 
-A
-
 Adam Spice
 
 So Matt, on the Solera margins, again, that's something that we continue to work through the challenges of some pre-acquisition -- well, really on pre-acquisition owners contract which still has a bit of a ways to go on that.So kind of what we look to is if you kind of exclude that thing, which unfortunately, we weren't able to effect, we had to kind of absorb that upon adoption of the company.
-
-A
 
 Adam Spice
 
@@ -710,45 +610,31 @@ When we acquired the business, we said within about 2 years of acquisitions when
 
 But again, I think I feel very good about kind of everything else that we've been booking and where the backlog stands right now.I think it's probably going to be -- we've got at least through the end of 2024 and probably a little bit beyond that to get that out of the mix.
 
-O
-
 Operator
 
 The next question comes from Michael Leshock, KeyBanc Capital Markets.
-
-M
 
 Michael Leshock
 
 I wanted to follow up on the backlog question, very strong right now.And just wondering how high you can take your backlog before maybe having to walk away from business or in the same vein, do you expect to get more pricing power on future contract wins as your backlog grows.
 
-P
-
 Peter Beck
 
 Yes.I mean first...
-
-A
 
 Adam Spice
 
 Okay, go ahead, sorry.
 
-P
-
 Peter Beck
 
 you go ahead.I'll...
-
-A
 
 Adam Spice
 
 I was going to say, I don't think that it doesn't feel like we're in a position where we necessarily have got a problem because we have kind of too much backlog role to our ability to produce to that backlog.I think we are seeing some natural pricing support come on the Electron side just because of the fact that a lot of the competition that we're really aspirational have not materialized.
 
 And so I think that's certainly helping on the pricing front because I think now there's more rationalization going on with -- you can have more rational discussions because, again, you don't have people who don't know how to run a rocket business going out and trying to sell rockets and putting kind of phantom pressure on pricing.So that has really started to evaporate.
-
-A
 
 Adam Spice
 
@@ -762,15 +648,11 @@ But what's helpful about that business, though, even though it may not have the 
 
 So that's kind of how I look at kind of the overall kind of margin shaping over the course of the next year or so.But I'll -- maybe Pete, you can jump in.
 
-P
-
 Peter Beck
 
 Yes.I think you said it well, Adam.
 
 The only thing I'd add there is that we are -- Rocket Labs known and our reputation is execution.So we're always kind of, as Adam pointed out, balancing our growth with our ability to execute because the last thing we want to do is fall behind on that.
-
-P
 
 Peter Beck
 
@@ -778,15 +660,11 @@ So when we look at programs and opportunities, we are selective and kind of as I
 
 So we're continually juggling those opportunities against how we want to grow the business.
 
-A
-
 Adam Spice
 
 Yes.And Michael, I would further add that a little bit saying like Pete and I were talking the other day about the fact that it feels like the demand signal is stronger now than any time I could really remember it in the business.
 
 You think that it maybe would start to moderate a bit because we've now got a $1 billion-plus backlog and the business is kind of hitting a new scale with our Q2 guide above $100 million per quarter.But it feels like to a great extent, it feels like we're drinking from a fire hydrant here, and there's a lot of opportunities that we're having to kind of sift through, but there's a very strong demand signal out there as far as the kind of programs that we're being asked to look at.
-
-M
 
 Michael Leshock
 
@@ -798,8 +676,6 @@ I think if you look at the customers' alternatives, they could be significantly 
 
 Any update on the haste side would be great.
 
-P
-
 Peter Beck
 
 Well, I mean, we see haste is a really fantastic opportunity for Electron, not only just on price but also on scale.And I guess the biggest opportunity for us here from a revenue perspective is the additional services from the launch vehicle as well.
@@ -808,21 +684,15 @@ So yes, as you pointed out, Michael, the alternatives are significantly higher.B
 
 So by coming into the market with a disruptively low price point, we're seeing just such a growth in kind of revitalization of that market that I think, ultimately, that's the best approach for the -- creating the most amount of value out of it is to stimulate it rather than [indiscernible].
 
-O
-
 Operator
 
 And the next question is from Suji Desilva of MKM.
-
-S
 
 Sujeeva De Silva
 
 Just a little bit maybe following with the last question.The big -- does missions, you talked about being end-to-end service.
 
 I'm just trying to understand if there's incremental products or services you're offering there that can be productized and offered more broadly if there's a financial uplift of those incremental elements you're characterizing as part of the end-to-end service offering?
-
-P
 
 Peter Beck
 
@@ -836,21 +706,15 @@ And we see this is the direction that not just the U.S.government, but the world
 
 On-demand, rapid call up and whoever has the best solution there is in a good position because often, responsive launches talked about, well, I mean, that's useless unless you've got something to stick on top of it.
 
-P
-
 Peter Beck
 
 So this is really the first demonstration of responsive space where it's all combined right down to the data handling and operations of the spacecraft.
-
-A
 
 Adam Spice
 
 Yes.And I think, Suji, I think along the hotline, I think one of the -- we talked about the financial benefits to the model, I think when you're able to couple the launch with the spacecraft manufacturer, I mean, you just -- you're increasing your odds of -- or your Pwin for these type of programs.
 
 When you can go with a turnkey solution because I think right now, what we're seeing is what the customer probably fears the most, it's not necessarily they feel like higher pricing or whatever they fear delay, right?Because I think there's just the supply chain within the space market, particularly new space has not yet gotten to the point where we could deliver scalable solutions on time.
-
-A
 
 Adam Spice
 
@@ -862,8 +726,6 @@ This is where we really wanted to take the business was being able to do these e
 
 So we think this is a huge kind of validation of that strategy being realized now.And of course, with an incredibly sophisticated customer as well.
 
-S
-
 Sujeeva De Silva
 
 Sure.Great.
@@ -874,8 +736,6 @@ Just trying to understand now, I know you've been targeting M&A to in-source.But
 
 How do you balance that going forward as you grow?
 
-A
-
 Adam Spice
 
 Yes.It's really 2 elements.
@@ -884,21 +744,15 @@ I mean, we don't vertically integrate because we think it's some kind of revisio
 
 One, we think we can create more value for the company or 2, we need to control it because suppliers just can't deliver at either the scale or the time lines that we require.
 
-A
-
 Adam Spice
 
 So as we kind of execute on prime, then as a prime then the subcontractors that deliver on schedule, on budget.This kind of to your point, there's no need to kind of religiously the capabilities in.
 
 It's just -- there seems to be a relatively rare thing in the space industry.So we end up more often than not having to own it, then rely on those parties.
 
-O
-
 Operator
 
 Next up here from Cai von Rumohr, TD Cowen.
-
-C
 
 Cai Von Rumohr
 
@@ -906,15 +760,11 @@ Yes.So it looks like -- it feels like your schedule has definitely slipped and I
 
 I mean you only did 10 last year, that would say 11 would get you home.Can you give us your best guess as to a realistic range of number of electron launches we could see this year?
 
-P
-
 Peter Beck
 
 Yes, I think if we launched 11, that would not be a record year in our minds, that would be a massive disappointment.And look, it's just -- we provide a number, but it's just super hard to kind of predict given as the customers move around.
 
 But I think it's fairly fair to say that at this point, we'll struggle to achieve '22.But we have line of sight for probably a couple of less than that.
-
-A
 
 Adam Spice
 
@@ -924,13 +774,9 @@ I would add something to that.I mean one of the benefits of diversification that
 
 So we believe that we've got strength in other parts of the business, particularly on the Space Systems side, where if we can't deliver those 22 launches, it doesn't really put at risk our ability to deliver a very solid year that's still on target with our internal plan for what we think we can deliver as far as revenue and growth.
 
-A
-
 Adam Spice
 
 So as much as -- again, we are very, very, very reluctant to weigh the white flag on anything here.But to the extent that things move outside of our control, we do believe that we've got strength in the business more broadly that would make up for any potential shortfall that we'd see from a launch or 2 that move out.
-
-C
 
 Cai Von Rumohr
 
@@ -944,15 +790,11 @@ They basically have been late with problems.Keiran is basically on Ultralife sup
 
 It sounds like your competitors are really not doing particularly well.
 
-C
-
 Cai Von Rumohr
 
 Any thoughts about, a, it sounds like things are actually a little bit more chaotic than they've been.Maybe that's an over read.
 
 Do you see that happening?And is there any opportunity to just take a radically different approach and basically raise your price is 25% because the problem I can see of getting your backlog is you don't have the opportunity to kind of do a more profitable launch for someone who might be willing to pay for it.
-
-P
 
 Peter Beck
 
@@ -960,29 +802,21 @@ Well, Cai, I would say our business model and our strategy is working exactly to
 
 And then from a launch perspective, I think as Adam pointed out, there has been a kind of a weaning of who's real and who is not.And the there be opportunities for us there, I'm sure.
 
-C
-
 Cai Von Rumohr
 
 Great.And so I mean you talk about demand being better, but it doesn't really sound like pricing is a whole lot better.
 
 Is that a misread on my part.
 
-A
-
 Adam Spice
 
 Well, I think it is delicate.Go ahead.
-
-P
 
 Peter Beck
 
 I was just going to say, I think it's a delicate balance, Cai because to the point about the haste missions before is you want to stimulate the market.And if you just go and just all of a sudden, what a big price increase there, then you can potentially damage those markets that you're trying to grow because some of them are new and some of them are fragile.
 
 So I think you have to be very balanced and careful about how you do those things.
-
-A
 
 Adam Spice
 
@@ -992,8 +826,6 @@ So if you recall back a few years ago, we were talking about launch prices in th
 
 And I think you're going to continue to see that type of trajectory on pricing as competition, again, as kind of people fail to execute, and we bring an increasingly scarce product to market.And the mix of that electron business, as was I think was being asked earlier with regards to the impact of things like haste on the overall mix.
 
-A
-
 Adam Spice
 
 But I also think that when you look at our photon pricing, if you look at the contracts that we're competing on, the contracts that we're winning, we're not winning on the lowest price.It's quite the opposite.
@@ -1002,33 +834,23 @@ Like we can oftentimes price at a premium to our competition, again, because of 
 
 So I think that's really what is kind of playing into the strategy side.I think we're absolutely seeing pricing benefits that are accruing to us as a result of the strategy, not only for diversification, but actually the fact that we're executing that we're vertically integrated and that we represent strangely up a lower risk option for customers despite the fact that we're a very new generation new space company versus some of the legacy players that you mentioned earlier in your commentary.
 
-O
-
 Operator
 
 Next up is Xin Yu Deutsche Bank.
-
-X
 
 Xin Yu
 
 Just a couple of quick ones.First, on Neutron, did the Baltimore bridge incident impact the infrastructure time line at all?
 
-P
-
 Peter Beck
 
 Not that we can see at this point in time, no.
-
-X
 
 Xin Yu
 
 Okay.Then on the financials, I think the R&D was a bit low in the first quarter.
 
 Is that just a timing thing?Should we expect that to really step up in Q2.
-
-A
 
 Adam Spice
 
@@ -1038,15 +860,11 @@ It's a timing issue.I think it seems like all things in our business, there's el
 
 So the nature of particularly on Neutron how things come and kind of fits and starts, we have large, for example, prototyping expenses that they may end up slipping out a little bit relative to maybe where you thought they're going to be.But there will be volatility, and I think you would absolutely expect that over the next few quarters, we'll continue to see a march up in R&D, primarily driven by -- if not entirely driven by Neutron kind of first flight.
 
-X
-
 Xin Yu
 
 Understood.And just last one on the -- I guess, the FDA contribution, do we have any sense what that could be this year, next year?
 
 I know you said you would get some small amount, but just wondering if there's anything a bit more discrete, you can maybe provide on that curve in the launch curve?
-
-A
 
 Adam Spice
 
@@ -1055,8 +873,6 @@ Yes.So we're continuing to do our work.
 I mean the program is certainly progressing and with that progression.And we talked about identifying subcontractors to work with us on that program.
 
 As we kind of brought more people for one intent, we've got more color as far as kind of their timing and their ability to deliver against their milestones.So we definitely are starting to bake some of that into our operating plan for the remainder of this year.
-
-A
 
 Adam Spice
 
@@ -1074,13 +890,9 @@ So I don't think we're quite ready yet to give kind of full year contribution fr
 
 So we hope to be able to give you more color in a little bit.But right now, we're just a little too early to provide a lot of color on FDA contribution.
 
-O
-
 Operator
 
 And at this time, there are no further questions.I'll hand things back to our speakers for any additional or closing remarks.
-
-P
 
 Peter Beck
 
@@ -1089,8 +901,6 @@ Okay.I think that wraps up today's presentation.
 Thank you, everyone, for joining us on the call.Rocket Lab will be participating in these up-and-coming conferences and look forward to the opportunity to share more exciting news and updates with you then.
 
 So thanks again.
-
-O
 
 Operator
 

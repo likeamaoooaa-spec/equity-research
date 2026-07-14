@@ -6,106 +6,7 @@ source: https://roic.ai/quote/PLTR/transcripts/2025-year/1-quarter
 downloaded: 2026-07-14
 ---
 
-*   Solutions
-*   [API Docs](https://roic.ai/api)
-*   [MCP](https://roic.ai/api/mcp)
-*   [Pricing](https://roic.ai/pricing)
-*   [Discord](https://discord.gg/paJKM97rU7)
-*   Resources
-
-
-Company Search
-
-⌘K
-
-Toggle theme
-
-Toggle theme Login Sign up
-
-2.   •
-
-[Technology](https://roic.ai/quote/PLTR/transcripts/2025-year/1-quarter#)
-3.   •
-
-[Software - Infrastructure](https://roic.ai/quote/PLTR/transcripts/2025-year/1-quarter#)
-
-![Image 1: Palantir Technologies Inc.](https://www.roic.ai/image-stock/pltr.webp)
-
-# Palantir Technologies Inc.
-
-PLTR
-
-Alerts
-
-PLTR Palantir Technologies Inc.![Image 2: US flag](https://react-circle-flags.pages.dev/us.svg)NASDAQ Global Select
-
-Alerts
-
-130.04
-
-USD
-
-+3.25
-
-- -
-
-298.58B Market Cap
-
-[Summary](https://roic.ai/quote/PLTR)[Financials](https://roic.ai/quote/PLTR/financials)[Ratios](https://roic.ai/quote/PLTR/ratios)[Transcripts](https://roic.ai/quote/PLTR/transcripts)[Charts](https://roic.ai/quote/PLTR/charts)[Classic View](https://roic.ai/quote/PLTR/classic)[Statistics](https://roic.ai/quote/PLTR/statistics)[Stock Splits](https://roic.ai/quote/PLTR/stock-splits)
-
-## Earnings Call Transcripts
-
-### 2026
-
-*   [1 Quarter May 4](https://roic.ai/quote/PLTR/transcripts/2026-year/1-quarter)  
-
-### 2025
-
-*   [4 Quarter Feb 2](https://roic.ai/quote/PLTR/transcripts/2025-year/4-quarter)  
-*   [3 Quarter Nov 4](https://roic.ai/quote/PLTR/transcripts/2025-year/3-quarter)  
-*   [2 Quarter Aug 4](https://roic.ai/quote/PLTR/transcripts/2025-year/2-quarter)  
-*   [1 Quarter May 5](https://roic.ai/quote/PLTR/transcripts/2025-year/1-quarter)  
-
-### 2024
-
-*   [4 Quarter Feb 3](https://roic.ai/quote/PLTR/transcripts/2024-year/4-quarter)  
-*   [3 Quarter Nov 4](https://roic.ai/quote/PLTR/transcripts/2024-year/3-quarter)  
-*   [2 Quarter Aug 5](https://roic.ai/quote/PLTR/transcripts/2024-year/2-quarter)  
-*   [1 Quarter May 6](https://roic.ai/quote/PLTR/transcripts/2024-year/1-quarter)  
-
-### 2023
-
-*   [4 Quarter Feb 5](https://roic.ai/quote/PLTR/transcripts/2023-year/4-quarter)  
-*   [3 Quarter Nov 2](https://roic.ai/quote/PLTR/transcripts/2023-year/3-quarter)  
-*   [2 Quarter Aug 7](https://roic.ai/quote/PLTR/transcripts/2023-year/2-quarter)  
-*   [1 Quarter May 8](https://roic.ai/quote/PLTR/transcripts/2023-year/1-quarter)  
-
-### 2022
-
-*   [4 Quarter Feb 13](https://roic.ai/quote/PLTR/transcripts/2022-year/4-quarter)  
-*   [3 Quarter Nov 7](https://roic.ai/quote/PLTR/transcripts/2022-year/3-quarter)  
-*   [2 Quarter Aug 8](https://roic.ai/quote/PLTR/transcripts/2022-year/2-quarter)  
-*   [1 Quarter May 9](https://roic.ai/quote/PLTR/transcripts/2022-year/1-quarter)  
-
-### 2021
-
-*   [4 Quarter Feb 17](https://roic.ai/quote/PLTR/transcripts/2021-year/4-quarter)  
-*   [3 Quarter Nov 9](https://roic.ai/quote/PLTR/transcripts/2021-year/3-quarter)  
-*   [2 Quarter Aug 12](https://roic.ai/quote/PLTR/transcripts/2021-year/2-quarter)  
-*   [1 Quarter May 11](https://roic.ai/quote/PLTR/transcripts/2021-year/1-quarter)  
-
-### 2020
-
-*   [4 Quarter Feb 16](https://roic.ai/quote/PLTR/transcripts/2020-year/4-quarter)  
-*   [3 Quarter Nov 16](https://roic.ai/quote/PLTR/transcripts/2020-year/3-quarter)  
-
-Open Transcript List
-
 # Q1 FY2025 · Earnings Call Transcript May 5, 2025
-
-[API](https://roic.ai/api/docs/earnings-calls/transcript "View API documentation")[ChatGPT](https://roic.ai/connectors/chatgpt "Use this data in ChatGPT")Google Sheets
-
-A
 
 Ana Soro
 
@@ -124,8 +25,6 @@ Our press release, investor presentation, and other earnings materials are avail
 These rates reflect year-over-year comparisons unless otherwise stated.Joining me on today's call are Alex Karp, Chief Executive Officer; Shyam Sankar, Chief Technology Officer; Dave Glazer, Chief Financial Officer; and Ryan Taylor, Chief Revenue Officer and Chief Legal Officer.
 
 I'll now turn it over to Ryan to start the call.
-
-R
 
 Ryan Taylor
 
@@ -169,8 +68,6 @@ We are built to help companies embrace volatility.We expect more surprises, not 
 
 And with the uncertainty ahead, we are more confident than ever in Palantir's ability to deliver tangible impact for our customers, to transform organizations with real workflows in production, and to help institutions adapt to survive.I'll now turn it over to Shyam.
 
-S
-
 Shyam Sankar
 
 Thanks, Ryan.We've been consistently saying that even while the LLMs are improving, the models across both closed and open source, they're becoming more similar and that performance will converge, all while cost per token for inference continues to drop substantially.
@@ -212,8 +109,6 @@ AI agents are analyzing intelligence, finding targets, automating staff function
 Green Suitors developed the Hurricane Helene rescue common operating picture in five days.Next time, they will have AI agents do it for them in five minutes.
 
 With that, I'll turn it over to Dave to take us through the numbers.
-
-D
 
 Dave Glazer
 
@@ -285,8 +180,6 @@ We are raising our US commercial revenue guidance to an excess of $1.178 billion
 
 We are raising our adjusted free cash flow guidance to between $1.6 billion and $1.8 billion, and we continue to expect GAAP operating income and net income in each quarter of this year.With that, I'll turn it over to Alex for a few remarks, and then Ana will kick off the Q&A.
 
-A
-
 Alex Karp
 
 Welcome to our earnings adventure.Palantir is on fire.
@@ -329,15 +222,11 @@ And that's basically our plan for the rest of the year and into next year.And we
 
 And with that, we can kick it off to questions.
 
-A
-
 A - Ana Soro
 
 Thanks, Alex.We'll now turn to a few questions from our shareholders before opening up the call.
 
 Our first question is from Gabriel who asks, "How does Palantir plan to sustain its competitive advantage in AI, particularly in light of growing competition?"
-
-S
 
 Shyam Sankar
 
@@ -347,15 +236,11 @@ It's really an advantage on the AI demand side, and that has positioned AIP to b
 
 You can see this in the sharp opinionation that we've earned in the field with our customers on how to get to value in days or weeks.And most critically, you can see it in the insight that we have that to practically transform the enterprise, you actually need mixed human AI teams, and that is something that AIP is uniquely positioned for.
 
-A
-
 Ana Soro
 
 Thank you, Shyam.We also received a few questions on this topic.
 
 How will the current US administration's focus on reducing federal spend as well as the February announcement of US Department of Defense budget cuts impact current contracts as well as future contract acquisition?
-
-S
 
 Shyam Sankar
 
@@ -366,8 +251,6 @@ The government has started to resemble a finely marbled wagyu.The fake projects 
 And so, we welcome DOGE.I mean, to me, these guys are heroes.
 
 They are world-class technologists that could be choosing to do anything, and instead, they are choosing to do this.And we believe deeply in the actual value that our software is creating, both on an absolute basis and on a relative basis to the traditional labor based cost plus model that has failed to deliver for the American people.
-
-A
 
 Alex Karp
 
@@ -389,23 +272,17 @@ We need people to have to transform.This is why they put up with us.
 
 And once they see those results, they stick with us.
 
-A
-
 Ana Soro
 
 Thank you, both.Our next question is from Dan with Wedbush.
 
 Dan, please turn on your camera, and then you'll receive a prompt to unmute your line.
 
-D
-
 Dan Ives
 
 Thanks.And, another amazing quarter.
 
 I mean, it's just -- so my question is, given that what we're seeing in the government, isn't that another opportunity where you could actually gain more share of budgets as you go to more meritocracy?Like, Palantir should actually gain more dollars within the budgets of DoD and a lot of other agencies.
-
-A
 
 Alex Karp
 
@@ -431,15 +308,11 @@ We are not in the shelfware business, which is another reason why pressure in th
 
 We don't do shelfware.We don't think our personality can afford shelfware.
 
-A
-
 Ana Soro
 
 Thank you, Alex.Our next question is from Mariana with Bank of America.
 
 Mariana, please turn on your camera, and then you'll receive a prompt to unmute your line.
-
-M
 
 Mariana Perez Mora
 
@@ -452,8 +325,6 @@ Like, are you interested on applying that as these European countries build up t
 But TITAN is a great example how -- on how, like, software actually played a role that was more intuitively hard work.Where else you actually have opportunities for software to add value there?
 
 Like, is it Golden Dome, is space communications?Like, have you think about that?
-
-S
 
 Shyam Sankar
 
@@ -473,8 +344,6 @@ In Europe, there are some green shoots.Like, some very well-known manufacturing 
 
 So I just don't want to commit to I think -- a lot of it is where's the customer's head at, but we could obviously do a lot to help you.
 
-A
-
 Alex Karp
 
 Europe doesn't get AI yet.At some point in the future, it will.
@@ -491,8 +360,6 @@ And somewhere in that range, we guided to rule of 80, and that's going to be pri
 
 And those are early days, but the demand -- the signal there is very strong.
 
-S
-
 Shyam Sankar
 
 And then, on the TITAN point, I think that's an excellent point and is going to be a big part of the future where you're really thinking about how do you build your hardware around the software.There's some classified projects that we have as well where the first step to building the hardware is not to build the hardware.
@@ -505,8 +372,6 @@ You can't do anything.But, actually, with software, you have to build the kitche
 
 If you don't, you're going to get it all wrong.And so, there's -- I've seen a lot more of the next-gen programs are starting to think about how do we build the lethal software first, and we'll figure out how to wrap hardware...
 
-A
-
 Alex Karp
 
 One of the most interesting things about the current environment we're in is something Shyam was alluding to, which is and, again, it's a European versus American.People assume if you're world class at hardware, you'll be world class at software and they're interchangeable.
@@ -517,15 +382,11 @@ And in any program that's trying to outpace and beat our adversaries, it should 
 
 Conversely, this is one of the challenges that our -- some of our allies and our adversaries have.The role of taste in in getting these things to work, tribal knowledge and ability to do it is really, really underestimated.
 
-A
-
 Ana Soro
 
 Thank you.Alex, as always, we have a lot of individual investors on the line.
 
 Is there anything you'd like to say before we wrap up this call?
-
-A
 
 Alex Karp
 
@@ -537,38 +398,6 @@ Our belief that meritocracy will lead us to a better place, that competence is b
 
 So, thank you.
 
-A
-
 Ana Soro
 
 Thank you.That concludes Q&A for today's call.
-
-## Footer
-
-Stock research and financial data for fundamental investors. Decades of statements, transcripts and metrics, one API.
-
-Found an error or have an idea?[support@roic.ai](mailto:support@roic.ai)
-
-### Product
-
-*   [Financial Data API](https://roic.ai/financial-data-api)
-*   [API reference](https://roic.ai/api/docs)
-*   [Pricing](https://roic.ai/pricing)
-*   [Knowledge Base](https://roic.ai/knowledge-base)
-*   [Status](https://status.roic.ai/)
-
-### Developers
-
-*   [Getting started](https://roic.ai/api/docs/getting-started)
-*   [Authentication](https://roic.ai/api/docs/authentication)
-*   [Changelog](https://roic.ai/api/docs/changelog)
-
-### Company
-
-*   [About](https://roic.ai/about)
-*   [Blog](https://roic.ai/blog)
-*   [FAQ](https://roic.ai/faq)
-
-© 2026 Roic AI, Inc. Financial data and stock API.
-
-[Privacy Policy](https://roic.ai/policy)[Terms](https://roic.ai/tos)

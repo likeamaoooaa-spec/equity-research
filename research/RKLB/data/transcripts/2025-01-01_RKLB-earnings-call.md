@@ -6,100 +6,7 @@ source: https://roic.ai/quote/RKLB/transcripts/2025-year/1-quarter
 downloaded: 2026-07-14
 ---
 
-*   Solutions
-*   [API Docs](https://roic.ai/api)
-*   [MCP](https://roic.ai/api/mcp)
-*   [Pricing](https://roic.ai/pricing)
-*   [Discord](https://discord.gg/paJKM97rU7)
-*   Resources
-
-
-Company Search
-
-⌘K
-
-Toggle theme
-
-Toggle theme Login Sign up
-
-2.   •
-
-[Industrials](https://roic.ai/quote/RKLB/transcripts/2025-year/1-quarter#)
-3.   •
-
-[Aerospace & Defense](https://roic.ai/quote/RKLB/transcripts/2025-year/1-quarter#)
-
-![Image 1: Rocket Lab USA, Inc.](https://www.roic.ai/image-stock/rklb.webp)
-
-# Rocket Lab USA, Inc.
-
-RKLB
-
-Alerts
-
-RKLB Rocket Lab USA, Inc.![Image 2: US flag](https://react-circle-flags.pages.dev/us.svg)NASDAQ Capital Market
-
-Alerts
-
-76.73
-
-USD
-
--4.31
-
-- -
-
-44.42B Market Cap
-
-[Summary](https://roic.ai/quote/RKLB)[Financials](https://roic.ai/quote/RKLB/financials)[Ratios](https://roic.ai/quote/RKLB/ratios)[Transcripts](https://roic.ai/quote/RKLB/transcripts)[Charts](https://roic.ai/quote/RKLB/charts)[Classic View](https://roic.ai/quote/RKLB/classic)[Statistics](https://roic.ai/quote/RKLB/statistics)[Stock Splits](https://roic.ai/quote/RKLB/stock-splits)
-
-## Earnings Call Transcripts
-
-### 2026
-
-*   [1 Quarter May 8](https://roic.ai/quote/RKLB/transcripts/2026-year/1-quarter)  
-
-### 2025
-
-*   [4 Quarter Feb 27](https://roic.ai/quote/RKLB/transcripts/2025-year/4-quarter)  
-*   [3 Quarter Nov 10](https://roic.ai/quote/RKLB/transcripts/2025-year/3-quarter)  
-*   [2 Quarter Aug 7](https://roic.ai/quote/RKLB/transcripts/2025-year/2-quarter)  
-*   [1 Quarter May 8](https://roic.ai/quote/RKLB/transcripts/2025-year/1-quarter)  
-
-### 2024
-
-*   [4 Quarter Feb 27](https://roic.ai/quote/RKLB/transcripts/2024-year/4-quarter)  
-*   [3 Quarter Nov 12](https://roic.ai/quote/RKLB/transcripts/2024-year/3-quarter)  
-*   [2 Quarter Aug 8](https://roic.ai/quote/RKLB/transcripts/2024-year/2-quarter)  
-*   [1 Quarter May 6](https://roic.ai/quote/RKLB/transcripts/2024-year/1-quarter)  
-
-### 2023
-
-*   [4 Quarter Feb 27](https://roic.ai/quote/RKLB/transcripts/2023-year/4-quarter)  
-*   [3 Quarter Nov 9](https://roic.ai/quote/RKLB/transcripts/2023-year/3-quarter)  
-*   [2 Quarter Aug 8](https://roic.ai/quote/RKLB/transcripts/2023-year/2-quarter)  
-*   [1 Quarter May 10](https://roic.ai/quote/RKLB/transcripts/2023-year/1-quarter)  
-
-### 2022
-
-*   [4 Quarter Feb 28](https://roic.ai/quote/RKLB/transcripts/2022-year/4-quarter)  
-*   [3 Quarter Nov 10](https://roic.ai/quote/RKLB/transcripts/2022-year/3-quarter)  
-*   [2 Quarter Aug 11](https://roic.ai/quote/RKLB/transcripts/2022-year/2-quarter)  
-*   [1 Quarter May 16](https://roic.ai/quote/RKLB/transcripts/2022-year/1-quarter)  
-
-### 2021
-
-*   [4 Quarter Mar 1](https://roic.ai/quote/RKLB/transcripts/2021-year/4-quarter)  
-*   [3 Quarter Nov 15](https://roic.ai/quote/RKLB/transcripts/2021-year/3-quarter)  
-*   [2 Quarter Sep 8](https://roic.ai/quote/RKLB/transcripts/2021-year/2-quarter)  
-
-Open Transcript List
-
 # Q1 FY2025 · Earnings Call Transcript May 8, 2025
-
-[API](https://roic.ai/api/docs/earnings-calls/transcript "View API documentation")[ChatGPT](https://roic.ai/connectors/chatgpt "Use this data in ChatGPT")Google Sheets
-
-O
 
 Operator
 
@@ -110,8 +17,6 @@ At this time, I would like to welcome everyone to Rocket Lab’s First Quarter 2
 After the speakers’ remarks, there will be a question-and-answer session.[Operator Instructions] At this time, I would like to turn the call over to Murielle Baker, Senior Communications Manager.
 
 Murielle, you may begin.
-
-M
 
 Murielle Baker
 
@@ -128,8 +33,6 @@ This call is also being webcast with a supporting presentation and a replay and 
 They will be discussing key business developments and highlights including updates on our launch and space systems programs.We will discuss financial highlights and outlook before we finish by taking questions.
 
 So, with that, let me turn the call over to Sir Peter.
-
-P
 
 Peter Beck
 
@@ -253,13 +156,9 @@ Meanwhile, the team is working hard at wrapping up the integration and testing f
 
 [Technical Difficulty]
 
-O
-
 Operator
 
 [Operator Instructions] Are we ready to take questions now?
-
-A
 
 Adam Spice
 
@@ -267,39 +166,27 @@ No, this is Adam.I think we've had a comms issue with Pete.
 
 Let's give him a minute to...
 
-O
-
 Operator
 
 No problem.While we're getting Pete back on the line again [Operator Instructions]
 
-A
-
 Adam Spice
 
 Okay, operator, until we can get Pete back on the line, I'll just pick up where he left off.
-
-O
 
 Operator
 
 Okay.That will be great.
 
-A
-
 Adam Spice
 
 Okay, operator, until we can get Pete back on the line, I'll just pick up where he left off.
-
-O
 
 Operator
 
 Okay.That'll be great.
 
 Thank you so much.
-
-A
 
 Adam Spice
 
@@ -379,15 +266,11 @@ We expect second quarter adjusted EBITDA loss to range between $28 million and $
 
 And with that we'll hand the call over to the operator for questions.
 
-O
-
 Operator
 
 Great.Thank you so much again.
 
 [Operator Instructions] And our first question comes from the line of Edison Yu with Deutsche Bank.Edison, your line is open.
-
-E
 
 Edison Yu
 
@@ -397,8 +280,6 @@ First one, want to ask about Mynaric.It's a public company, so we've obviously s
 
 After you are doing your analysis or due diligence on it, what do you think is the of the biggest issue they have had and the plan to kind of address that so you can scale it up?
 
-P
-
 Peter Beck
 
 I can take that one if you want, Adam.And at this point I think it's appropriate to make the statement that we can go to the moon but can't secure a telephone line.
@@ -407,19 +288,13 @@ So my apologies for that.But the biggest issue there, Edison, is just production
 
 And that's an area that obviously we're very, very strong in.So as we look at them as a company, they've got a great product, there's been a tremendous amount of capital invested in the business to scale, but there's just a few fundamentals there that we really feel we can jump in and fix.
 
-E
-
 Edison Yu
 
 And would you expect that ultimately to be quite a high margin product or at least similar to some of the merchant business that you do now?
 
-P
-
 Peter Beck
 
 Yes, you go, Adam, you better dance there.
-
-A
 
 Adam Spice
 
@@ -431,15 +306,11 @@ So I think, probably starts kind of, I would say, kind of, I would say more towa
 
 It's going to be pretty consistent with our overall kind of blended margin for our components business.
 
-E
-
 Edison Yu
 
 Got you.And then kind of in relation to that, you mentioned in the slide deck, in the remarks that you still have several, I think half a dozen, potentially quite, quite large opportunities in the pipeline.
 
 I'm wondering if you could maybe comment, are you considering looking at actual operator assets so not just kind of tuck in for components, but other operators out there, given there are some, I would say fairly distressed assets.And would you kind of consider working with them or acquiring them in some, in some way?
-
-P
 
 Peter Beck
 
@@ -449,15 +320,11 @@ Then I would say that, to your point, the opportunities right now to do interest
 
 Hence the reason why we've made sure we're in a strong position to act on some of those opportunities.
 
-E
-
 Edison Yu
 
 Understood.And just quick housekeeping.
 
 The space system margin was quite good in the first quarter.Is that a good run rate for going forward?
-
-P
 
 Peter Beck
 
@@ -467,15 +334,11 @@ Sorry.As on, it was quite.
 
 What?Sorry…
 
-E
-
 Edison Yu
 
 It was quite high.It was quite good.
 
 It was very strong performance in space systems margin in the quarter gross margin.Is that a good rate?
-
-P
 
 Peter Beck
 
@@ -487,27 +350,19 @@ But they almost certainly be more pronounced on the launch side because we just 
 
 So good news on the margin front for sure, across both space systems and launch.
 
-E
-
 Edison Yu
 
 Fantastic.Thank you.
 
-O
-
 Operator
 
 Your next question comes from the line of Gautam Khanna with TD Securities.Gautam, your line is now open.
-
-G
 
 Gautam Khanna
 
 Yes, thanks.Good afternoon, guys.
 
 I was wondering, could you just elaborate on the launch margins in the quarter, what may have drove that variability down a little bit, and if you could give us an update on your free cash expectations, the cadence through the year, that'd be very helpful.Thank you.
-
-P
 
 Peter Beck
 
@@ -533,8 +388,6 @@ So some of those things you have to buy components 12 months or greater in advan
 
 So I'd say that you should expect these elevated levels of kind of negative free cash flow that we posted in Q1 to kind of continue in Q2, and certainly in the second half of the year until we get that first launch off and then we expect things to moderate.And we can provide more color on that as we get closer to that milestone.
 
-G
-
 Gautam Khanna
 
 I appreciate it.And one last one on tariffs.
@@ -542,8 +395,6 @@ I appreciate it.And one last one on tariffs.
 Can you size your exposure where you have the exposure, if at all?How it impacts the business?
 
 Thank you.
-
-A
 
 Adam Spice
 
@@ -563,33 +414,23 @@ So I think overall, we're pretty fortunate in the fact that we've got our manufa
 
 We don't -- I think we don't have a crystal ball as to where things are going to be in the future, but we think we're positioned better than most given the current environment.
 
-G
-
 Gautam Khanna
 
 I appreciate it guys.Thanks and good luck.
-
-A
 
 Adam Spice
 
 Thank you.
 
-O
-
 Operator
 
 Your next question comes from the line of Ryan Koontz with Needham.Ryan, your line is open.
-
-R
 
 Ryan Koontz
 
 Hey thanks.I want to ask a little bit about the new products and kind of the pipeline of opportunities for that?
 
 Maybe starting with your new solar array products, sounds like they're modular, and maybe you can expand on kind of target applications for those products?
-
-P
 
 Peter Beck
 
@@ -607,8 +448,6 @@ I mean [indiscernible] can earn to go off on what we see customers asking for.Bu
 
 Typically, SolAero or historically, SolAero just made cells and some panels, but since the integration with Rocket Lab, now we are able to add all of the other elements, deployment mechanism, hinges and whatnot to produce these entire array.
 
-R
-
 Ryan Koontz
 
 Got it.That's really helpful, Peter.
@@ -617,27 +456,19 @@ Then you mentioned opportunities in Europe.Can you maybe summarize those at a hi
 
 I assume maybe there's some sovereign government programs and as well -- commercial as well.Maybe you can expand on Europe?
 
-P
-
 Peter Beck
 
 Yes.So Europe, we have been thinking about how we get into Europe for quite some time because Europe is a very protected market, especially with the government programs through ESA.
 
 And having a business that's able to work in those programs and having a footprint on the ground really does not just open us up to be able to provide solutions of -- from -- of the satellite terminals, but communication terminals, but basically, a lot of our products.So it's actually pretty exciting TAM expansion opportunity for us because like I said, it's typically very, very difficult to get involved with these large European programs, unless you have a footprint there.
 
-R
-
 Ryan Koontz
 
 And Peter, is that mostly from the Space Systems perspective?Or are you thinking Launch as well?
 
-P
-
 Peter Beck
 
 Mostly Space Systems, I mean, yes, the prominent opportunity for us here.
-
-R
 
 Ryan Koontz
 
@@ -645,13 +476,9 @@ Perfect.Thanks so much.
 
 Appreciate it.
 
-O
-
 Operator
 
 And your next question comes from the line of Andre Madrid with BTIG.Andre, your line is now open.
-
-A
 
 Andre Madrid
 
@@ -660,8 +487,6 @@ Peter, Adam, thanks for the question.Real quick touch on SolAero.
 I understand, maybe an update on the backlog there.How are things progressing in terms of working through some of that lower-margin work that you guys still had?
 
 I know it was targeted to be done already and you guys are continuing to work towards that.So maybe just a status update.
-
-A
 
 Adam Spice
 
@@ -677,8 +502,6 @@ But I think, overall, we've gotten into where we want it to be.And I think more 
 
 So yes, I'm very happy kind of where we've been able to kind of drive the gross margin progression on that business.And I think we've -- hopefully, we have more upside to come on that, but I think we can kind of check the box that we've gotten into that neighborhood that we had originally promised we would.
 
-A
-
 Andre Madrid
 
 Yes.No, I'd agree.
@@ -686,8 +509,6 @@ Yes.No, I'd agree.
 Glad to hear that you guys have achieved that target.On Mynaric, maybe just touching on the supply chain.
 
 I think when you guys announced the acquisition, you mentioned that sourcing some key components due to shortages was somewhat difficult, some semi impact there, and that was kind of barring your ability to get -- or their ability to get product out of the door.Is that still an issue or measures looking to be taken to, I guess, improve things on that front?
-
-P
 
 Peter Beck
 
@@ -697,8 +518,6 @@ If you're a supplier into that that's kind of a challenging place to supply into
 
 So at least some of those supply chain issues get resolved.
 
-A
-
 Andre Madrid
 
 Got it.Got it.
@@ -706,8 +525,6 @@ Got it.Got it.
 And then if I could just squeeze in one more.I mean, you guys talked or link about Neutron reusability and the value of that, which was super helpful.
 
 But can we get another update maybe on Electron reusability, some milestones to look forward to?
-
-P
 
 Peter Beck
 
@@ -719,15 +536,11 @@ So it was just a priority decision that we've made within the company.It's obvio
 
 So yes, it's just a priority call within the company that we'll put that on pause until we get Neutron to the pad and flying.And as Adam said before, it's all hands to the pump.
 
-A
-
 Andre Madrid
 
 Yes, yes.No doubt.
 
 So those engineers were just moved over from one program to the other, no loss there, right?On the head count base?
-
-P
 
 Peter Beck
 
@@ -735,21 +548,15 @@ No, correct.Yes.
 
 Yes, no, no, no.They've...
 
-A
-
 Andre Madrid
 
 Nice one.I’ll leave it there.
 
 Peter, Adam, thanks so much.
 
-O
-
 Operator
 
 Your next question comes from the line of Matt Akers with Wells Fargo.Matt, you line is now open.
-
-M
 
 Matthew Akers
 
@@ -760,8 +567,6 @@ I wanted to ask a couple on the federal budget.I guess one on Golden Dome, just 
 Is there maybe an opportunity on kind of the space layer there?And then I guess the NASA budget was proposed to be cut pretty substantially.
 
 I don't think you guys have a ton of kind of direct exposure there, but just curious if that's a risk if that does end up going through to Congress.
-
-P
 
 Peter Beck
 
@@ -775,19 +580,13 @@ We don't have a tremendous amount of NASA work.We always -- I personally have a 
 
 But yes, so NASA doesn't form a tremendous amount of our pipeline or backlog.
 
-M
-
 Matthew Akers
 
 Yes, got it.Thank you.
 
-O
-
 Operator
 
 Our next question comes from the line of Suji Desilva with ROTH Capital.Suji, your line is now open.
-
-S
 
 Suji Desilva
 
@@ -796,8 +595,6 @@ Hi, Peter, hi Adam.Maybe on the financials, maybe in picking question, but the p
 I would have thought if you have more multiyear contracts that would trend down.Am I thinking about that correctly?
 
 Or maybe you could clarify something?
-
-A
 
 Adam Spice
 
@@ -825,8 +622,6 @@ And when you look at the launch business, I mentioned earlier, getting through s
 
 I mean $1 billion nothing to be ashamed of, but we think that, that has the potential to grow significantly now as we have kind of gotten to the next phase of these big satellite programs that we think we're in good shape on and also being on ramp for Neutron exposure.So yes, I think it requires a little bit of patience, but I think people when they look back over history have seen we've been successful in converting opportunities into backlog, and we think we're even more confident now than we've ever been on being to do that.
 
-S
-
 Suji Desilva
 
 Okay.That's very helpful.
@@ -836,8 +631,6 @@ And then this question may be a little further out.Thinking about sort of Neutro
 I wouldn't have thought about this for a few years, but it's this AFRL announcement you had today about being a global logistics provider for them.I'm curious, is it more than one ROI barge globally?
 
 Or what are the elements of kind of reentry and landing for Neutron that require investments potentially?
-
-P
 
 Peter Beck
 
@@ -849,19 +642,13 @@ government.So I think we're very much in the experimental phase.
 
 And it will be interesting to see if that turns into a full requirement for an operational capability, but it's good to be on that program and working on early.
 
-S
-
 Suji Desilva
 
 Okay, fair enough.Appreciate it, thanks.
 
-O
-
 Operator
 
 Your next question comes from the line of Jason Gursky with Citi.Jason, your line is now open.
-
-J
 
 Jason Gursky
 
@@ -870,8 +657,6 @@ Great, thanks.Peter, you mentioned in your comments about Mynaric that they got 
 What I thought was more interesting about your comments were was how you might utilize that technology in future constellations that you plan to build and operate on your own.So I'm just kind of curious, the strategic rationale behind purchasing Mynaric.
 
 Was it more for that purpose and enabling your future constellation?Or was it more to be a merchant supplier?
-
-P
 
 Peter Beck
 
@@ -882,8 +667,6 @@ So the space industry, as you well know, is full of subscale manufacturing shops
 So we're really trying to solve two problems here.One is provide -- be that merchant supplier at scale for the industry.
 
 And then as you point out, when it comes time for us to build our own stuff, then we already have that capability at scale and we're just methodically going through every element of the satellite that we're going to need now and in the future and when opportunities present themselves, we take advantage of that.
-
-J
 
 Jason Gursky
 
@@ -896,8 +679,6 @@ Maybe you could step back and provide some context for us all.And what you think
 What's unique about it relative to what the customer there might be able to go and buy from the commercial market today?So you've got commercial communications providers out there today.
 
 Maybe just talk -- provide some context on why they need to continue on and go do SDA tranche -- additional tranches on the transport layer versus just going and buying commercial.
-
-P
 
 Peter Beck
 
@@ -915,8 +696,6 @@ But the important thing is that there's one layer of mini layers.So our focus he
 
 Our real focus is on things like the track layers and the other layers that are out for tender right now because we think that those are -- well, certainly, those are not being able to provide it from commercial assets and there's a lot more to the SDA program than just that one transport layer.
 
-J
-
 Jason Gursky
 
 Right.And that's a pretty segue into my final question, which was about the pipeline.
@@ -926,8 +705,6 @@ As you look at your pipeline for constellation builds, and I would consider this
 Like the next announcement comes along, are we likely to see more government wins from you all?Or are you trying to balance this out and we could very well see a commercial one?
 
 Just kind of curious how you are going to market at this point.Thanks.
-
-P
 
 Peter Beck
 
@@ -943,29 +720,21 @@ And we've demonstrated we can do really, really technically difficult missions a
 
 So I hope that answers your question.
 
-J
-
 Jason Gursky
 
 Great.That’s helpful.
 
 Appreciate it.
 
-O
-
 Operator
 
 Your next question comes from the line of Michael Leshock from KeyBanc Capital Markets.Michael, your line is now open.
-
-M
 
 Michael Leshock
 
 Hey good afternoon everyone.I want to stick with the satellite constellation topic, and you had mentioned the potential for government contracts that could be to build the entire satellite constellation.
 
 How do you think about prioritizing that type of work versus building your own constellation first?
-
-P
 
 Peter Beck
 
@@ -977,13 +746,9 @@ So the answer to the question is probably not a very good answer is that we bala
 
 And when we have a full conviction and thesis that we can talk about around what kind of constellation that we intend to go after, you really have to have that extremely well baked because at that point, you're committing significant resource to go after those kinds of things.So yes, I mean, like I said, the focus is on strengthening the company and we're moving as rapidly as we can into constellations and where we think is important, but we're not going to do that at the cost of the security of the business.
 
-M
-
 Michael Leshock
 
 And then shifting to Archimedes, how long are you targeting that engine to burn for a full launch?And maybe what's the duration of the half hires that you're doing today relative to that full burn expectation?
-
-P
 
 Peter Beck
 
@@ -995,19 +760,13 @@ So our focus has not been on big long durations.Our focus has been on all the op
 
 So that's really been our focus.
 
-M
-
 Michael Leshock
 
 Alright, thank you.Appreciate the color.
 
-O
-
 Operator
 
 Your next question comes from the line of Erik Rasmussen with Stifel.Erik, your line is open.
-
-E
 
 Erik Rasmussen
 
@@ -1015,15 +774,11 @@ Yes, thank you for taking the question.Maybe just circling back with Mynaric.
 
 I remember in the press release or it seemed like the deal was contingent on, I guess, acceptable terms to Rocket Lab, I mean it sounds like in your prepared remarks, you seem a lot more comfortable on closing that transaction.So what -- are there any sort of sticking points remaining to closing this deal at this point?
 
-P
-
 Peter Beck
 
 Yes, Erik, I'll make a few comments, and Adam probably have better ones.But you have to go through a whole process in Germany and that process can take some time and that's probably the longer pole in the tent.
 
 And it's not really a process that we have much kind of control over.The bankruptcy laws and stuff are different in Germany than the States, but Adam, you might have a better comment?
-
-A
 
 Adam Spice
 
@@ -1041,23 +796,17 @@ We're going to continue to invest in.We are going to have what we believe to be 
 
 So yes, we have no reason to be concerned at this point.
 
-E
-
 Erik Rasmussen
 
 Great.And then maybe on the final light, since winning -- since, I guess, announcing that spacecraft, what's sort of feedback or interest have you received?
 
 And then maybe any updates on progress thus far, maybe timing of bringing that space at market?
 
-P
-
 Peter Beck
 
 Yes.I mean, we have strong interest from commercial and government constellation providers.
 
 And the -- light really is the gold standard for high volume, high cadence kind of deployments of constellations, also useful for ourselves, of course, but there was really a product that was developed and driven by a set of customers.
-
-E
 
 Erik Rasmussen
 
@@ -1069,8 +818,6 @@ But at what point -- I think you've gone through a pretty rigorous process just 
 
 Is it contingent on that first flight?Or what are the milestones that we can potentially look for that maybe get more excited about that program?
 
-P
-
 Peter Beck
 
 Yes, totally.So the team now works with us for the next few years on all of the elements of mission assurance and everything that they need for these critical mission.
@@ -1079,8 +826,6 @@ And yes, we're eligible for task orders after the first flight.And -- but betwee
 
 But truly, it's after for a flight eligible to bid for those task orders.The Phase 3 set of task orders go through to 2029.
 
-E
-
 Erik Rasmussen
 
 Great.So really getting to the pad is an OT milestone.
@@ -1088,8 +833,6 @@ Great.So really getting to the pad is an OT milestone.
 And then maybe just finally on Electron, I think, Adam, you talked about higher ASPs.Q1 obviously was lower, but you expect to see an improved cadence.
 
 Would you expect, though, the year to end at a much higher rate or just slowly pick up from here in terms of an ASP?So -- and obviously, some lumpiness that you've talked about with some of these volume deals.
-
-A
 
 Adam Spice
 
@@ -1103,31 +846,21 @@ And that's really what kind of gets us to that target margin that we talked abou
 
 And I think everything that we're seeing right now is consistently kind of playing -- getting us towards that.So I think we're pretty pleased with how things is pretty much almost exactly to plan.
 
-E
-
 Erik Rasmussen
 
 Great.And that's still is 20-plus launches for the year?
-
-A
 
 Adam Spice
 
 Correct.
 
-E
-
 Erik Rasmussen
 
 Thank you.
 
-O
-
 Operator
 
 Your next question comes from the line of Andres Schroder [ph] with Cantor Fitzgerald.Andres your line is now open.
-
-U
 
 Unidentified Analyst
 
@@ -1139,15 +872,11 @@ I wanted to maybe get your thoughts with the international space budgets growing
 
 Thank you.
 
-P
-
 Peter Beck
 
 Yes, hi Andres.So primarily Europe, and Electron has done incredibly well in Japan.
 
 So Japanese market is like the second biggest market for Electron.But as we think about larger opportunities and programs, I think it really sits with allies in Europe.
-
-U
 
 Unidentified Analyst
 
@@ -1160,8 +889,6 @@ But -- and I realize -- I think we touched on this last quarter as well.But as w
 As I look at the backlog, there's seems to have been an increase in launch systems over space systems from the last reported backlog.As we are getting closer to Neutron, how quickly do you foresee that shifting towards launches over space systems?
 
 Or how long would that transition take, I guess, in your opinion?Thank you.
-
-A
 
 Adam Spice
 
@@ -1181,19 +908,13 @@ That's really gone well, but at $8 million, $8.5 million, $9 million doesn't -- 
 
 It's going to be very volatile, but the good thing is we see the -- trying to see which one is going to grow faster and move the needle the most is a great problem to have because they both have strong tailwinds to them.
 
-U
-
 Unidentified Analyst
 
 That's very helpful, Adam.Really, really appreciate that color and congrats again to the team.
 
-O
-
 Operator
 
 And your final question comes from the line of Ron Epstein with Bank of America.Ron, your line is now open.
-
-U
 
 Unidentified Analyst
 
@@ -1204,8 +925,6 @@ Just one quick one for me to close this out.I'm thinking about the NSSL on-ramp 
 I'm curious if you think -- how you're thinking about potentially transitioning to Lane 2 awards in the future, the more demanding launches?Is it a matter of just demonstrating flight heritage over a number of missions?
 
 Or do you see incremental capabilities you'll need Neutron to demonstrate?
-
-P
 
 Peter Beck
 
@@ -1219,21 +938,15 @@ So the cost of admission to get into that lane is extremely high, hence, the rea
 
 But to be honest with you, this is one of the reasons why [indiscernible] base force created this extra lane is they saw that there's a huge lost opportunity with some medium launch vehicles in development and wanting to make sure they take advantage of those.And it will be really interesting to see in time how many of those missions fall from the various lanes, drop down into the lower lanes that are much faster and much more affordable to deliver.
 
-U
-
 Unidentified Analyst
 
 Got it.Thanks guys, really appreciate it.
-
-O
 
 Operator
 
 All right.Thank you so much.
 
 This does conclude our Q&A section for today.And with that, I will hand it back over to Peter Beck for our closing remarks.
-
-P
 
 Peter Beck
 
@@ -1245,40 +958,8 @@ Otherwise, thank you very much for joining us.That wraps up today's call, and we
 
 Thanks.Bye.
 
-O
-
 Operator
 
 Thank you so much for joining us today.This does conclude our conference call.
 
 You are now free to disconnect.Thank you.
-
-## Footer
-
-Stock research and financial data for fundamental investors. Decades of statements, transcripts and metrics, one API.
-
-Found an error or have an idea?[support@roic.ai](mailto:support@roic.ai)
-
-### Product
-
-*   [Financial Data API](https://roic.ai/financial-data-api)
-*   [API reference](https://roic.ai/api/docs)
-*   [Pricing](https://roic.ai/pricing)
-*   [Knowledge Base](https://roic.ai/knowledge-base)
-*   [Status](https://status.roic.ai/)
-
-### Developers
-
-*   [Getting started](https://roic.ai/api/docs/getting-started)
-*   [Authentication](https://roic.ai/api/docs/authentication)
-*   [Changelog](https://roic.ai/api/docs/changelog)
-
-### Company
-
-*   [About](https://roic.ai/about)
-*   [Blog](https://roic.ai/blog)
-*   [FAQ](https://roic.ai/faq)
-
-© 2026 Roic AI, Inc. Financial data and stock API.
-
-[Privacy Policy](https://roic.ai/policy)[Terms](https://roic.ai/tos)

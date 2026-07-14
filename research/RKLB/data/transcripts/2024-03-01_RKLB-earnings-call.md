@@ -6,100 +6,7 @@ source: https://roic.ai/quote/RKLB/transcripts/2024-year/3-quarter
 downloaded: 2026-07-14
 ---
 
-*   Solutions
-*   [API Docs](https://roic.ai/api)
-*   [MCP](https://roic.ai/api/mcp)
-*   [Pricing](https://roic.ai/pricing)
-*   [Discord](https://discord.gg/paJKM97rU7)
-*   Resources
-
-
-Company Search
-
-⌘K
-
-Toggle theme
-
-Toggle theme Login Sign up
-
-2.   •
-
-[Industrials](https://roic.ai/quote/RKLB/transcripts/2024-year/3-quarter#)
-3.   •
-
-[Aerospace & Defense](https://roic.ai/quote/RKLB/transcripts/2024-year/3-quarter#)
-
-![Image 1: Rocket Lab USA, Inc.](https://www.roic.ai/image-stock/rklb.webp)
-
-# Rocket Lab USA, Inc.
-
-RKLB
-
-Alerts
-
-RKLB Rocket Lab USA, Inc.![Image 2: US flag](https://react-circle-flags.pages.dev/us.svg)NASDAQ Capital Market
-
-Alerts
-
-76.73
-
-USD
-
--4.31
-
-- -
-
-44.42B Market Cap
-
-[Summary](https://roic.ai/quote/RKLB)[Financials](https://roic.ai/quote/RKLB/financials)[Ratios](https://roic.ai/quote/RKLB/ratios)[Transcripts](https://roic.ai/quote/RKLB/transcripts)[Charts](https://roic.ai/quote/RKLB/charts)[Classic View](https://roic.ai/quote/RKLB/classic)[Statistics](https://roic.ai/quote/RKLB/statistics)[Stock Splits](https://roic.ai/quote/RKLB/stock-splits)
-
-## Earnings Call Transcripts
-
-### 2026
-
-*   [1 Quarter May 8](https://roic.ai/quote/RKLB/transcripts/2026-year/1-quarter)  
-
-### 2025
-
-*   [4 Quarter Feb 27](https://roic.ai/quote/RKLB/transcripts/2025-year/4-quarter)  
-*   [3 Quarter Nov 10](https://roic.ai/quote/RKLB/transcripts/2025-year/3-quarter)  
-*   [2 Quarter Aug 7](https://roic.ai/quote/RKLB/transcripts/2025-year/2-quarter)  
-*   [1 Quarter May 8](https://roic.ai/quote/RKLB/transcripts/2025-year/1-quarter)  
-
-### 2024
-
-*   [4 Quarter Feb 27](https://roic.ai/quote/RKLB/transcripts/2024-year/4-quarter)  
-*   [3 Quarter Nov 12](https://roic.ai/quote/RKLB/transcripts/2024-year/3-quarter)  
-*   [2 Quarter Aug 8](https://roic.ai/quote/RKLB/transcripts/2024-year/2-quarter)  
-*   [1 Quarter May 6](https://roic.ai/quote/RKLB/transcripts/2024-year/1-quarter)  
-
-### 2023
-
-*   [4 Quarter Feb 27](https://roic.ai/quote/RKLB/transcripts/2023-year/4-quarter)  
-*   [3 Quarter Nov 9](https://roic.ai/quote/RKLB/transcripts/2023-year/3-quarter)  
-*   [2 Quarter Aug 8](https://roic.ai/quote/RKLB/transcripts/2023-year/2-quarter)  
-*   [1 Quarter May 10](https://roic.ai/quote/RKLB/transcripts/2023-year/1-quarter)  
-
-### 2022
-
-*   [4 Quarter Feb 28](https://roic.ai/quote/RKLB/transcripts/2022-year/4-quarter)  
-*   [3 Quarter Nov 10](https://roic.ai/quote/RKLB/transcripts/2022-year/3-quarter)  
-*   [2 Quarter Aug 11](https://roic.ai/quote/RKLB/transcripts/2022-year/2-quarter)  
-*   [1 Quarter May 16](https://roic.ai/quote/RKLB/transcripts/2022-year/1-quarter)  
-
-### 2021
-
-*   [4 Quarter Mar 1](https://roic.ai/quote/RKLB/transcripts/2021-year/4-quarter)  
-*   [3 Quarter Nov 15](https://roic.ai/quote/RKLB/transcripts/2021-year/3-quarter)  
-*   [2 Quarter Sep 8](https://roic.ai/quote/RKLB/transcripts/2021-year/2-quarter)  
-
-Open Transcript List
-
 # Q3 FY2024 · Earnings Call Transcript November 12, 2024
-
-[API](https://roic.ai/api/docs/earnings-calls/transcript "View API documentation")[ChatGPT](https://roic.ai/connectors/chatgpt "Use this data in ChatGPT")Google Sheets
-
-O
 
 Operator
 
@@ -110,8 +17,6 @@ At this time, I would like to Welcome everyone to the Rocket Lab Third Quarter 2
 After the speakers' remarks, there will be a question-and-answer session.[Operator Instructions] I would now like to turn the call over to Mariel Baker, Senior Communications Manager at Rocket Lab.
 
 You may begin.
-
-M
 
 Murielle Baker
 
@@ -128,8 +33,6 @@ Now this call is also being webcast with a supporting presentation and a replay 
 They will be discussing key business highlights, including updates on our launch and space systems programs.And we will discuss the financial highlights and outlook before we finish by taking questions.
 
 So with that, let me turn the call over to Sir Peter.
-
-P
 
 Peter Beck
 
@@ -309,8 +212,6 @@ Ken's deep aerospace and defence industry experience combined with his financial
 
 Over to you Adam.
 
-A
-
 Adam Spice
 
 Great.Thanks Pete.
@@ -367,13 +268,9 @@ We expect fourth quarter GAAP and non-GAAP net interest expense to be $1.5 milli
 
 And with that we'll hand the call over the operator for questions.
 
-O
-
 Operator
 
 [Operator Instructions] Your first question comes from the line of Andres Sheppard with Cantor Fitzgerald.Your line is open.
-
-A
 
 Andres Sheppard
 
@@ -384,8 +281,6 @@ Certainly a lot of developments, so well done.I guess first question, just on th
 So it sounds like you're, the target for the first launch is unchanged for mid-2025, but the multi-launch agreement that you disclosed today, that's targeted for, I believe, to start in middle of 2026.So I guess A, just wanted to confirm that, and B, then if that's the case, why announced this contract today, just given where you still are on the Neutron development?
 
 Any color there would be helpful.Thank you.
-
-P
 
 Peter Beck
 
@@ -405,8 +300,6 @@ So we're kind of easing into that kind of gently.With respect to announcing it n
 
 So I think it was a material thing that we really would have to disclose.
 
-A
-
 Adam Spice
 
 Yeah, and I would add to that, too, Andres, that we've talked about the fact that, as you start to approach Neutron readiness, you think about a timeframe of kind of 12 months, 18 months where you want to have your customer lined up because you got to -- again, have this whole synchronization to make sure that the rocket's ready.There's a long time between signing a contract usually and getting the actual payload integrated and launched.
@@ -417,8 +310,6 @@ We bring a lot of heritage to this market because of the 54 successful launches 
 
 So I think this was a definitely an important milestone for the company to reach and we're very happy to be able to announce that today.
 
-A
-
 Andres Sheppard
 
 Thanks guys you know that that's super helpful I appreciate all that context.Maybe just a quick follow-up, if I may.
@@ -426,8 +317,6 @@ Thanks guys you know that that's super helpful I appreciate all that context.May
 Can you maybe just remind us, what are the outstanding maybe catalysts or milestones for the Neutron development that you think investors should be aware of.And additionally maybe if you can give us a little more granularity on the hot fire test and the production of the additional engines there.
 
 Thank you.
-
-P
 
 Peter Beck
 
@@ -455,27 +344,19 @@ And I sort of made comment in the script here that like an engine program, it's 
 
 So I think we're in a good spot, but those are the three things for folks to track.
 
-A
-
 Andres Sheppard
 
 Wonderful.I really appreciate all that color.
 
 Congrats again on the quarter.I'll pass it on.
 
-P
-
 Peter Beck
 
 Thanks, Andres.
 
-O
-
 Operator
 
 Your next question comes from the line of Edison Yu with Deutsche Bank.Your line is open.
-
-E
 
 Edison Yu
 
@@ -485,15 +366,11 @@ Can you provide any context in terms of what you want relative to if the custome
 
 Just is this, I know you say you could launch a whole thing, just some context around currently what is the piece that you have?
 
-P
-
 Peter Beck
 
 Yeah, I mean look, we probably can't say too much, but it's a customer that we know.And as I mentioned, we were very strategic, in especially these early launches, about who we want to almost essentially partner with on these early contracts.
 
 So look, I mean, it's not my business to get into their kind of business, but needless to say, we were happy with that particular customer, and it's a good customer for the stage and phase of the program.
-
-A
 
 Adam Spice
 
@@ -507,8 +384,6 @@ When you look at the people that have capacity, a lot of that capacity has been 
 
 So just a lot of the stars are starting to align on that for us with regards to Neutron.
 
-E
-
 Edison Yu
 
 Understood.Then a follow up question a bit longer term.
@@ -516,8 +391,6 @@ Understood.Then a follow up question a bit longer term.
 Obviously you've got Frank on board now and he comes from the automotive industry.And curious if you can maybe dimension the kind of scale you're looking for.
 
 Obviously automotive is orders of magnitude higher scale than aerospace is frankly coming on Board to kind of take you to much, much higher level or more to kind of get the existing backlog up to speed?
-
-P
 
 Peter Beck
 
@@ -527,19 +400,13 @@ Now, of course, the numbers that roll-off the end of the production line differ,
 
 But as we look to move even further up that curve, bringing someone on with just such deep experience, not just within production and production scaling but within operations.It was just kind of the right time for the company to create that position.
 
-E
-
 Edison Yu
 
 Fantastic.Thank you.
 
-O
-
 Operator
 
 And your next question comes from the line of Matt Akers with Wells Fargo.Your line is open.
-
-M
 
 Matt Akers
 
@@ -553,8 +420,6 @@ I know you don't want to reveal what that could look like yet but just curious w
 
 Are there maybe more parts of the portfolio to fill in?Just curious how you think of kind of the timing there.
 
-P
-
 Peter Beck
 
 Yeah, thanks Matt.So look, everything is irrelevant without a reusable high cadence launch.
@@ -563,15 +428,11 @@ So Neutron is really the key to unlocking that.And if you look at Starlink, it's
 
 And that in turn is made possible by a reusable launch vehicle.So until Neutron is flying at some level of cadence, it's kind of academic to talk about deploying constellations.
 
-M
-
 Matt Akers
 
 Yeah, got it.Okay.
 
 And just curious on this Neutron deal or maybe just Neutron in general, thoughts on kind of what the progress payment maybe looks like on that?Just curious, I guess one, if there's maybe some lumpiness in cash flow around that just because those are pretty big dollar items and also just how we should think about kind of the advanced payments versus kind of working capital aspect as that program ramps up.
-
-A
 
 Adam Spice
 
@@ -589,19 +450,13 @@ Well, it should look very, very, very similar to what we've kind of disclosed an
 
 And as we experience also on Electron, the Electron you know came out initially with not kind of target margins obviously but as we kind of build towards that, I think that there's a combination of the fact that we'll be collecting payments against milestones in the contracts, but also getting production efficiencies and ultimately reusability, which is a real key to kind of getting Neutron to its target model, which we think will look very similar to the long-term model for Electron.So hopefully that gives you a little bit of context.
 
-M
-
 Matt Akers
 
 Yeah, that's very helpful.Thank you.
 
-O
-
 Operator
 
 Your next question comes from the line of Erik Rasmussen with Stiefel.Your line is open.
-
-E
 
 Erik Rasmussen
 
@@ -609,23 +464,17 @@ Yeah, thanks for taking the questions.And congrats on the progress with Neutron.
 
 Maybe just on that subject, Neutron, I know it's not a lot you want to really share at this time, but are you replacing anyone or are you being brought on to sort of, you know, as another alternative just because of, like Adam you said, there's a number of medium rockets that are in the market or that will be potentially in the market in the coming years but is this just sort of you think a hedge because you guys are a lot closer than some others?
 
-P
-
 Peter Beck
 
 Yeah, I think with respect to kind of commercial contracts and in some cases, definitely replacing.I would say that Erik in the NSSL world, it's bringing on new providers.
 
 I think if you look at the last NSSL Lane 1 Phase 3 award, 100% of that award went to one particular launch provider because there was nobody else.So in some cases, it's replacing and in some cases it's just being brought on as a new alternative.
 
-E
-
 Erik Rasmussen
 
 Okay, and then you stated that the ASPs, you're going to be pretty firm on pricing.Is that the $50 million to $55 million that you initially talked about, and that's sort of where things have settled maybe for these two dedicated missions, and it says you're starting in mid-2026.
 
 Would both of those potentially happen in 2026, or how should we think about sort of timing, assuming you do meet the mid-2025 for your first test launch?
-
-P
 
 Peter Beck
 
@@ -635,8 +484,6 @@ And then we're selling real slots with real launch windows.So we kind of, you kn
 
 So, you know, so the 2026 timeframes for those launches, are the customers, you know, driven requests.
 
-E
-
 Erik Rasmussen
 
 Got it.Then maybe just staying with launch.
@@ -644,8 +491,6 @@ Got it.Then maybe just staying with launch.
 You sitting at 12 launches year-to-date, you previously gave a range of 15 to 18.You have another 1 slotted in the coming weeks, the earliest.
 
 You would need sort of four in this quarter to get to the bottom of that range but do you still feel like that's a viable range for you the 15 to 18 where we sit today I appreciate you not giving specific guidance on that but I just want to get a sense of your confidence level on that prior guidance of 15 to 18.
-
-P
 
 Peter Beck
 
@@ -655,21 +500,15 @@ But no, I think we've got certainly a very busy fourth quarter.And at this stage
 
 So I think, we'll be within that range.
 
-E
-
 Erik Rasmussen
 
 Okay.And then just -- on the NSSL, I just want to clarify the RFPs opened up pretty recently within the last two weeks.
 
 Does that mean you'll be available for this particular one or it's the next cycle because of the timeframe of Neutron at the earliest of mid-2025?
 
-P
-
 Peter Beck
 
 Yeah, the way it works is that you have to demonstrate you can launch in 2025 to be on-ramped, and then once you're on-ramped, then you'll bid for various task orders.So there'll be, you know, this kind of, the task order is separate from the on-ramp and those task orders, you know, are released at the times that NSSL or the Space Force decides to.
-
-A
 
 Adam Spice
 
@@ -681,21 +520,15 @@ So the most likely scenario is that could you see something in 2026 for NSSL?You
 
 That probably looks more like it, you know, at 2027, but never seen ever.
 
-E
-
 Erik Rasmussen
 
 Right.Okay, great.
 
 And then just one last thing on the backlog of clarification.The $326 million for launch, Does that include this latest award win for the two for Neutron?
 
-P
-
 Peter Beck
 
 No, it does not, because that was a Q3 ending, and this contract was signed post the end of Q3.
-
-E
 
 Erik Rasmussen
 
@@ -703,25 +536,17 @@ Great.Okay.
 
 I’ll get back in the queue.
 
-P
-
 Peter Beck
 
 It will show up in our Q4 backlog.
-
-E
 
 Erik Rasmussen
 
 Great.Thank you.
 
-O
-
 Operator
 
 Your next question comes from the line of Suji Desilva with ROTH Capital.Your line is open.
-
-S
 
 Suji Desilva
 
@@ -731,8 +556,6 @@ Congrats on the progress and the Neutron success here.The gross margin improveme
 
 And can you give an update on the solar gross margin improvement?Is there tailwinds still there?
 
-A
-
 Adam Spice
 
 So the gross margin percentages are actually pretty close across.I mean, they're pretty consistent across launch and space systems right now.
@@ -741,13 +564,9 @@ That's the function of kind of again, where we are in the margin improvement pat
 
 So you just take the percentage of the business times the same rough margin calculation and just apply it.
 
-S
-
 Suji Desilva
 
 Okay and then on solar, Adam is that remain a tailwind?
-
-A
 
 Adam Spice
 
@@ -767,8 +586,6 @@ It's just taken us a little bit longer.And so I think, you know, it's also not t
 
 So when you have a good quarter where you're shipping a lot more product, you get the benefit of that overhead absorption.And so as we mentioned earlier, and we mentioned in our prepared remarks, the solar business is particularly strong in Q3.
 
-S
-
 Suji Desilva
 
 Okay, great.And then my other questions on the launch business, I understand that Neutron is going to add to the backlog this quarter but Electron growing $55 million.
@@ -777,27 +594,19 @@ I'm just wondering what that, how that comparison to the last few quarters.Is th
 
 Is it ASP trending up or any color there be helpful?
 
-P
-
 Peter Beck
 
 Yeah, I have a [crack at] (ph).
 
-A
-
 Adam Spice
 
 Yeah, go ahead, Pete.
-
-P
 
 Peter Beck
 
 I have a crack and maybe add a bit more color as well.So launch is lumpy, like actually launching the rockets is lumpy, so is the contracts.
 
 And we can go a quarter without signing anything.So as far as historical kind of lookbacks, I mean, certainly this has been a good call for Electron, but it tends to be pretty lumpy throughout.
-
-A
 
 Adam Spice
 
@@ -809,21 +618,15 @@ And we've also talked on previous calls that our total backlog for Electron is p
 
 So that we're having a beneficial ASP mix effect.And that's obviously helping contribute to the backlog growth, but also to what we believe is kind of a nice steady progress towards our target margins for that electron business.
 
-S
-
 Suji Desilva
 
 Okay.Very helpful.
 
 Thanks, guys.
 
-O
-
 Operator
 
 Your next question comes from the line of Andre Madrid with BTIG.Your line is open.
-
-A
 
 Andre Madrid
 
@@ -831,21 +634,15 @@ Adam, Peter, thanks for the time.I know we kind of danced around it, but I wante
 
 I know previously you said about [$160 million] (ph) for the year or about $40 million a quarter.And also like, is that kind of still an appropriate target looking all in?
 
-A
-
 Adam Spice
 
 Yeah, I'm scrolling up the number right now.Yeah, no, this in Q3, it was a total -- well, you have to split out between the different elements, but if you look at total net spend for Neutron across OpEx and CapEx, it was just a hair under $44 million.
-
-A
 
 Andre Madrid
 
 Got it, Got it.Okay.
 
 And I think --.
-
-A
 
 Adam Spice
 
@@ -859,15 +656,11 @@ And so I think probably along with that, we still feel very, very comfortable th
 
 And we put that in pretty stark contrast to what some other kind of medium and larger launch vehicles have cost in the many, many billions of dollars and taken the better part of a decade to get to first launch.So we feel like we're on track and we're going to set a new benchmark for capital efficiency and timing of getting a new launch vehicle to the pad.
 
-A
-
 Andre Madrid
 
 Got it, got it.And if I could squeeze in one more, could you maybe highlight backlog at some of the non-photon space systems businesses like PSC, Sinclair?
 
 I mean, how is expansion and acquiring more business progressed at that line of business?
-
-P
 
 Peter Beck
 
@@ -893,13 +686,9 @@ And we think there's some upside to that.And then there's just the kind of a lit
 
 So you've got that blending effect there.But we feel really good about, you know, all the elements of that subsystem business.
 
-A
-
 Andre Madrid
 
 And since you brought it up, what's the mix between what goes in-house for components versus what's delivered as a merchant supplier?And do you guys have a target mix for first-base systems, I guess?
-
-P
 
 Peter Beck
 
@@ -913,27 +702,19 @@ So really, there really is a mix.But that's a good question.
 
 We can certainly follow up offline and see if we can get you more kind of concrete answer to that.
 
-A
-
 Andre Madrid
 
 Yeah, definitely.I would appreciate that.
 
 Adam, thanks so much for the call.I really appreciate it.
 
-A
-
 Adam Spice
 
 Sure.
 
-O
-
 Operator
 
 Next question comes from Jason Gursky with Citi.Your line is open.
-
-J
 
 Jason Gursky
 
@@ -942,8 +723,6 @@ Hey, good afternoon everybody.Pete, I want to -- have you just walk us all throu
 And if there isn't an opportunity to go a little faster here, you suggest that, you know, history would suggest with others you got to do it that way, but why is that the case?And Adam, you talked about throwing CapEx.
 
 There's some more CapEx coming into the mix here.Is this something we can throw some capital at and speed things up a bit?
-
-P
 
 Peter Beck
 
@@ -965,13 +744,9 @@ But we're looking to get into commercial operations as quickly as we can.So when
 
 You have to be very methodical in any of the changes that you roll in.So we just don't want to be unrealistic with what's being -- what can tangibly be delivered.
 
-A
-
 Adam Spice
 
 Jason, I'll be asking Pete that question every day going forward as well.
-
-J
 
 Jason Gursky
 
@@ -980,8 +755,6 @@ Yeah, if you can do it on my behalf, I appreciate that.And then, Pete, look, 1, 
 But as you look at the pipeline, I mean, over that time period, if you had more capacity, is there more demand out there?I just want to -- maybe strip out the national security launch just on the commercial side of things.
 
 I'm just trying to get a better gauge of supply and demand equilibrium.
-
-P
 
 Peter Beck
 
@@ -993,8 +766,6 @@ So that's not good for their business or long term relationships or quite frankl
 
 We worry more about how fast can we scale the Neutron rather than other customers there to fly on it for sure.Right.
 
-J
-
 Jason Gursky
 
 Okay, then last one is for me.I'm just kind of curious.
@@ -1005,8 +776,6 @@ I guess what policy statements have you heard to date that, you know, either hav
 
 What are you going to be looking for and looking to hear from the new administration?
 
-P
-
 Peter Beck
 
 Yeah, it's a really good question.So I think what I take out of it is that I don't think there's ever been such a focus on space from any administration, perhaps back in the Apollo era but I mean it's very clear that this administration has a very strong focus on space which is good and when Space wins, Rocket Lab wins.
@@ -1015,21 +784,15 @@ Also, we see a very strong focus on national security which is obviously a core 
 
 So, you know, I look out on the new administration with quite a bullish outlook given those kind of three things.
 
-J
-
 Jason Gursky
 
 Right.Okay, great.
 
 I'll pass the line.Appreciate it.
 
-O
-
 Operator
 
 And your next question comes from the line of Michael Leshock with KeyBanc Capital Markets.Your line is open.
-
-M
 
 Michael Leshock
 
@@ -1040,8 +803,6 @@ You've talked about both organic and inorganic ways to scale the business.We're 
 And then secondly, you also have those organic initiatives like additional clean room capacity that you already have the footprint for.I'm just wondering if you could provide some more details there and how much is left to go on those initiatives.
 
 Thanks.
-
-P
 
 Peter Beck
 
@@ -1054,8 +815,6 @@ So that will – when we have something that we think is ready, then we'll relea
 We don't kind of talk about it until really it's done.And you saw that with even reaction wheels or something like the haste missions, you know, we announced a haste mission and then a number of weeks later we launched one.
 
 So that's kind of the way we roll with organic product development.And then inorganic, you know, we always maintain a pretty healthy pipeline and maybe, Adam, you can provide a bit more comment on that.
-
-A
 
 Adam Spice
 
@@ -1077,21 +836,15 @@ It's got to be the right price.And so far we haven't gotten those three stars to
 
 And I think that will also provide a bit of a bread-crumbing for folks to understand a little bit more specifically which applications we're targeting because a lot of the payload is obviously very specific to the application.And so having kind of some insight into kind of the capabilities that we'd be acquiring would kind of give you some ideas about where we're going from an applications perspective, which I know everyone's chomping at the bit to try to understand better.
 
-M
-
 Michael Leshock
 
 Okay, great.I appreciate all that detail.
 
 I'll leave it there.Thanks, guys.
 
-O
-
 Operator
 
 Your next question comes from the line of Anthony Valentini with Goldman Sachs.Your line is open.
-
-A
 
 Anthony Valentini
 
@@ -1101,19 +854,13 @@ Sorry to beat this point to death here, but it's been pretty well publicized at 
 
 So I guess my question is, you know, do you guys stand to benefit from that between now and 2026 where you guys can get, you know, a piece of that pie or is it, you know, to what Peter was talking to in an earlier answer, it's just not possible given capacity and how many slots you guys have available?
 
-P
-
 Peter Beck
 
 Well, I'll put it this way, as we said, Anthony, demand is not something that we worry about and that kind of falls into that category.
 
-A
-
 Anthony Valentini
 
 Okay, that's helpful.And then, Adam, for you, is the systems segment profitable today?
-
-A
 
 Adam Spice
 
@@ -1125,8 +872,6 @@ Things will become a lot more clear at that point as in and actually at some lev
 
 That could change in the future, but that's not the current kind of approach we take to it.
 
-A
-
 Anthony Valentini
 
 Okay.Yeah, that makes a ton of sense.
@@ -1134,8 +879,6 @@ Okay.Yeah, that makes a ton of sense.
 Last one for me here.I just want to confirm the test flight on Neutron in 2025.
 
 That’s no revenue.Right.
-
-A
 
 Adam Spice
 
@@ -1145,29 +888,21 @@ There won't be any revenue associated with that launch.But we are working on thi
 
 So looking to do some creative things there where we can kind of buy down our cost of that test launch.And so that's something that we're working pretty hard towards and hopefully we can get some of that to come into focus.
 
-A
-
 Anthony Valentini
 
 Awesome.Thank you guys so much.
 
 Appreciate the time.
 
-O
-
 Operator
 
 Your next question comes from the line of Cai von Rumohr with TD Cowen.Your line is open.
-
-C
 
 Cai von Rumohr
 
 Super, thanks so much.So Adam, your ASPs for Electron have gone down sequentially for three straight quarters and yet your gross margin has improved.
 
 Now I know that costs are kind of specific to each mission, but what does that tell us about the underlying core profitability of Electron?
-
-A
 
 Adam Spice
 
@@ -1183,8 +918,6 @@ And then the reason why the gross margin has gone up, despite having the optics 
 
 So even as ASP may go down, gross margins go up.I think that's kind of the most salient points of kind of the gross margin trend analysis.
 
-C
-
 Cai von Rumohr
 
 Got it.And the second one is, you started the year, Peter, you mentioned that 22 launches sort of scheduled or targeted and we're going to probably end up at 15 to 18.
@@ -1192,8 +925,6 @@ Got it.And the second one is, you started the year, Peter, you mentioned that 22
 Have you ever thought, I mean, and one of the big problems is that you commit to a certain price and the customer commits to a certain date, but it's not a hard date.Have you ever thought of a kind of pricing so that if the customer misses, the price goes up?
 
 And I know that you have other competitors, but Certainly if you could get your number of launches up, you've made a big point of how high the fixed launch costs are.Is there any thought of kind of getting that volume -- thinking of ways, creative ways of getting that volume up?
-
-P
 
 Peter Beck
 
@@ -1209,19 +940,13 @@ It's just a peculiarity of the way that revenue is recognized on launch.So no, I
 
 But it's kind of really the reality of the service that we provide.
 
-C
-
 Cai von Rumohr
 
 Terrific.Thank you so much.
 
-O
-
 Operator
 
 And there are no further questions at this time.I will turn the call back over to Peter Beck for closing remarks.
-
-P
 
 Peter Beck
 
@@ -1233,38 +958,6 @@ But that wraps up today's call, and thanks everybody for sticking around and lis
 
 So thanks very much.
 
-O
-
 Operator
 
 This does conclude today's conference.You may now disconnect.
-
-## Footer
-
-Stock research and financial data for fundamental investors. Decades of statements, transcripts and metrics, one API.
-
-Found an error or have an idea?[support@roic.ai](mailto:support@roic.ai)
-
-### Product
-
-*   [Financial Data API](https://roic.ai/financial-data-api)
-*   [API reference](https://roic.ai/api/docs)
-*   [Pricing](https://roic.ai/pricing)
-*   [Knowledge Base](https://roic.ai/knowledge-base)
-*   [Status](https://status.roic.ai/)
-
-### Developers
-
-*   [Getting started](https://roic.ai/api/docs/getting-started)
-*   [Authentication](https://roic.ai/api/docs/authentication)
-*   [Changelog](https://roic.ai/api/docs/changelog)
-
-### Company
-
-*   [About](https://roic.ai/about)
-*   [Blog](https://roic.ai/blog)
-*   [FAQ](https://roic.ai/faq)
-
-© 2026 Roic AI, Inc. Financial data and stock API.
-
-[Privacy Policy](https://roic.ai/policy)[Terms](https://roic.ai/tos)

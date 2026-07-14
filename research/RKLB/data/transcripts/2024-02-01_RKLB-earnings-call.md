@@ -6,6 +6,8 @@ source: https://roic.ai/quote/RKLB/transcripts/2024-year/2-quarter
 downloaded: 2026-07-14
 ---
 
+
+
 Thanks very much Morgan and thank you all for joining us today.We've delivered an exceptionally strong second quarter this year and I'm looking forward to taking you through all of the highlights and achievements.
 
 But before we get there I wanted to spend some time talking about who we are today, where Rocket Lab is headed in the future and the very deliberate and strategic steps we're taking to get there.One of the common misconceptions we've faced is that Rocket Lab is a launch company.
