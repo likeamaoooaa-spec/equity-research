@@ -12,11 +12,6 @@ URL Source: https://www.fool.com/earnings/call-transcripts/2025/11/04/palantir-p
 
 Published Time: 2025-11-04T12:08:58.000Z
 
-Markdown Content:
-![Image 1](https://g.foolcdn.com/image/?url=https%3A%2F%2Fcdn.content.foolcdn.com%2Fimages%2F1umn9qeh%2Fproduction%2Fa2a40ac227551191f40e319646e58c421fd8b8c0-400x427.png%3Fw%3D400%26h%3D427&w=3840&op=resize)
-
-Image source: The Motley Fool.
-
 ## Date
 
 Monday, November 3, 2025 at 5 p.m. ET

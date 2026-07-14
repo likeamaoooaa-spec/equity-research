@@ -12,11 +12,6 @@ URL Source: https://www.fool.com/earnings/call-transcripts/2024/02/05/palantir-t
 
 Published Time: 2024-02-06T04:30:16.000Z
 
-Markdown Content:
-![Image 1: Logo of jester cap with thought bubble.](https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Fmisc-assets%2Ffool-transcripts-logo.png&w=3840&op=resize)
-
-Image source: The Motley Fool.
-
 **Palantir Technologies**([PLTR](https://www.fool.com/quote/nyse/pltr/)+2.56%)
 
 Q4 2023 Earnings Call

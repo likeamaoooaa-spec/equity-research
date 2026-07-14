@@ -12,11 +12,6 @@ URL Source: https://www.fool.com/earnings/call-transcripts/2026/02/02/palantir-p
 
 Published Time: 2026-02-02T23:02:16.000Z
 
-Markdown Content:
-![Image 1: Logo of jester cap with thought bubble.](https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Fmisc-assets%2Ffool-transcripts-logo.png&w=3840&op=resize)
-
-Image source: The Motley Fool.
-
 ## DATE
 
 Monday, Feb. 2, 2026, at 5 p.m. ET

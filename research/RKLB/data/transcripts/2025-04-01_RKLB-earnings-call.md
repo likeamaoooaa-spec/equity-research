@@ -12,11 +12,6 @@ URL Source: https://www.fool.com/earnings/call-transcripts/2026/02/26/rocket-lab
 
 Published Time: 2026-02-27T00:59:40.000Z
 
-Markdown Content:
-![Image 1: Logo of jester cap with thought bubble.](https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Fmisc-assets%2Ffool-transcripts-logo.png&w=3840&op=resize)
-
-Image source: The Motley Fool.
-
 ## Date
 
 Thursday, Feb. 26, 2026 at 5:00 p.m. ET

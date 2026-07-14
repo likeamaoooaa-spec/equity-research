@@ -12,11 +12,6 @@ URL Source: https://www.fool.com/earnings/call-transcripts/2025/08/08/rocket-lab
 
 Published Time: 2025-08-08T12:49:34.000Z
 
-Markdown Content:
-![Image 1](https://g.foolcdn.com/image/?url=https%3A%2F%2Fcdn.content.foolcdn.com%2Fimages%2F1umn9qeh%2Fproduction%2Fa2a40ac227551191f40e319646e58c421fd8b8c0-400x427.png&w=3840&op=resize)
-
-Image source: The Motley Fool.
-
 ## Date
 
 Aug. 7, 2025 at 5:00 p.m. ET
