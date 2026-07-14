@@ -41,6 +41,12 @@ const TREE_DATA = {
         "ticker": "RKLB"
       },
       {
+        "path": "research/RKLB/2026-07-14_buyside-memo.md",
+        "title": "buyside memo",
+        "date": "2026-07-14",
+        "ticker": "RKLB"
+      },
+      {
         "path": "research/RKLB/2026-07-14_competitor-macro-analysis.md",
         "title": "competitor macro analysis",
         "date": "2026-07-14",
