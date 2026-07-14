@@ -8,6 +8,8 @@
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/dompurify/dist/purify.min.js" defer></script>
 <script src="tree-data.js" defer></script>
+<script src="financial-data.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js" defer></script>
 <style>
   /* ==========================================================
      Equity Research — sspai-inspired clean reading layout
@@ -521,6 +523,228 @@
     .welcome { padding: 80px 16px; }
     .welcome h2 { font-size: 24px; }
   }
+
+  /* ── Financial Dashboard ── */
+  .fin-dashboard {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px 80px;
+  }
+  .fin-dashboard-header {
+    text-align: center;
+    padding: 40px 0 32px;
+  }
+  .fin-dashboard-header h2 {
+    font-family: var(--font-serif);
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 8px;
+  }
+  .fin-dashboard-header p {
+    font-size: 14px;
+    color: var(--text-tertiary);
+  }
+  .fin-ticker-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 28px;
+    flex-wrap: wrap;
+  }
+  .fin-ticker-tab {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 8px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: var(--font-sans);
+    cursor: pointer;
+    transition: all 0.2s;
+    color: var(--text-secondary);
+  }
+  .fin-ticker-tab:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+    background: var(--accent-bg);
+  }
+  .fin-ticker-tab.active {
+    background: var(--text);
+    color: white;
+    border-color: var(--text);
+  }
+  .fin-period-toggle {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    margin-bottom: 32px;
+    background: var(--bg-hover);
+    border-radius: 8px;
+    padding: 3px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fin-period-btn {
+    background: none;
+    border: none;
+    padding: 6px 16px;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: var(--font-sans);
+    cursor: pointer;
+    border-radius: 6px;
+    color: var(--text-secondary);
+    transition: all 0.15s;
+  }
+  .fin-period-btn:hover { color: var(--text); }
+  .fin-period-btn.active {
+    background: var(--bg);
+    color: var(--text);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  }
+  /* ── KPI Cards ── */
+  .fin-kpi-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px;
+    margin-bottom: 28px;
+  }
+  .fin-kpi-card {
+    background: var(--bg);
+    border: 1px solid var(--border-light);
+    border-radius: 12px;
+    padding: 18px 16px 14px;
+    transition: box-shadow 0.2s, transform 0.2s;
+  }
+  .fin-kpi-card:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+    transform: translateY(-2px);
+  }
+  .fin-kpi-label {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--text-tertiary);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+  }
+  .fin-kpi-value {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text);
+    font-family: var(--font-sans);
+    letter-spacing: -0.5px;
+  }
+  .fin-kpi-change {
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 4px;
+  }
+  .fin-kpi-change.positive { color: #16a34a; }
+  .fin-kpi-change.negative { color: #dc2626; }
+  /* ── Chart Grid ── */
+  .fin-chart-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 20px;
+    margin-bottom: 32px;
+  }
+  .fin-chart-card {
+    background: var(--bg);
+    border: 1px solid var(--border-light);
+    border-radius: 12px;
+    padding: 20px;
+    transition: box-shadow 0.2s;
+  }
+  .fin-chart-card:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+  }
+  .fin-chart-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .fin-chart-title .emoji { font-size: 18px; }
+  .fin-chart-wrap {
+    position: relative;
+    height: 280px;
+  }
+  /* ── Data Table ── */
+  .fin-table-wrap {
+    background: var(--bg);
+    border: 1px solid var(--border-light);
+    border-radius: 12px;
+    overflow-x: auto;
+    margin-bottom: 32px;
+  }
+  .fin-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    font-family: var(--font-sans);
+    white-space: nowrap;
+  }
+  .fin-table th {
+    background: var(--bg-page);
+    font-weight: 600;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+    padding: 10px 14px;
+    text-align: right;
+    border-bottom: 1px solid var(--border-light);
+    position: sticky;
+    top: 0;
+  }
+  .fin-table th:first-child { text-align: left; }
+  .fin-table td {
+    padding: 10px 14px;
+    text-align: right;
+    border-bottom: 1px solid var(--border-light);
+    color: var(--text);
+  }
+  .fin-table td:first-child {
+    text-align: left;
+    font-weight: 600;
+    color: var(--text-secondary);
+  }
+  .fin-table tr:last-child td { border-bottom: none; }
+  .fin-table tr:hover td { background: var(--bg-hover); }
+  .fin-table .negative { color: #dc2626; }
+  .fin-table .positive { color: #16a34a; }
+  /* ── Topbar Financial Button ── */
+  .topbar-fin-btn {
+    background: none;
+    border: 1px solid var(--border);
+    cursor: pointer;
+    padding: 5px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: var(--font-sans);
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: all 0.15s;
+    white-space: nowrap;
+  }
+  .topbar-fin-btn:hover { background: var(--bg-hover); color: var(--text); }
+  .topbar-fin-btn.active { background: var(--accent-bg); color: var(--accent); border-color: var(--accent); }
+  @media (max-width: 640px) {
+    .fin-chart-grid { grid-template-columns: 1fr; }
+    .fin-kpi-row { grid-template-columns: repeat(2, 1fr); }
+    .fin-dashboard { padding: 0 12px 60px; }
+    .fin-chart-wrap { height: 220px; }
+    .topbar-fin-btn span.fin-btn-text { display: none; }
+  }
 </style>
 </head>
 <body>
@@ -535,6 +759,10 @@
   <button class="topbar-toc-btn" id="toc-mobile-btn" title="大纲">
     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
     目录
+  </button>
+  <button class="topbar-fin-btn" id="fin-dashboard-btn" title="财务数据">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+    <span class="fin-btn-text">财务数据</span>
   </button>
 </div>
 
@@ -605,23 +833,30 @@ document.getElementById("file-count").textContent = total;
 function storageKey(name) { return "eq-tree-" + encodeURIComponent(name); }
 
 // ── Type icons ──
+const SVG_ICONS = {
+  file: `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>`,
+  user: `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>`,
+  chart: `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>`,
+  search: `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>`,
+  news: `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="18" rx="2" ry="2"></rect><line x1="16" y1="8" x2="16" y2="8"></line><line x1="8" y1="12" x2="16" y2="12"></line><line x1="8" y1="16" x2="16" y2="16"></line><line x1="8" y1="8" x2="12" y2="8"></line></svg>`
+};
 const TYPE_ICONS = {
-  'buyside memo': '📋', 'memo': '📋',
-  'chronicle': '📜', 'corporate chronicle': '📜',
-  'biography': '👤',
-  'investment audit': '🔍', 'audit': '🔍',
-  'bayesian intrinsic growth': '📐', 'valuation': '📐',
-  'deep research': '🔬',
-  'moat': '🏰', 'vision': '🔭',
-  'investment report': '📊',
-  '日报': '📰',
+  'buyside memo': SVG_ICONS.file, 'memo': SVG_ICONS.file,
+  'chronicle': SVG_ICONS.file, 'corporate chronicle': SVG_ICONS.file,
+  'biography': SVG_ICONS.user,
+  'investment audit': SVG_ICONS.search, 'audit': SVG_ICONS.search,
+  'bayesian intrinsic growth': SVG_ICONS.chart, 'valuation': SVG_ICONS.chart,
+  'deep research': SVG_ICONS.search,
+  'moat': SVG_ICONS.file, 'vision': SVG_ICONS.search,
+  'investment report': SVG_ICONS.chart,
+  '日报': SVG_ICONS.news,
 };
 function getTypeIcon(title) {
   const t = title.toLowerCase();
   for (const [key, icon] of Object.entries(TYPE_ICONS)) {
     if (t.includes(key)) return icon;
   }
-  return '📄';
+  return SVG_ICONS.file;
 }
 function getTypeTag(title) {
   const t = title.toLowerCase();
@@ -718,7 +953,7 @@ function createTree() {
 
         const icon = document.createElement('span');
         icon.className = 'file-icon';
-        icon.textContent = getTypeIcon(f.title);
+        icon.innerHTML = getTypeIcon(f.title);
         a.appendChild(icon);
 
         const info = document.createElement('div');
@@ -1122,6 +1357,537 @@ function highlightTextInDOM(root, searchStr) {
     }
   }
 }
+
+// ── Financial Dashboard ──────────────────────────────────────────
+const FIN = typeof FINANCIAL_DATA !== 'undefined' ? FINANCIAL_DATA : {};
+let finCharts = [];
+let finCurrentTicker = Object.keys(FIN)[0] || '';
+let finPeriodMode = 'quarterly'; // 'quarterly' | 'annual'
+
+const finDashboardBtn = document.getElementById('fin-dashboard-btn');
+
+finDashboardBtn.addEventListener('click', () => {
+  const isActive = finDashboardBtn.classList.toggle('active');
+  if (isActive) {
+    showFinancialDashboard();
+  } else {
+    // Return to welcome
+    const content = document.getElementById('content');
+    content.className = 'content welcome';
+    
+    // Reset layout widths
+    const mainLayout = document.querySelector('.main-layout');
+    if(mainLayout) mainLayout.style.maxWidth = '';
+    const articleCol = document.querySelector('.article-column');
+    if(articleCol) articleCol.style.maxWidth = '';
+    const toc = document.getElementById('toc-column');
+    if(toc) toc.style.display = '';
+
+    content.innerHTML = `
+      <h2>Equity Research</h2>
+      <p class="tagline">独立 · 深度 · 长期主义</p>
+      <p class="hint">点击左上角菜单选择研究报告</p>
+    `;
+    document.getElementById('breadcrumb').textContent = '';
+    // Deactivate file links
+    document.querySelectorAll('.file-link').forEach(e => e.classList.remove('active'));
+  }
+});
+
+function showFinancialDashboard() {
+  const content = document.getElementById('content');
+  content.className = 'content';
+  
+  // Expand layout for dashboard
+  const mainLayout = document.querySelector('.main-layout');
+  if(mainLayout) mainLayout.style.maxWidth = '1400px';
+  const articleCol = document.querySelector('.article-column');
+  if(articleCol) articleCol.style.maxWidth = '100%';
+  const toc = document.getElementById('toc-column');
+  if(toc) toc.style.display = 'none';
+
+  document.getElementById('breadcrumb').textContent = '财务数据仪表盘';
+  document.querySelectorAll('.file-link').forEach(e => e.classList.remove('active'));
+
+  // Destroy old charts
+  finCharts.forEach(c => c.destroy());
+  finCharts = [];
+
+  if (!Object.keys(FIN).length) {
+    content.innerHTML = '<div class="fin-dashboard"><div class="fin-dashboard-header"><h2>暂无财务数据</h2><p>请先运行 python3 extract_financials.py 生成数据</p></div></div>';
+    return;
+  }
+
+  content.innerHTML = buildDashboardHTML();
+  bindDashboardEvents();
+  renderDashboard();
+  content.scrollIntoView({ behavior: 'instant', block: 'start' });
+}
+
+function buildDashboardHTML() {
+  const tickers = Object.keys(FIN);
+  const tickerTabs = tickers.map(t =>
+    `<button class="fin-ticker-tab${t === finCurrentTicker ? ' active' : ''}" data-ticker="${t}">${t}</button>`
+  ).join('');
+
+  return `
+    <div class="fin-dashboard">
+      <div class="fin-dashboard-header">
+        <h2>财务数据仪表盘</h2>
+        <p>基于 SEC 10-K/10-Q 年报季报提取 · 单位: 百万美元 (M)</p>
+      </div>
+
+      <div class="fin-ticker-tabs" id="fin-ticker-tabs">${tickerTabs}</div>
+
+      <div class="fin-period-toggle" id="fin-period-toggle">
+        <button class="fin-period-btn${finPeriodMode === 'quarterly' ? ' active' : ''}" data-mode="quarterly">季度</button>
+        <button class="fin-period-btn${finPeriodMode === 'annual' ? ' active' : ''}" data-mode="annual">年度</button>
+      </div>
+
+      <div class="fin-kpi-row" id="fin-kpi-row"></div>
+
+      <div class="fin-chart-grid" id="fin-chart-grid">
+        <div class="fin-chart-card">
+          <div class="fin-chart-title">营收 (Revenue)</div>
+          <div class="fin-chart-wrap"><canvas id="fin-chart-revenue"></canvas></div>
+        </div>
+        <div class="fin-chart-card">
+          <div class="fin-chart-title">净利润 (Net Income)</div>
+          <div class="fin-chart-wrap"><canvas id="fin-chart-netincome"></canvas></div>
+        </div>
+        <div class="fin-chart-card">
+          <div class="fin-chart-title">毛利润 & 营业利润</div>
+          <div class="fin-chart-wrap"><canvas id="fin-chart-profits"></canvas></div>
+        </div>
+        <div class="fin-chart-card">
+          <div class="fin-chart-title">现金 & 总资产</div>
+          <div class="fin-chart-wrap"><canvas id="fin-chart-balance"></canvas></div>
+        </div>
+        <div class="fin-chart-card">
+          <div class="fin-chart-title">毛利率 & 营业利润率</div>
+          <div class="fin-chart-wrap"><canvas id="fin-chart-margins"></canvas></div>
+        </div>
+        <div class="fin-chart-card">
+          <div class="fin-chart-title">每股收益 (EPS)</div>
+          <div class="fin-chart-wrap"><canvas id="fin-chart-eps"></canvas></div>
+        </div>
+      </div>
+
+      <div class="fin-table-wrap" id="fin-table-wrap"></div>
+    </div>
+  `;
+}
+
+function bindDashboardEvents() {
+  document.getElementById('fin-ticker-tabs').addEventListener('click', e => {
+    const btn = e.target.closest('.fin-ticker-tab');
+    if (!btn) return;
+    finCurrentTicker = btn.dataset.ticker;
+    document.querySelectorAll('.fin-ticker-tab').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    renderDashboard();
+  });
+
+  document.getElementById('fin-period-toggle').addEventListener('click', e => {
+    const btn = e.target.closest('.fin-period-btn');
+    if (!btn) return;
+    finPeriodMode = btn.dataset.mode;
+    document.querySelectorAll('.fin-period-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    renderDashboard();
+  });
+}
+
+function getFilteredData(ticker) {
+  const data = FIN[ticker] || [];
+  if (finPeriodMode === 'annual') {
+    return data.filter(d => d.period.startsWith('FY'));
+  }
+  // quarterly only
+  return data.filter(d => !d.period.startsWith('FY'));
+}
+
+function fmtM(val) {
+  if (val == null || val === undefined) return '—';
+  if (Math.abs(val) >= 1000) return `$${(val / 1000).toFixed(1)}B`;
+  return `$${val.toFixed(0)}M`;
+}
+
+function fmtPct(val) {
+  if (val == null) return '—';
+  return `${val >= 0 ? '+' : ''}${val.toFixed(1)}%`;
+}
+
+function renderDashboard() {
+  const data = getFilteredData(finCurrentTicker);
+  renderKPIs(data);
+  renderCharts(data);
+  renderTable(data);
+}
+
+function renderKPIs(data) {
+  const row = document.getElementById('fin-kpi-row');
+  if (!data.length) { row.innerHTML = ''; return; }
+
+  const latest = data[data.length - 1];
+  const prev = data.length > 1 ? data[data.length - 2] : null;
+
+  const kpis = [
+    { label: '营收', key: 'Revenue' },
+    { label: '净利润', key: 'NetIncome' },
+    { label: '毛利润', key: 'GrossProfit' },
+    { label: '营业利润', key: 'OperatingIncome' },
+    { label: '现金', key: 'Cash' },
+    { label: '总资产', key: 'TotalAssets' },
+  ];
+
+  row.innerHTML = kpis.map(k => {
+    const val = latest[k.key];
+    const prevVal = prev ? prev[k.key] : null;
+    let changeHTML = '';
+    if (val != null && prevVal != null && prevVal !== 0) {
+      const pct = ((val - prevVal) / Math.abs(prevVal)) * 100;
+      const cls = pct >= 0 ? 'positive' : 'negative';
+      const arrow = pct >= 0 ? '↑' : '↓';
+      changeHTML = `<div class="fin-kpi-change ${cls}">${arrow} ${Math.abs(pct).toFixed(1)}% vs 上期</div>`;
+    }
+    return `
+      <div class="fin-kpi-card">
+        <div class="fin-kpi-label">${k.label}</div>
+        <div class="fin-kpi-value">${val != null ? fmtM(val) : '—'}</div>
+        ${changeHTML}
+      </div>
+    `;
+  }).join('');
+}
+
+function renderCharts(data) {
+  finCharts.forEach(c => c.destroy());
+  finCharts = [];
+
+  if (!data.length) return;
+
+  const labels = data.map(d => d.period);
+  const chartFont = { family: "'Inter', sans-serif" };
+  const gridColor = 'rgba(0,0,0,0.04)';
+
+  const baseOptions = {
+    responsive: true,
+    maintainAspectRatio: false,
+    interaction: { mode: 'index', intersect: false },
+    plugins: {
+      legend: { position: 'bottom', labels: { font: { ...chartFont, size: 12 }, padding: 16, usePointStyle: true, pointStyleWidth: 8 } },
+      tooltip: {
+        backgroundColor: 'rgba(30,30,30,0.92)',
+        titleFont: { ...chartFont, size: 13, weight: '600' },
+        bodyFont: { ...chartFont, size: 12 },
+        padding: 12,
+        cornerRadius: 8,
+        callbacks: {
+          label: function(ctx) {
+            const val = ctx.parsed.y;
+            if (ctx.dataset.label.includes('率') || ctx.dataset.label.includes('Margin')) {
+              return ` ${ctx.dataset.label}: ${val != null ? val.toFixed(1) + '%' : '—'}`;
+            }
+            if (ctx.dataset.label.includes('EPS')) {
+              return ` ${ctx.dataset.label}: $${val != null ? val.toFixed(2) : '—'}`;
+            }
+            return ` ${ctx.dataset.label}: ${fmtM(val)}`;
+          }
+        }
+      }
+    },
+    scales: {
+      x: { grid: { display: false }, ticks: { font: { ...chartFont, size: 11 }, maxRotation: 45 } },
+      y: { grid: { color: gridColor }, ticks: { font: { ...chartFont, size: 11 }, callback: v => {
+        if (Math.abs(v) >= 1000) return `$${(v/1000).toFixed(0)}B`;
+        return `$${v}M`;
+      }}}
+    }
+  };
+
+  const colors = {
+    blue: { bg: 'rgba(59,130,246,0.15)', border: '#3b82f6' },
+    green: { bg: 'rgba(22,163,74,0.15)', border: '#16a34a' },
+    orange: { bg: 'rgba(234,88,12,0.15)', border: '#ea580c' },
+    purple: { bg: 'rgba(147,51,234,0.15)', border: '#9333ea' },
+    red: { bg: 'rgba(220,38,38,0.15)', border: '#dc2626' },
+    teal: { bg: 'rgba(20,184,166,0.15)', border: '#14b8a6' },
+    pink: { bg: 'rgba(236,72,153,0.15)', border: '#ec4899' },
+  };
+
+  // 1. Revenue chart
+  finCharts.push(new Chart(document.getElementById('fin-chart-revenue'), {
+    type: 'bar',
+    data: {
+      labels,
+      datasets: [{
+        label: '营收 Revenue',
+        data: data.map(d => d.Revenue ?? null),
+        backgroundColor: colors.blue.bg,
+        borderColor: colors.blue.border,
+        borderWidth: 2,
+        borderRadius: 6,
+        borderSkipped: false,
+      }]
+    },
+    options: { ...baseOptions }
+  }));
+
+  // 2. Net Income chart
+  finCharts.push(new Chart(document.getElementById('fin-chart-netincome'), {
+    type: 'bar',
+    data: {
+      labels,
+      datasets: [{
+        label: '净利润 Net Income',
+        data: data.map(d => d.NetIncome ?? null),
+        backgroundColor: data.map(d => (d.NetIncome ?? 0) >= 0 ? colors.green.bg : colors.red.bg),
+        borderColor: data.map(d => (d.NetIncome ?? 0) >= 0 ? colors.green.border : colors.red.border),
+        borderWidth: 2,
+        borderRadius: 6,
+        borderSkipped: false,
+      }]
+    },
+    options: { ...baseOptions }
+  }));
+
+  // 3. Gross + Operating Profit
+  finCharts.push(new Chart(document.getElementById('fin-chart-profits'), {
+    type: 'line',
+    data: {
+      labels,
+      datasets: [
+        {
+          label: '毛利润 Gross Profit',
+          data: data.map(d => d.GrossProfit ?? null),
+          borderColor: colors.teal.border,
+          backgroundColor: colors.teal.bg,
+          fill: true,
+          tension: 0.3,
+          pointRadius: 3,
+          pointHoverRadius: 6,
+        },
+        {
+          label: '营业利润 Operating Income',
+          data: data.map(d => d.OperatingIncome ?? null),
+          borderColor: colors.orange.border,
+          backgroundColor: colors.orange.bg,
+          fill: true,
+          tension: 0.3,
+          pointRadius: 3,
+          pointHoverRadius: 6,
+        }
+      ]
+    },
+    options: { ...baseOptions }
+  }));
+
+  // 4. Cash & Total Assets
+  finCharts.push(new Chart(document.getElementById('fin-chart-balance'), {
+    type: 'line',
+    data: {
+      labels,
+      datasets: [
+        {
+          label: '现金 Cash',
+          data: data.map(d => d.Cash ?? null),
+          borderColor: colors.green.border,
+          backgroundColor: colors.green.bg,
+          fill: true,
+          tension: 0.3,
+          pointRadius: 3,
+          pointHoverRadius: 6,
+        },
+        {
+          label: '总资产 Total Assets',
+          data: data.map(d => d.TotalAssets ?? null),
+          borderColor: colors.purple.border,
+          backgroundColor: colors.purple.bg,
+          fill: false,
+          tension: 0.3,
+          pointRadius: 3,
+          pointHoverRadius: 6,
+        }
+      ]
+    },
+    options: { ...baseOptions }
+  }));
+
+  // 5. Margins chart (percentage)
+  const marginsOpts = JSON.parse(JSON.stringify(baseOptions));
+  marginsOpts.scales.y.ticks.callback = v => `${v}%`;
+  finCharts.push(new Chart(document.getElementById('fin-chart-margins'), {
+    type: 'line',
+    data: {
+      labels,
+      datasets: [
+        {
+          label: '毛利率 Gross Margin',
+          data: data.map(d => {
+            if (d.GrossProfit != null && d.Revenue) return ((d.GrossProfit / d.Revenue) * 100);
+            return null;
+          }),
+          borderColor: colors.teal.border,
+          backgroundColor: 'transparent',
+          tension: 0.3,
+          pointRadius: 4,
+          pointHoverRadius: 7,
+          borderWidth: 2.5,
+        },
+        {
+          label: '营业利润率 Operating Margin',
+          data: data.map(d => {
+            if (d.OperatingIncome != null && d.Revenue) return ((d.OperatingIncome / d.Revenue) * 100);
+            return null;
+          }),
+          borderColor: colors.orange.border,
+          backgroundColor: 'transparent',
+          tension: 0.3,
+          pointRadius: 4,
+          pointHoverRadius: 7,
+          borderWidth: 2.5,
+        },
+        {
+          label: '净利率 Net Margin',
+          data: data.map(d => {
+            if (d.NetIncome != null && d.Revenue) return ((d.NetIncome / d.Revenue) * 100);
+            return null;
+          }),
+          borderColor: colors.blue.border,
+          backgroundColor: 'transparent',
+          tension: 0.3,
+          pointRadius: 4,
+          pointHoverRadius: 7,
+          borderWidth: 2.5,
+          borderDash: [5, 3],
+        }
+      ]
+    },
+    options: marginsOpts
+  }));
+
+  // 6. EPS
+  const epsOpts = JSON.parse(JSON.stringify(baseOptions));
+  epsOpts.scales.y.ticks.callback = v => `$${v.toFixed(2)}`;
+  finCharts.push(new Chart(document.getElementById('fin-chart-eps'), {
+    type: 'line',
+    data: {
+      labels,
+      datasets: [
+        {
+          label: 'EPS (Basic)',
+          data: data.map(d => d.EPS_Basic ?? null),
+          borderColor: colors.blue.border,
+          backgroundColor: colors.blue.bg,
+          fill: true,
+          tension: 0.3,
+          pointRadius: 4,
+          pointHoverRadius: 7,
+          borderWidth: 2.5,
+        },
+        {
+          label: 'EPS (Diluted)',
+          data: data.map(d => d.EPS_Diluted ?? null),
+          borderColor: colors.pink.border,
+          backgroundColor: 'transparent',
+          tension: 0.3,
+          pointRadius: 4,
+          pointHoverRadius: 7,
+          borderWidth: 2,
+          borderDash: [5, 3],
+        }
+      ]
+    },
+    options: epsOpts
+  }));
+}
+
+function renderTable(data) {
+  const wrap = document.getElementById('fin-table-wrap');
+  if (!data.length) { wrap.innerHTML = ''; return; }
+
+  const metrics = [
+    { key: 'Revenue', label: '营收' },
+    { key: 'CostOfRevenue', label: '营收成本' },
+    { key: 'GrossProfit', label: '毛利润' },
+    { key: 'OperatingExpenses', label: '运营费用' },
+    { key: 'OperatingIncome', label: '营业利润' },
+    { key: 'NetIncome', label: '净利润' },
+    { key: 'EPS_Basic', label: 'EPS (Basic)', isEPS: true },
+    { key: 'EPS_Diluted', label: 'EPS (Diluted)', isEPS: true },
+    { key: 'Cash', label: '现金' },
+    { key: 'TotalAssets', label: '总资产' },
+    { key: 'TotalLiabilities', label: '总负债' },
+    { key: 'StockholdersEquity', label: '股东权益' },
+    { key: 'R&D', label: '研发费用' },
+    { key: 'SG&A', label: 'SG&A' },
+    { key: 'SBC', label: '股权激励 SBC' },
+  ];
+
+  // Filter metrics that have at least one value
+  const activeMetrics = metrics.filter(m => data.some(d => d[m.key] != null));
+
+  let html = '<table class="fin-table"><thead><tr><th>指标</th>';
+  data.forEach(d => { html += `<th>${d.period}</th>`; });
+  html += '</tr></thead><tbody>';
+
+  activeMetrics.forEach(m => {
+    html += `<tr><td>${m.label}</td>`;
+    data.forEach(d => {
+      const val = d[m.key];
+      if (val == null) {
+        html += '<td>—</td>';
+      } else if (m.isEPS) {
+        const cls = val < 0 ? 'negative' : val > 0 ? 'positive' : '';
+        html += `<td class="${cls}">$${val.toFixed(2)}</td>`;
+      } else {
+        const cls = val < 0 ? 'negative' : '';
+        html += `<td class="${cls}">${fmtM(val)}</td>`;
+      }
+    });
+    html += '</tr>';
+  });
+
+  // Add margin rows
+  html += '<tr><td>毛利率</td>';
+  data.forEach(d => {
+    if (d.GrossProfit != null && d.Revenue) {
+      html += `<td>${((d.GrossProfit / d.Revenue) * 100).toFixed(1)}%</td>`;
+    } else {
+      html += '<td>—</td>';
+    }
+  });
+  html += '</tr>';
+
+  html += '<tr><td>营业利润率</td>';
+  data.forEach(d => {
+    if (d.OperatingIncome != null && d.Revenue) {
+      const v = ((d.OperatingIncome / d.Revenue) * 100).toFixed(1);
+      const cls = v < 0 ? 'negative' : 'positive';
+      html += `<td class="${cls}">${v}%</td>`;
+    } else {
+      html += '<td>—</td>';
+    }
+  });
+  html += '</tr>';
+
+  html += '<tr><td>净利率</td>';
+  data.forEach(d => {
+    if (d.NetIncome != null && d.Revenue) {
+      const v = ((d.NetIncome / d.Revenue) * 100).toFixed(1);
+      const cls = v < 0 ? 'negative' : 'positive';
+      html += `<td class="${cls}">${v}%</td>`;
+    } else {
+      html += '<td>—</td>';
+    }
+  });
+  html += '</tr>';
+
+  html += '</tbody></table>';
+  wrap.innerHTML = html;
+}
+
 </script>
 </body>
 </html>
