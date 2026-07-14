@@ -2,299 +2,152 @@
 ticker: RKLB
 quarter: Q3
 year: 2023
-source: https://www.gurufocus.com/stock/RKLB/transcripts/2217066
+source: https://roic.ai/quote/RKLB/transcripts/2023-year/3-quarter
 downloaded: 2026-07-14
 ---
 
-Title: Q3 2023 Rocket Lab USA Inc Earnings Call Transcript
+Peter Beck
 
-URL Source: https://www.gurufocus.com/stock/RKLB/transcripts/2217066
+Thanks, Colin and welcome everybody for joining us.Today’s presentation we will go over our key business accomplishments for the third quarter of 2023 as well as further achievements we have made since the end of the quarter.
 
-Markdown Content:
-[🚀Enjoy a 7-Day Free Trial Thru Jul 21, 2026!✨](https://www.gurufocus.com/pricing?ref=/&sel=premium&utm_source=webApp&utm_medium=userClick&utm_campaign=notification_bar)
+Adam will then talk through our financial results for the third quarter before covering the financial outlook for Q4 2023.After that, we will take questions and finish today’s call with the near-term conferences we will be attending.
 
-[![Image 3: Logo](https://static.gurufocus.com/images/logo_header.png)](https://www.gurufocus.com/)
+Alright.On to what we achieved – excuse me, in the third quarter for the year.
 
-[Sign Up](https://www.gurufocus.com/register)
+Starting with Electron, in July, we launched a mission with several satellites for NASA and others, which was the first of the two back-to-back reusability focused missions.After successfully deploying the first Mission 7 spacecraft, Electron’s first stage was bought back to Earth and recovered from the ocean.
 
-[Login](https://www.gurufocus.com/login?ref=/stock/RKLB/transcripts/2217066)
+Then we followed that up with our 40th Electron launch and even more recovery milestones, including a return for stage and thea first launch, reflowing Rutherford engine previously flown on our 26 Mission, There and Back Again.The engine performed flawlessly like a new one, completely validating our pursuit of reusability for Electron and setting us up well to refly an entire engine set as our next major reusability goal.
 
-[Free Sign-up](https://www.gurufocus.com/register)[Login](https://www.gurufocus.com/login?ref=/stock/RKLB/transcripts/2217066)[7-Day Free Trial](https://www.gurufocus.com/membership/new/index.html#/)
+Next, I will provide a bit of an update for Electron.Following those two successful flights, as you know, we unfortunately experienced an anomaly on our 41st Mission.
 
-[Home](https://www.gurufocus.com/)
+It’s important to remember that up until this launch, we have had 37 successful orbital missions to place 171 satellites in orbit.And the past two years have been flawless, with a record of 20 successful missions one after the other.
 
-[Homepage](https://www.gurufocus.com/)[Membership Levels](https://www.gurufocus.com/pricing)[About Us](https://www.gurufocus.com/about)[Discussion Board](https://www.gurufocus.com/discussion#1)[Complete Stock List](https://www.gurufocus.com/stocks)[The book](https://www.gurufocus.com/ads/books/index.php)[Membership Data Coverage](https://www.gurufocus.com/news/281207/data-coverage-of-gurufocus-premium-membership-)[Founder's Message](https://www.gurufocus.com/letter)[10-Year Letter](https://www.gurufocus.com/letter_10y)[20-Year Letter](https://www.gurufocus.com/letter_20y)[Free Trial](https://www.gurufocus.com/membership/new/index.html#/?ref=topMenu&sel=premium&utm_source=webApp&utm_medium=userClick&utm_campaign=topMenu)[Referral Program](https://www.gurufocus.com/referral-program)[Partner Program](https://www.gurufocus.com/partner-program)[Newsletters Signup](https://www.gurufocus.com/newsletters_signup)[Advertise](https://www.gurufocus.com/advertise)
+For Flight 41, as soon as the issue occurred, a team jumped into action in the week since the team has been scarring through thousands of channels of flight data and manufacturing data to determine what was the probable root cause.I will take you through their investigation in detail over the next couple of slides.
 
-[Screeners](https://www.gurufocus.com/screener)
+Working in parallel with the FAA.The FAA has conducted its own review of the mission safety processes, plans and procedures, which concluded that they all worked as they should to keep the public safe and I am pleased to confirm that the FAA has since given us approval to resume launching from Launch Complex One.
 
-[GuruFocus Screeners](https://www.gurufocus.com/screener)
+With their investigation in its final stages and our launch license remaining active, we are fully anticipating to return to flight within the next few weeks.Following updates and changes to our testing and manufacturing processes, we will be returning to the pad with an even more reliable vehicle to meet our busy launch manifest for the remainder of ‘23 and into ‘24.
 
-[All-In-One Screener](https://www.gurufocus.com/screener)[Bond Screener](https://www.gurufocus.com/bonds)[ETF Screener](https://www.gurufocus.com/screener/etf)[Strategies Created by Users](https://www.gurufocus.com/strategy)[Ben Graham Lost Formula 2 New](https://www.gurufocus.com/screener?name=Ben%20Graham%20Lost%20Formula&id=70)[Canadian Faster Growers](https://www.gurufocus.com/screener?name=Canadian%20Faster%20Growers&id=73)[CEO Buys 20 New](https://www.gurufocus.com/screener?name=CEO%20Buys&id=74)[CEO Buys after Price Drop > 20% 16 New](https://www.gurufocus.com/screener?name=CEO%20Buys%20after%20Price%20Drop%20%3E%2020%25&id=75)[Dividend Kings 2026](https://www.gurufocus.com/screener?name=Dividend%20Kings%202026&id=121779)[Dividend Aristocrats 2026](https://www.gurufocus.com/screener?name=Dividend%20Aristocrats%202026&id=123161)[Dividend Growth Portfolio 1 New](https://www.gurufocus.com/screener?name=Dividend%20Growth%20Portfolio&id=77)[Dividend Income Portfolio](https://www.gurufocus.com/screener?name=Dividend%20Income%20Portfolio&id=78)[Fast Growers](https://www.gurufocus.com/screener?name=Fast%20Growers&id=79)[Good Companies](https://www.gurufocus.com/screener?name=Good%20Companies&id=103)[Hedge Fund Guru Top 10 Aggregated](https://www.gurufocus.com/screener?name=Hedge%20Fund%20Guru%20Top%2010%20Aggregated&id=80)[High Quality](https://www.gurufocus.com/screener?name=High%20Quality&id=81)[High Quality Low Capex w ROE ROC min](https://www.gurufocus.com/screener?name=High%20Quality%20Low%20Capex%20w%20ROE%20ROC%20min&id=84)[High Quality & Low Capex](https://www.gurufocus.com/screener?name=High%20Quality%20&%20Low%20Capex&id=87)[High Yield Insider Buys](https://www.gurufocus.com/screener?name=High%20Yield%20Insider%20Buys&id=88)[Historical High Dividend Yields 1 New](https://www.gurufocus.com/screener?name=Historical%20High%20Dividend%20Yields&id=89)[International Gurus' Top Holdings](https://www.gurufocus.com/screener?name=International%20Gurus%27%20Top%20Holdings&id=90)[James Montier Short Screen 20 New](https://www.gurufocus.com/screener?name=James%20Montier%20Short%20Screen&id=91)[Margin Decliners 20 New](https://www.gurufocus.com/screener?name=Margin%20Decliners&id=92)[Mega Caps 20 New](https://www.gurufocus.com/screener?name=Mega%20Caps&id=93)[Peter Lynch & Warren Buffett 3 New](https://www.gurufocus.com/screener?name=Peter%20Lynch%20&%20Warren%20Buffett&id=94)[Peter Lynch Growth w Lower Valuation 20 New](https://www.gurufocus.com/screener?name=Peter%20Lynch%20Growth%20w%20Lower%20Valuation&id=95)[Peter Lynch S&L Traded Below Book 20 New](https://www.gurufocus.com/screener?name=Peter%20Lynch%20S&L%20Traded%20Below%20Book&id=96)[PFCF Screener 20 New](https://www.gurufocus.com/screener?name=PFCF%20Screener&id=97)[Piotroski Score Screener](https://www.gurufocus.com/screener?name=Piotroski%20Score%20Screener&id=6724)[Predictable Growth Companies 20 New](https://www.gurufocus.com/screener?name=Predictable%20Companies&id=99)[Profitable predictable margin expanders](https://www.gurufocus.com/screener?name=Profitable%20predictable%20margin%20expanders&id=100)[Stocks Sold w less Cash](https://www.gurufocus.com/screener?name=Stocks%20Sold%20w%20less%20Cash&id=102)[The Stalwarts](https://www.gurufocus.com/screener?name=The%20Stalwarts&id=104)
+Now, let me take you through what happened and what we have learned.So here is a slide on the anomaly timeline.
 
-[My Screeners](https://www.gurufocus.com/screener?manage=screen)
+The anomaly that ended the mission happened incredibly quickly.From the first action in the chain of events when Electron cutoff its data relay, the team only had 1.6 seconds of anomaly flight data to work with.
 
-[Create My Screener](https://www.gurufocus.com/screener)
+This was always going to be a highly complex issue to figure out, but with deep diligence and analysis, here is what we have been able to determine.On its 41st Mission launched September 19, from LC-1, it completed all the usual launch milestones through lift-off Max-Q stage separations.
 
-[Value Screens](https://www.gurufocus.com/ideas)
+At 151 seconds, the second stage engine tried to ignite, which is confirmed by flight telemetry that showed the ignited pressure is building and the locks and kerosene pump speed rising to pump propellants into the combustion chamber.The voltage levels from the battery packs that power the engine and the motor controllers were nominal at this point and normal at that point of ignition, but within milliseconds, in fact, 151.7 seconds, we get our first indication of the anomaly.
 
-[Stock Ideas](https://www.gurufocus.com/ideas)[S&P 500 Map](https://www.gurufocus.com/screener?view=map&show_header=false)[S&P 500 Bubble](https://www.gurufocus.com/screener?view=bubble&show_header=false)[S&P 500 Aggregate](https://www.gurufocus.com/screener?view=aggregate&show_header=false)[Top GF Score](https://www.gurufocus.com/screener/top-gf-score)[Top Profitability Rank](https://www.gurufocus.com/screener/top-profitability-rank)[Top Quality Rank](https://www.gurufocus.com/screener/top-quality-rank)[Top Momentum Rank](https://www.gurufocus.com/screener/top-momentum-rank)[Buffett-Munger Screener 1 New](https://www.gurufocus.com/screener/buffett-munger)[Industry Overview](https://www.gurufocus.com/industry#1)[Undervalued Predictable 2 New](https://www.gurufocus.com/screener/valuedcf)[Benjamin Graham Net-Net 2 New](https://www.gurufocus.com/screener/grahamncav)[52-week/3Y/5Y Lows 20 New](https://www.gurufocus.com/screener/52weeklow)[52-week/3Y/5Y Highs 20 New](https://www.gurufocus.com/screener/52weekhigh)[Magic Formula(Greenblatt) 8 New](https://www.gurufocus.com/screener/magic-formula)[Dividend Stocks 20 New](https://www.gurufocus.com/screener/dividend-stocks)[Peter Lynch Screen 1 New](https://www.gurufocus.com/screener/peter-lynch-stocks)[S&P500 Grid 20 New](https://www.gurufocus.com/screener/guru-sp-grid)[Predictable Companies 1 New](https://www.gurufocus.com/screener/predictable)[Spin Off List 20 New](https://www.gurufocus.com/screener/spinoff)[Merger and Acquisition List](https://www.gurufocus.com/screener/merger)[Historical Low P/B List 20 New](https://www.gurufocus.com/screener/lowpb)[Historical Low P/S List 20 New](https://www.gurufocus.com/screener/lowps)[High Short Interest 10 New](https://www.gurufocus.com/screener/short-stocks)[Upcoming Special Dividends 20 New](https://www.gurufocus.com/screener/upcoming-special-dividends)[Delisted Stocks](https://www.gurufocus.com/screener/delisted)
+The system’s high level voltage levels take a sudden dip and rise of about 100 volts within 30 milliseconds, indicating an energy escape from a system that then led to a full loss of power to the second stage lower avionics, cutting off telemetry and communication with the second stage.And with that, it was all over.
 
-[Model Portfolios](https://www.gurufocus.com/model_portfolio.php)
+So move on to the issues.So you have to bear with me on this was a little bit to talk about here.
 
-[Performances Overview](https://www.gurufocus.com/model_portfolio.php)[Most Broadly Held Portfolio](https://www.gurufocus.com/model_portfolio.php?mp=largecap)[Most Weighted Portfolio](https://www.gurufocus.com/model_portfolio.php?mp=hr_largecap)[Buffett-Munger Top 25](https://www.gurufocus.com/model_portfolio.php?mp=midcap)[GF Score <= 100 Top 25](https://www.gurufocus.com/model_portfolio.php?mp=gfscore_91_100)[Top 25 Undervalued Predictable](https://www.gurufocus.com/model_portfolio.php?mp=smallcap)[Top 25 52-week Low Predictable](https://www.gurufocus.com/model_portfolio.php?mp=cap20)[Top 25 Historical Low P/S](https://www.gurufocus.com/model_portfolio.php?mp=cap40)
+But with good visual evidence with the on-boarded cameras and over 12,000 channels of data and this high level timeline to draw from, the investigation narrowed in on the issue.More than 200 sub-investigations were launched to rollout hypothetical causes of the anomaly.
 
-[Stock Comparison](https://www.gurufocus.com/ideas)
+After more than 7 weeks of extensive analysis of the mission’s manufacturing test and flight data, the findings of the Rocket Lab investigation team overwhelmingly indicate an unexpected electrical arc occurred within the power system.Shown in the image on the top right, the team did some tricky optical triangulation and image processing of a small shadow on the engine bell caused by the arc.
 
-[Airline Stocks](https://www.gurufocus.com/ideas/airline-stocks)[Artificial Intelligence Stocks](https://www.gurufocus.com/ideas/artificial-intelligence-stocks)[Bank Stocks](https://www.gurufocus.com/ideas/bank-stocks)[Biotech Stocks](https://www.gurufocus.com/ideas/biotech-stocks)[Blockchain Stocks](https://www.gurufocus.com/ideas/blockchain-stocks)[Chinese Stocks](https://www.gurufocus.com/ideas/chinese-stocks)[Dividend Stocks](https://www.gurufocus.com/ideas/dividend-stocks)[EV Stocks](https://www.gurufocus.com/ideas/ev-stocks)[Growth Stocks](https://www.gurufocus.com/ideas/growth-stocks)[Oil Stocks](https://www.gurufocus.com/ideas/oil-stocks)[Value Stocks](https://www.gurufocus.com/ideas/value-stocks)[Virtual Reality Stocks](https://www.gurufocus.com/ideas/virtual-reality-stocks)[Compare More Stocks…](https://www.gurufocus.com/ideas#compare-stocks)
+From that, they are able to pinpoint and retriangulate the failure’s points origin to an area where the two battery packs connect known as the fix-packed to supply the high voltage power.So now, we are all going to take a little lesson in passion law and passion curves.
 
-[Gurus](https://www.gurufocus.com/guru/latest-picks)
+So passion law describes how in partial pressure environments the likelihood of an act to occur changes in high voltage systems depending on the environmental composition.An approximate guide that can then be applied across different situations called the passion curve, which uses the relationship between voltage pressure, multiplied by distance to indicate what the range of danger is for an arc to form through various gases like helium, argon, nitrogen etcetera.
 
-[Guru Trades](https://www.gurufocus.com/guru/latest-picks)
+So the graph on the bottom right is what’s known as a highly simplified passion curves.So basically, the easiest way to think about this is if you have a positive in a negative terminal of a battery at 500 volts down here on earth, you could place those two terminals of the battery about 0.03 millimeters or one-third of the thickness of a human here beside each other and they would not create an arc or jumper spark between them.
 
-[Latest Guru Picks](https://www.gurufocus.com/guru/latest-picks)[Real Time Picks](https://www.gurufocus.com/guru/realtime-picks)[Guru Portfolio](https://www.gurufocus.com/guru/portfolio)[Score Board](https://www.gurufocus.com/guru/scoreboard)[Mutual Funds](https://www.gurufocus.com/guru/mutual-funds)[Top 10 Holdings](https://www.gurufocus.com/guru/top-holdings)[Sector Picks](https://www.gurufocus.com/guru/sector-picks)[International Picks](https://www.gurufocus.com/guru/international-picks)[Aggregated Portfolio](https://www.gurufocus.com/guru/aggregated-portfolio)[Consensus Picks](https://www.gurufocus.com/guru/consensus-picks)[Guru Bargains](https://www.gurufocus.com/guru/bargains)[Hot Picks](https://www.gurufocus.com/guru/hot-picks)[Download Guru Portfolios](https://www.gurufocus.com/guru/download-guru-portfolio)[Industry Trends](https://www.gurufocus.com/guru/industry-trends)[Geographic Trend](https://www.gurufocus.com/guru/geographic-trends)[ETFs](https://www.gurufocus.com/guru/etfs)[Options Holdings](https://www.gurufocus.com/guru/option-holdings)[European Shorting](https://www.gurufocus.com/guru/european-shortings)
+Now, take the same 500-volt battery in terminals and put them in the worst part of the passion curve, which just happens to be just after stage separation and Stage 2 ignition of Electron and the same 500-volt battery in terminals will now act to each other when they are nearly 1 meter apart.So different gases, different pressures affect this distance.
 
-[Guru Lists](https://www.gurufocus.com/guru/list)
+And there is also other things like AC ripple that can have a huge negative effect.But for now, let’s just keep it simple.
 
-[Complete Guru List](https://www.gurufocus.com/guru/list)[Warren Buffett](https://www.gurufocus.com/guru/warren%2Bbuffett/summary)[Bill Gates](https://www.gurufocus.com/guru/bill%2Bgates/summary)[Mohnish Pabrai](https://www.gurufocus.com/guru/mohnish%2Bpabrai/summary)[Carl Icahn](https://www.gurufocus.com/guru/carl%2Bicahn/summary)[George Soros](https://www.gurufocus.com/guru/george%2Bsoros/summary)[David Tepper](https://www.gurufocus.com/guru/david%2Btepper/summary)[Seth Klarman](https://www.gurufocus.com/guru/seth%2Bklarman/summary)[Bill Ackman](https://www.gurufocus.com/guru/bill%2Backman/summary)[Joel Greenblatt](https://www.gurufocus.com/guru/joel%2Bgreenblatt/summary)[Charlie Munger](https://www.gurufocus.com/guru/charlie%2Bmunger/summary)[Michael Price](https://www.gurufocus.com/guru/michael%2Bprice/summary)[Julian Robertson](https://www.gurufocus.com/guru/julian%2Brobertson/summary)[Chuck Akre](https://www.gurufocus.com/guru/chuck%2Bakre/summary)[David Einhorn](https://www.gurufocus.com/guru/david%2Beinhorn/summary)[Tom Gayner](https://www.gurufocus.com/guru/tom%2Bgayner/summary)
+For Electron, with its high voltage 500-volt power supply, we have to ensure that every connection is essentially hermetically sealed.A tiny pinprick or installation failure will result in arcs given that they can travel over large distances when in the passion curve.
 
-[My Guru Lists](https://www.gurufocus.com/guru/list)
+One of this is influx and very transient, because as we ascend higher during the second stage burn and go into the high vacuum of space, the arcing distance goes back the other way and it becomes hard to arc again.It’s really just at stage separation where things are the worst and we bought them out on the passion curve.
 
-[Insiders](https://www.gurufocus.com/insider/summary)
+As you can imagine, this is extremely difficult to test for down on earth.We actually currently put the whole rear engine assembly in a vacuum chamber, pull it down and inject gases like argon to try and aggravate the phenomenon.
 
-[Insider Trading Tracker](https://www.gurufocus.com/insider/summary)
+But even the smallest installation compromise cannot always be detected, especially when you compile that with other factors like AC ripple and trace gases.Excuse me.
 
-[Real-Time Insider Picks](https://www.gurufocus.com/insider/summary)[CEO Buys/Sells](https://www.gurufocus.com/insider/ceo)[CFO Buys/Sells](https://www.gurufocus.com/insider/cfo)[Insider Trends](https://www.gurufocus.com/insider/trend)[Insider Cluster](https://www.gurufocus.com/insider/cluster)[Guru + Insider Double Buys](https://www.gurufocus.com/insider/double)[Triple Buys/Sells](https://www.gurufocus.com/insider/triple)[Canadian Insider](https://www.gurufocus.com/insider/canadian)[Chinese Insider](https://www.gurufocus.com/insider/chinese)[German Insider](https://www.gurufocus.com/insider/german)[Complete Insider List](https://www.gurufocus.com/insiders)
+So, now that everybody understands passion curves during the second stage ignition, we are at the worst part of the curve and we had a small concentration of helium in the vicinity of the upper stage, which is normal and a high voltage AC ripple that lowers the spark threshold even lower and a tiny undetectable fault in the HV loom installation.All of which – excuse me, all of which combined allowed for an arc to briefly occur.
 
-[Politician Trading Tracker](https://www.gurufocus.com/politician/summary)
+If any of these things were not present, then the failure would not have occurred.All four had to be there.
 
-[Real-Time Politician Picks](https://www.gurufocus.com/politician/summary)[Complete Politician List](https://www.gurufocus.com/politicians)[Nancy Pelosi](https://www.gurufocus.com/politician/7/nancy-pelosi)[Mitch Mcconnell](https://www.gurufocus.com/politician/45/mitch-mcconnell)[Tommy Tuberville](https://www.gurufocus.com/politician/4/tommy-tuberville)[Josh Gottheimer](https://www.gurufocus.com/politician/35/josh-gottheimer)[Kevin Hern](https://www.gurufocus.com/politician/36/kevin-hern)[Thomas R. Carper](https://www.gurufocus.com/politician/2/thomas-r.-carper)[Susie Lee](https://www.gurufocus.com/politician/90/susie-lee)[Lois Frankel](https://www.gurufocus.com/politician/28/lois-frankel)
+And to be honest, with all the testing we do before flight, you would also have to be incredibly unlucky to have the installation failure point, also line up with an electrical path to be able to act a chassis.And look, I don’t generally believe in luck as an engineer, but in this instance, I would say that so many things had to line up that most people would say that this – the current probability of this occurring would be largely improbable.
 
-[Market](https://www.gurufocus.com/economic_indicators)
+So with that, now that we kind of understand and we have explained the failure, what are we going to do to get back to flight?So the failure is obviously a highly complex set of conditions that are extremely difficult to predict.
 
-[US Market Valuation](https://www.gurufocus.com/stock-market-valuations.php)
+A team’s top priority through the investigation has been to find a way to make sure that this never happens again.And as a result, there is a couple of key corrective measures.
 
-[Market Newsletter](https://www.gurufocus.com/market-newsletter)[Buffett Indicator](https://www.gurufocus.com/stock-market-valuations.php)[U.S. Treasury Yield Curve](https://www.gurufocus.com/yield_curve.php)[U.S. Inflation Rate](https://www.gurufocus.com/market/us-inflation-contributors)[Presidential Cycle and Stock Market](https://www.gurufocus.com/market/presidential-cycle)[Debt-to-GDP](https://www.gurufocus.com/market/debt-to-gdp/usa)[Shiller P/E](https://www.gurufocus.com/shiller-PE.php)[Shiller P/E by Sectors](https://www.gurufocus.com/sector_shiller_pe.php)[GF Value for S&P 500 Index](https://www.gurufocus.com/market/sp500-gf-value)[GF Value for NASDAQ 100 Index](https://www.gurufocus.com/market/nasdaq100-gf-value)[GF Value for DOW 30 Index](https://www.gurufocus.com/market/dow30-gf-value)[Gold/Silver Price Ratio](https://www.gurufocus.com/market/gold-silver-ratio)[Gold/Platinum Price Ratio](https://www.gurufocus.com/market/gold-platinum-ratio)[Gold/Palladium Price Ratio](https://www.gurufocus.com/market/gold-palladium-ratio)[Fed Net Liquidity](https://www.gurufocus.com/market/fed-net-liquidity-sp500)[Buffett Assets Allocation](https://www.gurufocus.com/buffett_assets_allocations.php?1)[Latest IPOs](https://www.gurufocus.com/ipos)
+The first is to increase the fidelity of a stage level vacuum testing.We now have a much more sensitive instruments implemented in the pre-flight test both at the component level and the stage level, that can sense partial discharge all the way down to a picocoulomb now.
 
-[Global Market Valuation](https://www.gurufocus.com/global-market-valuation.php)
+This gives us much more confidence in the testing.However, I was not happy to stop there.
 
-[Major Stock Market Indices Performance](https://www.gurufocus.com/idx/%5EGSPC)[Global Market Overview](https://www.gurufocus.com/global-market-valuation.php)[USA](https://www.gurufocus.com/stock-market-valuations.php)[China](https://www.gurufocus.com/global-market-valuation.php?country=CHN)[Japan](https://www.gurufocus.com/global-market-valuation.php?country=JPN)[India](https://www.gurufocus.com/global-market-valuation.php?country=IND)[Canada](https://www.gurufocus.com/global-market-valuation.php?country=CAN)[UK](https://www.gurufocus.com/global-market-valuation.php?country=GBR)[France](https://www.gurufocus.com/global-market-valuation.php?country=FRA)[Germany](https://www.gurufocus.com/global-market-valuation.php?country=DEU)[Brazil](https://www.gurufocus.com/global-market-valuation.php?country=BRA)[Australia](https://www.gurufocus.com/global-market-valuation.php?country=AUS)[More...](https://www.gurufocus.com/global-market-valuation.php)
+And so we have implemented a rather brute force solution.What we have done is seal up the battery frame, that contains all the high voltage connections and equipment and then pressurize, it to about 0.5 of PSI.
 
-[Economic Indicators](https://www.gurufocus.com/economic_indicators)
+I will draw your attention to the graph on the top right.Surprise, surprise, it’s another passion curve that shows that by pressurizing the high voltage area, we shift the passion curve to the left out of the red zone and into the green zone, meaning basically, we are back to what it’s like on earth, where it’s not really possible for big archy distances to occur.
 
-[Economic Indicators Overview](https://www.gurufocus.com/economic_indicators)[Commitments of Traders Reports](https://www.gurufocus.com/cot_reports)[The Dow Jones Industrial Average (DJIA)](https://www.gurufocus.com/economic_indicators/229/the-dow-jones-industrial-average-djia)[SP 500 Index](https://www.gurufocus.com/economic_indicators/63/sp-500-index)[Nasdaq Composite Index](https://www.gurufocus.com/economic_indicators/232/nasdaq-composite-index)[Gross Domestic Product (GDP)](https://www.gurufocus.com/economic_indicators/20/gross-domestic-product-gdp)[Shiller PE](https://www.gurufocus.com/economic_indicators/56/shiller-pe)[Ratio of Wilshire 5000 over GNP](https://www.gurufocus.com/economic_indicators/60/ratio-of-wilshire-5000-over-gnp)[Civilian Unemployment Rate](https://www.gurufocus.com/economic_indicators/10/civilian-unemployment-rate)[Russell 2000 Index](https://www.gurufocus.com/economic_indicators/4448/russell-2000-index)[CBOE Volatility Index (VIX)](https://www.gurufocus.com/economic_indicators/234/cboe-volatility-index-the-vix)[Total Nonfarm Payrolls: All Employees](https://www.gurufocus.com/economic_indicators/14/total-nonfarm-payrolls-all-employees)[More...](https://www.gurufocus.com/economic_indicators)
+Now, this has been a lot of work to implement by the team and it’s a fairly extreme solution.But really, I thought of the only way we can put the passion law well back in its box.
 
-[Sector & Industry Performance](https://www.gurufocus.com/industry)
+So the best way to solve a problem in my opinion is always to eliminate the problem.And that’s what we have done.
 
-[Global Industry Overview](https://www.gurufocus.com/industry)[USA](https://www.gurufocus.com/industry/usa)[Asia](https://www.gurufocus.com/industry/asia)[Europe](https://www.gurufocus.com/industry/europe)[Canada](https://www.gurufocus.com/industry/canada)[UK/Ireland](https://www.gurufocus.com/industry/uk-ireland)[Oceania](https://www.gurufocus.com/industry/oceania)[Latin America](https://www.gurufocus.com/industry/latin-america)[Africa](https://www.gurufocus.com/industry/africa)[India/Pakistan](https://www.gurufocus.com/industry/india-pakistan)
+Getting to the bottom of the issue and back to the pad for our customers has been the team’s number one priority.It’s been incredible to witness their perseverance, dedication over these past few weeks, not only on the anomaly investigation, but in the work that they have completed in parallel to make sure that we are good to go as soon as we get back to the pad.
 
-[News](https://www.gurufocus.com/latest-news)
+The launch window for our return to flight mission will open on November 28 and extend into December.This dedicated mission will be for iQPS, a Japanese-based Earth imaging company, with the rocket for that mission going through pre-launch testing on the pad at launch complex right now.
 
-[News](https://www.gurufocus.com/latest-news)
+So move on to Electron launch manifest.So in 2024, we have a really big year ahead of us.
 
-[Editors' Picks](https://www.gurufocus.com/latest-news/all/timeless)[Stock Analysis](https://www.gurufocus.com/latest-news/all/analysis)[Stock Market News](https://www.gurufocus.com/stock-market-news)[Q&A with Gurus](https://www.gurufocus.com/latest-news/all/qa)[Guru Stock Picks](https://www.gurufocus.com/latest-news/all/guru-stock-picks)[Insider Transaction](https://www.gurufocus.com/latest-news/all/insider)[Earning Reports](https://www.gurufocus.com/latest-news/all/earning-report)[Earnings Call Transcripts](https://www.gurufocus.com/latest-news/all/earnings-call-transcripts)[Software Stock News](https://www.gurufocus.com/latest-news/all/software)[Biotechnology Stock News](https://www.gurufocus.com/latest-news/all/biotechnology)[Hardware Stock News](https://www.gurufocus.com/latest-news/all/hardware)[Banks Stock News](https://www.gurufocus.com/latest-news/all/banks)[Metals & Mining Stock News](https://www.gurufocus.com/latest-news/all/metals-%26-mining)[Drug Manufacturers Stock News](https://www.gurufocus.com/latest-news/all/drug-manufacturers)[Instant Alerts](https://www.gurufocus.com/latest-news/all/instant-alerts)[Press Release](https://www.gurufocus.com/latest-news/all/press_release)[Crypto Press Release](https://www.gurufocus.com/latest-news/all/crypto_press_release)[All News](https://www.gurufocus.com/latest-news/all/all)
+Even with air pores in operations, Electron remains the world’s most frequently launch small orbital rocket.Dedicated missions for small satellites continue to experience strong demand, which we have seen in multiple buys by returning customers and constellation operators.
 
-[Submit Articles](https://www.gurufocus.com/news/post)
+In fact, we have booked out Electron launches next year completely booked.We see the market for the Electron product being very strong and this manifest validates that.
 
-[Submit Article Online](https://www.gurufocus.com/news/post)[Contributor Guidelines](https://www.gurufocus.com/guidelines)[Stock-Picking Contest](https://www.gurufocus.com/stock-picking-contest)
+Frequent launch opportunities, flexibility over schedule and control over orbiter deployment are what our customers are looking for and that’s what Electron has been providing and will continue to provide in the new year.And all that, all we have to do really in – with our 2024 manifest is execute as and with anything in the space industry.
 
- Tools 
+By ramping Electron production and keeping on top of demand with recent acquisitions as well as continuous improvement in automation across our manufacturing processes, we look to continue improving on our already impressive performance in manufacturing.We also note that the scaling is coming with improved gross margins in Q3 2023, we achieved a 27% GAAP launch gross margin, which should look to enable to progress our profitability targets for Electron as we drive scale and efficiency into the business.
 
- AI & Analysis 
+I now want to take you through and highlight some of their accomplishments in Q4.So Neutron Structures, we will start with a Neutron update.
 
-[GuruAI](https://www.gurufocus.com/guru-ai)[Stock Comparison Table](https://www.gurufocus.com/compare-table)[Interactive Chart](https://www.gurufocus.com/stock/AAPL/chart)[Manual of Stocks](https://www.gurufocus.com/manual-of-stocks)
+Earlier this quarter, we reached a major milestone and had frosty second stage tank, up on the stand for structural and cryogenic testing, which is really a key marker for our Neutron program development, an embedded program.The team’s job was to push the tank to its absolute limits by loading it up with cryogenic fluids and test to destruction.
 
-[Financial Calculators](https://www.gurufocus.com/calculators)
+Something like 96,000 liters of liquid nitrogen was used for this test campaign and an exploded tank in this instance is very much a good thing and what we wanted to achieve.The team took the tank past me up or maximum expected operation pressure at more than 7x atmospheric pressure.
 
-[DCF Calculator](https://www.gurufocus.com/dcf-calculator)[Peter Lynch Chart](https://www.gurufocus.com/peter-lynch-chart)[WACC Calculator](https://www.gurufocus.com/calculator/wacc-calculator)[Graham Number Calculator](https://www.gurufocus.com/calculators/graham-number)[Dividend Calculator](https://www.gurufocus.com/calculators/dividend)[ROE / EPS / ROIC Calculator](https://www.gurufocus.com/calculators/roic)[PE / PB / PS / PEG Ratio Calculators](https://www.gurufocus.com/calculators/pe-pb-ps-peg-ratios)[Enterprise Value Calculator](https://www.gurufocus.com/calculators/enterprise-value)[Sharpe Ratio Calculator](https://www.gurufocus.com/calculators/sharpe-ratio)[All Calculators →](https://www.gurufocus.com/calculators)
+What they have learned in the campaign has been applied to the next Stage 2 tank and currently under production, really to vacant structural reliability early as we get closer to our date with the launch pad.Speaking of baking, this is quite literally what carbon composites team has been up to, with their next full scale Neutron structures and components.
 
- Data & API 
+The images on this slide here show you the scale of some of the in-tank devices being produced more than 7 feet in diameter for those circular propellant management devices and the Stage 2 dome being eliminated in the bottom section.Most of Neutron’s fixed fairing sections are coming together nicely.
 
-[Excel Add-In](https://www.gurufocus.com/excel-add-in)[Google Sheets Add-On](https://www.gurufocus.com/google-sheets-add-on)[GuruFocus API](https://www.gurufocus.com/data-api)[Embed Widgets](https://www.gurufocus.com/widgets)[Mobile App](https://www.gurufocus.com/mobile-app)[Guru Portfolio Download](https://www.gurufocus.com/guru/download-guru-portfolio)[Insider Data Download](https://www.gurufocus.com/insider/data-export)
+And of course, we have another second stage Neutron Tank being built for our next test stint and – to go on our next test in the first half of ‘24.And then over to Neutron’s Archimedes engine, another test we are celebrating was a critical combustion test that the team achieved with Neutron’s Archimedes engine.
 
- Calendar & Research 
+There is plenty of benefits to pursuing methane LOX propellants, but it does come with some of its own challenges.The critical piece really and one of the challenges was in using methane and liquid oxygen for Archimedes is getting the pre-burner dialed in, where generally you want a fuel mixture ratio in a chamber of something like 3:1 oxygen fuel, we are running an oxygen rich pre-burner cycle on Archimedes that forces us to flow all of our oxygen through the combustion device.
 
-[Financial Calendar](https://www.gurufocus.com/calendar)[Earnings Calendar & Reports](https://www.gurufocus.com/earnings)[Analyst Ratings](https://www.gurufocus.com/ratings)[Fund Letters Archive](https://www.gurufocus.com/fund-letters)[Transcripts Search](https://www.gurufocus.com/search/transcripts)[Stock Market Holidays](https://www.gurufocus.com/stock-market-holidays)
+Therefore, our ideal mix is something between 60 to 100 to 1, which is a challenging thing to achieve without all the excess oxygen extinguishing combustion.Archimedes also has an extremely benign operating point, making it great for reliability and reusability, but it does mean that the pressures are low and ironically harder for the pre-burner.
 
-[Pricing](https://www.gurufocus.com/pricing)
+But I am happy to say that we met all the operating points that we wanted to on those tests.That was a great accomplishment by the team.
 
-[Reviews](https://www.gurufocus.com/reviews)
+At the same time, the Archimedes team had been producing and testing full scale hardware like valves, chambers, injectors, controllers and assemblies in preparation for development and propulsion tests making for a really impressive sight when all the pieces come together, like you see in the photo on the side as well.Over to Neutron infrastructure, so supporting infrastructure for Neutron has also scaled quickly over the past few months.
 
-[Data Licensing](https://www.gurufocus.com/data-api/pricing)
+Ground works are being completed in Virginia, where our Neutron pad will be.Test facilities and support services will be based there as well.
 
-[Pricing](https://www.gurufocus.com/data-api/pricing)[API Documentation](https://www.gurufocus.com/data-api/introduction)
+And we are ready for construction to begin at our launch site located close to our key government customers, which will enjoy the benefits of a less congested launch site then obviously the case.In Q4, we opened our new engine development center in Long Beach that will support the development and production of the Archimedes engine.
 
- Support 
+And once the engines are completed at EDC, they will to go to testing at our standard NASA Stennis Space Center, where the Neutron team has been busy with site improvements to accept the engine for hot fires.And then finally, Neutron timeline, all of these achievements across Q3 and Q4 that I have mentioned and several others are shown here have been great to tick off along with – along the Neutron timeline.
 
- Chat Support [Create a ticket](https://www.gurufocus.com/user/ticket/open?ref=/stock/RKLB/transcripts/2217066)[User Engagement Meeting](https://www.gurufocus.com/meeting)[Status](https://status.gurufocus.com/)[Take Survey](https://www.gurufocus.com/surveys/4)[Give us your feedback](https://www.gurufocus.com/feedback)
+We’ve completed second stage tank testing, printed key Archimedes engine parts and components had success with our combustion testing devices, completed qualification testing of our composite over our pressure vessel, run through separation lock deployment testing and stage pusher system testing, completed our actuator microcontroller testing, finished test on our power management module, confirm Neutron’s engine and stage controller functions that should completed avionics controller testing, successfully tested the vehicle’s thermal protection system, setup a test rig for incoming Neutron and system testing.The team is obviously working hard to keep our ambitious schedule for the rest of the year and into ‘24 with the same – with some of the next year milestones to look out for including first stage qualification tank test completed, Archimedes engine testing campaign and the first simulated flight orbit with our hardware connected to our flight computers.
 
- Education 
+Now, we will continue to provide updates on how Neutron is tracking outside our quarterly reviews.Beyond Electron and Neutron, our hypersonic test vehicle, HASTE has seen significant amounts of interest from new and returning government customers looking to further develop the nation’s hypersonic testing capability.
 
-[Discussion](https://www.gurufocus.com/discussion)
+We have actually booked 7 launch contracts in the 6 months since HASTE program was introduced, including our latest mission announced today.HASTE launched from Virginia from the U.S Department of Defense Innovation Unit, this mission will demonstrate HASTE direct inject capability by deploying its payload during ascent, while still within the earth atmosphere, a long sought-after capability for the nation’s strategic defense and civil needs at a fraction of the cost of the current full scale tests.
 
-[All Topics](https://www.gurufocus.com/discussion)[Trending Stocks](https://www.gurufocus.com/discussion?category=8)[Hidden Gems](https://www.gurufocus.com/discussion?category=9)
+On to space systems now and we have a new spacecraft order on the books for our confidential constellation customer that builds on a strong demand for our satellite products.This particular spacecraft will include a full suite of our own satellite components and subsystems, including star trackers reaction wheel solar panels, radios, flight software and so on and so forth.
 
-[Guru University](https://www.gurufocus.com/university)
+This contract in particular speaks to the popularity and configurability of our spacecraft bus, but the confidence also in our satellite components in the market and our ability to grow an end-to-end mission grow as an end-to-end mission partner for the space industry.Now importantly, we will also be managing the mission’s operations and a further demonstration of our end-to-end business model of building and operating satellites that we build for our customers.
 
-[Investing 101](https://www.gurufocus.com/university/investing-101)
+Continuous space systems to our largest space system contract now, the $143 million contract we have with MDA global staff.We are getting close to the delivery of our first of 17 spacecraft for the program by the end of Q1 next year.
 
-[Tutorials](https://www.gurufocus.com/tutorial)
+Having cleared significant milestones in the contract in the past few months, the spacecraft critical design review and delivery of a structural thermal model for the customer, we expect to recognize revenue from those invoice payments to MDA in the fourth quarter of 2023.This sets the stage for a more meaningful revenue contribution from this contract as we enter 2024.
 
-[Tutorials](https://www.gurufocus.com/tutorial)[Demo Center](https://www.gurufocus.com/demo-center)[Financial Glossary](https://www.gurufocus.com/term)[FAQ](https://www.gurufocus.com/faq)[Change Log](https://www.gurufocus.com/changelog)[Contact Us](https://www.gurufocus.com/user/ticket/open)
+We continue to pursue increasingly complex and financially needle moving space system opportunities and are encouraged by progress being made in this part of our business.And we believe that these pursuits position us to continue scaling as an end-to-end space solutions leader.
 
-[Subscribe](https://www.gurufocus.com/pricing?ref=stock-name-transcripts-id&sel=premium&utm_source=webApp&utm_medium=userClick&utm_campaign=new_navbar_free_trial)
+Lastly, in space systems updates, we are proud to have directly supported the success of NASA’s groundbreaking Psyche mission launched in October, with their solar panels powering the spacecraft on its 6-year journey into deep space.These solar panels we provided to the mission hold the record for being the largest solar panels ever installed on a NASA JPL satellite, which we are immensely proud of.
 
-[Free Trial](https://www.gurufocus.com/pricing?ref=stock-name-transcripts-id&sel=premium&utm_source=webApp&utm_medium=userClick&utm_campaign=new_navbar_free_trial_item)[Group Subscription](https://www.gurufocus.com/pricing?group=2)[Refer a Friend and Earn One Month of Free Membership](https://www.gurufocus.com/referral-program)
+And then finally into post-quarter achievements.I am thrilled to welcome retired U.S.
 
-0
+Space Force Lieutenant General, Nina Armagno to Rocket Lab’s Board of Directors.Lieutenant General Armagno served more than 35 years in leadership positions across the U.S.
 
- Site Overview 
+Space Force and U.S.Space Force, including U.S Air Force and U.S.
 
-[7-Day Free Trial](https://www.gurufocus.com/pricing?ref=stock-name-transcripts-id&sel=premium&utm_source=webApp&utm_medium=userClick&utm_campaign=stock-name-transcripts-id_topMenuButton)
+Space Force including being the first Lieutenant General Officer appointed to and Director of Staff for the Space Force where she established America’s first new military branch in 72 years.She has had an accomplished and distinguished career in the military and will be an invaluable asset to the board.
 
- / 
-
-[RKLB ▼5.32%](https://www.gurufocus.com/stock/RKLB/summary)
-
-[GURUFOCUS.COM](https://www.gurufocus.com/)[STOCK LIST](https://www.gurufocus.com/stocks)[Industrials](https://www.gurufocus.com/stocks/sector/industrials)[Aerospace & Defense](https://www.gurufocus.com/stocks/sector/industrials/aerospace-%26-defense)[Rocket Lab Corp (NAS:RKLB)](https://www.gurufocus.com/stock/RKLB/summary)Transcripts Item
-
- Rocket Lab Corp  (NAS:RKLB) 
-
- $ 76.73  -4.31 (-5.32%) [Market Cap: 47.94 Bil](https://www.gurufocus.com/term/mktcap/RKLB)[Enterprise Value: 46.70 Bil](https://www.gurufocus.com/term/enterprise-value/RKLB)[PE Ratio: 0](https://www.gurufocus.com/term/pe-ratio/RKLB)[PB Ratio: 21.07](https://www.gurufocus.com/term/pb-ratio/RKLB) GF Score: 71/100 
-
-*   [Summary](https://www.gurufocus.com/stock/RKLB/summary)
-*   [30-Y Financials](https://www.gurufocus.com/stock/RKLB/financials)
-*   [Valuation](https://www.gurufocus.com/stock/RKLB/valuation)
-*   [Forecast](https://www.gurufocus.com/stock/RKLB/forecast)
-*   [DCF](https://www.gurufocus.com/stock/RKLB/dcf)
-*   [Dividend](https://www.gurufocus.com/stock/RKLB/dividend)
-*   [Guru Trades](https://www.gurufocus.com/stock/RKLB/guru-trades)
-*   [Insider](https://www.gurufocus.com/stock/RKLB/insider)
-*   [Interactive Chart](https://www.gurufocus.com/stock/RKLB/chart)
-*   [Filings](https://www.gurufocus.com/stock/RKLB/filings)
-*   [Transcripts](https://www.gurufocus.com/stock/RKLB/transcripts)
-*   [News](https://www.gurufocus.com/stock/RKLB/article)
-*   [Compare](https://www.gurufocus.com/stock/RKLB/analysis)
-*   [Stock PDF](https://www.gurufocus.com/stock/RKLB/report)
-*   [Ownership](https://www.gurufocus.com/stock/RKLB/ownership)
-*   [Operating](https://www.gurufocus.com/stock/RKLB/operating)
-*   More 
-
-    *   [Checklist](https://www.gurufocus.com/stock/RKLB/checklist)
-    *   [Vote](https://www.gurufocus.com/stock/RKLB/basket)
-    *   [Definitions](https://www.gurufocus.com/stock/RKLB/definition)
-
-[Transcripts List](https://www.gurufocus.com/stock/RKLB/transcripts)
-
-Search
-
-*   [![Image 4: Earning Transcript Icon](https://static.gurufocus.com/cdn-cgi/image/width=24,quality=100/earning_icon.jpg) Rocket Lab Corp Annual Shareholders Meeting Transcript May 20, 2026](https://www.gurufocus.com/stock/RKLB/transcripts/8873497)  
-*   [![Image 5: Earning Transcript Icon](https://static.gurufocus.com/cdn-cgi/image/width=24,quality=100/earning_icon.jpg) Q1 2026 Rocket Lab Corp Earnings Call Transcript May 07, 2026 $78.58 (-7.17%) Earnings](https://www.gurufocus.com/stock/RKLB/transcripts/8845235)  
-*   [![Image 6: Earning Transcript Icon](https://static.gurufocus.com/cdn-cgi/image/width=24,quality=100/earning_icon.jpg) Q4 2025 Rocket Lab Corp Earnings Call Transcript Feb 26, 2026 $72.65 (+3.49%) Earnings](https://www.gurufocus.com/stock/RKLB/transcripts/8659818)  
-*   [![Image 7: Earning Transcript Icon](https://static.gurufocus.com/cdn-cgi/image/width=24,quality=100/earning_icon.jpg) Q3 2025 Rocket Lab Corp Earnings Call Transcript Nov 10, 2025 $51.9 (+0.50%) Earnings](https://www.gurufocus.com/stock/RKLB/transcripts/3200499)  
-*   [![Image 8: Earning Transcript Icon](https://static.gurufocus.com/cdn-cgi/image/width=24,quality=100/earning_icon.jpg) Q1 2025 Rocket Lab USA Inc Earnings Call Transcript May 08, 2025 $23.1 (+3.63%) Earnings](https://www.gurufocus.com/stock/RKLB/transcripts/2847701)  
-*   [![Image 9: Earning Transcript Icon](https://static.gurufocus.com/cdn-cgi/image/width=24,quality=100/earning_icon.jpg) Q4 2024 Rocket Lab USA Inc Earnings Call Transcript Feb 27, 2025 $19.83 (-6.68%) Earnings](https://www.gurufocus.com/stock/RKLB/transcripts/2721156)  
-*   [![Image 10: Earning Transcript Icon](https://static.gurufocus.com/cdn-cgi/image/width=24,quality=100/earning_icon.jpg) Q3 2024 Rocket Lab USA Inc Earnings Call Transcript Nov 12, 2024 $14.66 (-0.81%) Earnings](https://www.gurufocus.com/stock/RKLB/transcripts/2599164)  
-*   [![Image 11: Earning Transcript Icon](https://static.gurufocus.com/cdn-cgi/image/width=24,quality=100/earning_icon.jpg) Q2 2024 Rocket Lab USA Inc Earnings Call Transcript Aug 08, 2024 $4.77 (+4.15%) Earnings](https://www.gurufocus.com/stock/RKLB/transcripts/2548514)  
-*   [![Image 12: Earning Transcript Icon](https://static.gurufocus.com/cdn-cgi/image/width=24,quality=100/earning_icon.jpg) Q1 2024 Rocket Lab USA Inc Earnings Call Transcript May 06, 2024 $4.06 (+1.50%) Earnings](https://www.gurufocus.com/stock/RKLB/transcripts/2429318)  
-*   [![Image 13: Earning Transcript Icon](https://static.gurufocus.com/cdn-cgi/image/width=24,quality=100/earning_icon.jpg) Q4 2023 Rocket Lab USA Inc Earnings Call Transcript Feb 27, 2024 $4.71 (+3.06%) Earnings](https://www.gurufocus.com/stock/RKLB/transcripts/2359071)  
-*   [![Image 14: Earning Transcript Icon](https://static.gurufocus.com/cdn-cgi/image/width=24,quality=100/earning_icon.jpg) Rocket Lab USA Inc Hosts Government Constellation Award Transcript Jan 08, 2024](https://www.gurufocus.com/stock/RKLB/transcripts/2217068)  
-*   [![Image 15: Earning Transcript Icon](https://static.gurufocus.com/cdn-cgi/image/width=24,quality=100/earning_icon.jpg) Rocket Lab USA Inc at Deutsche Bank Global Space Summit Transcript Nov 15, 2023](https://www.gurufocus.com/stock/RKLB/transcripts/2217067)  
-*   [![Image 16: Earning Transcript Icon](https://static.gurufocus.com/cdn-cgi/image/width=24,quality=100/earning_icon.jpg) Q3 2023 Rocket Lab USA Inc Earnings Call Transcript Nov 08, 2023 $4.36 (-3.11%) Earnings](https://www.gurufocus.com/stock/RKLB/transcripts/2217066)  
-*   [![Image 17: Earning Transcript Icon](https://static.gurufocus.com/cdn-cgi/image/width=24,quality=100/earning_icon.jpg) Rocket Lab USA Inc at Morgan Stanley Laguna Conference Transcript Sep 13, 2023](https://www.gurufocus.com/stock/RKLB/transcripts/2217065)  
-*   [![Image 18: Earning Transcript Icon](https://static.gurufocus.com/cdn-cgi/image/width=24,quality=100/earning_icon.jpg) Rocket Lab USA Inc at Bank of America SMID Cap Ideas Conference (Virtual) Transcript Aug 09, 2023](https://www.gurufocus.com/stock/RKLB/transcripts/2217064)  
-*   [![Image 19: Earning Transcript Icon](https://static.gurufocus.com/cdn-cgi/image/width=24,quality=100/earning_icon.jpg) Q2 2023 Rocket Lab USA Inc Earnings Call Transcript Aug 08, 2023 $6.66 (+1.06%) Earnings](https://www.gurufocus.com/stock/RKLB/transcripts/2217063)  
-*   [![Image 20: Earning Transcript Icon](https://static.gurufocus.com/cdn-cgi/image/width=24,quality=100/earning_icon.jpg) Q1 2023 Rocket Lab USA Inc Earnings Call Transcript May 09, 2023 $3.94 (+2.34%) Earnings](https://www.gurufocus.com/stock/RKLB/transcripts/2217062)  
-*   [![Image 21: Earning Transcript Icon](https://static.gurufocus.com/cdn-cgi/image/width=24,quality=100/earning_icon.jpg) Q4 2022 Rocket Lab USA Inc Earnings Call Transcript Feb 28, 2023 $4.5 (-1.96%) Earnings](https://www.gurufocus.com/stock/RKLB/transcripts/2217061)  
-*   [![Image 22: Earning Transcript Icon](https://static.gurufocus.com/cdn-cgi/image/width=24,quality=100/earning_icon.jpg) Rocket Lab USA Inc at Deutsche Bank Global Space Summit (Virtual) Transcript Nov 10, 2022](https://www.gurufocus.com/stock/RKLB/transcripts/2217060)  
-*   [![Image 23: Earning Transcript Icon](https://static.gurufocus.com/cdn-cgi/image/width=24,quality=100/earning_icon.jpg) Q3 2022 Rocket Lab USA Inc Earnings Call Transcript Nov 09, 2022 $4.74 (-7.24%) Earnings](https://www.gurufocus.com/stock/RKLB/transcripts/2217059)  
-*   [![Image 24: Earning Transcript Icon](https://static.gurufocus.com/cdn-cgi/image/width=24,quality=100/earning_icon.jpg) Rocket Lab USA Inc Investor Day Transcript Sep 21, 2022](https://www.gurufocus.com/stock/RKLB/transcripts/2217058)  
-*   [![Image 25: Earning Transcript Icon](https://static.gurufocus.com/cdn-cgi/image/width=24,quality=100/earning_icon.jpg) Q2 2022 Rocket Lab USA Inc Earnings Call Transcript Aug 11, 2022 $5.86 (+1.21%) Earnings](https://www.gurufocus.com/stock/RKLB/transcripts/2217057)  
-*   [![Image 26: Earning Transcript Icon](https://static.gurufocus.com/cdn-cgi/image/width=24,quality=100/earning_icon.jpg) Q1 2022 Rocket Lab USA Inc Earnings Call Transcript May 16, 2022 $5.41 (-7.68%) Earnings](https://www.gurufocus.com/stock/RKLB/transcripts/2217056)  
-*   [![Image 27: Earning Transcript Icon](https://static.gurufocus.com/cdn-cgi/image/width=24,quality=100/earning_icon.jpg) Q4 2021 Rocket Lab USA Inc Earnings Call Transcript Feb 28, 2022 $9.54 (+0.95%) Earnings](https://www.gurufocus.com/stock/RKLB/transcripts/2217055)  
-*   [![Image 28: Earning Transcript Icon](https://static.gurufocus.com/cdn-cgi/image/width=24,quality=100/earning_icon.jpg) Q3 2021 Rocket Lab USA Inc Earnings Call Transcript Nov 15, 2021 $14.29 (-0.56%) Earnings](https://www.gurufocus.com/stock/RKLB/transcripts/2217054)  
-*   [![Image 29: Earning Transcript Icon](https://static.gurufocus.com/cdn-cgi/image/width=24,quality=100/earning_icon.jpg) Q2 2021 Rocket Lab USA Inc Earnings Call Transcript Sep 08, 2021 $15.09 (+4.07%) Earnings](https://www.gurufocus.com/stock/RKLB/transcripts/2217053)  
-
-# Q3 2023 Rocket Lab USA Inc Earnings Call Transcript
-
-Nov 08, 2023 / 10:00PM GMT 
-
- Release Date Price: $4.36 (-3.11%) 
-
- Transcript  10-Q 8-K 
-
- Ask GuruAI ![Image 30: GuruFocus Premium Icon](https://static.gurufocus.com/images/icons/premium.svg)
-
- Operator 
-
-Thank you for standing by. My name is Eric, and I will be your conference operator today. At this time, I would like to welcome everyone to the Rocket Lab Q3, 2023 Earnings Call. (Operator Instructions) Thank you.
-
- I would now like to turn the call over to Colin Canfield, Head of Investor Relations. Please go ahead.
-
- Colin Canfield 
-
- Rocket Lab USA, Inc. - IR Manager 
-
-Thank you, Eric. Hello, everyone. We're glad to have you join us for today's conference call to discuss Rocket Lab's third quarter 2023 financial results.
-
- Before we begin the call, I'd like to remind you that our remarks may contain forward-looking statements that relate to the future performance of the company, and these statements are intended to qualify for the Safe harbor protection from the liability established by Private Securities Litigation Reform Act. Any such statements are not guarantees of future performance and factors that could influence our results are highlighted in today's press release and others are contained in our filings with the Securities and Exchange
-
- Already have an account?[Log in](https://www.gurufocus.com/login?ref=%2Fstock%2FRKLB%2Ftranscripts%2F2217066)
-
- Get the full story 
-
-[Subscribe Now](https://www.gurufocus.com/pricing?ref=stock-name-transcripts-id&sel=premium&utm_source=webApp&utm_medium=userClick&utm_campaign=transcript_paywall&pmc=PAYNOWTRANSCRIPTS)
-
-Access to All Earning Calls and Stock Analysis
-30-Year Financial on one screen
-All-in-one Stock Screener with unlimited filters
-Customizable Stock Dashboard
-Real Time Insider Trading Transactions
-8,000+ Institutional investors’ 13F holdings
-Powerful Excel Add-in and Google sheets Add-on
-All data downloadable
-Quick customer support
-And much more...
-
- 7-Day Free Trial · Cancel Anytime 
-
-Subscription fee may be tax deductible. 
-
-Excellent ![Image 31](https://static.gurufocus.com/trust_rating.png)
-
- 4.6 out of 5 ![Image 32](https://static.gurufocus.com/trust.png) Trustpilot 
-
- Research Tools 
-
-[All-In-One Screener](https://www.gurufocus.com/screener)[Stock Ideas](https://www.gurufocus.com/ideas)[Stock List](https://www.gurufocus.com/stocks)[Guru List](https://www.gurufocus.com/guru/list)[Guru Real-Time Picks](https://www.gurufocus.com/guru/realtime-picks)[Insider List](https://www.gurufocus.com/insiders)[Insider Trades](https://www.gurufocus.com/insider/summary)[Economic Indicators](https://www.gurufocus.com/economic_indicators)[Sector & Industry Performance](https://www.gurufocus.com/industry)[DCF Calculator](https://www.gurufocus.com/stock/AAPL/dcf)[Calculators](https://www.gurufocus.com/calculators)[Discussion Board](https://www.gurufocus.com/discussion)
-
- Product 
-
-[Pricing Plans](https://www.gurufocus.com/pricing)[Excel Add-In](https://www.gurufocus.com/excel-add-in)[Google Sheets Add-on](https://www.gurufocus.com/google-sheets-add-on)[Data API](https://www.gurufocus.com/data-api/pricing)[Stock Comparison Table](https://www.gurufocus.com/compare-table)[Manual of Stocks](https://www.gurufocus.com/manual-of-stocks)[Instant Alerts](https://www.gurufocus.com/latest-news/all/instant-alerts)[Mobile App](https://www.gurufocus.com/mobile-app)[Newsletters Signup](https://www.gurufocus.com/newsletters_signup)[中文](https://www.gurufocus.cn/)
-
- Education 
-
-[Financial Glossary](https://www.gurufocus.com/term)[Tutorials](https://www.gurufocus.com/tutorial)[FAQ](https://www.gurufocus.com/faq)[Buffett Indicator](https://www.gurufocus.com/stock-market-valuations.php)[Shiller P/E](https://www.gurufocus.com/shiller-PE.php)[Yield Curve Today](https://www.gurufocus.com/yield_curve.php)[U.S. Inflation Rate](https://www.gurufocus.com/market/us-inflation-contributors)[Global Market Valuation](https://www.gurufocus.com/global-market-valuation.php)[Fed Net Liquidity](https://www.gurufocus.com/market/fed-net-liquidity-sp500)[Buffett Assets Allocation](https://www.gurufocus.com/buffett_assets_allocations.php?1)
-
- Company 
-
-[About GuruFocus](https://www.gurufocus.com/about)[Career](https://www.gurufocus.com/jobs.php)[Contact Us](https://www.gurufocus.com/user/ticket/open)[Advertise](https://www.gurufocus.com/advertise)[Term of Use](https://www.gurufocus.com/term-of-use)[Privacy Policy](https://www.gurufocus.com/privacy-policy)[Referral Program](https://www.gurufocus.com/referral-program)[Partner Program](https://www.gurufocus.com/partner-program)
-
- Survey 
-
-We'd love to learn more about your experiences on GuruFocus.com and how we can improve!
-
-[Take Survey](https://www.gurufocus.com/surveys/4 "GuruFocus Survey")
-
- Follow Us 
-
-[![Image 33: download GuruFocus on Apple store](https://static.gurufocus.com/images/apple.svg)](https://itunes.apple.com/us/app/gurufocus/id1054144526)[![Image 34: download GuruFocus on Google Play](https://static.gurufocus.com/images/android.svg)](https://play.google.com/store/apps/details?id=com.gurufocus.app)
-
-[](https://twitter.com/gurufocus "Twitter")[](https://www.youtube.com/user/GuruFocusVideos "YouTube")[](https://www.facebook.com/GuruFocus/ "FaceBook")[](https://www.instagram.com/gurufocus/ "Instagram")
-
- Disclaimers 
-
- GuruFocus.com is not operated by a broker or a dealer. Under no circumstances does any information posted on GuruFocus.com represent a recommendation to buy or sell a security. The information on this site, and in its related newsletters, is not intended to be, nor does it constitute investment advice or recommendations. The individuals or entities selected as "gurus" may buy and sell securities before and after any particular article and report and information herein is published, with respect to the securities discussed in any article and report posted herein. Gurus may be added or dropped from the GuruFocus site at any time. In no event shall GuruFocus.com be liable to any member, guest or third party for any damages of any kind arising out of the use of any content or other material published or available on GuruFocus.com, or relating to the use of, or inability to use, GuruFocus.com or any content, including, without limitation, any investment losses, lost profits, lost opportunity, special, incidental, indirect, consequential or punitive damages. Past performance is a poor indicator of future performance. The information on this site, and in its related newsletters, is not intended to be, nor does it constitute investment advice or recommendations. The information on this site is in no way guaranteed for completeness, accuracy or in any other way. The gurus listed in this website are not affiliated with GuruFocus.com, LLC. Stock quotes are provided by QuoteMedia, Inc. (CSI). Company fundamental data is provided by Morningstar. Analyst estimates data is sourced from both Refinitiv and Morningstar, with priority given to Refinitiv data. Data is updated daily. 
-
- © 2004-2026 GuruFocus.com, LLC. All Rights Reserved. 
-
-![Image 35](https://www.gurufocus.com/stock/RKLB/transcripts/2217066)
+And then over to Adam for the third quarter financial highlights.

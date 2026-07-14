@@ -2,309 +2,573 @@
 ticker: PLTR
 quarter: Q1
 year: 2025
-source: https://www.gurufocus.com/news/2831008/q1-2025-palantir-technologies-inc-earnings-call-transcript
+source: https://roic.ai/quote/PLTR/transcripts/2025-year/1-quarter
 downloaded: 2026-07-14
 ---
 
-Title: Q1 2025 Palantir Technologies Inc Earnings Call Transcript
+*   Solutions
+*   [API Docs](https://roic.ai/api)
+*   [MCP](https://roic.ai/api/mcp)
+*   [Pricing](https://roic.ai/pricing)
+*   [Discord](https://discord.gg/paJKM97rU7)
+*   Resources
 
-URL Source: https://www.gurufocus.com/news/2831008/q1-2025-palantir-technologies-inc-earnings-call-transcript
 
-Published Time: 2025-05-06T04:01:54.000Z
+Company Search
 
-Markdown Content:
-[🚀Enjoy a 7-Day Free Trial Thru Jul 21, 2026!✨](https://www.gurufocus.com/pricing?ref=/&sel=premium&utm_source=webApp&utm_medium=userClick&utm_campaign=notification_bar)
+⌘K
 
-[![Image 4: Logo](https://static.gurufocus.com/images/logo_header.png)](https://www.gurufocus.com/)
+Toggle theme
 
-[Sign Up](https://www.gurufocus.com/register)
+Toggle theme Login Sign up
 
-[Login](https://www.gurufocus.com/login?ref=/news/2831008/q1-2025-palantir-technologies-inc-earnings-call-transcript)
+2.   •
 
-[Free Sign-up](https://www.gurufocus.com/register)[Login](https://www.gurufocus.com/login?ref=/news/2831008/q1-2025-palantir-technologies-inc-earnings-call-transcript)[7-Day Free Trial](https://www.gurufocus.com/membership/new/index.html#/)
+[Technology](https://roic.ai/quote/PLTR/transcripts/2025-year/1-quarter#)
+3.   •
 
-[Home](https://www.gurufocus.com/)
+[Software - Infrastructure](https://roic.ai/quote/PLTR/transcripts/2025-year/1-quarter#)
 
-[Homepage](https://www.gurufocus.com/)[Membership Levels](https://www.gurufocus.com/pricing)[About Us](https://www.gurufocus.com/about)[Discussion Board](https://www.gurufocus.com/discussion#1)[Complete Stock List](https://www.gurufocus.com/stocks)[The book](https://www.gurufocus.com/ads/books/index.php)[Membership Data Coverage](https://www.gurufocus.com/news/281207/data-coverage-of-gurufocus-premium-membership-)[Founder's Message](https://www.gurufocus.com/letter)[10-Year Letter](https://www.gurufocus.com/letter_10y)[20-Year Letter](https://www.gurufocus.com/letter_20y)[Free Trial](https://www.gurufocus.com/membership/new/index.html#/?ref=topMenu&sel=premium&utm_source=webApp&utm_medium=userClick&utm_campaign=topMenu)[Referral Program](https://www.gurufocus.com/referral-program)[Partner Program](https://www.gurufocus.com/partner-program)[Newsletters Signup](https://www.gurufocus.com/newsletters_signup)[Advertise](https://www.gurufocus.com/advertise)
+![Image 1: Palantir Technologies Inc.](https://www.roic.ai/image-stock/pltr.webp)
 
-[Screeners](https://www.gurufocus.com/screener)
+# Palantir Technologies Inc.
 
-[GuruFocus Screeners](https://www.gurufocus.com/screener)
+PLTR
 
-[All-In-One Screener](https://www.gurufocus.com/screener)[Bond Screener](https://www.gurufocus.com/bonds)[ETF Screener](https://www.gurufocus.com/screener/etf)[Strategies Created by Users](https://www.gurufocus.com/strategy)[Ben Graham Lost Formula 2 New](https://www.gurufocus.com/screener?name=Ben%20Graham%20Lost%20Formula&id=70)[Canadian Faster Growers](https://www.gurufocus.com/screener?name=Canadian%20Faster%20Growers&id=73)[CEO Buys 20 New](https://www.gurufocus.com/screener?name=CEO%20Buys&id=74)[CEO Buys after Price Drop > 20% 16 New](https://www.gurufocus.com/screener?name=CEO%20Buys%20after%20Price%20Drop%20%3E%2020%25&id=75)[Dividend Kings 2026](https://www.gurufocus.com/screener?name=Dividend%20Kings%202026&id=121779)[Dividend Aristocrats 2026](https://www.gurufocus.com/screener?name=Dividend%20Aristocrats%202026&id=123161)[Dividend Growth Portfolio 1 New](https://www.gurufocus.com/screener?name=Dividend%20Growth%20Portfolio&id=77)[Dividend Income Portfolio](https://www.gurufocus.com/screener?name=Dividend%20Income%20Portfolio&id=78)[Fast Growers](https://www.gurufocus.com/screener?name=Fast%20Growers&id=79)[Good Companies](https://www.gurufocus.com/screener?name=Good%20Companies&id=103)[Hedge Fund Guru Top 10 Aggregated](https://www.gurufocus.com/screener?name=Hedge%20Fund%20Guru%20Top%2010%20Aggregated&id=80)[High Quality](https://www.gurufocus.com/screener?name=High%20Quality&id=81)[High Quality Low Capex w ROE ROC min](https://www.gurufocus.com/screener?name=High%20Quality%20Low%20Capex%20w%20ROE%20ROC%20min&id=84)[High Quality & Low Capex](https://www.gurufocus.com/screener?name=High%20Quality%20&%20Low%20Capex&id=87)[High Yield Insider Buys](https://www.gurufocus.com/screener?name=High%20Yield%20Insider%20Buys&id=88)[Historical High Dividend Yields 1 New](https://www.gurufocus.com/screener?name=Historical%20High%20Dividend%20Yields&id=89)[International Gurus' Top Holdings](https://www.gurufocus.com/screener?name=International%20Gurus%27%20Top%20Holdings&id=90)[James Montier Short Screen 20 New](https://www.gurufocus.com/screener?name=James%20Montier%20Short%20Screen&id=91)[Margin Decliners 20 New](https://www.gurufocus.com/screener?name=Margin%20Decliners&id=92)[Mega Caps 20 New](https://www.gurufocus.com/screener?name=Mega%20Caps&id=93)[Peter Lynch & Warren Buffett 3 New](https://www.gurufocus.com/screener?name=Peter%20Lynch%20&%20Warren%20Buffett&id=94)[Peter Lynch Growth w Lower Valuation 20 New](https://www.gurufocus.com/screener?name=Peter%20Lynch%20Growth%20w%20Lower%20Valuation&id=95)[Peter Lynch S&L Traded Below Book 20 New](https://www.gurufocus.com/screener?name=Peter%20Lynch%20S&L%20Traded%20Below%20Book&id=96)[PFCF Screener 20 New](https://www.gurufocus.com/screener?name=PFCF%20Screener&id=97)[Piotroski Score Screener](https://www.gurufocus.com/screener?name=Piotroski%20Score%20Screener&id=6724)[Predictable Growth Companies 20 New](https://www.gurufocus.com/screener?name=Predictable%20Companies&id=99)[Profitable predictable margin expanders](https://www.gurufocus.com/screener?name=Profitable%20predictable%20margin%20expanders&id=100)[Stocks Sold w less Cash](https://www.gurufocus.com/screener?name=Stocks%20Sold%20w%20less%20Cash&id=102)[The Stalwarts](https://www.gurufocus.com/screener?name=The%20Stalwarts&id=104)
+Alerts
 
-[My Screeners](https://www.gurufocus.com/screener?manage=screen)
+PLTR Palantir Technologies Inc.![Image 2: US flag](https://react-circle-flags.pages.dev/us.svg)NASDAQ Global Select
 
-[Create My Screener](https://www.gurufocus.com/screener)
+Alerts
 
-[Value Screens](https://www.gurufocus.com/ideas)
+130.04
 
-[Stock Ideas](https://www.gurufocus.com/ideas)[S&P 500 Map](https://www.gurufocus.com/screener?view=map&show_header=false)[S&P 500 Bubble](https://www.gurufocus.com/screener?view=bubble&show_header=false)[S&P 500 Aggregate](https://www.gurufocus.com/screener?view=aggregate&show_header=false)[Top GF Score](https://www.gurufocus.com/screener/top-gf-score)[Top Profitability Rank](https://www.gurufocus.com/screener/top-profitability-rank)[Top Quality Rank](https://www.gurufocus.com/screener/top-quality-rank)[Top Momentum Rank](https://www.gurufocus.com/screener/top-momentum-rank)[Buffett-Munger Screener 1 New](https://www.gurufocus.com/screener/buffett-munger)[Industry Overview](https://www.gurufocus.com/industry#1)[Undervalued Predictable 2 New](https://www.gurufocus.com/screener/valuedcf)[Benjamin Graham Net-Net 2 New](https://www.gurufocus.com/screener/grahamncav)[52-week/3Y/5Y Lows 20 New](https://www.gurufocus.com/screener/52weeklow)[52-week/3Y/5Y Highs 20 New](https://www.gurufocus.com/screener/52weekhigh)[Magic Formula(Greenblatt) 8 New](https://www.gurufocus.com/screener/magic-formula)[Dividend Stocks 20 New](https://www.gurufocus.com/screener/dividend-stocks)[Peter Lynch Screen 1 New](https://www.gurufocus.com/screener/peter-lynch-stocks)[S&P500 Grid 20 New](https://www.gurufocus.com/screener/guru-sp-grid)[Predictable Companies 1 New](https://www.gurufocus.com/screener/predictable)[Spin Off List 20 New](https://www.gurufocus.com/screener/spinoff)[Merger and Acquisition List](https://www.gurufocus.com/screener/merger)[Historical Low P/B List 20 New](https://www.gurufocus.com/screener/lowpb)[Historical Low P/S List 20 New](https://www.gurufocus.com/screener/lowps)[High Short Interest 10 New](https://www.gurufocus.com/screener/short-stocks)[Upcoming Special Dividends 20 New](https://www.gurufocus.com/screener/upcoming-special-dividends)[Delisted Stocks](https://www.gurufocus.com/screener/delisted)
+USD
 
-[Model Portfolios](https://www.gurufocus.com/model_portfolio.php)
++3.25
 
-[Performances Overview](https://www.gurufocus.com/model_portfolio.php)[Most Broadly Held Portfolio](https://www.gurufocus.com/model_portfolio.php?mp=largecap)[Most Weighted Portfolio](https://www.gurufocus.com/model_portfolio.php?mp=hr_largecap)[Buffett-Munger Top 25](https://www.gurufocus.com/model_portfolio.php?mp=midcap)[GF Score <= 100 Top 25](https://www.gurufocus.com/model_portfolio.php?mp=gfscore_91_100)[Top 25 Undervalued Predictable](https://www.gurufocus.com/model_portfolio.php?mp=smallcap)[Top 25 52-week Low Predictable](https://www.gurufocus.com/model_portfolio.php?mp=cap20)[Top 25 Historical Low P/S](https://www.gurufocus.com/model_portfolio.php?mp=cap40)
+- -
 
-[Stock Comparison](https://www.gurufocus.com/ideas)
+298.58B Market Cap
 
-[Airline Stocks](https://www.gurufocus.com/ideas/airline-stocks)[Artificial Intelligence Stocks](https://www.gurufocus.com/ideas/artificial-intelligence-stocks)[Bank Stocks](https://www.gurufocus.com/ideas/bank-stocks)[Biotech Stocks](https://www.gurufocus.com/ideas/biotech-stocks)[Blockchain Stocks](https://www.gurufocus.com/ideas/blockchain-stocks)[Chinese Stocks](https://www.gurufocus.com/ideas/chinese-stocks)[Dividend Stocks](https://www.gurufocus.com/ideas/dividend-stocks)[EV Stocks](https://www.gurufocus.com/ideas/ev-stocks)[Growth Stocks](https://www.gurufocus.com/ideas/growth-stocks)[Oil Stocks](https://www.gurufocus.com/ideas/oil-stocks)[Value Stocks](https://www.gurufocus.com/ideas/value-stocks)[Virtual Reality Stocks](https://www.gurufocus.com/ideas/virtual-reality-stocks)[Compare More Stocks…](https://www.gurufocus.com/ideas#compare-stocks)
+[Summary](https://roic.ai/quote/PLTR)[Financials](https://roic.ai/quote/PLTR/financials)[Ratios](https://roic.ai/quote/PLTR/ratios)[Transcripts](https://roic.ai/quote/PLTR/transcripts)[Charts](https://roic.ai/quote/PLTR/charts)[Classic View](https://roic.ai/quote/PLTR/classic)[Statistics](https://roic.ai/quote/PLTR/statistics)[Stock Splits](https://roic.ai/quote/PLTR/stock-splits)
 
-[Gurus](https://www.gurufocus.com/guru/latest-picks)
+## Earnings Call Transcripts
 
-[Guru Trades](https://www.gurufocus.com/guru/latest-picks)
+### 2026
 
-[Latest Guru Picks](https://www.gurufocus.com/guru/latest-picks)[Real Time Picks](https://www.gurufocus.com/guru/realtime-picks)[Guru Portfolio](https://www.gurufocus.com/guru/portfolio)[Score Board](https://www.gurufocus.com/guru/scoreboard)[Mutual Funds](https://www.gurufocus.com/guru/mutual-funds)[Top 10 Holdings](https://www.gurufocus.com/guru/top-holdings)[Sector Picks](https://www.gurufocus.com/guru/sector-picks)[International Picks](https://www.gurufocus.com/guru/international-picks)[Aggregated Portfolio](https://www.gurufocus.com/guru/aggregated-portfolio)[Consensus Picks](https://www.gurufocus.com/guru/consensus-picks)[Guru Bargains](https://www.gurufocus.com/guru/bargains)[Hot Picks](https://www.gurufocus.com/guru/hot-picks)[Download Guru Portfolios](https://www.gurufocus.com/guru/download-guru-portfolio)[Industry Trends](https://www.gurufocus.com/guru/industry-trends)[Geographic Trend](https://www.gurufocus.com/guru/geographic-trends)[ETFs](https://www.gurufocus.com/guru/etfs)[Options Holdings](https://www.gurufocus.com/guru/option-holdings)[European Shorting](https://www.gurufocus.com/guru/european-shortings)
+*   [1 Quarter May 4](https://roic.ai/quote/PLTR/transcripts/2026-year/1-quarter)  
 
-[Guru Lists](https://www.gurufocus.com/guru/list)
+### 2025
 
-[Complete Guru List](https://www.gurufocus.com/guru/list)[Warren Buffett](https://www.gurufocus.com/guru/warren%2Bbuffett/summary)[Bill Gates](https://www.gurufocus.com/guru/bill%2Bgates/summary)[Mohnish Pabrai](https://www.gurufocus.com/guru/mohnish%2Bpabrai/summary)[Carl Icahn](https://www.gurufocus.com/guru/carl%2Bicahn/summary)[George Soros](https://www.gurufocus.com/guru/george%2Bsoros/summary)[David Tepper](https://www.gurufocus.com/guru/david%2Btepper/summary)[Seth Klarman](https://www.gurufocus.com/guru/seth%2Bklarman/summary)[Bill Ackman](https://www.gurufocus.com/guru/bill%2Backman/summary)[Joel Greenblatt](https://www.gurufocus.com/guru/joel%2Bgreenblatt/summary)[Charlie Munger](https://www.gurufocus.com/guru/charlie%2Bmunger/summary)[Michael Price](https://www.gurufocus.com/guru/michael%2Bprice/summary)[Julian Robertson](https://www.gurufocus.com/guru/julian%2Brobertson/summary)[Chuck Akre](https://www.gurufocus.com/guru/chuck%2Bakre/summary)[David Einhorn](https://www.gurufocus.com/guru/david%2Beinhorn/summary)[Tom Gayner](https://www.gurufocus.com/guru/tom%2Bgayner/summary)
+*   [4 Quarter Feb 2](https://roic.ai/quote/PLTR/transcripts/2025-year/4-quarter)  
+*   [3 Quarter Nov 4](https://roic.ai/quote/PLTR/transcripts/2025-year/3-quarter)  
+*   [2 Quarter Aug 4](https://roic.ai/quote/PLTR/transcripts/2025-year/2-quarter)  
+*   [1 Quarter May 5](https://roic.ai/quote/PLTR/transcripts/2025-year/1-quarter)  
 
-[My Guru Lists](https://www.gurufocus.com/guru/list)
+### 2024
 
-[Insiders](https://www.gurufocus.com/insider/summary)
+*   [4 Quarter Feb 3](https://roic.ai/quote/PLTR/transcripts/2024-year/4-quarter)  
+*   [3 Quarter Nov 4](https://roic.ai/quote/PLTR/transcripts/2024-year/3-quarter)  
+*   [2 Quarter Aug 5](https://roic.ai/quote/PLTR/transcripts/2024-year/2-quarter)  
+*   [1 Quarter May 6](https://roic.ai/quote/PLTR/transcripts/2024-year/1-quarter)  
 
-[Insider Trading Tracker](https://www.gurufocus.com/insider/summary)
+### 2023
 
-[Real-Time Insider Picks](https://www.gurufocus.com/insider/summary)[CEO Buys/Sells](https://www.gurufocus.com/insider/ceo)[CFO Buys/Sells](https://www.gurufocus.com/insider/cfo)[Insider Trends](https://www.gurufocus.com/insider/trend)[Insider Cluster](https://www.gurufocus.com/insider/cluster)[Guru + Insider Double Buys](https://www.gurufocus.com/insider/double)[Triple Buys/Sells](https://www.gurufocus.com/insider/triple)[Canadian Insider](https://www.gurufocus.com/insider/canadian)[Chinese Insider](https://www.gurufocus.com/insider/chinese)[German Insider](https://www.gurufocus.com/insider/german)[Complete Insider List](https://www.gurufocus.com/insiders)
+*   [4 Quarter Feb 5](https://roic.ai/quote/PLTR/transcripts/2023-year/4-quarter)  
+*   [3 Quarter Nov 2](https://roic.ai/quote/PLTR/transcripts/2023-year/3-quarter)  
+*   [2 Quarter Aug 7](https://roic.ai/quote/PLTR/transcripts/2023-year/2-quarter)  
+*   [1 Quarter May 8](https://roic.ai/quote/PLTR/transcripts/2023-year/1-quarter)  
 
-[Politician Trading Tracker](https://www.gurufocus.com/politician/summary)
+### 2022
 
-[Real-Time Politician Picks](https://www.gurufocus.com/politician/summary)[Complete Politician List](https://www.gurufocus.com/politicians)[Nancy Pelosi](https://www.gurufocus.com/politician/7/nancy-pelosi)[Mitch Mcconnell](https://www.gurufocus.com/politician/45/mitch-mcconnell)[Tommy Tuberville](https://www.gurufocus.com/politician/4/tommy-tuberville)[Josh Gottheimer](https://www.gurufocus.com/politician/35/josh-gottheimer)[Kevin Hern](https://www.gurufocus.com/politician/36/kevin-hern)[Thomas R. Carper](https://www.gurufocus.com/politician/2/thomas-r.-carper)[Susie Lee](https://www.gurufocus.com/politician/90/susie-lee)[Lois Frankel](https://www.gurufocus.com/politician/28/lois-frankel)
+*   [4 Quarter Feb 13](https://roic.ai/quote/PLTR/transcripts/2022-year/4-quarter)  
+*   [3 Quarter Nov 7](https://roic.ai/quote/PLTR/transcripts/2022-year/3-quarter)  
+*   [2 Quarter Aug 8](https://roic.ai/quote/PLTR/transcripts/2022-year/2-quarter)  
+*   [1 Quarter May 9](https://roic.ai/quote/PLTR/transcripts/2022-year/1-quarter)  
 
-[Market](https://www.gurufocus.com/economic_indicators)
+### 2021
 
-[US Market Valuation](https://www.gurufocus.com/stock-market-valuations.php)
+*   [4 Quarter Feb 17](https://roic.ai/quote/PLTR/transcripts/2021-year/4-quarter)  
+*   [3 Quarter Nov 9](https://roic.ai/quote/PLTR/transcripts/2021-year/3-quarter)  
+*   [2 Quarter Aug 12](https://roic.ai/quote/PLTR/transcripts/2021-year/2-quarter)  
+*   [1 Quarter May 11](https://roic.ai/quote/PLTR/transcripts/2021-year/1-quarter)  
 
-[Market Newsletter](https://www.gurufocus.com/market-newsletter)[Buffett Indicator](https://www.gurufocus.com/stock-market-valuations.php)[U.S. Treasury Yield Curve](https://www.gurufocus.com/yield_curve.php)[U.S. Inflation Rate](https://www.gurufocus.com/market/us-inflation-contributors)[Presidential Cycle and Stock Market](https://www.gurufocus.com/market/presidential-cycle)[Debt-to-GDP](https://www.gurufocus.com/market/debt-to-gdp/usa)[Shiller P/E](https://www.gurufocus.com/shiller-PE.php)[Shiller P/E by Sectors](https://www.gurufocus.com/sector_shiller_pe.php)[GF Value for S&P 500 Index](https://www.gurufocus.com/market/sp500-gf-value)[GF Value for NASDAQ 100 Index](https://www.gurufocus.com/market/nasdaq100-gf-value)[GF Value for DOW 30 Index](https://www.gurufocus.com/market/dow30-gf-value)[Gold/Silver Price Ratio](https://www.gurufocus.com/market/gold-silver-ratio)[Gold/Platinum Price Ratio](https://www.gurufocus.com/market/gold-platinum-ratio)[Gold/Palladium Price Ratio](https://www.gurufocus.com/market/gold-palladium-ratio)[Fed Net Liquidity](https://www.gurufocus.com/market/fed-net-liquidity-sp500)[Buffett Assets Allocation](https://www.gurufocus.com/buffett_assets_allocations.php?1)[Latest IPOs](https://www.gurufocus.com/ipos)
+### 2020
 
-[Global Market Valuation](https://www.gurufocus.com/global-market-valuation.php)
+*   [4 Quarter Feb 16](https://roic.ai/quote/PLTR/transcripts/2020-year/4-quarter)  
+*   [3 Quarter Nov 16](https://roic.ai/quote/PLTR/transcripts/2020-year/3-quarter)  
 
-[Major Stock Market Indices Performance](https://www.gurufocus.com/idx/%5EGSPC)[Global Market Overview](https://www.gurufocus.com/global-market-valuation.php)[USA](https://www.gurufocus.com/stock-market-valuations.php)[China](https://www.gurufocus.com/global-market-valuation.php?country=CHN)[Japan](https://www.gurufocus.com/global-market-valuation.php?country=JPN)[India](https://www.gurufocus.com/global-market-valuation.php?country=IND)[Canada](https://www.gurufocus.com/global-market-valuation.php?country=CAN)[UK](https://www.gurufocus.com/global-market-valuation.php?country=GBR)[France](https://www.gurufocus.com/global-market-valuation.php?country=FRA)[Germany](https://www.gurufocus.com/global-market-valuation.php?country=DEU)[Brazil](https://www.gurufocus.com/global-market-valuation.php?country=BRA)[Australia](https://www.gurufocus.com/global-market-valuation.php?country=AUS)[More...](https://www.gurufocus.com/global-market-valuation.php)
+Open Transcript List
 
-[Economic Indicators](https://www.gurufocus.com/economic_indicators)
+# Q1 FY2025 · Earnings Call Transcript May 5, 2025
 
-[Economic Indicators Overview](https://www.gurufocus.com/economic_indicators)[Commitments of Traders Reports](https://www.gurufocus.com/cot_reports)[The Dow Jones Industrial Average (DJIA)](https://www.gurufocus.com/economic_indicators/229/the-dow-jones-industrial-average-djia)[SP 500 Index](https://www.gurufocus.com/economic_indicators/63/sp-500-index)[Nasdaq Composite Index](https://www.gurufocus.com/economic_indicators/232/nasdaq-composite-index)[Gross Domestic Product (GDP)](https://www.gurufocus.com/economic_indicators/20/gross-domestic-product-gdp)[Shiller PE](https://www.gurufocus.com/economic_indicators/56/shiller-pe)[Ratio of Wilshire 5000 over GNP](https://www.gurufocus.com/economic_indicators/60/ratio-of-wilshire-5000-over-gnp)[Civilian Unemployment Rate](https://www.gurufocus.com/economic_indicators/10/civilian-unemployment-rate)[Russell 2000 Index](https://www.gurufocus.com/economic_indicators/4448/russell-2000-index)[CBOE Volatility Index (VIX)](https://www.gurufocus.com/economic_indicators/234/cboe-volatility-index-the-vix)[Total Nonfarm Payrolls: All Employees](https://www.gurufocus.com/economic_indicators/14/total-nonfarm-payrolls-all-employees)[More...](https://www.gurufocus.com/economic_indicators)
+[API](https://roic.ai/api/docs/earnings-calls/transcript "View API documentation")[ChatGPT](https://roic.ai/connectors/chatgpt "Use this data in ChatGPT")Google Sheets
 
-[Sector & Industry Performance](https://www.gurufocus.com/industry)
+A
 
-[Global Industry Overview](https://www.gurufocus.com/industry)[USA](https://www.gurufocus.com/industry/usa)[Asia](https://www.gurufocus.com/industry/asia)[Europe](https://www.gurufocus.com/industry/europe)[Canada](https://www.gurufocus.com/industry/canada)[UK/Ireland](https://www.gurufocus.com/industry/uk-ireland)[Oceania](https://www.gurufocus.com/industry/oceania)[Latin America](https://www.gurufocus.com/industry/latin-america)[Africa](https://www.gurufocus.com/industry/africa)[India/Pakistan](https://www.gurufocus.com/industry/india-pakistan)
+Ana Soro
 
-[News](https://www.gurufocus.com/latest-news)
+Good afternoon.I'm Ana Soro from Palantir's Finance Team, and I'd like to welcome you to our First Quarter 2025 Earnings Call.
 
-[News](https://www.gurufocus.com/latest-news)
+We'll be discussing the results announced in our press release issued after the market closed and posted on our Investor Relations website.During the call, we will make statements regarding our business that may be considered forward looking within applicable securities laws, including statements regarding our second quarter and fiscal 2025 results, management's expectations for our future financial and operational performance, and other statements regarding our plans, prospects, and expectations.
 
-[Editors' Picks](https://www.gurufocus.com/latest-news/all/timeless)[Stock Analysis](https://www.gurufocus.com/latest-news/all/analysis)[Stock Market News](https://www.gurufocus.com/stock-market-news)[Q&A with Gurus](https://www.gurufocus.com/latest-news/all/qa)[Guru Stock Picks](https://www.gurufocus.com/latest-news/all/guru-stock-picks)[Insider Transaction](https://www.gurufocus.com/latest-news/all/insider)[Earning Reports](https://www.gurufocus.com/latest-news/all/earning-report)[Earnings Call Transcripts](https://www.gurufocus.com/latest-news/all/earnings-call-transcripts)[Software Stock News](https://www.gurufocus.com/latest-news/all/software)[Biotechnology Stock News](https://www.gurufocus.com/latest-news/all/biotechnology)[Hardware Stock News](https://www.gurufocus.com/latest-news/all/hardware)[Banks Stock News](https://www.gurufocus.com/latest-news/all/banks)[Metals & Mining Stock News](https://www.gurufocus.com/latest-news/all/metals-%26-mining)[Drug Manufacturers Stock News](https://www.gurufocus.com/latest-news/all/drug-manufacturers)[Instant Alerts](https://www.gurufocus.com/latest-news/all/instant-alerts)[Press Release](https://www.gurufocus.com/latest-news/all/press_release)[Crypto Press Release](https://www.gurufocus.com/latest-news/all/crypto_press_release)[All News](https://www.gurufocus.com/latest-news/all/all)
+These statements are not promises or guarantees and are subject to risks and uncertainties, which would cause them to differ materially from actual results.Information concerning those risks is available in our earnings press release distributed after the market closed today and in our SEC filings.
 
-[Submit Articles](https://www.gurufocus.com/news/post)
+We undertake no obligation to update forward-looking statements except as required by law.Further, during the course of today's call, we will refer to certain adjusted financial measures.
 
-[Submit Article Online](https://www.gurufocus.com/news/post)[Contributor Guidelines](https://www.gurufocus.com/guidelines)[Stock-Picking Contest](https://www.gurufocus.com/stock-picking-contest)
+These non-GAAP financial measures should be considered in addition to, not as a substitute for, or in isolation from, GAAP measures.Additional information about these non-GAAP measures, including reconciliation of non-GAAP to comparable GAAP measures, is included in our press release and investor presentation provided today.
 
- Tools 
+Our press release, investor presentation, and other earnings materials are available on our Investor Relations website at investors.palantir.com.Over the course of the call, we will refer to various growth rates when discussing our business.
 
- AI & Analysis 
+These rates reflect year-over-year comparisons unless otherwise stated.Joining me on today's call are Alex Karp, Chief Executive Officer; Shyam Sankar, Chief Technology Officer; Dave Glazer, Chief Financial Officer; and Ryan Taylor, Chief Revenue Officer and Chief Legal Officer.
 
-[GuruAI](https://www.gurufocus.com/guru-ai)[Stock Comparison Table](https://www.gurufocus.com/compare-table)[Interactive Chart](https://www.gurufocus.com/stock/AAPL/chart)[Manual of Stocks](https://www.gurufocus.com/manual-of-stocks)
+I'll now turn it over to Ryan to start the call.
 
-[Financial Calculators](https://www.gurufocus.com/calculators)
+R
 
-[DCF Calculator](https://www.gurufocus.com/dcf-calculator)[Peter Lynch Chart](https://www.gurufocus.com/peter-lynch-chart)[WACC Calculator](https://www.gurufocus.com/calculator/wacc-calculator)[Graham Number Calculator](https://www.gurufocus.com/calculators/graham-number)[Dividend Calculator](https://www.gurufocus.com/calculators/dividend)[ROE / EPS / ROIC Calculator](https://www.gurufocus.com/calculators/roic)[PE / PB / PS / PEG Ratio Calculators](https://www.gurufocus.com/calculators/pe-pb-ps-peg-ratios)[Enterprise Value Calculator](https://www.gurufocus.com/calculators/enterprise-value)[Sharpe Ratio Calculator](https://www.gurufocus.com/calculators/sharpe-ratio)[All Calculators →](https://www.gurufocus.com/calculators)
+Ryan Taylor
 
- Data & API 
+Our first quarter of the year showcased incredible strength and remarkable momentum as revenue grew 39% year-over-year.Our story continues to be one of pre-eminence in the US.
 
-[Excel Add-In](https://www.gurufocus.com/excel-add-in)[Google Sheets Add-On](https://www.gurufocus.com/google-sheets-add-on)[GuruFocus API](https://www.gurufocus.com/data-api)[Embed Widgets](https://www.gurufocus.com/widgets)[Mobile App](https://www.gurufocus.com/mobile-app)[Guru Portfolio Download](https://www.gurufocus.com/guru/download-guru-portfolio)[Insider Data Download](https://www.gurufocus.com/insider/data-export)
+Our US revenue grew 55% year-over-year and now makes up 71% of our overall business.Our US commercial business' extraordinary momentum continued as revenue grew 71% year-over-year.
 
- Calendar & Research 
+Our foundational US government business achieved compelling revenue growth of 45% year-over-year.Our results continue to redefine the rule of 40, with our rule of 40 score increasing from 81% in Q4 to 83% last quarter.
 
-[Financial Calendar](https://www.gurufocus.com/calendar)[Earnings Calendar & Reports](https://www.gurufocus.com/earnings)[Analyst Ratings](https://www.gurufocus.com/ratings)[Fund Letters Archive](https://www.gurufocus.com/fund-letters)[Transcripts Search](https://www.gurufocus.com/search/transcripts)[Stock Market Holidays](https://www.gurufocus.com/stock-market-holidays)
+While organizations may consider curtailing spending to drive efficiencies or weather heightened volatility, they find this is the moment they need Palantir the most, the time they turn to us asking, how can we help them adapt and solve their latest challenges?As AI models progress and improve, we continue enabling our customers to maximally leverage these models in production, capitalizing upon the rich context within the enterprise through the ontology.
 
-[Pricing](https://www.gurufocus.com/pricing)
+We remain differentiated in our elite execution to deliver quantified exceptionalism for our customers, ever widening their advantage over the AI have-nots.As a result, unrelenting demand for AIP continues to drive outperformance despite Q1 historically being our slowest quarter due to business seasonality.
 
-[Reviews](https://www.gurufocus.com/reviews)
+Our US commercial revenue grew 19% sequentially to surpass the $1 billion annual run rate for revenue in Q1.We closed $810 million in US commercial TCV with a 239% year-over-year growth rate on dollar-weighted duration basis, and we closed twice as many deals of $1 million or more compared to the same time period a year ago.
 
-[Data Licensing](https://www.gurufocus.com/data-api/pricing)
+I feel the demand in the conversations I'm having with customers.On the ground, things are accelerating.
 
-[Pricing](https://www.gurufocus.com/data-api/pricing)[API Documentation](https://www.gurufocus.com/data-api/introduction)
+Customers are getting started, then expanding in quick succession.A large healthcare company did a boot camp with us in December, and five weeks later, converted to a five-year, $26 million ACV enterprise agreement.
 
- Support 
+A global bank started a pilot with us in Q4 2024, signed a $2 million engagement a month later, then expanded to a three-year, $19 million dollar ACV engagement four months after that.A Fortune 500 healthcare company began working with us in Q2 2024 and last quarter signed a five-year $10 million ACV conversion deal.
 
- Chat Support [Create a ticket](https://www.gurufocus.com/user/ticket/open?ref=/news/2831008/q1-2025-palantir-technologies-inc-earnings-call-transcript)[User Engagement Meeting](https://www.gurufocus.com/meeting)[Status](https://status.gurufocus.com/)[Take Survey](https://www.gurufocus.com/surveys/4)[Give us your feedback](https://www.gurufocus.com/feedback)
+The pace and magnitude of these deals are being driven by the quantified exceptionalism our customers see from day one working with us.We continue to hear from customers that our software's impact is remarkably apparent.
 
- Education 
+A Walgreens executive recently highlighted Foundry and AIP allowed them to play AI-powered end-to-end workflows in 4,000 stores within eight months, automating what would have amounted to 384 billion decisions every day if relying on humans.AIG recently highlighted that they expect the end-to-end adoption of tech advancements leveraging Palantir will double their five-year CAGR.
 
-[Discussion](https://www.gurufocus.com/discussion)
+They noted, "It's an unbelievable outcome in terms of what we get.You could give underwriters unlimited time, two, three, four weeks, they still can't get the amount of data that I can get within two to three hours through Palantir."
 
-[All Topics](https://www.gurufocus.com/discussion)[Trending Stocks](https://www.gurufocus.com/discussion?category=8)[Hidden Gems](https://www.gurufocus.com/discussion?category=9)
+We are partnering with R1 RCM to develop intelligent automation solutions to create faster, more precise healthcare reimbursement outcomes.Their executive noted, "We believe there's a multi-$100 billion opportunity here industry-wide to put money back into the pockets of providers and physicians so they can better invest in patient outcomes.
 
-[Guru University](https://www.gurufocus.com/university)
+Our name is popping up across earnings calls around the world as companies like Citibank, BP, and L3Harris tout the ambition of their work with Palantir to their investors.Our US government business continues to achieve impressive growth as we deliver towards the vital missions of the agencies we support.
 
-[Investing 101](https://www.gurufocus.com/university/investing-101)
+As the government focuses on efficiency, our commercially fielded battle hardened products stand alone.Last quarter, we closed deals expanding our work in the Department of Defense, including the critical impact we are delivering with Maven Smart System across the COCOMs and the services.
 
-[Tutorials](https://www.gurufocus.com/tutorial)
+The impact is far reaching.Internationally, we closed a deal to provide Palantir Maven Smart System to NATO to deploy our AI mission command solution across its 32 member states.
 
-[Tutorials](https://www.gurufocus.com/tutorial)[Demo Center](https://www.gurufocus.com/demo-center)[Financial Glossary](https://www.gurufocus.com/term)[FAQ](https://www.gurufocus.com/faq)[Change Log](https://www.gurufocus.com/changelog)[Contact Us](https://www.gurufocus.com/user/ticket/open)
+Historically, in periods of turmoil, organizations, both public and private, have turned to Palantir.With the proliferation of AI, you see an even wider gap between the winners and losers.
 
-[Subscribe](https://www.gurufocus.com/pricing?ref=news-message_id-subject&sel=premium&utm_source=webApp&utm_medium=userClick&utm_campaign=new_navbar_free_trial)
+The winners won't be determined by size, but by adaptability.Many organizations are having to reimagine how their business does and should work in the future simply to survive.
 
-[Free Trial](https://www.gurufocus.com/pricing?ref=news-message_id-subject&sel=premium&utm_source=webApp&utm_medium=userClick&utm_campaign=new_navbar_free_trial_item)[Group Subscription](https://www.gurufocus.com/pricing?group=2)[Refer a Friend and Earn One Month of Free Membership](https://www.gurufocus.com/referral-program)
+We are built to help companies embrace volatility.We expect more surprises, not less.
 
-0
+And with the uncertainty ahead, we are more confident than ever in Palantir's ability to deliver tangible impact for our customers, to transform organizations with real workflows in production, and to help institutions adapt to survive.I'll now turn it over to Shyam.
 
- Site Overview 
+S
 
-[7-Day Free Trial](https://www.gurufocus.com/pricing?ref=news-message_id-subject&sel=premium&utm_source=webApp&utm_medium=userClick&utm_campaign=news-message_id-subject_topMenuButton)
+Shyam Sankar
 
- / 
+Thanks, Ryan.We've been consistently saying that even while the LLMs are improving, the models across both closed and open source, they're becoming more similar and that performance will converge, all while cost per token for inference continues to drop substantially.
 
-[GURUFOCUS.COM](https://www.gurufocus.com/)[Latest News](https://www.gurufocus.com/latest-news)[USA](https://www.gurufocus.com/latest-news/USA)[Software](https://www.gurufocus.com/latest-news/USA/software) PLTR 
+The market has been focused on AI supply, the models, while we have been focused on delivering on AI demand.It's now blindingly obvious to everyone after the first DeepSeek moment.
 
-# Q1 2025 Palantir Technologies Inc Earnings Call Transcript
+Our foundational investments in ontology and infrastructure have positioned us to uniquely deliver on AI demand now and into the world ahead.AIP has entered the next phase of product development and adoption focused on enterprise autonomy.
 
-![Image 5: Author's Avatar](https://avatar.gurufocus.com/1_big.png)
+As I mentioned in last call, the normative value of AI is the self-driving company.We're not talking about copilots that make you 50% more productive.
 
- GuruFocus News 
+We're talking about agents that make you 50 times more productive.AIP is increasingly owning the position of being the technology that translate the ever-expanding raw capability of LLMs into business outcomes through ontology.
 
-May 05, 2025
+AIP is proving to be the best harness to build, test, evaluate, and deploy agents to eat the elephant of the enterprise.Everyday users are building their own agents to realize the potential of enterprise autonomy across both public and private sector.
 
-[Click here to view more PLTR transcripts](https://www.gurufocus.com/stock/PLTR/transcripts)
+AI agents are operating as part of human AI teams leveraging the mix of workflow applications for mammals and code-first approaches for AI agents, with ontology as that common intermediary representation of the state of the enterprise.Agents are having a transformative impact for our customers now from targeting our enemies to targeting supply chain opportunities.
 
-[Search All Transcripts and SEC Filings](https://www.gurufocus.com/search/transcripts)
+You can hear more about these stories, not in our earnings call, but as Ryan mentioned in our customers' earnings calls, AIG, Citi, BP, L3Harris, Hertz all mentioned the transformative impact of AIP on their most recent calls.These agents represent AI users, the supply chain agent that works with your supply chain analysts, the intelligence AI agent that works with your human agents.
 
-May 05, 2025 / 09:00PM GMT
+AIP as a platform enables our customers to rapidly build and deploy AI agents that automate more and more of the enterprise in a continuous fashion.AIG announced the AI underwriting agent.
 
-**Ana Soro** - _Palantir Technologies Inc - Finance Team_
+AI agents are processing vast volumes of intelligence reports in the Department of Defense, finding things humans missed.AI agents are monitoring for sepsis at Tampa General.
 
- Good afternoon. I'm Ana Soro from Palantir's finance team, and I'd like to welcome you to our first quarter 2025 earnings call. We'll be discussing the results announced in our press release issued after the market closed and posted on our Investor Relations website.
+As Ryan mentioned, our US business is on fire, and I want to again call out the continued strength with Warp Speed in particular, our modern American manufacturing operating system.Both the adoption and the rate of product development has exceeded expectations.
 
- During the call, we will make statements regarding our business that may be considered forward-looking within applicable securities laws, including statements regarding our second quarter and fiscal 2025 results, management's expectations for our future financial and operational performance and other statements regarding our plans, prospects and expectations.
+These investments are powering America's reindustrialization, not only with new defense entrants, but also with traditional defense industrial players and the broader manufacturing industry.Turning to government, we delivered our first TITAN vehicles to the US army in Q1, on time, on budget.
 
- These statements are not promises or guarantees and are subject to risks and uncertainties, which could cause them to differ materially from actual results. Information concerning those risks is available in our earnings release distributed after the market closed today and in our SEC filings. We undertake no obligation to update forward-looking statements, except as required by law.
+The Army rated TITAN as a top-performing program, and everything about it is heretical.A military vehicle with a software company as the prime contractor, and it's built by a team of non-traditional defense innovators like Anduril.
 
- Further, during the
+Maven Smart System adoption continues to grow, with usage doubling in the first nine months of 2024 and doubling again in the five subsequent months.The rate of adoption has really accelerated as Maven scales across more combatant commands and through the services and into more and more use cases.
 
-## [PLTR GF Value™: $140.49](https://www.gurufocus.com/term/gf-value/PLTR)
+You commonly hear combatant commanders reference Maven in their posture hearings to congress now.And Maven has reached Europe with NATO adopting the capabilities of Maven Smart System as its C2 operating system.
 
- Fairly Valued 
+Leadership at EUCOM said this platform, Maven, has become more than a common operating picture.It's a decision advantage environment that is rapidly transforming the command.
 
-Palantir Technologies Inc
+AI agents aren't just transforming the US commercial sector.They are transforming how we fight.
 
-*   Download Chart 
-*   Download Data ![Image 6: premium](https://static.gurufocus.com/images/icons/premium.svg)
+AI agents are analyzing intelligence, finding targets, automating staff functions, and improving the understanding of the battle space, but we are just at the beginning.Our defense users are amongst the most creative and self-sufficient developers.
 
-[View Full PLTR Analysis →](https://www.gurufocus.com/stock/PLTR/summary?utm_source=news&utm_medium=chart_link&utm_campaign=news_to_summary_gf_value_button)
+Green Suitors developed the Hurricane Helene rescue common operating picture in five days.Next time, they will have AI agents do it for them in five minutes.
 
-_This stock alert was generated using automated technology and GuruFocus financial data to provide readers with timely and accurate market reporting. This content was reviewed by GuruFocus editorial team prior to publication. Please send any questions or comments about this story to [editors@gurufocus.com](mailto:editors@gurufocus.com)._
+With that, I'll turn it over to Dave to take us through the numbers.
 
- Already have an account?[Log in](https://www.gurufocus.com/login?ref=%2Fnews%2F2831008%2Fq1-2025-palantir-technologies-inc-earnings-call-transcript)
+D
 
- Get the full story 
+Dave Glazer
 
-[Subscribe Now](https://www.gurufocus.com/pricing?ref=news-message_id-subject&sel=premium&utm_source=webApp&utm_medium=userClick&utm_campaign=transcript_paywall&pmc=PAYNOWTRANSCRIPTS)
+Thanks, Shyam.We had an exceptional first quarter.
 
-Access to All Earning Calls and Stock Analysis
-30-Year Financial on one screen
-All-in-one Stock Screener with unlimited filters
-Customizable Stock Dashboard
-Real Time Insider Trading Transactions
-8,000+ Institutional investors’ 13F holdings
-Powerful Excel Add-in and Google sheets Add-on
-All data downloadable
-Quick customer support
-And much more...
+Revenue growth accelerated to 39% year-over-year, exceeding the high end of our prior guidance by nearly 350 basis points and representing a 1,800 basis point increase compared to the growth rate in Q1 of last year.We achieved another $1 billion milestone this quarter by surpassing $1 billion annual run rate in our US commercial business for the first time, which grew 71% year-over-year and 19% sequentially.
 
- 7-Day Free Trial · Cancel Anytime 
+On the back of this continued strength, we're raising our full year 2025 revenue guidance midpoint to $3.896 billion, representing a 36% year-over-year growth rate, and our US commercial revenue guidance to an excess of $1.178 billion, representing a growth rate of at least 68%.The continued increase in demand for AIP drove the outperformance in our US business overall in the first quarter, which grew 55% year-over-year and 13% sequentially, including our US government business, which grew 45% year-over-year and 9% sequentially.
 
-Subscription fee may be tax deductible. 
+We delivered these outstanding top-line results at an adjusted operating margin of 44%, representing an 800 basis point increase compared to the first quarter of last year.Our revenue and profitability drove a 2-point sequential increase to our rule of 40 score from 81% in the fourth quarter of 2024 to 83% in the first quarter of 2025.
 
-Excellent ![Image 7](https://static.gurufocus.com/trust_rating.png)
+We also had a strong cash flow quarter with adjusted free cash flow of $370 million, representing margin of 42%.Turning to our global top-line results.
 
- 4.6 out of 5 ![Image 8](https://static.gurufocus.com/trust.png) Trustpilot 
+First quarter revenue grew 39% year-over-year and 7% sequentially to $884 million.First quarter US revenue grew 55% year-over-year and 13% sequentially to $628 million.
 
-[PLTR GF Score™:81/100](https://www.gurufocus.com/term/gf-score/PLTR)[](https://www.gurufocus.com/learn?symbol=PLTR "About GF Score&trade;")[](https://www.gurufocus.com/model_portfolio.php?mp=gfscore_91_100 "High GF Score&trade; Companies")
+Excluding the impact of revenue from strategic commercial contracts, first quarter revenue grew 44% year-over-year and 7% sequentially, and first quarter US revenue grew 56% year-over-year and 14% sequentially.Customer count grew 39% year-over-year and 8% sequentially to 769 customers.
 
-Year: 2026
+Revenue from our largest customers continues to expand.First quarter trailing 12-month revenue from our top 20 customers increased 26% year-over-year to $70 million per customer.
 
-[View Full PLTR Analysis →](https://www.gurufocus.com/stock/PLTR/summary?utm_source=news&utm_medium=ticker_link&utm_campaign=news_to_summary_ticker_side_component)
+Now moving to our commercial segment.First quarter commercial revenue grew 33% year-over-year and 7% sequentially to $397 million.
 
-### Related Tickers
+Excluding the impact from strategic commercial contracts, first quarter commercial revenue grew 42% year-over-year and 8% sequentially.We closed $930 million in commercial TCV bookings, representing 84% growth year-over-year.
 
-| Ticker |
-| --- |
+As I highlighted earlier, we achieved $1 billion annual run rate in our US commercial business for the first time as AIP continues to drive both new customer conversions and existing customer expansions in the US.First quarter US commercial revenue grew 71% year-over-year and 19% sequentially to $255 million.
 
-| Ticker |
-| [PLTR](https://www.gurufocus.com/stock/PLTR/summary?utm_source=news&utm_medium=ticker_link&utm_campaign=news_to_summary_ticker_side_component) |
+Excluding revenue from strategic commercial contracts, first quarter US commercial revenue grew 75% year-over-year and 22% sequentially.We are the strongest quarter of US commercial TCV booked at $810 million, representing growth of 183% year-over-year.
 
-| Ticker | Price | Day's Change % | Price Change |
-| --- | --- | --- | --- |
+On a trailing 12-month basis, we closed over $2 billion of US commercial TCV bookings, highlighting the demand for AI production use cases.Total remaining deal value in our US commercial business grew 127% year-over-year and 30% sequentially.
 
-| Ticker | Price | Day's Change % | Price Change |
-| [PLTR](https://www.gurufocus.com/stock/PLTR/summary?utm_source=news&utm_medium=ticker_link&utm_campaign=news_to_summary_ticker_side_component) | $130.04 | 2.57 | 3.26 |
+Our US commercial customer count grew to 432 customers, reflecting growth of 65% year-over-year and 13% sequentially.First quarter international commercial revenue declined 5% year-over-year and 11% sequentially to $141 million.
 
-### Editors' Picks
+The decline was driven by continued headwinds in Europe and by the one-time revenue catchup in the fourth quarter of 2024 that we noted on last quarter's call.For our international commercial business, we continued to capitalize on targeted growth opportunities in Asia, the Middle East and beyond, but remain focused on accelerating the growth in our US business.
 
-### [Top Gainers](https://www.gurufocus.com/screener?sh=9a970d6af24d1f3ec102cbdfafd86484) USA [](https://www.gurufocus.com/screener?sh=9a970d6af24d1f3ec102cbdfafd86484)
+Revenue from strategic commercial contracts was $5.1 million for the quarter.We anticipate second quarter 2025 revenue from these contracts to be between $4 million to $6 million compared to $9 million in the second quarter of 2024.
 
-| Ticker | Price | Day's Change % |
-| --- | --- | --- |
-| [BRAI](https://www.gurufocus.com/stock/BRAI/summary?utm_source=news&utm_medium=ticker_link&utm_campaign=news_to_summary_ticker_side_component) | $6.43 | +16.59% |
-| [BVC](https://www.gurufocus.com/stock/BVC/summary?utm_source=news&utm_medium=ticker_link&utm_campaign=news_to_summary_ticker_side_component) | $11.71 | +16.29% |
-| [FIG](https://www.gurufocus.com/stock/FIG/summary?utm_source=news&utm_medium=ticker_link&utm_campaign=news_to_summary_ticker_side_component) | $23.65 | +12.03% |
-| [CNXC](https://www.gurufocus.com/stock/CNXC/summary?utm_source=news&utm_medium=ticker_link&utm_campaign=news_to_summary_ticker_side_component) | $24.88 | +11.97% |
-| [TCBK](https://www.gurufocus.com/stock/TCBK/summary?utm_source=news&utm_medium=ticker_link&utm_campaign=news_to_summary_ticker_side_component) | $60.09 | +11.94% |
-| [CNMD](https://www.gurufocus.com/stock/CNMD/summary?utm_source=news&utm_medium=ticker_link&utm_campaign=news_to_summary_ticker_side_component) | $42.41 | +10.21% |
-| [NOG](https://www.gurufocus.com/stock/NOG/summary?utm_source=news&utm_medium=ticker_link&utm_campaign=news_to_summary_ticker_side_component) | $20.36 | +9.94% |
-| [LBTYB](https://www.gurufocus.com/stock/LBTYB/summary?utm_source=news&utm_medium=ticker_link&utm_campaign=news_to_summary_ticker_side_component) | $12.80 | +9.87% |
-| [RHI](https://www.gurufocus.com/stock/RHI/summary?utm_source=news&utm_medium=ticker_link&utm_campaign=news_to_summary_ticker_side_component) | $35.59 | +9.85% |
-| [KRO](https://www.gurufocus.com/stock/KRO/summary?utm_source=news&utm_medium=ticker_link&utm_campaign=news_to_summary_ticker_side_component) | $6.46 | +9.68% |
+We anticipate 2025 revenue from these contracts to continue to be approximately half of 1% of full year revenue.Shifting to our government segment.
 
-### [Top Losers](https://www.gurufocus.com/screener?sh=9b806f4bb5ba33b9da40cc5e76754307)[](https://www.gurufocus.com/screener?sh=9b806f4bb5ba33b9da40cc5e76754307)
+First quarter government revenue grew 45% year-over-year and 7% sequentially to $487 million.First quarter US government revenue grew 45% year-over-year and 9% sequentially to $373 million.
 
-| Ticker | Price | Day's Change % |
-| --- | --- | --- |
-| [FAC](https://www.gurufocus.com/stock/FAC/summary?utm_source=news&utm_medium=ticker_link&utm_campaign=news_to_summary_ticker_side_component) | $6.00 | -35.48% |
-| [MAAS](https://www.gurufocus.com/stock/MAAS/summary?utm_source=news&utm_medium=ticker_link&utm_campaign=news_to_summary_ticker_side_component) | $13.13 | -16.20% |
-| [TSHA](https://www.gurufocus.com/stock/TSHA/summary?utm_source=news&utm_medium=ticker_link&utm_campaign=news_to_summary_ticker_side_component) | $5.37 | -15.14% |
-| [RGC](https://www.gurufocus.com/stock/RGC/summary?utm_source=news&utm_medium=ticker_link&utm_campaign=news_to_summary_ticker_side_component) | $5.04 | -14.12% |
-| [PHAT](https://www.gurufocus.com/stock/PHAT/summary?utm_source=news&utm_medium=ticker_link&utm_campaign=news_to_summary_ticker_side_component) | $10.91 | -13.44% |
-| [APP](https://www.gurufocus.com/stock/APP/summary?utm_source=news&utm_medium=ticker_link&utm_campaign=news_to_summary_ticker_side_component) | $442.85 | -12.65% |
-| [SNDK](https://www.gurufocus.com/stock/SNDK/summary?utm_source=news&utm_medium=ticker_link&utm_campaign=news_to_summary_ticker_side_component) | $1,673.97 | -12.63% |
-| [ALAB](https://www.gurufocus.com/stock/ALAB/summary?utm_source=news&utm_medium=ticker_link&utm_campaign=news_to_summary_ticker_side_component) | $362.05 | -12.33% |
-| [DSC](https://www.gurufocus.com/stock/DSC/summary?utm_source=news&utm_medium=ticker_link&utm_campaign=news_to_summary_ticker_side_component) | $5.72 | -12.14% |
-| [AUGO](https://www.gurufocus.com/stock/AUGO/summary?utm_source=news&utm_medium=ticker_link&utm_campaign=news_to_summary_ticker_side_component) | $53.51 | -11.96% |
+This growth was driven by continued execution in existing programs and new awards reflecting the growing demand for AI in our government software offerings.First quarter international government revenue grew 45% year-over-year and 2% sequentially to $114 million, bolstered by our continued work in UK healthcare and defense as well as our new partnership with NATO.
 
-* * *
+First quarter TCV booked was $1.5 billion, up 66% year-over-year.Net dollar retention was 124%, an increase of 400 basis points from last quarter.
 
- Research Tools 
+The increase was driven both by expansions at existing customers and new customers acquired in Q1 of last year as we see the effect of the AI revolution.As net dollar retention does not include revenue from new customers that were acquired in the past 12 months, it has not yet fully captured the acceleration and velocity in our US business over the past year.
 
-[All-In-One Screener](https://www.gurufocus.com/screener)[Stock Ideas](https://www.gurufocus.com/ideas)[Stock List](https://www.gurufocus.com/stocks)[Guru List](https://www.gurufocus.com/guru/list)[Guru Real-Time Picks](https://www.gurufocus.com/guru/realtime-picks)[Insider List](https://www.gurufocus.com/insiders)[Insider Trades](https://www.gurufocus.com/insider/summary)[Economic Indicators](https://www.gurufocus.com/economic_indicators)[Sector & Industry Performance](https://www.gurufocus.com/industry)[DCF Calculator](https://www.gurufocus.com/stock/AAPL/dcf)[Calculators](https://www.gurufocus.com/calculators)[Discussion Board](https://www.gurufocus.com/discussion)
+We ended the first quarter with $5.97 billion in total remaining deal value, an increase of 45% year-over-year and 10% sequentially, and $1.9 billion in remaining performance obligations, an increase of 46% year-over-year and 10% sequentially.As a reminder, RPO is primarily comprised of our commercial business as it does not take into account contracts with an initial term of less than 12 months and contractual obligations that fall beyond termination for convenience clauses, both of which are common in most of our government business.
 
- Product 
+Turning to margin and expense.Adjusted gross margin, which excludes stock-based compensation expense, was 82% for the quarter.
 
-[Pricing Plans](https://www.gurufocus.com/pricing)[Excel Add-In](https://www.gurufocus.com/excel-add-in)[Google Sheets Add-on](https://www.gurufocus.com/google-sheets-add-on)[Data API](https://www.gurufocus.com/data-api/pricing)[Stock Comparison Table](https://www.gurufocus.com/compare-table)[Manual of Stocks](https://www.gurufocus.com/manual-of-stocks)[Instant Alerts](https://www.gurufocus.com/latest-news/all/instant-alerts)[Mobile App](https://www.gurufocus.com/mobile-app)[Newsletters Signup](https://www.gurufocus.com/newsletters_signup)[中文](https://www.gurufocus.cn/)
+Adjusted income from operations, which excludes stock-based compensation expense and related employer payroll taxes, was $391 million, representing adjusted operating margin of 44%.Q1 adjusted expense was $493 million, up 8% sequentially and 21% year-over-year, primarily driven by our continued investment in AIP and technical hiring.
 
- Education 
+We continue to expect to see a more significant increase in expense in 2025 as we invest in the most elite technical talent, the product pipeline, and AI production use cases, all delivering on our goals of sustained GAAP profitability.First quarter GAAP operating income was $176 million, representing a 20% margin.
 
-[Financial Glossary](https://www.gurufocus.com/term)[Tutorials](https://www.gurufocus.com/tutorial)[FAQ](https://www.gurufocus.com/faq)[Buffett Indicator](https://www.gurufocus.com/stock-market-valuations.php)[Shiller P/E](https://www.gurufocus.com/shiller-PE.php)[Yield Curve Today](https://www.gurufocus.com/yield_curve.php)[U.S. Inflation Rate](https://www.gurufocus.com/market/us-inflation-contributors)[Global Market Valuation](https://www.gurufocus.com/global-market-valuation.php)[Fed Net Liquidity](https://www.gurufocus.com/market/fed-net-liquidity-sp500)[Buffett Assets Allocation](https://www.gurufocus.com/buffett_assets_allocations.php?1)
+First quarter GAAP net income was $214 million, representing a 24% margin.First quarter stock-based compensation expense was $155 million, and employer-related equity tax expense was $59 million.
 
- Company 
+First quarter GAAP earnings per share was $0.08.First quarter adjusted earnings per share was $0.13.
 
-[About GuruFocus](https://www.gurufocus.com/about)[Career](https://www.gurufocus.com/jobs.php)[Contact Us](https://www.gurufocus.com/user/ticket/open)[Advertise](https://www.gurufocus.com/advertise)[Term of Use](https://www.gurufocus.com/term-of-use)[Privacy Policy](https://www.gurufocus.com/privacy-policy)[Referral Program](https://www.gurufocus.com/referral-program)[Partner Program](https://www.gurufocus.com/partner-program)
+Additionally, our combined revenue growth and adjusted operating margin accelerated to 83% in the first quarter, a 2-point increase to our rule of 40 score from the prior quarter on our seventh consecutive quarter of an expanding rule of 40 score.With the increase in our 2025 revenue and adjusted operating income guidance, we are now guiding to a rule of 40 score of 80% for the full year.
 
- Survey 
+Turning to our cash flow.In the first quarter, we generated $310 million in cash from operations and $370 million in adjusted free cash flow, representing margins of 35% and 42%, respectively.
 
-We'd love to learn more about your experiences on GuruFocus.com and how we can improve!
+Through the end of the first quarter, we repurchased approximately 2.3 million shares as part of our share repurchase program.As of the end of the quarter, we have $918 million remaining of the original authorization.
 
-[Take Survey](https://www.gurufocus.com/surveys/4 "GuruFocus Survey")
+We ended the quarter with $5.4 billion in cash, cash equivalents, and short-term US treasury securities.Now, turning to our outlook.
 
- Follow Us 
+For Q2 2025, we expect revenue of between $934 million and $938 million, adjusted income from operations of between $401 million and $405 million.For full year 2025, we are raising our revenue guidance to between $3.89 billion and $3.902 billion.
 
-[![Image 9: download GuruFocus on Apple store](https://static.gurufocus.com/images/apple.svg)](https://itunes.apple.com/us/app/gurufocus/id1054144526)[![Image 10: download GuruFocus on Google Play](https://static.gurufocus.com/images/android.svg)](https://play.google.com/store/apps/details?id=com.gurufocus.app)
+We are raising our US commercial revenue guidance to an excess of $1.178 billion, representing a growth rate of at least 68%.We are raising our adjusted income from operations guidance to between $1.711 billion and $1.723 billion.
 
-[](https://twitter.com/gurufocus "Twitter")[](https://www.youtube.com/user/GuruFocusVideos "YouTube")[](https://www.facebook.com/GuruFocus/ "FaceBook")[](https://www.instagram.com/gurufocus/ "Instagram")
+We are raising our adjusted free cash flow guidance to between $1.6 billion and $1.8 billion, and we continue to expect GAAP operating income and net income in each quarter of this year.With that, I'll turn it over to Alex for a few remarks, and then Ana will kick off the Q&A.
 
- Disclaimers 
+A
 
- GuruFocus.com is not operated by a broker or a dealer. Under no circumstances does any information posted on GuruFocus.com represent a recommendation to buy or sell a security. The information on this site, and in its related newsletters, is not intended to be, nor does it constitute investment advice or recommendations. The individuals or entities selected as "gurus" may buy and sell securities before and after any particular article and report and information herein is published, with respect to the securities discussed in any article and report posted herein. Gurus may be added or dropped from the GuruFocus site at any time. In no event shall GuruFocus.com be liable to any member, guest or third party for any damages of any kind arising out of the use of any content or other material published or available on GuruFocus.com, or relating to the use of, or inability to use, GuruFocus.com or any content, including, without limitation, any investment losses, lost profits, lost opportunity, special, incidental, indirect, consequential or punitive damages. Past performance is a poor indicator of future performance. The information on this site, and in its related newsletters, is not intended to be, nor does it constitute investment advice or recommendations. The information on this site is in no way guaranteed for completeness, accuracy or in any other way. The gurus listed in this website are not affiliated with GuruFocus.com, LLC. Stock quotes are provided by QuoteMedia, Inc. (CSI). Company fundamental data is provided by Morningstar. Analyst estimates data is sourced from both Refinitiv and Morningstar, with priority given to Refinitiv data. Data is updated daily. 
+Alex Karp
 
- © 2004-2026 GuruFocus.com, LLC. All Rights Reserved. 
+Welcome to our earnings adventure.Palantir is on fire.
 
-![Image 11](https://www.gurufocus.com/news/2831008/q1-2025-palantir-technologies-inc-earnings-call-transcript)
+We -- there's been a lot of discussions basically how we should talk about these numbers and people admonishing me to be a little more modest, and we'll try.It's -- the reality of what's going on is that this is a unvarnished, cacophony of the combination of 20 years of investment and a massive cultural shift in the US, which is generating numbers.
+
+Again, 71% growth in US commercial, 71%.We had journalists this morning that were asking me if it's a seven handle.
+
+It 71% growth.We had 45% growth in our US government business.
+
+Every three days, you read a headline about how our commercial business would be in danger because of pressure -- necessary pressure put on the system to root out fraud, race, and abuse and to pentest systems to see if they create more value or much more value or less value or no value in the US government.We are seeing rapid expansion and very significant demand for Maven both in America and outside of America as all part of our core mission to provide an unfair advantage to the noble warriors of the West.
+
+We see an increased recognition that large language models were commodities, that the value of these commodities becomes only realizable in the context of our ontology on top of Foundry.As has been mentioned, the reindustrialization of America is happening in our software.
+
+The ability to reimagine your business in a volatile situation happens in our software.If you take the 90% of our business that is outside of Europe, which is going through very structural change and doesn't quite get AI, maybe in the near future will get AI, we are hoping and praying, that part of our business grew 49%, forty-nine percent.
+
+And we're doing this at a very significant scale.So, we're saying we're going to do close to $4 billion in revenue.
+
+And last, not least, we're doing this with double the gold standard on the rule of 40.The rule of 40 is a very important standard because it shows you the quality of your revenue and because it's hard to attain, especially if you have a rule of 83.
+
+And one of the things that Palantir is doing is we want to bring our friends and our allies along with us on this winning ride.Those friends are largely in America, but also among allied countries.
+
+Those friends are inside Palantir, outside Palantir, and we are using ontology and AI or AIP to drive these successes.And I would say, while profitability is apparently unpopular, the numbers are driven by the fact that we are downstream from value creation.
+
+There's a consensus in the market that Palantir owns value creation.And what does that actually mean?
+
+It means that when you use our software, when you use AIP, you will get demonstrably more value than what you're paying for, and you will share some of that value with us.And then, I would say also, culturally, we just don't see the resistance to the way we roll that we did in the past.
+
+We would show up in the past, the freak show trying to get things to work, not with the wrong access to the wrong people at the wrong time.And that was by intent, and people were very uncomfortable at all levels of the enterprise working with us.
+
+And without going into specific names, because these companies, in many case, are in the middle of transforming itself, but I'm on the front line with everyone here, and it used to be two years ago that we might get a CEO, we might get a CIO, we might get someone in marketing, we might get someone who's willing to rebuild the business, but they had no power.Now, we have the full stack engaged with us inside government, outside government on the most critical issues.
+
+And if you -- again, if you look at the math in terms of where the action is, our business is growing 49% ex Continental Europe.49%, rule of 83.
+
+We were the freak show.And we spent 20 years for this moment, and we plan to have nose to the grindstone, focus on taking the best talent inside Palantir, managing them, the best clients and make sure our clients and our partners, especially in national security, but also with a pretty significant focus on the US, win in the way we're winning.
+
+And that's why you get these results.And we're going to just focus and focus and focus and focus on execution.
+
+And that's basically our plan for the rest of the year and into next year.And we're very, very optimistic about what's going on.
+
+And with that, we can kick it off to questions.
+
+A
+
+A - Ana Soro
+
+Thanks, Alex.We'll now turn to a few questions from our shareholders before opening up the call.
+
+Our first question is from Gabriel who asks, "How does Palantir plan to sustain its competitive advantage in AI, particularly in light of growing competition?"
+
+S
+
+Shyam Sankar
+
+Thanks, Gabriel.Well, our advantage comes down to ontology.
+
+It's really an advantage on the AI demand side, and that has positioned AIP to be the platform that is able to capture the ever-expanding capability of the raw LLMs and turn that into business value.AIP is that tool factory and the point of control for the orchestration with these models and those tools.
+
+You can see this in the sharp opinionation that we've earned in the field with our customers on how to get to value in days or weeks.And most critically, you can see it in the insight that we have that to practically transform the enterprise, you actually need mixed human AI teams, and that is something that AIP is uniquely positioned for.
+
+A
+
+Ana Soro
+
+Thank you, Shyam.We also received a few questions on this topic.
+
+How will the current US administration's focus on reducing federal spend as well as the February announcement of US Department of Defense budget cuts impact current contracts as well as future contract acquisition?
+
+S
+
+Shyam Sankar
+
+Well, the first thing I'd say is, like, this is the right thing for the country.Like, we have way too much spend on things that do not work.
+
+The government has started to resemble a finely marbled wagyu.The fake projects that do not deliver and will never deliver crowd out the -- and suffocate the things that could actually be excellent.
+
+And so, we welcome DOGE.I mean, to me, these guys are heroes.
+
+They are world-class technologists that could be choosing to do anything, and instead, they are choosing to do this.And we believe deeply in the actual value that our software is creating, both on an absolute basis and on a relative basis to the traditional labor based cost plus model that has failed to deliver for the American people.
+
+A
+
+Alex Karp
+
+We often get variance of, if the institutions are in pressure, either we go through a difficult time in America or there's DOGE, how will that affect your software sales, basically?And Palantir does exceptionally well when things are pentested.
+
+We like pressure on the system.We need pressure on the system.
+
+And then, why is it better for America?Because that pentesting forces you to ask questions like, does the software work?
+
+How does it work?How does it manage ethical concerns?
+
+How does it manage data protection?How does it manage output?
+
+Without pressure on the system -- one of the myths is that if you don't have pressure on the system, you just spend money, you somehow get a better system, both in terms of output, in terms of ethics.But actually, you get neither.
+
+And so, in reality, we need pressure on the system.We need people to have to change.
+
+We need people to have to transform.This is why they put up with us.
+
+And once they see those results, they stick with us.
+
+A
+
+Ana Soro
+
+Thank you, both.Our next question is from Dan with Wedbush.
+
+Dan, please turn on your camera, and then you'll receive a prompt to unmute your line.
+
+D
+
+Dan Ives
+
+Thanks.And, another amazing quarter.
+
+I mean, it's just -- so my question is, given that what we're seeing in the government, isn't that another opportunity where you could actually gain more share of budgets as you go to more meritocracy?Like, Palantir should actually gain more dollars within the budgets of DoD and a lot of other agencies.
+
+A
+
+Alex Karp
+
+We're very optimistic about what we're going to do in the US, but the devil's in the details.And we're running this business for you with you as owners, which means it's like there's going to be maybe lumpiness, but we predict we're going to do very, very well.
+
+Any -- basically, where you have pressure testing, you can assume AIP, AI Foundry, Ontology, Apollo, and the Palantir culture itself, I mean, we are a warrior culture.Like, that's why our whole culture is built around putting the exact right team and the exact right product at the final mile.
+
+And so, where you have environments that are crucial and under pressure, you can expect -- and where meritocracy happens.It's like we need meritocracy.
+
+How do you get meritocracy?Well, there's lots of ways to get meritocracy.
+
+One way is because you're scared.And then, you buy the best product, you install the price product, and then the part that's correlated different than people think is you also get the best ethics, the best execution, and that, of course -- and then you can ask a simple question, why is this a moot?
+
+Okay.Well, I can tell you why it's a moot, because heretofore, no one has gotten into these environments at scale under any circumstance.
+
+And when if they did get in, they got in with services.So, now, we have a single-purposed, highly-formed stack of software that is exactly right for this moment with a culture that's exactly right to implement it, which a culture that can teach people how to do this, that is now charismatic for some.
+
+It's anti-chrismatic for others.And that de facto, it's the compounding rate of return on that stack.
+
+And to Shyam's opinion, Shyam's with -- the opinionation we have about how to do this, it essentially allows you to express your tribal knowledge of your enterprise in a way you could never do it before on the terms of your enterprise with unit economics that are heretofore impossible to do.And that's what's happening in this country and really in 90% of our market, which explains, like, the 49% growth and the rule of 83 despite our what would be viewed on the outside as large ineptitudes in sales and go to market and how do we interact with people and our opinionation, both on the outside, on the ins inside, and with the frontline customer, which is like, we're not agnostic to using our software as shelfware.
+
+We are not in the shelfware business, which is another reason why pressure in the government really helps us.We've never done shelfware.
+
+We don't do shelfware.We don't think our personality can afford shelfware.
+
+A
+
+Ana Soro
+
+Thank you, Alex.Our next question is from Mariana with Bank of America.
+
+Mariana, please turn on your camera, and then you'll receive a prompt to unmute your line.
+
+M
+
+Mariana Perez Mora
+
+Good afternoon, everyone.So, I have two questions.
+
+First one is on the European defense buildup.You mentioned Warp Speed and how that has been successful here.
+
+Like, are you interested on applying that as these European countries build up their own defenses and catch up on industrial capabilities that have been under invested for like many, many years?And the second one is, I think investors are pretty familiar with this like software versus services type of like Palantir approach, because you have been like actually leaders on that trend.
+
+But TITAN is a great example how -- on how, like, software actually played a role that was more intuitively hard work.Where else you actually have opportunities for software to add value there?
+
+Like, is it Golden Dome, is space communications?Like, have you think about that?
+
+S
+
+Shyam Sankar
+
+Yeah.On the first one, Alex may have more to say as well, but we would love to help Europe on the manufacturing challenges around rearmament, and I think there are a lot of them to do.
+
+The precondition for Warp Speed is understanding that the existing manufacturing stack is broken.And so, you could say, why did America get there first?
+
+Because you have all these people who are essentially the progeny of Elon, who have learned and understood how to actually make things, the sort of brains that go from the Raptor one to the Raptor three engine, and that's proliferated around the community that's in El Segundo and even beyond.That's, like, the basis of reindustrialization in America.
+
+And so, it's when we work with the new defense champions, new industrial champions, like, it's a very short sales cycle because they recognize, like, that what we're doing with Warp Speed is exactly what they need in order to do it.When you work with some of the older manufacturing customers, even the US, it's heterogeneous.
+
+Some of them are already there.They get it.
+
+They realize it.Some of them are going to be there because it's just a reality.
+
+In Europe, there are some green shoots.Like, some very well-known manufacturing companies have kind of said, like, oh, I now understand that my ERP thing doesn't work and warp speed maybe we should get Warp Speed.
+
+So I just don't want to commit to I think -- a lot of it is where's the customer's head at, but we could obviously do a lot to help you.
+
+A
+
+Alex Karp
+
+Europe doesn't get AI yet.At some point in the future, it will.
+
+And then as you know, Europe is not Europe.You have Eastern Europe.
+
+You have Germany, France.You have -- they're very different Europe.
+
+Europe that is scared understands that you're going to have to do software, hardware hybrid systems, and our products are very, very well-known and differentiated.It could take a couple of years for Europe to understand that you just can't spend money.
+
+You're going to have to spend it on things that actually work, and work means spending it on people that have actually done this on the battlefield.I would say our plan is to continue to be roughly in the zone where 90% of our business is growing like it is now at 49% with this rule of 83.
+
+And somewhere in that range, we guided to rule of 80, and that's going to be primarily driven by the US.I would say as an unknown variable, we're seeing very significant demand for our software, our government software around the world outside of Europe.
+
+And those are early days, but the demand -- the signal there is very strong.
+
+S
+
+Shyam Sankar
+
+And then, on the TITAN point, I think that's an excellent point and is going to be a big part of the future where you're really thinking about how do you build your hardware around the software.There's some classified projects that we have as well where the first step to building the hardware is not to build the hardware.
+
+It's actually to build the mission payload and the software that can execute the thing and then work backwards from that to figure out what is the hardware that you ought to have around that.And this plays to this -- like, it is actually a cultural impedance mismatch.
+
+Like, if you're a hardware company, you think about the world the way that a construction person would think about building the house.You have to pour the foundation first.
+
+You can't do anything.But, actually, with software, you have to build the kitchen first.
+
+If you don't, you're going to get it all wrong.And so, there's -- I've seen a lot more of the next-gen programs are starting to think about how do we build the lethal software first, and we'll figure out how to wrap hardware...
+
+A
+
+Alex Karp
+
+One of the most interesting things about the current environment we're in is something Shyam was alluding to, which is and, again, it's a European versus American.People assume if you're world class at hardware, you'll be world class at software and they're interchangeable.
+
+It's just not true at all.And, like, the skills and the taste you need to do software is a completely different thing, and America's unique advantage is hybrid software, hardware, software.
+
+And in any program that's trying to outpace and beat our adversaries, it should -- it basically is going to have to begin with a software first or software hardware hybrid program because, otherwise, we're at a disadvantage.And, also, the resourcing and the way you organize is going to be suboptimal in this country.
+
+Conversely, this is one of the challenges that our -- some of our allies and our adversaries have.The role of taste in in getting these things to work, tribal knowledge and ability to do it is really, really underestimated.
+
+A
+
+Ana Soro
+
+Thank you.Alex, as always, we have a lot of individual investors on the line.
+
+Is there anything you'd like to say before we wrap up this call?
+
+A
+
+Alex Karp
+
+This company is organized around giving our friends a really strong shot, I would say, unfair advantage and not helping our adversaries or enemies and, on occasion, hurting them.And a lot of you are scattered around the world and helping us in many ways, and, we are in a phase where we are very focused on scaling our company.
+
+And, we really appreciate your support, and the fact that you defend us.Our support of western values is often under attack for somewhat idiotic reasons.
+
+Our belief that meritocracy will lead us to a better place, that competence is better than incompetence, that competence includes ethics.And the results the fruits of those labors are here today, but they would none of that would have been possible without your support.
+
+So, thank you.
+
+A
+
+Ana Soro
+
+Thank you.That concludes Q&A for today's call.
+
+## Footer
+
+Stock research and financial data for fundamental investors. Decades of statements, transcripts and metrics, one API.
+
+Found an error or have an idea?[support@roic.ai](mailto:support@roic.ai)
+
+### Product
+
+*   [Financial Data API](https://roic.ai/financial-data-api)
+*   [API reference](https://roic.ai/api/docs)
+*   [Pricing](https://roic.ai/pricing)
+*   [Knowledge Base](https://roic.ai/knowledge-base)
+*   [Status](https://status.roic.ai/)
+
+### Developers
+
+*   [Getting started](https://roic.ai/api/docs/getting-started)
+*   [Authentication](https://roic.ai/api/docs/authentication)
+*   [Changelog](https://roic.ai/api/docs/changelog)
+
+### Company
+
+*   [About](https://roic.ai/about)
+*   [Blog](https://roic.ai/blog)
+*   [FAQ](https://roic.ai/faq)
+
+© 2026 Roic AI, Inc. Financial data and stock API.
+
+[Privacy Policy](https://roic.ai/policy)[Terms](https://roic.ai/tos)

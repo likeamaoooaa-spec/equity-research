@@ -2,323 +2,1098 @@
 ticker: RKLB
 quarter: Q1
 year: 2024
-source: https://www.gurufocus.com/stock/RKLB/transcripts/2429318
+source: https://roic.ai/quote/RKLB/transcripts/2024-year/1-quarter
 downloaded: 2026-07-14
 ---
 
-Title: Q1 2024 Rocket Lab USA Inc Earnings Call Transcript
+O
 
-URL Source: https://www.gurufocus.com/stock/RKLB/transcripts/2429318
+Operator
 
-Markdown Content:
-[🚀Enjoy a 7-Day Free Trial Thru Jul 21, 2026!✨](https://www.gurufocus.com/pricing?ref=/&sel=premium&utm_source=webApp&utm_medium=userClick&utm_campaign=notification_bar)
+Good day, everyone, and welcome to the Rocket Labs First Quarter 2021 Financial Results Update and Conference Call.At this time, I would like to hand the call over to Murielle Baker, Communications Manager at Rocket Lab.
 
-[![Image 3: Logo](https://static.gurufocus.com/images/logo_header.png)](https://www.gurufocus.com/)
+Please go ahead, ma'am.
 
-[Sign Up](https://www.gurufocus.com/register)
+M
 
-[Login](https://www.gurufocus.com/login?ref=/stock/RKLB/transcripts/2429318)
+Murielle Baker
 
-[Free Sign-up](https://www.gurufocus.com/register)[Login](https://www.gurufocus.com/login?ref=/stock/RKLB/transcripts/2429318)[7-Day Free Trial](https://www.gurufocus.com/membership/new/index.html#/)
+Thank you.Hello, everyone.
 
-[Home](https://www.gurufocus.com/)
+We're glad to have you join us for today's conference call to discuss Rocket Lab's First Quarter 2024 financial results.Before we begin the call, I'd like to remind you that our remarks may contain forward-looking statements that relate to the future performance of the company, and these statements are intended to qualify for the safe harbor protection from liability established by the Private Securities Litigation Reform Act.
 
-[Homepage](https://www.gurufocus.com/)[Membership Levels](https://www.gurufocus.com/pricing)[About Us](https://www.gurufocus.com/about)[Discussion Board](https://www.gurufocus.com/discussion#1)[Complete Stock List](https://www.gurufocus.com/stocks)[The book](https://www.gurufocus.com/ads/books/index.php)[Membership Data Coverage](https://www.gurufocus.com/news/281207/data-coverage-of-gurufocus-premium-membership-)[Founder's Message](https://www.gurufocus.com/letter)[10-Year Letter](https://www.gurufocus.com/letter_10y)[20-Year Letter](https://www.gurufocus.com/letter_20y)[Free Trial](https://www.gurufocus.com/membership/new/index.html#/?ref=topMenu&sel=premium&utm_source=webApp&utm_medium=userClick&utm_campaign=topMenu)[Referral Program](https://www.gurufocus.com/referral-program)[Partner Program](https://www.gurufocus.com/partner-program)[Newsletters Signup](https://www.gurufocus.com/newsletters_signup)[Advertise](https://www.gurufocus.com/advertise)
+M
 
-[Screeners](https://www.gurufocus.com/screener)
+Murielle Baker
 
-[GuruFocus Screeners](https://www.gurufocus.com/screener)
+Any such statements are not guarantees of future performance and factors that could influence our results are highlighted in today's press release and others are contained in our filings with the Securities and Exchange Commission.Such statements are based upon information available to the company as of the date hereof and are subject to change for future developments.
 
-[All-In-One Screener](https://www.gurufocus.com/screener)[Bond Screener](https://www.gurufocus.com/bonds)[ETF Screener](https://www.gurufocus.com/screener/etf)[Strategies Created by Users](https://www.gurufocus.com/strategy)[Ben Graham Lost Formula 2 New](https://www.gurufocus.com/screener?name=Ben%20Graham%20Lost%20Formula&id=70)[Canadian Faster Growers](https://www.gurufocus.com/screener?name=Canadian%20Faster%20Growers&id=73)[CEO Buys 20 New](https://www.gurufocus.com/screener?name=CEO%20Buys&id=74)[CEO Buys after Price Drop > 20% 16 New](https://www.gurufocus.com/screener?name=CEO%20Buys%20after%20Price%20Drop%20%3E%2020%25&id=75)[Dividend Kings 2026](https://www.gurufocus.com/screener?name=Dividend%20Kings%202026&id=121779)[Dividend Aristocrats 2026](https://www.gurufocus.com/screener?name=Dividend%20Aristocrats%202026&id=123161)[Dividend Growth Portfolio 1 New](https://www.gurufocus.com/screener?name=Dividend%20Growth%20Portfolio&id=77)[Dividend Income Portfolio](https://www.gurufocus.com/screener?name=Dividend%20Income%20Portfolio&id=78)[Fast Growers](https://www.gurufocus.com/screener?name=Fast%20Growers&id=79)[Good Companies](https://www.gurufocus.com/screener?name=Good%20Companies&id=103)[Hedge Fund Guru Top 10 Aggregated](https://www.gurufocus.com/screener?name=Hedge%20Fund%20Guru%20Top%2010%20Aggregated&id=80)[High Quality](https://www.gurufocus.com/screener?name=High%20Quality&id=81)[High Quality Low Capex w ROE ROC min](https://www.gurufocus.com/screener?name=High%20Quality%20Low%20Capex%20w%20ROE%20ROC%20min&id=84)[High Quality & Low Capex](https://www.gurufocus.com/screener?name=High%20Quality%20&%20Low%20Capex&id=87)[High Yield Insider Buys](https://www.gurufocus.com/screener?name=High%20Yield%20Insider%20Buys&id=88)[Historical High Dividend Yields 1 New](https://www.gurufocus.com/screener?name=Historical%20High%20Dividend%20Yields&id=89)[International Gurus' Top Holdings](https://www.gurufocus.com/screener?name=International%20Gurus%27%20Top%20Holdings&id=90)[James Montier Short Screen 20 New](https://www.gurufocus.com/screener?name=James%20Montier%20Short%20Screen&id=91)[Margin Decliners 20 New](https://www.gurufocus.com/screener?name=Margin%20Decliners&id=92)[Mega Caps 20 New](https://www.gurufocus.com/screener?name=Mega%20Caps&id=93)[Peter Lynch & Warren Buffett 3 New](https://www.gurufocus.com/screener?name=Peter%20Lynch%20&%20Warren%20Buffett&id=94)[Peter Lynch Growth w Lower Valuation 20 New](https://www.gurufocus.com/screener?name=Peter%20Lynch%20Growth%20w%20Lower%20Valuation&id=95)[Peter Lynch S&L Traded Below Book 20 New](https://www.gurufocus.com/screener?name=Peter%20Lynch%20S&L%20Traded%20Below%20Book&id=96)[PFCF Screener 20 New](https://www.gurufocus.com/screener?name=PFCF%20Screener&id=97)[Piotroski Score Screener](https://www.gurufocus.com/screener?name=Piotroski%20Score%20Screener&id=6724)[Predictable Growth Companies 20 New](https://www.gurufocus.com/screener?name=Predictable%20Companies&id=99)[Profitable predictable margin expanders](https://www.gurufocus.com/screener?name=Profitable%20predictable%20margin%20expanders&id=100)[Stocks Sold w less Cash](https://www.gurufocus.com/screener?name=Stocks%20Sold%20w%20less%20Cash&id=102)[The Stalwarts](https://www.gurufocus.com/screener?name=The%20Stalwarts&id=104)
+Except as required by law, the company does not undertake any obligation to update these statements.
 
-[My Screeners](https://www.gurufocus.com/screener?manage=screen)
+Our remarks and press release today also contain non-GAAP financial measures within the meaning of Regulation G enacted by the SEC.Included in such release and our supplemental materials are reconciliations of these historical non-GAAP financial measures to the comparable financial measures calculated in accordance with GAAP.
 
-[Create My Screener](https://www.gurufocus.com/screener)
+This call is also being webcast with a supporting presentation and a replay and copy of the presentation will be available on our website.
 
-[Value Screens](https://www.gurufocus.com/ideas)
+Our presenters today are Rocket Lab, Founder and Chief Executive, Peter Beck; and Chief Financial Officer, Adam Spice.After our prepared comments, we will take questions.
 
-[Stock Ideas](https://www.gurufocus.com/ideas)[S&P 500 Map](https://www.gurufocus.com/screener?view=map&show_header=false)[S&P 500 Bubble](https://www.gurufocus.com/screener?view=bubble&show_header=false)[S&P 500 Aggregate](https://www.gurufocus.com/screener?view=aggregate&show_header=false)[Top GF Score](https://www.gurufocus.com/screener/top-gf-score)[Top Profitability Rank](https://www.gurufocus.com/screener/top-profitability-rank)[Top Quality Rank](https://www.gurufocus.com/screener/top-quality-rank)[Top Momentum Rank](https://www.gurufocus.com/screener/top-momentum-rank)[Buffett-Munger Screener 1 New](https://www.gurufocus.com/screener/buffett-munger)[Industry Overview](https://www.gurufocus.com/industry#1)[Undervalued Predictable 2 New](https://www.gurufocus.com/screener/valuedcf)[Benjamin Graham Net-Net 2 New](https://www.gurufocus.com/screener/grahamncav)[52-week/3Y/5Y Lows 20 New](https://www.gurufocus.com/screener/52weeklow)[52-week/3Y/5Y Highs 20 New](https://www.gurufocus.com/screener/52weekhigh)[Magic Formula(Greenblatt) 8 New](https://www.gurufocus.com/screener/magic-formula)[Dividend Stocks 20 New](https://www.gurufocus.com/screener/dividend-stocks)[Peter Lynch Screen 1 New](https://www.gurufocus.com/screener/peter-lynch-stocks)[S&P500 Grid 20 New](https://www.gurufocus.com/screener/guru-sp-grid)[Predictable Companies 1 New](https://www.gurufocus.com/screener/predictable)[Spin Off List 20 New](https://www.gurufocus.com/screener/spinoff)[Merger and Acquisition List](https://www.gurufocus.com/screener/merger)[Historical Low P/B List 20 New](https://www.gurufocus.com/screener/lowpb)[Historical Low P/S List 20 New](https://www.gurufocus.com/screener/lowps)[High Short Interest 10 New](https://www.gurufocus.com/screener/short-stocks)[Upcoming Special Dividends 20 New](https://www.gurufocus.com/screener/upcoming-special-dividends)[Delisted Stocks](https://www.gurufocus.com/screener/delisted)
+And now let me turn the call over to Mr.Beck.
 
-[Model Portfolios](https://www.gurufocus.com/model_portfolio.php)
+P
 
-[Performances Overview](https://www.gurufocus.com/model_portfolio.php)[Most Broadly Held Portfolio](https://www.gurufocus.com/model_portfolio.php?mp=largecap)[Most Weighted Portfolio](https://www.gurufocus.com/model_portfolio.php?mp=hr_largecap)[Buffett-Munger Top 25](https://www.gurufocus.com/model_portfolio.php?mp=midcap)[GF Score <= 100 Top 25](https://www.gurufocus.com/model_portfolio.php?mp=gfscore_91_100)[Top 25 Undervalued Predictable](https://www.gurufocus.com/model_portfolio.php?mp=smallcap)[Top 25 52-week Low Predictable](https://www.gurufocus.com/model_portfolio.php?mp=cap20)[Top 25 Historical Low P/S](https://www.gurufocus.com/model_portfolio.php?mp=cap40)
+Peter Beck
 
-[Stock Comparison](https://www.gurufocus.com/ideas)
+Thank you, Maria, and thank you, everybody, for joining us today.We've got a lot of great achievements and milestones to share on our start to the year, not the least of which is executing a record number of launches and Space Systems growth that delivered a record total revenue of $93 million in the quarter, up 55% quarter-over-quarter and 69% year-over-year.
 
-[Airline Stocks](https://www.gurufocus.com/ideas/airline-stocks)[Artificial Intelligence Stocks](https://www.gurufocus.com/ideas/artificial-intelligence-stocks)[Bank Stocks](https://www.gurufocus.com/ideas/bank-stocks)[Biotech Stocks](https://www.gurufocus.com/ideas/biotech-stocks)[Blockchain Stocks](https://www.gurufocus.com/ideas/blockchain-stocks)[Chinese Stocks](https://www.gurufocus.com/ideas/chinese-stocks)[Dividend Stocks](https://www.gurufocus.com/ideas/dividend-stocks)[EV Stocks](https://www.gurufocus.com/ideas/ev-stocks)[Growth Stocks](https://www.gurufocus.com/ideas/growth-stocks)[Oil Stocks](https://www.gurufocus.com/ideas/oil-stocks)[Value Stocks](https://www.gurufocus.com/ideas/value-stocks)[Virtual Reality Stocks](https://www.gurufocus.com/ideas/virtual-reality-stocks)[Compare More Stocks…](https://www.gurufocus.com/ideas#compare-stocks)
+Adam will talk through the rest of the details of our financial results for the first quarter before covering the financial outlook for Q2 2024.After that, we'll take some questions and finish today's call with the near-term conferences we'll be attending.
 
-[Gurus](https://www.gurufocus.com/guru/latest-picks)
+P
 
-[Guru Trades](https://www.gurufocus.com/guru/latest-picks)
+Peter Beck
 
-[Latest Guru Picks](https://www.gurufocus.com/guru/latest-picks)[Real Time Picks](https://www.gurufocus.com/guru/realtime-picks)[Guru Portfolio](https://www.gurufocus.com/guru/portfolio)[Score Board](https://www.gurufocus.com/guru/scoreboard)[Mutual Funds](https://www.gurufocus.com/guru/mutual-funds)[Top 10 Holdings](https://www.gurufocus.com/guru/top-holdings)[Sector Picks](https://www.gurufocus.com/guru/sector-picks)[International Picks](https://www.gurufocus.com/guru/international-picks)[Aggregated Portfolio](https://www.gurufocus.com/guru/aggregated-portfolio)[Consensus Picks](https://www.gurufocus.com/guru/consensus-picks)[Guru Bargains](https://www.gurufocus.com/guru/bargains)[Hot Picks](https://www.gurufocus.com/guru/hot-picks)[Download Guru Portfolios](https://www.gurufocus.com/guru/download-guru-portfolio)[Industry Trends](https://www.gurufocus.com/guru/industry-trends)[Geographic Trend](https://www.gurufocus.com/guru/geographic-trends)[ETFs](https://www.gurufocus.com/guru/etfs)[Options Holdings](https://www.gurufocus.com/guru/option-holdings)[European Shorting](https://www.gurufocus.com/guru/european-shortings)
+All right, on to what we achieved in the first quarter of the year starting with Electron.We had a great series of launches in Q1 with 4 successful missions, 3 of them for commercial customers from Launch Complex 1 in New Zealand and a national security mission for the NRO out of our second site in Virginia.
 
-[Guru Lists](https://www.gurufocus.com/guru/list)
+We had to launch -- we had a launch turnaround of just 8 days between our flight for the Japanese customers inspective and the NRO launch, which was no small task from 2 launch sites across the world.In fact, we remain the only company with the capability of orbital launch from both hemispheres.
 
-[Complete Guru List](https://www.gurufocus.com/guru/list)[Warren Buffett](https://www.gurufocus.com/guru/warren%2Bbuffett/summary)[Bill Gates](https://www.gurufocus.com/guru/bill%2Bgates/summary)[Mohnish Pabrai](https://www.gurufocus.com/guru/mohnish%2Bpabrai/summary)[Carl Icahn](https://www.gurufocus.com/guru/carl%2Bicahn/summary)[George Soros](https://www.gurufocus.com/guru/george%2Bsoros/summary)[David Tepper](https://www.gurufocus.com/guru/david%2Btepper/summary)[Seth Klarman](https://www.gurufocus.com/guru/seth%2Bklarman/summary)[Bill Ackman](https://www.gurufocus.com/guru/bill%2Backman/summary)[Joel Greenblatt](https://www.gurufocus.com/guru/joel%2Bgreenblatt/summary)[Charlie Munger](https://www.gurufocus.com/guru/charlie%2Bmunger/summary)[Michael Price](https://www.gurufocus.com/guru/michael%2Bprice/summary)[Julian Robertson](https://www.gurufocus.com/guru/julian%2Brobertson/summary)[Chuck Akre](https://www.gurufocus.com/guru/chuck%2Bakre/summary)[David Einhorn](https://www.gurufocus.com/guru/david%2Beinhorn/summary)[Tom Gayner](https://www.gurufocus.com/guru/tom%2Bgayner/summary)
+It really demonstrates the capability of the team to turn around launches so quickly and sets us up well to execute against our Pamanifest for 2024.
 
-[My Guru Lists](https://www.gurufocus.com/guru/list)
+We completed our fifth launch of the year less than 2 weeks ago, a commercial mission for KASA Institute of South Korea, along with a landmark scientific mission for NASA to test our solar sailing technology, also on board.No 2 rideshare admissions are the same, and this launch, in particular, was a tricky and complex one that played into our unique strengths.
 
-[Insiders](https://www.gurufocus.com/insider/summary)
+For large launch ride here, normally, you have a bunch of satellites that are heading to the exact same orbit and you deploy them into one location.If the orbit isn't ideal from your spacecraft and then you kind of tough like.
 
-[Insider Trading Tracker](https://www.gurufocus.com/insider/summary)
+But for KASA and NASA, we had 2 satellites going to 2 completely different orbits to each other.First, 1 to 520 kilometers, and then all the way up to 1,000 kilometers and [indiscernible] with the other.
 
-[Real-Time Insider Picks](https://www.gurufocus.com/insider/summary)[CEO Buys/Sells](https://www.gurufocus.com/insider/ceo)[CFO Buys/Sells](https://www.gurufocus.com/insider/cfo)[Insider Trends](https://www.gurufocus.com/insider/trend)[Insider Cluster](https://www.gurufocus.com/insider/cluster)[Guru + Insider Double Buys](https://www.gurufocus.com/insider/double)[Triple Buys/Sells](https://www.gurufocus.com/insider/triple)[Canadian Insider](https://www.gurufocus.com/insider/canadian)[Chinese Insider](https://www.gurufocus.com/insider/chinese)[German Insider](https://www.gurufocus.com/insider/german)[Complete Insider List](https://www.gurufocus.com/insiders)
+Those kinds of conflicting mission requirements would normally require 2 separate launches.But with our unique kick stage capabilities, we're able to drop KASA off at 520 and NASA up to 1,000 and then complete another series of engine burns to bring the kickstage back closer to Earth for a faster disposal and endemizelity.
 
-[Politician Trading Tracker](https://www.gurufocus.com/politician/summary)
+It's this kind of precision and flexibility that makes us a really attractive launch service for our customers, which is also inherent in the next 2 missions we have scheduled to fly in Q2.So coming up in Q2, we have 2 back-to-back missions scheduled for NASA to deliver their prefire mission to space or missions to space.
 
-[Real-Time Politician Picks](https://www.gurufocus.com/politician/summary)[Complete Politician List](https://www.gurufocus.com/politicians)[Nancy Pelosi](https://www.gurufocus.com/politician/7/nancy-pelosi)[Mitch Mcconnell](https://www.gurufocus.com/politician/45/mitch-mcconnell)[Tommy Tuberville](https://www.gurufocus.com/politician/4/tommy-tuberville)[Josh Gottheimer](https://www.gurufocus.com/politician/35/josh-gottheimer)[Kevin Hern](https://www.gurufocus.com/politician/36/kevin-hern)[Thomas R. Carper](https://www.gurufocus.com/politician/2/thomas-r.-carper)[Susie Lee](https://www.gurufocus.com/politician/90/susie-lee)[Lois Frankel](https://www.gurufocus.com/politician/28/lois-frankel)
+The mission is focused on understanding how much of our heat loss is lost in the space from the Antarctic, which will help improve climate change models and provide better predictions on silicon rise and whether changes in the future.
 
-[Market](https://www.gurufocus.com/economic_indicators)
+We're setting up 2 satellites Vanessa, one on each launch that will crisscross the polls to get an accurate reading across the 2 orbits on one mission.One -- once prefs space, Pref 2 must be placed there within 3 weeks time, which again plays to our strengths as a response of launch provider heading precise orbital deployments.
 
-[US Market Valuation](https://www.gurufocus.com/stock-market-valuations.php)
+We actually demonstrated a similar capability with the 2 Tropic missions launched last year, so it's great to see NASA take up this capability once again.After that, we are set to launch the first of 5 missions for a new customer, KinÃ©is, a French company backed by private and public investors, including the French government space agency.
 
-[Market Newsletter](https://www.gurufocus.com/market-newsletter)[Buffett Indicator](https://www.gurufocus.com/stock-market-valuations.php)[U.S. Treasury Yield Curve](https://www.gurufocus.com/yield_curve.php)[U.S. Inflation Rate](https://www.gurufocus.com/market/us-inflation-contributors)[Presidential Cycle and Stock Market](https://www.gurufocus.com/market/presidential-cycle)[Debt-to-GDP](https://www.gurufocus.com/market/debt-to-gdp/usa)[Shiller P/E](https://www.gurufocus.com/shiller-PE.php)[Shiller P/E by Sectors](https://www.gurufocus.com/sector_shiller_pe.php)[GF Value for S&P 500 Index](https://www.gurufocus.com/market/sp500-gf-value)[GF Value for NASDAQ 100 Index](https://www.gurufocus.com/market/nasdaq100-gf-value)[GF Value for DOW 30 Index](https://www.gurufocus.com/market/dow30-gf-value)[Gold/Silver Price Ratio](https://www.gurufocus.com/market/gold-silver-ratio)[Gold/Platinum Price Ratio](https://www.gurufocus.com/market/gold-platinum-ratio)[Gold/Palladium Price Ratio](https://www.gurufocus.com/market/gold-palladium-ratio)[Fed Net Liquidity](https://www.gurufocus.com/market/fed-net-liquidity-sp500)[Buffett Assets Allocation](https://www.gurufocus.com/buffett_assets_allocations.php?1)[Latest IPOs](https://www.gurufocus.com/ipos)
+We'll be deploying their entire satellite constellation into lower orbit sub-25 satellites across 5 electron launches.
 
-[Global Market Valuation](https://www.gurufocus.com/global-market-valuation.php)
+There is also a non-forecasted but potential fit launch for a commercial constellation customer we're tracking for Q2.Operationally, we'll be ready to launch this mission when the customer is ready.
 
-[Major Stock Market Indices Performance](https://www.gurufocus.com/idx/%5EGSPC)[Global Market Overview](https://www.gurufocus.com/global-market-valuation.php)[USA](https://www.gurufocus.com/stock-market-valuations.php)[China](https://www.gurufocus.com/global-market-valuation.php?country=CHN)[Japan](https://www.gurufocus.com/global-market-valuation.php?country=JPN)[India](https://www.gurufocus.com/global-market-valuation.php?country=IND)[Canada](https://www.gurufocus.com/global-market-valuation.php?country=CAN)[UK](https://www.gurufocus.com/global-market-valuation.php?country=GBR)[France](https://www.gurufocus.com/global-market-valuation.php?country=FRA)[Germany](https://www.gurufocus.com/global-market-valuation.php?country=DEU)[Brazil](https://www.gurufocus.com/global-market-valuation.php?country=BRA)[Australia](https://www.gurufocus.com/global-market-valuation.php?country=AUS)[More...](https://www.gurufocus.com/global-market-valuation.php)
+And if there's a chance of that happening before the end of Q2.But like I said, there's also a chance of it slipping out of the quarter, so it's not forecast in the financials for the current quarter.
 
-[Economic Indicators](https://www.gurufocus.com/economic_indicators)
+On to the rest of the year, and we remain on track for another record number of electron launches.Across the 22 emissions sold for 2024, we are seeing some movement in the manifest as expected due to customers being late with the spacecraft or asking to shift later in the year or sometimes even into 2025.
 
-[Economic Indicators Overview](https://www.gurufocus.com/economic_indicators)[Commitments of Traders Reports](https://www.gurufocus.com/cot_reports)[The Dow Jones Industrial Average (DJIA)](https://www.gurufocus.com/economic_indicators/229/the-dow-jones-industrial-average-djia)[SP 500 Index](https://www.gurufocus.com/economic_indicators/63/sp-500-index)[Nasdaq Composite Index](https://www.gurufocus.com/economic_indicators/232/nasdaq-composite-index)[Gross Domestic Product (GDP)](https://www.gurufocus.com/economic_indicators/20/gross-domestic-product-gdp)[Shiller PE](https://www.gurufocus.com/economic_indicators/56/shiller-pe)[Ratio of Wilshire 5000 over GNP](https://www.gurufocus.com/economic_indicators/60/ratio-of-wilshire-5000-over-gnp)[Civilian Unemployment Rate](https://www.gurufocus.com/economic_indicators/10/civilian-unemployment-rate)[Russell 2000 Index](https://www.gurufocus.com/economic_indicators/4448/russell-2000-index)[CBOE Volatility Index (VIX)](https://www.gurufocus.com/economic_indicators/234/cboe-volatility-index-the-vix)[Total Nonfarm Payrolls: All Employees](https://www.gurufocus.com/economic_indicators/14/total-nonfarm-payrolls-all-employees)[More...](https://www.gurufocus.com/economic_indicators)
+This kind of manifests wacked as we call it.There's nothing new to large provider and it's something we've become very familiar with after 7 years of launching Electron.
 
-[Sector & Industry Performance](https://www.gurufocus.com/industry)
+We see the opportunity of those gaps to fill the manifest with new customers who need an urgent ride sometimes within months or existing ones who want to move to the left rather than wait for their book slot.
 
-[Global Industry Overview](https://www.gurufocus.com/industry)[USA](https://www.gurufocus.com/industry/usa)[Asia](https://www.gurufocus.com/industry/asia)[Europe](https://www.gurufocus.com/industry/europe)[Canada](https://www.gurufocus.com/industry/canada)[UK/Ireland](https://www.gurufocus.com/industry/uk-ireland)[Oceania](https://www.gurufocus.com/industry/oceania)[Latin America](https://www.gurufocus.com/industry/latin-america)[Africa](https://www.gurufocus.com/industry/africa)[India/Pakistan](https://www.gurufocus.com/industry/india-pakistan)
+The customers who also asked for a new launch date later in the schedule, we have typically invoiced and collected the majority of the launch contract value up to that point, and then we recognize the revenue once step flowing.That's why launch revenue forecasting can be so lumpy.
 
-[News](https://www.gurufocus.com/latest-news)
+But like I said, while we might not get all 22 flights off this year based on customer movement, we're on track for a record year for Electron.And from where we sit today, 2025 is shaping up to be another record year also.
 
-[News](https://www.gurufocus.com/latest-news)
+One of the really exciting missions for 2025 was one we booked early in Q1 -- early in Q2, the $32 million Victor says mission for the U.S.base force.
 
-[Editors' Picks](https://www.gurufocus.com/latest-news/all/timeless)[Stock Analysis](https://www.gurufocus.com/latest-news/all/analysis)[Stock Market News](https://www.gurufocus.com/stock-market-news)[Q&A with Gurus](https://www.gurufocus.com/latest-news/all/qa)[Guru Stock Picks](https://www.gurufocus.com/latest-news/all/guru-stock-picks)[Insider Transaction](https://www.gurufocus.com/latest-news/all/insider)[Earning Reports](https://www.gurufocus.com/latest-news/all/earning-report)[Earnings Call Transcripts](https://www.gurufocus.com/latest-news/all/earnings-call-transcripts)[Software Stock News](https://www.gurufocus.com/latest-news/all/software)[Biotechnology Stock News](https://www.gurufocus.com/latest-news/all/biotechnology)[Hardware Stock News](https://www.gurufocus.com/latest-news/all/hardware)[Banks Stock News](https://www.gurufocus.com/latest-news/all/banks)[Metals & Mining Stock News](https://www.gurufocus.com/latest-news/all/metals-%26-mining)[Drug Manufacturers Stock News](https://www.gurufocus.com/latest-news/all/drug-manufacturers)[Instant Alerts](https://www.gurufocus.com/latest-news/all/instant-alerts)[Press Release](https://www.gurufocus.com/latest-news/all/press_release)[Crypto Press Release](https://www.gurufocus.com/latest-news/all/crypto_press_release)[All News](https://www.gurufocus.com/latest-news/all/all)
+This one is really a full into emission solution that will really show the success of our vertical integration strategy.We'll be designing, building, launching and operating the spacecraft to demonstrate detectably responsive space for the Department of Defense.
 
-[Submit Articles](https://www.gurufocus.com/news/post)
+The space graph will come with all of our own components, including propulsion systems, solar sales action we Star triggers software space spectron and on and on it goes.Then we will fly it on Electron.
 
-[Submit Article Online](https://www.gurufocus.com/news/post)[Contributor Guidelines](https://www.gurufocus.com/guidelines)[Stock-Picking Contest](https://www.gurufocus.com/stock-picking-contest)
+And once it's in space, we'll be operating it to demonstrate [Audio Gap] with another spacecraft and Albert, which is a highly sought-after capability for the DoD.And I should mention that our task is to launch a spacecraft within 24 hours' notice from the space force.
 
- Tools 
+It's the first time we sold a complete end-to-end mission solution and to a prestigious customer as well.It's a super exciting mission that showcases our ability to meet the DoD's growing need for rapid and responsive orbital capability.
 
- AI & Analysis 
+It will also be a fantastic demonstration of what we can do as a full end-to-end mission services provider.We'll be taking care of absolutely everything that DoD needs for assured access to space, which is an important capability for the nation.
 
-[GuruAI](https://www.gurufocus.com/guru-ai)[Stock Comparison Table](https://www.gurufocus.com/compare-table)[Interactive Chart](https://www.gurufocus.com/stock/AAPL/chart)[Manual of Stocks](https://www.gurufocus.com/manual-of-stocks)
+Another new launch contract we've been awarded post Q1 is the second mission from the U.S.base force this time for the space test program.
 
-[Financial Calculators](https://www.gurufocus.com/calculators)
+It's a $14.5 million launch that will fly out of launch complex 2 in Virginia within the next 24 months to carry out research experiments and technology demonstrations for the DoD in space.
 
-[DCF Calculator](https://www.gurufocus.com/dcf-calculator)[Peter Lynch Chart](https://www.gurufocus.com/peter-lynch-chart)[WACC Calculator](https://www.gurufocus.com/calculator/wacc-calculator)[Graham Number Calculator](https://www.gurufocus.com/calculators/graham-number)[Dividend Calculator](https://www.gurufocus.com/calculators/dividend)[ROE / EPS / ROIC Calculator](https://www.gurufocus.com/calculators/roic)[PE / PB / PS / PEG Ratio Calculators](https://www.gurufocus.com/calculators/pe-pb-ps-peg-ratios)[Enterprise Value Calculator](https://www.gurufocus.com/calculators/enterprise-value)[Sharpe Ratio Calculator](https://www.gurufocus.com/calculators/sharpe-ratio)[All Calculators →](https://www.gurufocus.com/calculators)
+We've proven ourselves as a trusted and dedicated partner to the DoD across multiple missions now on Electron.In fact, our first mission for the STP program was all the way back in 2019 when electron launches were still in single digits, and we're looking forward to continued execution with the STP 30 mission.
 
- Data & API 
+Finally, to round out Electron.We've got an existing -- an exciting post quarter update on our recovery program.
 
-[Excel Add-In](https://www.gurufocus.com/excel-add-in)[Google Sheets Add-On](https://www.gurufocus.com/google-sheets-add-on)[GuruFocus API](https://www.gurufocus.com/data-api)[Embed Widgets](https://www.gurufocus.com/widgets)[Mobile App](https://www.gurufocus.com/mobile-app)[Guru Portfolio Download](https://www.gurufocus.com/guru/download-guru-portfolio)[Insider Data Download](https://www.gurufocus.com/insider/data-export)
+For the first time, we have returned an electron stage back to the production line in preparation for reflying.This tank is the one that came back to earth during the recovery emission we launched in January, and it came back in such good condition that we're bringing it back into the production fold.
 
- Calendar & Research 
+Already, it's passed a barrage of qualification tests, but having gone through those additional checks, it's now undergoing its final fit-out and another round of the same acceptance testing that will take any brand-new tank through that runs off the line.As a result of that campaign will determine its suitability for re-flight all looks good, we could be looking to re-flight later in the year.
 
-[Financial Calendar](https://www.gurufocus.com/calendar)[Earnings Calendar & Reports](https://www.gurufocus.com/earnings)[Analyst Ratings](https://www.gurufocus.com/ratings)[Fund Letters Archive](https://www.gurufocus.com/fund-letters)[Transcripts Search](https://www.gurufocus.com/search/transcripts)[Stock Market Holidays](https://www.gurufocus.com/stock-market-holidays)
+First, just a quick overview of some of the key highlights across Q1 to date for Electron.Now on to some of the exciting progress and achievements for Space Systems.
 
-[Pricing](https://www.gurufocus.com/pricing)
+We moved quickly this quarter and executing against our largest base systems contract to date, debut as a prime spacecraft contractor to the industry with a $515 million constellation of 18 spacecraft we're developing for the space development agency.
 
-[Reviews](https://www.gurufocus.com/reviews)
+All of these base craft or the agencies tranche to transport layer will be designed, built and managed by us and includes a full suite of our Space Systems products.
 
-[Data Licensing](https://www.gurufocus.com/data-api/pricing)
+We officially kicked off the beginning of the program with the FDA in Q1 as well as completed preliminary studies for the spacecraft design.The contract marks the beginning of our extension being a prime contractor, a role we've moved into swiftly and comfortably by handpicking a team of experienced subcontractors to support the program across payload sensor supply and ground systems.
 
-[Pricing](https://www.gurufocus.com/data-api/pricing)[API Documentation](https://www.gurufocus.com/data-api/introduction)
+Another fantastic track for the Space Systems group in the quarter was the successful completion of their missions with BARDA, which returned to the world's first base manufacturing mission conducted outside of the International Space section.This was a mission where we took BARDAs manufacturing capsule that makes pharmaceutical crystals and put it on top of one of our spacecraft, which supplied the capsule everything it needed to do its work, like power supply and positioning and management and space.
 
- Support 
+The last one is a really important capability we demonstrated on this mission.Our spacecraft and operations team were tasked with sitting the capsule on its part back to earth, so it could lean safely in a tiny area in the middle of the Utah visit.
 
- Chat Support [Create a ticket](https://www.gurufocus.com/user/ticket/open?ref=/stock/RKLB/transcripts/2429318)[User Engagement Meeting](https://www.gurufocus.com/meeting)[Status](https://status.gurufocus.com/)[Take Survey](https://www.gurufocus.com/surveys/4)[Give us your feedback](https://www.gurufocus.com/feedback)
+I liken this to like throwing a ball from Lot albert while aiming to heat a barley.The Rock Lab team put off a really incredible feat to just absolutely nail the capsules reentry on target.
 
- Education 
+The skill set makes us now 1 of only 2 commercial launch companies with spacecraft reentry capabilities, a rare and valuable thing in the market.And we'll be demonstrating this again soon with our second space graph for the NexDATA demonstration already well ahead of production and on track for its expected launch date.
 
-[Discussion](https://www.gurufocus.com/discussion)
+The bonus is everything we've learned in these reentry missions is we're able to directly apply to future capsule launches on Neutron as well.
 
-[All Topics](https://www.gurufocus.com/discussion)[Trending Stocks](https://www.gurufocus.com/discussion?category=8)[Hidden Gems](https://www.gurufocus.com/discussion?category=9)
+Another of our big satellite programs, the 17 spacecraft build for NDA Globalstar has also progressed nicely through Q1.The first of 2 flight frames for the spacecraft were completed, shipped out of Long Beach and delivered to NDA to the next phase of the program.
 
-[Guru University](https://www.gurufocus.com/university)
+Once Globalstars payloads arrive to NDA, we'll begin the next step of integrating those into the space graph before the complete package enters the acceptance testing campaign.This constellation is slated to launch in 2025.
 
-[Investing 101](https://www.gurufocus.com/university/investing-101)
+So we're making great progress towards that deadline.
 
-[Tutorials](https://www.gurufocus.com/tutorial)
+Next is our Escape program, which is the mission to Mars Vanessa with our 2 spacecraft.The first fully assembled spacecraft is currently being put through the ringer and the vacuum chamber testing, pushing the spacecraft to its limit, so we can know with confidence that can survive the journey from earth to mars.
 
-[Tutorials](https://www.gurufocus.com/tutorial)[Demo Center](https://www.gurufocus.com/demo-center)[Financial Glossary](https://www.gurufocus.com/term)[FAQ](https://www.gurufocus.com/faq)[Change Log](https://www.gurufocus.com/changelog)[Contact Us](https://www.gurufocus.com/user/ticket/open)
+The second satellite will go into the vacuum chamber as soon as the first one comes out, and it's right now undergoing similar checks to ensure it's ready for the load that we'll see when it's launched later this year.
 
-[Subscribe](https://www.gurufocus.com/pricing?ref=stock-name-transcripts-id&sel=premium&utm_source=webApp&utm_medium=userClick&utm_campaign=new_navbar_free_trial)
+And finally, to wrap up Space Systems.We have a new long-term supply agreement for our space sold solutions with a large space prime worth up to $150 million.
 
-[Free Trial](https://www.gurufocus.com/pricing?ref=stock-name-transcripts-id&sel=premium&utm_source=webApp&utm_medium=userClick&utm_campaign=new_navbar_free_trial_item)[Group Subscription](https://www.gurufocus.com/pricing?group=2)[Refer a Friend and Earn One Month of Free Membership](https://www.gurufocus.com/referral-program)
+This one is a multiyear agreement that will see our solar technology support critical missions across civil, defense and national security.And March 31 ending backlog reflects the initial orders against this long-term agreement.
 
-0
+Demand for solar power and space continues to grow as the world moves towards new constellations and proliferated LEO architecture.We're now one of the largest suppliers of space-grade solar South globally.
 
- Site Overview 
+Space Solar Power is already one of the most constrained areas in the industrial supply chain, which is why we've invested in expanding, modernizing our space manufacturing capability, including automated processes and a sibling -- and assembling.These are just some of the steps we've taken to ensure the resiliency of the space dollar supply chain beyond current and future missions and it's the latest contract and the sales contract is a strong recognition of that.
 
-[7-Day Free Trial](https://www.gurufocus.com/pricing?ref=stock-name-transcripts-id&sel=premium&utm_source=webApp&utm_medium=userClick&utm_campaign=stock-name-transcripts-id_topMenuButton)
+Overall, some great work and progress across our Space Systems business to date.Now it's time to share how development with neutrons go.
 
- / 
+So on to a huge milestone for Neutron that I'm really excited to share.We've completed our first Archimedes engine.
 
-[RKLB ▼5.32%](https://www.gurufocus.com/stock/RKLB/summary)
+The engine you see here has already shipped out the door of our engine development complex in Long Beach and has fitted to the Titan at Neastenes.
 
-[GURUFOCUS.COM](https://www.gurufocus.com/)[STOCK LIST](https://www.gurufocus.com/stocks)[Industrials](https://www.gurufocus.com/stocks/sector/industrials)[Aerospace & Defense](https://www.gurufocus.com/stocks/sector/industrials/aerospace-%26-defense)[Rocket Lab Corp (NAS:RKLB)](https://www.gurufocus.com/stock/RKLB/summary)Transcripts Item
+What we're taking to the stand is a very close to a flight like engine and with all of the production infrastructure stood up alongside the engine development.We believe the team is in the optimum position to be able to make quicker durations to our committees based on what we learned through testing.
 
- Rocket Lab Corp  (NAS:RKLB) 
+Our committees has a really unique engine given its trust class engine cycle and propellant combination.It's an oxidized a rich stage combustion cycle powered by liquid oxygen and methane.
 
- $ 76.73  -4.31 (-5.32%) [Market Cap: 47.94 Bil](https://www.gurufocus.com/term/mktcap/RKLB)[Enterprise Value: 46.70 Bil](https://www.gurufocus.com/term/enterprise-value/RKLB)[PE Ratio: 0](https://www.gurufocus.com/term/pe-ratio/RKLB)[PB Ratio: 21.07](https://www.gurufocus.com/term/pb-ratio/RKLB) GF Score: 71/100 
+One of these engines equals the same amount of thrust as roughly 3 electron rockets.On top of that, we've designed our committees to stand up to a target maximum reasonability of 20 flights per engine.
 
-*   [Summary](https://www.gurufocus.com/stock/RKLB/summary)
-*   [30-Y Financials](https://www.gurufocus.com/stock/RKLB/financials)
-*   [Valuation](https://www.gurufocus.com/stock/RKLB/valuation)
-*   [Forecast](https://www.gurufocus.com/stock/RKLB/forecast)
-*   [DCF](https://www.gurufocus.com/stock/RKLB/dcf)
-*   [Dividend](https://www.gurufocus.com/stock/RKLB/dividend)
-*   [Guru Trades](https://www.gurufocus.com/stock/RKLB/guru-trades)
-*   [Insider](https://www.gurufocus.com/stock/RKLB/insider)
-*   [Interactive Chart](https://www.gurufocus.com/stock/RKLB/chart)
-*   [Filings](https://www.gurufocus.com/stock/RKLB/filings)
-*   [Transcripts](https://www.gurufocus.com/stock/RKLB/transcripts)
-*   [News](https://www.gurufocus.com/stock/RKLB/article)
-*   [Compare](https://www.gurufocus.com/stock/RKLB/analysis)
-*   [Stock PDF](https://www.gurufocus.com/stock/RKLB/report)
-*   [Ownership](https://www.gurufocus.com/stock/RKLB/ownership)
-*   [Operating](https://www.gurufocus.com/stock/RKLB/operating)
-*   More 
+HR committees is designed for 165,000 pounds of thrust for a combined lift-off on the first stage of 1,450 bill for us.The Turoa has an 18,000 shaft horsepower.
 
-    *   [Checklist](https://www.gurufocus.com/stock/RKLB/checklist)
-    *   [Vote](https://www.gurufocus.com/stock/RKLB/basket)
-    *   [Definitions](https://www.gurufocus.com/stock/RKLB/definition)
+And we picked an operating point that is optimized for reusability over a maximum performance, which will allow us to operate this engine at a much lower stress level as compared to others.And like I said, it positions us well for rapid development and qualify -- for our rapid development and qualification testing campaign integrated within our committees -- integrated within committees to all new 3D printed parts that come off their factory floor at Long Beach.
 
-[Transcripts List](https://www.gurufocus.com/stock/RKLB/transcripts)
+Like it's turbo pump, pre-burn and main combustion chamber components, valve houses and engine structure components.All of these are the same parts that continue to be printed as we build out more engines to this one in parallel.
 
-Search
+We've got about 4 sets of engines on the go right now.Perhaps the biggest point I want to make here, too, is that we haven't taken any huge concessions just to make fire for the sake of it.
 
-*   [![Image 4: Earning Transcript Icon](https://static.gurufocus.com/cdn-cgi/image/width=24,quality=100/earning_icon.jpg) Rocket Lab Corp Annual Shareholders Meeting Transcript May 20, 2026](https://www.gurufocus.com/stock/RKLB/transcripts/8873497)  
-*   [![Image 5: Earning Transcript Icon](https://static.gurufocus.com/cdn-cgi/image/width=24,quality=100/earning_icon.jpg) Q1 2026 Rocket Lab Corp Earnings Call Transcript May 07, 2026 $78.58 (-7.17%) Earnings](https://www.gurufocus.com/stock/RKLB/transcripts/8845235)  
-*   [![Image 6: Earning Transcript Icon](https://static.gurufocus.com/cdn-cgi/image/width=24,quality=100/earning_icon.jpg) Q4 2025 Rocket Lab Corp Earnings Call Transcript Feb 26, 2026 $72.65 (+3.49%) Earnings](https://www.gurufocus.com/stock/RKLB/transcripts/8659818)  
-*   [![Image 7: Earning Transcript Icon](https://static.gurufocus.com/cdn-cgi/image/width=24,quality=100/earning_icon.jpg) Q3 2025 Rocket Lab Corp Earnings Call Transcript Nov 10, 2025 $51.9 (+0.50%) Earnings](https://www.gurufocus.com/stock/RKLB/transcripts/3200499)  
-*   [![Image 8: Earning Transcript Icon](https://static.gurufocus.com/cdn-cgi/image/width=24,quality=100/earning_icon.jpg) Q1 2025 Rocket Lab USA Inc Earnings Call Transcript May 08, 2025 $23.1 (+3.63%) Earnings](https://www.gurufocus.com/stock/RKLB/transcripts/2847701)  
-*   [![Image 9: Earning Transcript Icon](https://static.gurufocus.com/cdn-cgi/image/width=24,quality=100/earning_icon.jpg) Q4 2024 Rocket Lab USA Inc Earnings Call Transcript Feb 27, 2025 $19.83 (-6.68%) Earnings](https://www.gurufocus.com/stock/RKLB/transcripts/2721156)  
-*   [![Image 10: Earning Transcript Icon](https://static.gurufocus.com/cdn-cgi/image/width=24,quality=100/earning_icon.jpg) Q3 2024 Rocket Lab USA Inc Earnings Call Transcript Nov 12, 2024 $14.66 (-0.81%) Earnings](https://www.gurufocus.com/stock/RKLB/transcripts/2599164)  
-*   [![Image 11: Earning Transcript Icon](https://static.gurufocus.com/cdn-cgi/image/width=24,quality=100/earning_icon.jpg) Q2 2024 Rocket Lab USA Inc Earnings Call Transcript Aug 08, 2024 $4.77 (+4.15%) Earnings](https://www.gurufocus.com/stock/RKLB/transcripts/2548514)  
-*   [![Image 12: Earning Transcript Icon](https://static.gurufocus.com/cdn-cgi/image/width=24,quality=100/earning_icon.jpg) Q1 2024 Rocket Lab USA Inc Earnings Call Transcript May 06, 2024 $4.06 (+1.50%) Earnings](https://www.gurufocus.com/stock/RKLB/transcripts/2429318)  
-*   [![Image 13: Earning Transcript Icon](https://static.gurufocus.com/cdn-cgi/image/width=24,quality=100/earning_icon.jpg) Q4 2023 Rocket Lab USA Inc Earnings Call Transcript Feb 27, 2024 $4.71 (+3.06%) Earnings](https://www.gurufocus.com/stock/RKLB/transcripts/2359071)  
-*   [![Image 14: Earning Transcript Icon](https://static.gurufocus.com/cdn-cgi/image/width=24,quality=100/earning_icon.jpg) Rocket Lab USA Inc Hosts Government Constellation Award Transcript Jan 08, 2024](https://www.gurufocus.com/stock/RKLB/transcripts/2217068)  
-*   [![Image 15: Earning Transcript Icon](https://static.gurufocus.com/cdn-cgi/image/width=24,quality=100/earning_icon.jpg) Rocket Lab USA Inc at Deutsche Bank Global Space Summit Transcript Nov 15, 2023](https://www.gurufocus.com/stock/RKLB/transcripts/2217067)  
-*   [![Image 16: Earning Transcript Icon](https://static.gurufocus.com/cdn-cgi/image/width=24,quality=100/earning_icon.jpg) Q3 2023 Rocket Lab USA Inc Earnings Call Transcript Nov 08, 2023 $4.36 (-3.11%) Earnings](https://www.gurufocus.com/stock/RKLB/transcripts/2217066)  
-*   [![Image 17: Earning Transcript Icon](https://static.gurufocus.com/cdn-cgi/image/width=24,quality=100/earning_icon.jpg) Rocket Lab USA Inc at Morgan Stanley Laguna Conference Transcript Sep 13, 2023](https://www.gurufocus.com/stock/RKLB/transcripts/2217065)  
-*   [![Image 18: Earning Transcript Icon](https://static.gurufocus.com/cdn-cgi/image/width=24,quality=100/earning_icon.jpg) Rocket Lab USA Inc at Bank of America SMID Cap Ideas Conference (Virtual) Transcript Aug 09, 2023](https://www.gurufocus.com/stock/RKLB/transcripts/2217064)  
-*   [![Image 19: Earning Transcript Icon](https://static.gurufocus.com/cdn-cgi/image/width=24,quality=100/earning_icon.jpg) Q2 2023 Rocket Lab USA Inc Earnings Call Transcript Aug 08, 2023 $6.66 (+1.06%) Earnings](https://www.gurufocus.com/stock/RKLB/transcripts/2217063)  
-*   [![Image 20: Earning Transcript Icon](https://static.gurufocus.com/cdn-cgi/image/width=24,quality=100/earning_icon.jpg) Q1 2023 Rocket Lab USA Inc Earnings Call Transcript May 09, 2023 $3.94 (+2.34%) Earnings](https://www.gurufocus.com/stock/RKLB/transcripts/2217062)  
-*   [![Image 21: Earning Transcript Icon](https://static.gurufocus.com/cdn-cgi/image/width=24,quality=100/earning_icon.jpg) Q4 2022 Rocket Lab USA Inc Earnings Call Transcript Feb 28, 2023 $4.5 (-1.96%) Earnings](https://www.gurufocus.com/stock/RKLB/transcripts/2217061)  
-*   [![Image 22: Earning Transcript Icon](https://static.gurufocus.com/cdn-cgi/image/width=24,quality=100/earning_icon.jpg) Rocket Lab USA Inc at Deutsche Bank Global Space Summit (Virtual) Transcript Nov 10, 2022](https://www.gurufocus.com/stock/RKLB/transcripts/2217060)  
-*   [![Image 23: Earning Transcript Icon](https://static.gurufocus.com/cdn-cgi/image/width=24,quality=100/earning_icon.jpg) Q3 2022 Rocket Lab USA Inc Earnings Call Transcript Nov 09, 2022 $4.74 (-7.24%) Earnings](https://www.gurufocus.com/stock/RKLB/transcripts/2217059)  
-*   [![Image 24: Earning Transcript Icon](https://static.gurufocus.com/cdn-cgi/image/width=24,quality=100/earning_icon.jpg) Rocket Lab USA Inc Investor Day Transcript Sep 21, 2022](https://www.gurufocus.com/stock/RKLB/transcripts/2217058)  
-*   [![Image 25: Earning Transcript Icon](https://static.gurufocus.com/cdn-cgi/image/width=24,quality=100/earning_icon.jpg) Q2 2022 Rocket Lab USA Inc Earnings Call Transcript Aug 11, 2022 $5.86 (+1.21%) Earnings](https://www.gurufocus.com/stock/RKLB/transcripts/2217057)  
-*   [![Image 26: Earning Transcript Icon](https://static.gurufocus.com/cdn-cgi/image/width=24,quality=100/earning_icon.jpg) Q1 2022 Rocket Lab USA Inc Earnings Call Transcript May 16, 2022 $5.41 (-7.68%) Earnings](https://www.gurufocus.com/stock/RKLB/transcripts/2217056)  
-*   [![Image 27: Earning Transcript Icon](https://static.gurufocus.com/cdn-cgi/image/width=24,quality=100/earning_icon.jpg) Q4 2021 Rocket Lab USA Inc Earnings Call Transcript Feb 28, 2022 $9.54 (+0.95%) Earnings](https://www.gurufocus.com/stock/RKLB/transcripts/2217055)  
-*   [![Image 28: Earning Transcript Icon](https://static.gurufocus.com/cdn-cgi/image/width=24,quality=100/earning_icon.jpg) Q3 2021 Rocket Lab USA Inc Earnings Call Transcript Nov 15, 2021 $14.29 (-0.56%) Earnings](https://www.gurufocus.com/stock/RKLB/transcripts/2217054)  
-*   [![Image 29: Earning Transcript Icon](https://static.gurufocus.com/cdn-cgi/image/width=24,quality=100/earning_icon.jpg) Q2 2021 Rocket Lab USA Inc Earnings Call Transcript Sep 08, 2021 $15.09 (+4.07%) Earnings](https://www.gurufocus.com/stock/RKLB/transcripts/2217053)  
+We've been very intentional and methodical with our committees making sure to refine its design so that now we're at a point that we've got an engine that can be readily productionized long term.
 
-# Q1 2024 Rocket Lab USA Inc Earnings Call Transcript
+Essentially our committe is really the inflection point for Neutron's development.Now that our committees understand the real fun begins and we've started the test campaign in earnest.
 
-May 06, 2024 / 09:00PM GMT 
+Having a complete engine, we've gone through some of the biggest unknowns in the development program and can update the schedule for its first flight accordingly, which we've adjusted to first launch no earlier than mid-25.
 
- Release Date Price: $4.06 (+1.50%) 
+We run highly aggressive schedules at Rocket Lab.We always have and all of our programs in all our programs, and that's why we've been able to deliver new capability to the market like Haste, Electron KapStone and more industry-leading time frames.
 
-Key Points
+Getting neutron to the pad this year was an ambitious green light schedule that we had a path to closing at every single aspect went exactly according to plan.But as we've always said, this is a rocket development program and has always filled with Gremlins, some are new control and some not.
 
- Transcript  10-Q 8-K 
+In this case, we've made the call to take additional time not only to just bring a minimum viable product engine to the stand, but to be very intentional and methodical about setting Artemis up for success in the long term.This means rigorous component-level testing before the first hot fire and refining a design that can put production is long term.
 
- Ask GuruAI ![Image 30: GuruFocus Premium Icon](https://static.gurufocus.com/images/icons/premium.svg)
+We've also taken the time to scale up the manufacturing and test facilities to support full-scale production and built a knowledgeable and experienced team ready to build, test and fly our committees at the pace that customers are demanding once we bring neutron to market.All of this takes time to get ultimately right.
 
-### Key Points
+So that drove a schedule, which now closes mid next year.
 
-Positve
+We have a proven track record of delivering technology and capabilities to market on rapid and often record-breaking time lines and neutron still coming to market faster than just about any other market program that I know.We believe Neutron will be a category-defining launch vehicle serving critical market needs, and we're excited to move into the final phase of development.
 
-*    Rocket Lab USA Inc (RKLB) reported a record total revenue of $93 million for the quarter, marking a 55% increase quarter over quarter and a 69% increase year over year. 
-*    The company successfully executed a record number of launches, including four successful missions in Q1, demonstrating strong operational capabilities and responsiveness. 
-*    Rocket Lab USA Inc (RKLB) has secured a significant contract with the Space Development Agency worth $515 million, positioning the company as a prime spacecraft contractor. 
-*    The company has made significant progress in its Neutron rocket development, including the completion of the first Archimedes engine, which is a key component of the rocket. 
-*    Rocket Lab USA Inc (RKLB) has a strong backlog of $1.02 billion, providing a solid foundation for future revenue and growth. 
+While the propulsion team has made leads in our committees, the structural team, a test team is also putting together big wins on the board as well.We've got some of the Rocket's largest composite panels and tech sections collected across all of our concept facilities.
 
-Negative
+We have completed the first neutrons failing panels with a set of full panels coming off the composites -- coming out of composite securing and expected to be assembled together in the coming weeks.These are large, almost 8-meter long sections that neutron transcends and payloads inside the rocket.
 
-*    The company's financial outlook for Q2 2024 indicates potential challenges with a fifth launch that may slip out of the quarter, reflecting the uncertainty in launch scheduling. 
-*    Rocket Lab USA Inc (RKLB) faces ongoing challenges with customer manifest changes, which can affect launch schedules and financial forecasting. 
-*    The company has pushed the first launch of its Neutron rocket to no earlier than mid-2025, indicating potential delays in its development timeline. 
-*    Despite strong revenue growth, the company's operating expenses have also increased, primarily due to investments in the Neutron development program and infrastructure. 
-*    Rocket Lab USA Inc (RKLB) is still navigating through the complexities of integrating and optimizing the SolAero business, with certain contracts impacting profitability. 
+So there are really significant pieces of neutrons filled.
 
- Operator 
+The internal tank structures on neutron second stage also come together, having completed an assembly test run earlier in the quarter.This is the second stage 2 that we built for Neutron after the development stage of Bilkentisted last year.
 
-Good day, everyone, and welcome to the Rocket Lab's first-quarter 2024 financial results update and conference call.
+Putting the pieces together -- putting all the pieces of neutrons together is not the same as assembling Electron, which the team obviously regularly does by hand.So completing the assembly test run for Neutron and now moving on to final assembly, elimination and integration of the pieces into flight configuration marks a major progress in the vehicles development.
 
- At this time, I would like to hand the call over to Murielle Baker, Communications Manager at Rocket Lab. Please go ahead, ma'am.
+Beside and the scale of the structure and the pieces we're working with here is important to show.So here are some more images of the carbon comps, the tank builds taking place across our various facilities.
 
- Murielle Baker 
+And it's fair to say some amazing work from the team here pushing hard to get this all together.
 
- Rocket Lab USA Inc - Communications Manager 
+Speaking of launch, Launched Complex 3 up in Virginia is really starting to take shape.Concrete works for neutrons launch amount have been completed and the concrete foundations for their sites liquid for parent and gas storage tanks have gone in.
 
-Thank you. Hello, everyone. We're glad to have you join us for today's conference call to discuss Rocket Lab's first-quarter 2024 financial results.
+Long lead propellent tanks are soon to be delivered to site and will see our propellent farms stood up in the coming months.
 
- Before we begin the call, I'd like to remind you that our remarks may contain forward-looking statements that relate to the future performance of the company. And these statements are intended to qualify for the Safe Harbor protection from liability established by the Private Securities Litigation Reform Act.
+Also installed the 278 foot water tower.Visually, we've changed the skyline of Wallops Waterfront River.
 
- Any such statements are not guarantees of future performance. And factors that could influence our results are highlighted in today's press release and others are contained in our filings with the Securities and Exchange Commission.
+So it's an exciting new feature for LC-3.
 
- Such statements are based upon
+We have made good progress on all other neutron facilities in the area as well, including new trans assembly and integration test complex just outside the Wallops gate.Another set of concrete foundations have gone down, and we've got the skeleton structure up for NX building on the site.
 
- Already have an account?[Log in](https://www.gurufocus.com/login?ref=%2Fstock%2FRKLB%2Ftranscripts%2F2429318)
+Construction is really moving nicely along in vision, which is great to see.
 
- Get the full story 
+So that wraps up the business highlights for 2024 so far.So from here, I'll hand it over to Adam to take us through the financial updates.
 
-[Subscribe Now](https://www.gurufocus.com/pricing?ref=stock-name-transcripts-id&sel=premium&utm_source=webApp&utm_medium=userClick&utm_campaign=transcript_paywall&pmc=PAYNOWTRANSCRIPTS)
+A
 
-Access to All Earning Calls and Stock Analysis
-30-Year Financial on one screen
-All-in-one Stock Screener with unlimited filters
-Customizable Stock Dashboard
-Real Time Insider Trading Transactions
-8,000+ Institutional investors’ 13F holdings
-Powerful Excel Add-in and Google sheets Add-on
-All data downloadable
-Quick customer support
-And much more...
+Adam Spice
 
- 7-Day Free Trial · Cancel Anytime 
+Great.Thanks, Pete.
 
-Subscription fee may be tax deductible. 
+First quarter 2024 revenue was $92.8 million, which was towards the low end of our prior guidance range, reflecting significant year-on-year growth of 69% and sequential growth of 55%, driven by strong contribution from both business segments.Our Launch Services segment delivered revenue of $32.7 million in the quarter from 4 launches, in line with guidance of $32 million to $33 million representing sequential growth of 287%, driven by a return to normal launch operations after Q4 was impacted by our September anomaly.
 
-Excellent ![Image 31](https://static.gurufocus.com/trust_rating.png)
+A
 
- 4.6 out of 5 ![Image 32](https://static.gurufocus.com/trust.png) Trustpilot 
+Adam Spice
 
- Research Tools 
+The average selling price per launch was $8.2 million, well above our target average selling price of $7.5 million, the result of a favorable mix of government and complex commercial missions.
 
-[All-In-One Screener](https://www.gurufocus.com/screener)[Stock Ideas](https://www.gurufocus.com/ideas)[Stock List](https://www.gurufocus.com/stocks)[Guru List](https://www.gurufocus.com/guru/list)[Guru Real-Time Picks](https://www.gurufocus.com/guru/realtime-picks)[Insider List](https://www.gurufocus.com/insiders)[Insider Trades](https://www.gurufocus.com/insider/summary)[Economic Indicators](https://www.gurufocus.com/economic_indicators)[Sector & Industry Performance](https://www.gurufocus.com/industry)[DCF Calculator](https://www.gurufocus.com/stock/AAPL/dcf)[Calculators](https://www.gurufocus.com/calculators)[Discussion Board](https://www.gurufocus.com/discussion)
+Our current backlog continues to support our target average revenue per launch with some variability tied to volume purchase commitments, launch location and mission assurance requirements.
 
- Product 
+Our Space Systems segment delivered just over $60 million in the quarter, which was towards the low end of our prior guidance range of $60 million to $65 million, but reflecting sequential growth of 17%, driven primarily by growth in our MDA contract revenue, albeit slightly less than was expected.
 
-[Pricing Plans](https://www.gurufocus.com/pricing)[Excel Add-In](https://www.gurufocus.com/excel-add-in)[Google Sheets Add-on](https://www.gurufocus.com/google-sheets-add-on)[Data API](https://www.gurufocus.com/data-api/pricing)[Stock Comparison Table](https://www.gurufocus.com/compare-table)[Manual of Stocks](https://www.gurufocus.com/manual-of-stocks)[Instant Alerts](https://www.gurufocus.com/latest-news/all/instant-alerts)[Mobile App](https://www.gurufocus.com/mobile-app)[Newsletters Signup](https://www.gurufocus.com/newsletters_signup)[中文](https://www.gurufocus.cn/)
+Now turning to gross margin.GAAP gross margin for the first quarter was 26.1%, slightly above the high end of our prior guidance range of 24% to 26%.
 
- Education 
+Non-GAAP gross margin for the first quarter was 31.7%, which was also above our prior guidance range of 29% to 31%.GAAP and non-GAAP gross margin improvements relative to our guidance reflects continued efficiencies in both our launch and satellite manufacturing businesses.
 
-[Financial Glossary](https://www.gurufocus.com/term)[Tutorials](https://www.gurufocus.com/tutorial)[FAQ](https://www.gurufocus.com/faq)[Buffett Indicator](https://www.gurufocus.com/stock-market-valuations.php)[Shiller P/E](https://www.gurufocus.com/shiller-PE.php)[Yield Curve Today](https://www.gurufocus.com/yield_curve.php)[U.S. Inflation Rate](https://www.gurufocus.com/market/us-inflation-contributors)[Global Market Valuation](https://www.gurufocus.com/global-market-valuation.php)[Fed Net Liquidity](https://www.gurufocus.com/market/fed-net-liquidity-sp500)[Buffett Assets Allocation](https://www.gurufocus.com/buffett_assets_allocations.php?1)
+We ended Q1 with production-related head count of 872, up 20% from the prior quarter.
 
- Company 
+Turning to backlog.We ended Q1 2024 with $1.02 billion of total backlog with launch backlog of $215.6 million and Space Systems backlog of $799.7 million.
 
-[About GuruFocus](https://www.gurufocus.com/about)[Career](https://www.gurufocus.com/jobs.php)[Contact Us](https://www.gurufocus.com/user/ticket/open)[Advertise](https://www.gurufocus.com/advertise)[Term of Use](https://www.gurufocus.com/term-of-use)[Privacy Policy](https://www.gurufocus.com/privacy-policy)[Referral Program](https://www.gurufocus.com/referral-program)[Partner Program](https://www.gurufocus.com/partner-program)
+Relative to Q4 2023, total backlog was down only 3% sequentially or $31 million despite a $93 million quarter of revenue.Strong bookings continued in our Space Systems business, highlighted by initial orders related to the long-term supply agreement with a Tier 1 prime contractor that Pete alluded to earlier and a follow-on booking for reaction wheels supporting a mega constellation.
 
- Survey 
+For launch, backlog was down 13% sequentially or $32.7 million as we drew backlog down against a record number of launches in the quarter.We continue to cultivate a healthy pipeline, including multi-launch deals that can be lumpy given the size and complexities of these opportunities.
 
-We'd love to learn more about your experiences on GuruFocus.com and how we can improve!
+We expect approximately 42% of current backlog to be recognized as revenue within 12 months.
 
-[Take Survey](https://www.gurufocus.com/surveys/4 "GuruFocus Survey")
+Turning to operating expenses.GAAP operating expenses for the first quarter of 2024 were $67.3 million, below the low end of our guidance range of $73 million to $75 million.
 
- Follow Us 
+Non-GAAP operating expenses for the first quarter were $56.4 million, which was below the low end of our guidance range of $62 million to $64 million.The increases in both GAAP and non-GAAP operating expenses versus the fourth quarter of 2023 were primarily driven by continued growth in head count and prototype spending to support our neutron development program and related infrastructure to support Neutron and our '18 satellite SDA contract, partially offset by shifting R&D resource to production to support for Space Systems.
 
-[![Image 33: download GuruFocus on Apple store](https://static.gurufocus.com/images/apple.svg)](https://itunes.apple.com/us/app/gurufocus/id1054144526)[![Image 34: download GuruFocus on Google Play](https://static.gurufocus.com/images/android.svg)](https://play.google.com/store/apps/details?id=com.gurufocus.app)
+In SG&A, GAAP expenses increased $2.9 million quarter-on-quarter, largely due to a $1.6 million increase in stock-based compensation, along with increase in outside services, partially offset by a decrease in the change in contingent consideration related to our PSC acquisition due to a lower average stock price in the quarter.Non-GAAP SG&A expenses increased by $1.9 million, primarily due to the increase in outside services included in year-end audit expenses, legal fees and corporate IT and security spending that further enable efficient scaling of the business.
 
-[](https://twitter.com/gurufocus "Twitter")[](https://www.youtube.com/user/GuruFocusVideos "YouTube")[](https://www.facebook.com/GuruFocus/ "FaceBook")[](https://www.instagram.com/gurufocus/ "Instagram")
+Q1 ending SG&A head count was 263, representing an increase of 16% from the prior quarter.
 
- Disclaimers 
+In R&D specifically, GAAP expenses were up $1 million quarter-on-quarter due to Neutron prototyping, materials and head count increases.Meanwhile, we have shifted certain non-new truck R&D resources to support the execution of our MDA contract production ramp.
 
- GuruFocus.com is not operated by a broker or a dealer. Under no circumstances does any information posted on GuruFocus.com represent a recommendation to buy or sell a security. The information on this site, and in its related newsletters, is not intended to be, nor does it constitute investment advice or recommendations. The individuals or entities selected as "gurus" may buy and sell securities before and after any particular article and report and information herein is published, with respect to the securities discussed in any article and report posted herein. Gurus may be added or dropped from the GuruFocus site at any time. In no event shall GuruFocus.com be liable to any member, guest or third party for any damages of any kind arising out of the use of any content or other material published or available on GuruFocus.com, or relating to the use of, or inability to use, GuruFocus.com or any content, including, without limitation, any investment losses, lost profits, lost opportunity, special, incidental, indirect, consequential or punitive damages. Past performance is a poor indicator of future performance. The information on this site, and in its related newsletters, is not intended to be, nor does it constitute investment advice or recommendations. The information on this site is in no way guaranteed for completeness, accuracy or in any other way. The gurus listed in this website are not affiliated with GuruFocus.com, LLC. Stock quotes are provided by QuoteMedia, Inc. (CSI). Company fundamental data is provided by Morningstar. Analyst estimates data is sourced from both Refinitiv and Morningstar, with priority given to Refinitiv data. Data is updated daily. 
+Non-GAAP expenses were up $900,000 quarter-on-quarter driven similarly to GAAP expenses.Q1 ending R&D head count was 625, represent an increase of 40% from the prior quarter.
 
- © 2004-2026 GuruFocus.com, LLC. All Rights Reserved. 
+In summary, total first quarter head count was $1,760, up 76 heads from the prior quarter.
 
-![Image 35](https://www.gurufocus.com/stock/RKLB/transcripts/2429318)
+Turning to cash.Purchases of property, equipment and capitalized software licenses was $19.2 million in the first quarter of 2024, an increase of $8.8 million from $10.4 million in the fourth quarter of 2023.
+
+This sequential increase was due to our continued investment in Neutron research, testing and production infrastructure projects, along with the expansion of our satellite production and space solar solutions capacity.
+
+Cash consumed from operations was $2.6 million in the first quarter of 2024 compared to $42.2 million in the fourth quarter of 2023.The sequential improvement of almost $40 million was driven by a lesser net income loss and working capital improvements owing to the ramp-up of production in our MDA Globalstar program and a step-up in launch cadence as well as strong cash collections, including initial milestone payments related to our Space Systems programs.
+
+Overall, non-GAAP free cash flow, defined as GAAP operating cash flow reduced by purchases of property equipment and capitalized software in the first quarter of 2024 was a use of $21.8 million compared to $52.6 million in the fourth quarter of 2023.The ending balance of cash, cash equivalents, restricted cash and marketable securities was $564.9 million as of the end of the first quarter of 2024.
+
+As discussed in our February earnings call, we generated $355 million in a convertible senior notes offering, which was coupled with 2 deployments of $43.2 million supporting our convertible capped call and equipment facility loan repayments as well as $11.2 million in debt issuance costs, yielding $257.4 million of net financing.We exit Q1 with a strong position to exercise inorganic options to further vertically integrate our supply chain with the critical capabilities, consistent with what we've done successfully in the past.
+
+Our fourth quarter profitability trend demonstrates progress towards adjusted EBITDA breakeven and attaining our long-term financial model.We expect Electron's gross margins to continue to improve over time due to increased scale and production efficiencies and satellite manufacturing contributions to improve due to increased scale and leverage of growing IP capabilities and infrastructure.
+
+With our strong launch Manifest and increase in scale driven by Space Systems contract execution in 2024, we are well positioned to continue our progression to adjusted EBITDA breakeven following our neutron investment cycle.And with that, let's turn to our guidance for the second quarter of 2024.
+
+We expect revenue in the second quarter to range between $105 million and $110 million.This range reflects $77 million to $81 million of contribution from Space Systems and $28 million to $29 million from launch services, which assumes 4 launches.
+
+As Pete noted, we do have a fifth launch slated for late June, but are taking a cautious approach in terms of guidance setting given the end of quarter timing risk.
+
+We expect second quarter GAAP gross margin to range between 24% to 26% and non-GAAP gross margin to range between 30% to 32%.These forecasted GAAP and non-GAAP gross margins reflect mix shifts in our Space Systems segment towards a larger and lower-margin satellite manufacturing program revenue contribution versus certain of our higher gross margin component offerings as well as a weaker mix within our components businesses.
+
+We expect second quarter GAAP operating expenses to range between $74 million and $76 million and non-GAAP operating expenses to range between $62 million and $64 million.The quarter-on-quarter increases are driven primarily by increased neutron investment, including staff costs, prototyping and materials as well as our annual merit increases effective April 1.
+
+We expect second quarter GAAP and non-GAAP net interest expense to be $1 million.We expect second quarter adjusted EBITDA loss to range between $23 million and $25 million and basic shares outstanding to be approximately 494 million shares.
+
+And with that, we'll hand the call over to the operator for questions.
+
+O
+
+Operator
+
+[Operator Instructions].And we'll go first to Erik Rasmussen from Stifel.
+
+E
+
+Erik Rasmussen
+
+Maybe just on Neutron.You obviously made a lot of significant progress as the number of milestones in the Archimedes being the latest, I guess, a major one, but you are pushing that out by at least 6 months.
+
+Is it mostly on the engine side, sort of the conservatism there?And sort of what can pull that time line in or even push that out further?
+
+P
+
+Peter Beck
+
+Yes.Erik, so the engine is always a long pole in the tent with any launch vehicle development.
+
+So -- and look, we learned a lot building that engine and getting it to the stand, and we'll continue to learn more as we go through the Engen qualification and hot fire programs.But the engine is really the primary driver for the move.
+
+And market programs are notoriously difficult to kind of plan.And I think a lot of people see the rocket, but they don't see all of the tremendous amount of infrastructure around it that it takes to bring a rocket to fruition.
+
+P
+
+Peter Beck
+
+So there's a lot going on in the program as you saw in some of the materials.But really, the engine is always certainly for us, the driver for the program.
+
+E
+
+Erik Rasmussen
+
+Okay.And then what would you say then because it was the first call it, we'll call it an S mission, right, or an R&D mission.
+
+Could there be -- if you do get in the middle of the year, could you actually then -- what do you think the time line would be for you to start to -- and assuming that's a successful launch, what do you think the time line could be sort of matching what you previously said maybe 3 following that R&D the following year and then 5 of the other year.Is that still the right way of thinking about new...
+
+P
+
+Peter Beck
+
+Yes...Yes, totally it is.
+
+We've played this game before, and sort of the 135 is the right way to think about it.And I think that certainly, as we're building capability and in some cases, stock that's exactly how we're planning it still.
+
+E
+
+Erik Rasmussen
+
+Okay.And staying with March, but going back to Electron, you had 22.
+
+It sounds like there's some changes in customers in the Manifest and that obviously is maybe impacting even this quarter.But we would have thought that if you hit that 22, you would have had to do 6 in Q2 and for each quarter for the remainder of the year given you did 4.
+
+Where do you think that number could wind up?And could you actually even hit 22 for the year, still?
+
+P
+
+Peter Beck
+
+Yes.Look, I mean, we had the sort of 22 emissions booked this year.
+
+And as I mentioned on the call that it's literally a game of benefits [indiscernible] and people move out.Very really as people move to the left, but that does occasionally happen.
+
+We have a bunch of folks that come in at the last minute.
+
+P
+
+Peter Beck
+
+The biggest challenge for the launch time lines is not so much vehicles.It's often licensing and sometimes mission design and payload structure development.
+
+So although we're in May, certainly not waving the right flag, but as more time goes on, it gets more and more difficult to be able to do that and bring those missions in or add new missions to the manifest.So we're just making sure that we're being transparent here that it's going to be difficult to get those 22 emissions off purely color some of those reasons.
+
+So will -- we actually end up at the end of the year is kind of in the hands of our customers in a lot of respects.But I'll make the point that this is just the reality of launch.
+
+And none of these missions go away, are they just sort of move around and some will move into other quarters and some will move into next year.
+
+E
+
+Erik Rasmussen
+
+Great.Well, and then maybe just last on the MBA contract, it seems like this program and revenue recognition is kicking in.
+
+Maybe just help us understand the revenue trajectory and contribution or maybe the weighting as we sort of progress through this year.
+
+A
+
+Adam Spice
+
+Yes, I can take that one, Pete.So Erik, yes, to your point, we are in now the meat of the rev rec underneath this program, and we expect to recognize the majority of the remaining contract value in 2024.
+
+And it will be, I would say, kind of you think about it kind of peaking probably in the -- kind of in the Q3 period, maybe shifts to Q4.And then we'll also start to see more meaningful contribution from the FDA contract that we announced early this year.
+
+A
+
+Adam Spice
+
+So I think we've kind of managed to have things land in such a way where you don't have kind of a risk of a big drop off as the MDA contract kind of comes to conclusion because we've got a contract that's more than 3x larger kind of following it in the wings, if you will.So I think that, again, our plan is to still see that almost all of the remaining contract value recognized in the 2024 time period.
+
+And there is an operating contract, a SOC that goes along with this NDA Globalstar agreement, but that's relatively small in the grand scheme of things with regards to the total contract value of roughly $150 million.
+
+O
+
+Operator
+
+And next up is Andre Sheppard, Cantor Fitzgerald.
+
+A
+
+Andres Sheppard-Slinger
+
+Congratulations on the quarter.Just a quick one for Pete.
+
+Obviously, congratulations on the Archimedes engine build.You're now targeting the hot fire test, which will be a big important milestone there.
+
+With now targeting first launch earlier than middle of 2025, can you just maybe help us -- just remind us what are the other big milestones between the Hotwire engine and the launch.
+
+P
+
+Peter Beck
+
+Yes, sure.Thanks, Andre.
+
+So we've always said look for concrete on the ground at Wallops and in the test sites, look for large stage tanks and things like that and look for fire.And those things remain kind of the same things that I'd be looking for.
+
+P
+
+Peter Beck
+
+So yes, getting something -- getting a pad built is a huge program and everything done right, getting the engine test facility built, it's a huge program that's done.And then like I said, now it's just working through the BR committee's final development and iteration.
+
+And then I think the other thing I'd be tracking is like making sure that we continue to build components for other launches.So not a one and done kind of a thing, it's like making sure that there's a bunch of other engines coming off the production line and more teams and structures and things like that.
+
+So that's sort of certainly something that we're focused on is making sure we keep the machine primed with all the components needed to not just get one launch way, but stand up a commercial service.
+
+A
+
+Andres Sheppard-Slinger
+
+Got it.Okay.
+
+That's super helpful.I appreciate all that color.
+
+And maybe just a quick follow-up for Adam.Adam, just on the liquidity, sorry, if I didn't hear this correctly, but does the $560 million, let's call it, $565 million, does that include the net proceeds of the recent capital raise?
+
+And definitely remind us...okay.
+
+That's okay.Great.
+
+A
+
+Andres Sheppard-Slinger
+
+And then just remind us.So with that liquidity on hand, what is the run rate expected?
+
+Or how are you thinking about that?
+
+A
+
+Adam Spice
+
+With a run rate a runway.I think that the -- we raised a significant amount of capital, obviously, in this most recent transaction.
+
+And as we've stated, it was really all about providing inorganic growth optionality for us.And we do continue to see significant opportunities out there.
+
+I would say the deal pipeline that we're managing at this point is probably as full as it's been in really the last couple of years as far as potential actionable targets for us.So I think the timing on raising that, the funds was probably pretty ideal.
+
+A
+
+Adam Spice
+
+If you look at the capital required to complete Neutron, we didn't raise the money for that.We had plenty of liquidity for that.
+
+We're -- given where we're at in the program, we feel like we're still very much on track to the $250 million to $300 million total spend to get Neutron to the pad.And fortunately for us, not all of that spend has landed on our backs.
+
+We've had some support from various partners that have brought capital to the table as well.So I think that, again, we feel very good about our ability to scale our Space Systems business, continue to scale Electron, get neutron the pad with the capital that we had pre-convertible, and we continue to look for options to deploy that convertible proceeds to inorganic means.
+
+So -- and I think that right now, we feel really good about where we're at from a liquidity perspective, and we really don't see the need right now to think about anything beyond that.
+
+A
+
+Andres Sheppard-Slinger
+
+Got it.That makes sense.
+
+So it sounds though that you are potentially interested in continuing to grow inorganically.And to that point, maybe you remain active in the M&A market.
+
+But with that liquidity on hand, that's certainly feasible, at least so far.So...
+
+Okay, that's helpful.Congrats on the quarter.
+
+I'll pass it on.
+
+O
+
+Operator
+
+Next question comes from Jason Gursky, Citi.
+
+J
+
+Jason Gursky
+
+Pete, a quick question for you on the engine development.What exactly caused you to need to push by 6-plus months?
+
+You mentioned you had some learnings there.Hope maybe you kind of share some of those details with us or at least characterize whether they were issues with the design, issues with the manufacturability.
+
+Just kind of give us a flavor of what went wrong here?
+
+P
+
+Peter Beck
+
+So no like major issue, not -- we didn't run up against a wall and had to solve something majorly technically.But I mean, kind of as I mentioned on the call, like the point here is not to just make fire.
+
+The point here is to roll into production.And there are a number of kind of new processes and actually even new materials that we developed for our committees.
+
+And those are all intended to support production at a different time, we go into much more detail about some of the manufacturing methods we've used for the combustion chambers and things like that.
+
+P
+
+Peter Beck
+
+But really, similar to other fed, when with the very first 3D print a chamber there.That was a new technology that hadn't been done before, and we spent a lot of time because we thought that, that was going to be a big payoff.
+
+So not dissimilar to that.There's some manufacturing techniques that we've employed on our committees that in the long term are going to pay off handsomely.
+
+So a lot of time we spend on that.
+
+And then just, quite frankly, just the time that it takes to stand up the factory and the machine that builds the machine is probably the biggest learning is -- look, we've done this enough.We know that is difficult and time-consuming.
+
+But an engine on the scale is certainly as an extra element to that.
+
+I mean you can't just pick up a pump volume and bolder on the engineer to get a crane to put the portfolio on -- so it -- everything is just such a larger scale that it makes it more difficult.So yes, not like one big staggering thing, just a whole bunch of stuff that just sort of adds up.
+
+J
+
+Jason Gursky
+
+Yes.Okay.
+
+That makes good sense.And then do you have a sense of like you build buffer or contingency into the planning and now you've got this mid-25 date out there.
+
+How much kind of contingency do you have in that?
+
+P
+
+Peter Beck
+
+Well, as I mentioned before, we won greenlight schedules at Rocket lab.So in an engineering program, especially one of that scale, it's almost impossible to build sensible engineering buffer and because you never really know the elements that are going to cause your problem.
+
+You've got some inklings and you paired some areas.But if you walk into a room full of the engineers and ask them to add buffer in their schedule, then come back in 2040.
+
+That's just kind of the way it rolls.
+
+P
+
+Peter Beck
+
+So we're always running greenlight schedules.So our schedules are always ambitious, and that's worked really well for us.
+
+I mean, if you look across the execution history, the time that it took us to put electron on the pad was extraordinary.I mean we started that program in 2014 had our first launch in 2017, and that was from absolutely 0.
+
+So there are some challenges with the vehicle of the scale.But -- and I always caution everybody all the time, that at the end of the day, this is a Rocket program, and it's a very difficult thing to execute.
+
+That's why there's only a few of us in the world that are pulled it off.But the way we run our schedules are informed by experience and what we've learned in the past, but we always run them very aggressively and very ambitiously.
+
+J
+
+Jason Gursky
+
+Okay.And then maybe just a quick update on the demand for Neutron, and you talked earlier on the call about this 135 schedule from a launch cadence perspective.
+
+But maybe you can just kind of give us an update on over the last 3 months, which you've been hearing from potential customers there and whether 135 is just going to be scratching the surface?Or can give us an update on what your view of the market is there.
+
+P
+
+Peter Beck
+
+Yes, sure.All the things that I stay awake at night not tossing and turning about demand for electronic or new Transas just -- it's not one of them.
+
+And we continue to have really good, robust discussions with our customers.But I think as I've mentioned before, it's kind of -- you show me yours and I'll show you mine.
+
+And we maintain the fact that what we want to do is bring a launch vehicle to market that's ready to go and into a market that is a great need rather than do a whole bunch of early adopter pricing and deals that don't have any teeth.
+
+P
+
+Peter Beck
+
+So it's fair to say that the interactions with customers over the last quarter have certainly strengthened and we maintain that we happy to entertain normal kind of deals where it's 10% down nonrefundable and normal kind of LSAs.But the reality is that people want to see a real rocket before they make such large commitments.
+
+And the same goes for us.We want -- if we sell a whole bunch of launch because most customers aren't looking to buy one, they're looking to buy mini that we don't commit to a customer that ultimately doesn't turn up in the pay because with electron, you can see the challenges that also causes is a reality of the space business.
+
+So we're looking at them and they're looking at us.
+
+J
+
+Jason Gursky
+
+Right.Yes.
+
+No, that makes good sense.I appreciate that.
+
+And then, Adam, just one quick one for you.The comment that you made on backlog burn over the next 12 months, 42%, I think, was the number that you threw out here.
+
+Was that a reference to all of the backlog?Or was that just to the launch business?
+
+J
+
+Jason Gursky
+
+And then as maybe just a quick follow-on to this backlog question.What are your guys' expectations or goals here as far as book-to-bill is concerned for 2024 and kind of going forward in any given year?
+
+I know these awards can be pretty lumpy, and you've just built up some nice backlog here, but investors are certainly going to be focused on book-to-bill going forward.So just kind of update us on what the overall pipeline looks like and whether we can year in, year out of this new base that you've got here that book-to-bill to exceed 1.
+
+A
+
+Adam Spice
+
+Yes.Yes.
+
+So Jason, so yes, I should have been more clear.So the 42% applies to all the backlog.
+
+So it's not specific to launch, horsepase system.So it's a total business.
+
+And as far as the book-to-bill target, now you're right, of course, everybody -- we need to see a book-to-bill greater than 1, just given kind of what our growth aspirations are.I think that when you see that we've got backlog over $1 billion against a street consensus number that's obviously significantly lower than that.
+
+We've got quite a bit of ability to grow significantly based off of just the backlog that we have in place.
+
+A
+
+Adam Spice
+
+But we're -- we continue to chase big deals.I think that's the one thing that's really evolved over the course of the last 12 months.
+
+And I think largely not -- I would say not disconnected at all from what we've seen, like, for example, landing that large SDA contract is that kind of as we start to get more and more of these super sophisticated programs, one, we seem to attract more of those kind of opportunities as well.
+
+So I think you'll continue to see us chasing big deals on the Space Systems side.I mean the component business continues to grow nicely, and that's great because of the margin profile that some of those businesses have by selling components into the merchant market.
+
+But I think that what we see are large program opportunities to continue to build the backlog, not to dissimilar to what happened with the FDA beta contract.But also as Neutron becomes closer and closer to its first launch, that's where -- that's a very chunky opportunity as we kind of -- as we sign LSAs for that vehicle, those are all needle moving, given the average selling price that we expect to realize from a neutron launch.
+
+So I think the -- you'll see and we talked about this last year as we progressed through 2023, is that when people kind of looked and said, "Hey, it looks like your backlog growth has stalled a bit.And what does that mean for future growth.
+
+We said, look, you have to be patient because the kind of opportunities that we're chasing are just such a scale and complexity that they don't come together on a predictable kind of programmatic way, they come in fits and starts.And I think we saw that again late last year with the FDA contract coming into focus.
+
+And then I believe you'll see similar things as far as program size and then again, across not only Space Systems, but also including Neutron.
+
+So I think that you're right, it's right for people to expect a book to bill greater than 1.I have no concerns similar to Pete said that's of the things that I sit up at night worrying about, that's also not one of them.
+
+O
+
+Operator
+
+The next question is from Matt Akers wells Fargo.
+
+M
+
+Matthew Akers
+
+Thanks for -- I guess you talked a little bit about reusability and putting the rocket back into the process.Just curious how you think about that ramping up.
+
+If that launch is successful, how fast you could start to see some of the cost benefits of doing that on a wider scale?
+
+A
+
+Adam Spice
+
+Yes.Thanks, Matt.
+
+So I mean, our focus this year has just been on production.And although the reusability program for electron has made good kind of strides and milestones, really just rolling the vehicles off the end of the production line has been our focus.
+
+A
+
+Adam Spice
+
+Reasonable vehicles, they still have developments in the aspects of them that make them kind of distracting to production.But like I said, the vehicle looks great, and this is really the first one that's rolling back in the production.
+
+If this goes well, then it becomes much more of a standardized thing we can kind of roll this into being a much more usual part of what you see with electron launches.
+
+M
+
+Matthew Akers
+
+Okay.Great.
+
+And I guess just one more just thoughts on latest on Solero margins and how you're making progress on, I think, the 30% margin target there.
+
+A
+
+Adam Spice
+
+I can take it .
+
+P
+
+Peter Beck
+
+Yes.Yes.
+
+A
+
+Adam Spice
+
+So Matt, on the Solera margins, again, that's something that we continue to work through the challenges of some pre-acquisition -- well, really on pre-acquisition owners contract which still has a bit of a ways to go on that.So kind of what we look to is if you kind of exclude that thing, which unfortunately, we weren't able to effect, we had to kind of absorb that upon adoption of the company.
+
+A
+
+Adam Spice
+
+The bookings that are coming in now are very strong.So we look at additions to backlog for the Solero business, it would -- I'd have to strain my memory to think of one that was coming in recently that was below our target.
+
+Most of the business that we're booking for that is above that 30% gross margin target.And part of that is enabled by the fact that, again, we've been a little bit more, I would say, a little bit more hard nose on customer negotiations and holding price.
+
+I think when -- I mean, the other things that factor into some of the investments that we're making in the business as far as putting new reactors in place in Albuquerque that are more -- that are delivering better production efficiency.
+
+I think the business has always been very good at controlling their overhead costs, and it's a very tightly run business.So it's really all about kind of building the backlog in such a way where we have comped as we can deliver that kind of at the margins.
+
+I think there's probably more upside than downside to that longer-term target of 30% gross margin.It just takes a little while to get there.
+
+When we acquired the business, we said within about 2 years of acquisitions when we expected to kind of be able to have line of sight to those gross margin targets of north on 30%.And I think what we underestimated was just a challenge in kind of getting that one onerous contract behind us, and we still have a bit of that water to carry.
+
+But again, I think I feel very good about kind of everything else that we've been booking and where the backlog stands right now.I think it's probably going to be -- we've got at least through the end of 2024 and probably a little bit beyond that to get that out of the mix.
+
+O
+
+Operator
+
+The next question comes from Michael Leshock, KeyBanc Capital Markets.
+
+M
+
+Michael Leshock
+
+I wanted to follow up on the backlog question, very strong right now.And just wondering how high you can take your backlog before maybe having to walk away from business or in the same vein, do you expect to get more pricing power on future contract wins as your backlog grows.
+
+P
+
+Peter Beck
+
+Yes.I mean first...
+
+A
+
+Adam Spice
+
+Okay, go ahead, sorry.
+
+P
+
+Peter Beck
+
+you go ahead.I'll...
+
+A
+
+Adam Spice
+
+I was going to say, I don't think that it doesn't feel like we're in a position where we necessarily have got a problem because we have kind of too much backlog role to our ability to produce to that backlog.I think we are seeing some natural pricing support come on the Electron side just because of the fact that a lot of the competition that we're really aspirational have not materialized.
+
+And so I think that's certainly helping on the pricing front because I think now there's more rationalization going on with -- you can have more rational discussions because, again, you don't have people who don't know how to run a rocket business going out and trying to sell rockets and putting kind of phantom pressure on pricing.So that has really started to evaporate.
+
+A
+
+Adam Spice
+
+I think that when you look at some of the things that we're doing, you have to put more capacity in place with places like Solero, I think that's helping us kind of remove any of those kind of kind of ceiling, if you will, on how big the business can grow to.So I feel pretty good about that.
+
+And I think all that is supportive of, again, margin expansion, gross margin expansion as we move forward.We've seen that in the business over the course of the last year.
+
+But we do have some interesting mixesmix challenges when it comes to kind of just the overall gross margin profile when you have some lower margin overall, call it, photon or satellite manufacturing skewing.So for example, we have more of the mix coming from that lower-margin Space Systems manufacturing part of the business.
+
+But what's helpful about that business, though, even though it may not have the same gross margin profile as the higher gross margin component, merchant component businesses, they can have a lot of operating leverage to them because we're able to basically reuse a lot of the IP that we've created on prior missions.And so we now have a pretty fulsome portfolio of IP, and we've invested in the manufacturing capabilities to the point now where incremental programs that may not have the greatest gross margin perspective can drop quite a bit to the bottom line because of what we've already put in place from an investment perspective.
+
+So that's kind of how I look at kind of the overall kind of margin shaping over the course of the next year or so.But I'll -- maybe Pete, you can jump in.
+
+P
+
+Peter Beck
+
+Yes.I think you said it well, Adam.
+
+The only thing I'd add there is that we are -- Rocket Labs known and our reputation is execution.So we're always kind of, as Adam pointed out, balancing our growth with our ability to execute because the last thing we want to do is fall behind on that.
+
+P
+
+Peter Beck
+
+So when we look at programs and opportunities, we are selective and kind of as I have mentioned before, is the kind of programs you're looking for and spending time on a very large ones.So we have to be kind of always diligent to make sure we don't take on programs that absorb a lot of resource, but don't have a lot of scale.
+
+So we're continually juggling those opportunities against how we want to grow the business.
+
+A
+
+Adam Spice
+
+Yes.And Michael, I would further add that a little bit saying like Pete and I were talking the other day about the fact that it feels like the demand signal is stronger now than any time I could really remember it in the business.
+
+You think that it maybe would start to moderate a bit because we've now got a $1 billion-plus backlog and the business is kind of hitting a new scale with our Q2 guide above $100 million per quarter.But it feels like to a great extent, it feels like we're drinking from a fire hydrant here, and there's a lot of opportunities that we're having to kind of sift through, but there's a very strong demand signal out there as far as the kind of programs that we're being asked to look at.
+
+M
+
+Michael Leshock
+
+Yes, absolutely.I appreciate that.
+
+And then on the launch side, specifically for haste launches.Just wondering if you see opportunities there for more pricing.
+
+I think if you look at the customers' alternatives, they could be significantly higher costs versus Rocket Labs offering.So is there a strategy there to increase pricing or keep it stable where it's at today?
+
+Any update on the haste side would be great.
+
+P
+
+Peter Beck
+
+Well, I mean, we see haste is a really fantastic opportunity for Electron, not only just on price but also on scale.And I guess the biggest opportunity for us here from a revenue perspective is the additional services from the launch vehicle as well.
+
+So yes, as you pointed out, Michael, the alternatives are significantly higher.But the reason why there's so few launches and a little advancement is because of that.
+
+So by coming into the market with a disruptively low price point, we're seeing just such a growth in kind of revitalization of that market that I think, ultimately, that's the best approach for the -- creating the most amount of value out of it is to stimulate it rather than [indiscernible].
+
+O
+
+Operator
+
+And the next question is from Suji Desilva of MKM.
+
+S
+
+Sujeeva De Silva
+
+Just a little bit maybe following with the last question.The big -- does missions, you talked about being end-to-end service.
+
+I'm just trying to understand if there's incremental products or services you're offering there that can be productized and offered more broadly if there's a financial uplift of those incremental elements you're characterizing as part of the end-to-end service offering?
+
+P
+
+Peter Beck
+
+Yes, yes, for sure.I guess the biggest one is Rondeanproximity operations.
+
+I mean that is a very rare capability and something you need to dock space craft with ISS, for example.So kind of aligned with our strategy of only taking on work that we think is strategic to us, that's certainly a good example of that.
+
+But as an end-to-end service with a spacecraft, we're leveraging the foundation design from one of our spacecraft already.It certainly does make it possible to be more productized.
+
+And we see this is the direction that not just the U.S.government, but the world is heading towards, right?
+
+On-demand, rapid call up and whoever has the best solution there is in a good position because often, responsive launches talked about, well, I mean, that's useless unless you've got something to stick on top of it.
+
+P
+
+Peter Beck
+
+So this is really the first demonstration of responsive space where it's all combined right down to the data handling and operations of the spacecraft.
+
+A
+
+Adam Spice
+
+Yes.And I think, Suji, I think along the hotline, I think one of the -- we talked about the financial benefits to the model, I think when you're able to couple the launch with the spacecraft manufacturer, I mean, you just -- you're increasing your odds of -- or your Pwin for these type of programs.
+
+When you can go with a turnkey solution because I think right now, what we're seeing is what the customer probably fears the most, it's not necessarily they feel like higher pricing or whatever they fear delay, right?Because I think there's just the supply chain within the space market, particularly new space has not yet gotten to the point where we could deliver scalable solutions on time.
+
+A
+
+Adam Spice
+
+So I think that when we can go with the turnkey say, look, we have the launch capacity.We have the ability to design a spacecraft and manufacture spacecraft in a predictable time line because we're so vertically integrated.
+
+I mean it just kind of pushes the narrative forward and ultimately allows you to have just a higher overall market share and market kind of share capture approach.So I think this is really kind of a more of a sign of things to come.
+
+This is where we really wanted to take the business was being able to do these end-to-end solutions for the customers.And ultimately, with that will come just better scaling and more predictable scaling of the business across both segments.
+
+So we think this is a huge kind of validation of that strategy being realized now.And of course, with an incredibly sophisticated customer as well.
+
+S
+
+Sujeeva De Silva
+
+Sure.Great.
+
+Okay.And then my second question is you listed out the subcontractors on the FDA contract in the press release.
+
+Just trying to understand now, I know you've been targeting M&A to in-source.But is there sort of an equilibrium balancing point where as a prime contractor, you'll leverage external subcontracting and components versus wanting to keep bringing things in-house?
+
+How do you balance that going forward as you grow?
+
+A
+
+Adam Spice
+
+Yes.It's really 2 elements.
+
+I mean, we don't vertically integrate because we think it's some kind of revision.We do it for either 1 or 2 reasons.
+
+One, we think we can create more value for the company or 2, we need to control it because suppliers just can't deliver at either the scale or the time lines that we require.
+
+A
+
+Adam Spice
+
+So as we kind of execute on prime, then as a prime then the subcontractors that deliver on schedule, on budget.This kind of to your point, there's no need to kind of religiously the capabilities in.
+
+It's just -- there seems to be a relatively rare thing in the space industry.So we end up more often than not having to own it, then rely on those parties.
+
+O
+
+Operator
+
+Next up here from Cai von Rumohr, TD Cowen.
+
+C
+
+Cai Von Rumohr
+
+Yes.So it looks like -- it feels like your schedule has definitely slipped and I mean you talk of a manifest of 22, but you have the comment in there that you look for a record year in launches.
+
+I mean you only did 10 last year, that would say 11 would get you home.Can you give us your best guess as to a realistic range of number of electron launches we could see this year?
+
+P
+
+Peter Beck
+
+Yes, I think if we launched 11, that would not be a record year in our minds, that would be a massive disappointment.And look, it's just -- we provide a number, but it's just super hard to kind of predict given as the customers move around.
+
+But I think it's fairly fair to say that at this point, we'll struggle to achieve '22.But we have line of sight for probably a couple of less than that.
+
+A
+
+Adam Spice
+
+Yes.Okay.
+
+I would add something to that.I mean one of the benefits of diversification that we've been driving so hard towards and now getting more than 70% of our revenue coming from Space Systems is that we no longer it's no longer like a push out of a launch, threatens our entire kind of year's annual operating plan, right?
+
+So we believe that we've got strength in other parts of the business, particularly on the Space Systems side, where if we can't deliver those 22 launches, it doesn't really put at risk our ability to deliver a very solid year that's still on target with our internal plan for what we think we can deliver as far as revenue and growth.
+
+A
+
+Adam Spice
+
+So as much as -- again, we are very, very, very reluctant to weigh the white flag on anything here.But to the extent that things move outside of our control, we do believe that we've got strength in the business more broadly that would make up for any potential shortfall that we'd see from a launch or 2 that move out.
+
+C
+
+Cai Von Rumohr
+
+Got it.Great.
+
+Got it.So if you look at the rest of your competitors, I mean, particularly in the satellite side, RTX basically said they're throwing in the towel on being a space prime.
+
+LHX is there.They bought satellites from MO.
+
+They basically have been late with problems.Keiran is basically on Ultralife support.
+
+It sounds like your competitors are really not doing particularly well.
+
+C
+
+Cai Von Rumohr
+
+Any thoughts about, a, it sounds like things are actually a little bit more chaotic than they've been.Maybe that's an over read.
+
+Do you see that happening?And is there any opportunity to just take a radically different approach and basically raise your price is 25% because the problem I can see of getting your backlog is you don't have the opportunity to kind of do a more profitable launch for someone who might be willing to pay for it.
+
+P
+
+Peter Beck
+
+Well, Cai, I would say our business model and our strategy is working exactly to your point.The vertical integration and the power that brings to bring these platforms to market at a price point and as Adam mentioned, the schedule is disruptive, and that's what you're seeing.
+
+And then from a launch perspective, I think as Adam pointed out, there has been a kind of a weaning of who's real and who is not.And the there be opportunities for us there, I'm sure.
+
+C
+
+Cai Von Rumohr
+
+Great.And so I mean you talk about demand being better, but it doesn't really sound like pricing is a whole lot better.
+
+Is that a misread on my part.
+
+A
+
+Adam Spice
+
+Well, I think it is delicate.Go ahead.
+
+P
+
+Peter Beck
+
+I was just going to say, I think it's a delicate balance, Cai because to the point about the haste missions before is you want to stimulate the market.And if you just go and just all of a sudden, what a big price increase there, then you can potentially damage those markets that you're trying to grow because some of them are new and some of them are fragile.
+
+So I think you have to be very balanced and careful about how you do those things.
+
+A
+
+Adam Spice
+
+I would add to that, too, Cai, on the pricing side of things.If we look at what's happened with electron pricing, it's gone nothing but up for us in the last several years, right?
+
+So if you recall back a few years ago, we were talking about launch prices in the $6.5 million to $7 million, now $7 million to $7.5 million.And now this for the recent quarter was $8.2 million.
+
+And I think you're going to continue to see that type of trajectory on pricing as competition, again, as kind of people fail to execute, and we bring an increasingly scarce product to market.And the mix of that electron business, as was I think was being asked earlier with regards to the impact of things like haste on the overall mix.
+
+A
+
+Adam Spice
+
+But I also think that when you look at our photon pricing, if you look at the contracts that we're competing on, the contracts that we're winning, we're not winning on the lowest price.It's quite the opposite.
+
+Like we can oftentimes price at a premium to our competition, again, because of the fact that we're bringing that level of vertical integration, which translates into schedule certainty and performance certainty, right?
+
+So I think that's really what is kind of playing into the strategy side.I think we're absolutely seeing pricing benefits that are accruing to us as a result of the strategy, not only for diversification, but actually the fact that we're executing that we're vertically integrated and that we represent strangely up a lower risk option for customers despite the fact that we're a very new generation new space company versus some of the legacy players that you mentioned earlier in your commentary.
+
+O
+
+Operator
+
+Next up is Xin Yu Deutsche Bank.
+
+X
+
+Xin Yu
+
+Just a couple of quick ones.First, on Neutron, did the Baltimore bridge incident impact the infrastructure time line at all?
+
+P
+
+Peter Beck
+
+Not that we can see at this point in time, no.
+
+X
+
+Xin Yu
+
+Okay.Then on the financials, I think the R&D was a bit low in the first quarter.
+
+Is that just a timing thing?Should we expect that to really step up in Q2.
+
+A
+
+Adam Spice
+
+Yes, Xin Yu.Yes, absolutely.
+
+It's a timing issue.I think it seems like all things in our business, there's elements of lumpiness and certainly spend timing is one of those things.
+
+So the nature of particularly on Neutron how things come and kind of fits and starts, we have large, for example, prototyping expenses that they may end up slipping out a little bit relative to maybe where you thought they're going to be.But there will be volatility, and I think you would absolutely expect that over the next few quarters, we'll continue to see a march up in R&D, primarily driven by -- if not entirely driven by Neutron kind of first flight.
+
+X
+
+Xin Yu
+
+Understood.And just last one on the -- I guess, the FDA contribution, do we have any sense what that could be this year, next year?
+
+I know you said you would get some small amount, but just wondering if there's anything a bit more discrete, you can maybe provide on that curve in the launch curve?
+
+A
+
+Adam Spice
+
+Yes.So we're continuing to do our work.
+
+I mean the program is certainly progressing and with that progression.And we talked about identifying subcontractors to work with us on that program.
+
+As we kind of brought more people for one intent, we've got more color as far as kind of their timing and their ability to deliver against their milestones.So we definitely are starting to bake some of that into our operating plan for the remainder of this year.
+
+A
+
+Adam Spice
+
+Earlier, we said that we couldn't -- we weren't positioned really say.So at the -- say, the impot that was in the Q1 results was actually very, very small, I would call that immaterial.
+
+It's starting to become more material in the numbers that you're seeing in Q2 that we guided towards, and you'll continue to see kind of building on that as we progress through 2024.
+
+And I would say that -- and part of -- and that is also allowing us to kind of overcome, I'd say a little bit of the earlier weakness that we talked about as far as progress being made against the MDA contract with regards to rev rec.Some of that NDA rev rec is being made up for from initial contributions from the FDA contract.
+
+But I think when Erik asked the question earlier about kind of what the timing of rev rec look like for the remainder of the MDA Globalstar contract.And that is given -- just given the delivery schedules, that will, again, continue to build momentum, probably peak sometime in the Q3 time period, maybe it's Q4.
+
+But ultimately, that's kind of peaking out, we've got this building of FDA coming in behind it to prevent a real kind of drop off, if you will, when that program comes to conclusion.
+
+So I don't think we're quite ready yet to give kind of full year contribution from the FDA program because, again, it's pretty early in his life.But it's -- again, part of the reason why we're confident that even if there was a launch or 2 that moves out of 2024 from that '22 launch manifest that we have the ability to not really feel that from an overall top line growth perspective.
+
+So we hope to be able to give you more color in a little bit.But right now, we're just a little too early to provide a lot of color on FDA contribution.
+
+O
+
+Operator
+
+And at this time, there are no further questions.I'll hand things back to our speakers for any additional or closing remarks.
+
+P
+
+Peter Beck
+
+Okay.I think that wraps up today's presentation.
+
+Thank you, everyone, for joining us on the call.Rocket Lab will be participating in these up-and-coming conferences and look forward to the opportunity to share more exciting news and updates with you then.
+
+So thanks again.
+
+O
+
+Operator
+
+Once again, everyone, that does conclude today's conference.Thank you all for your participation.
+
+You may now disconnect.

@@ -2,319 +2,186 @@
 ticker: RKLB
 quarter: Q2
 year: 2024
-source: https://www.gurufocus.com/stock/RKLB/transcripts/2548514
+source: https://roic.ai/quote/RKLB/transcripts/2024-year/2-quarter
 downloaded: 2026-07-14
 ---
 
-Title: Q2 2024 Rocket Lab USA Inc Earnings Call Transcript
+Thanks very much Morgan and thank you all for joining us today.We've delivered an exceptionally strong second quarter this year and I'm looking forward to taking you through all of the highlights and achievements.
 
-URL Source: https://www.gurufocus.com/stock/RKLB/transcripts/2548514
+But before we get there I wanted to spend some time talking about who we are today, where Rocket Lab is headed in the future and the very deliberate and strategic steps we're taking to get there.One of the common misconceptions we've faced is that Rocket Lab is a launch company.
 
-Markdown Content:
-[🚀Enjoy a 7-Day Free Trial Thru Jul 21, 2026!✨](https://www.gurufocus.com/pricing?ref=/&sel=premium&utm_source=webApp&utm_medium=userClick&utm_campaign=notification_bar)
+Yes, launch is something that we're an industry leader in and of course rocket being in the name doesn't help but it's just part of what we do.I'd like to look at this in three clear steps.
 
-[![Image 3: Logo](https://static.gurufocus.com/images/logo_header.png)](https://www.gurufocus.com/)
+First the ride.To do important things in space you first have to get there.
 
-[Sign Up](https://www.gurufocus.com/register)
+We've solved this with small launch with Electron and we're breaking the medium launch monopoly with Neutron.Next the tools to do the things in space once you get there.
 
-[Login](https://www.gurufocus.com/login?ref=/stock/RKLB/transcripts/2548514)
+This is spacecraft, the critical components that make them function, the software, the ground systems and all the other pieces that make missions possible in orbit.We're reliably delivering this for commercial government and customers today.
 
-[Free Sign-up](https://www.gurufocus.com/register)[Login](https://www.gurufocus.com/login?ref=/stock/RKLB/transcripts/2548514)[7-Day Free Trial](https://www.gurufocus.com/membership/new/index.html#/)
+With the first two comfortably under our belt, our future and the whole reason for going to space is in the first place the data and the services that spacecraft provide.It's the most valuable part of the supply chain.
 
-[Home](https://www.gurufocus.com/)
+Demand for it is growing worldwide and it's what will deliver long term recurring revenue and incremental value for shareholders.By owning launch and spacecraft, we're at a distinct advantage when it comes to establishing our own space capabilities or constellations.
 
-[Homepage](https://www.gurufocus.com/)[Membership Levels](https://www.gurufocus.com/pricing)[About Us](https://www.gurufocus.com/about)[Discussion Board](https://www.gurufocus.com/discussion#1)[Complete Stock List](https://www.gurufocus.com/stocks)[The book](https://www.gurufocus.com/ads/books/index.php)[Membership Data Coverage](https://www.gurufocus.com/news/281207/data-coverage-of-gurufocus-premium-membership-)[Founder's Message](https://www.gurufocus.com/letter)[10-Year Letter](https://www.gurufocus.com/letter_10y)[20-Year Letter](https://www.gurufocus.com/letter_20y)[Free Trial](https://www.gurufocus.com/membership/new/index.html#/?ref=topMenu&sel=premium&utm_source=webApp&utm_medium=userClick&utm_campaign=topMenu)[Referral Program](https://www.gurufocus.com/referral-program)[Partner Program](https://www.gurufocus.com/partner-program)[Newsletters Signup](https://www.gurufocus.com/newsletters_signup)[Advertise](https://www.gurufocus.com/advertise)
+We can build and launch our own spacecraft at cost and we don't have to wait in-line for limited launch capacity.We completely avoid the pain point that most constellation operators face, being at the mercy of suppliers on cost and schedule, often causing deeply disruptive delays and bringing capability online at scale.
 
-[Screeners](https://www.gurufocus.com/screener)
+But that constellation or capability is not quite ready yet for us to disclose.But this overall company vision is useful to bear in mind when reviewing Rocket Lab's achievements in this quarter, in the months and the years ahead.
 
-[GuruFocus Screeners](https://www.gurufocus.com/screener)
+So with that, let me move on to more specifics for the quarter.Q2 was a huge quarter for Rocket Lab in a lot of ways but especially in terms of revenue.
 
-[All-In-One Screener](https://www.gurufocus.com/screener)[Bond Screener](https://www.gurufocus.com/bonds)[ETF Screener](https://www.gurufocus.com/screener/etf)[Strategies Created by Users](https://www.gurufocus.com/strategy)[Ben Graham Lost Formula 2 New](https://www.gurufocus.com/screener?name=Ben%20Graham%20Lost%20Formula&id=70)[Canadian Faster Growers](https://www.gurufocus.com/screener?name=Canadian%20Faster%20Growers&id=73)[CEO Buys 20 New](https://www.gurufocus.com/screener?name=CEO%20Buys&id=74)[CEO Buys after Price Drop > 20% 16 New](https://www.gurufocus.com/screener?name=CEO%20Buys%20after%20Price%20Drop%20%3E%2020%25&id=75)[Dividend Kings 2026](https://www.gurufocus.com/screener?name=Dividend%20Kings%202026&id=121779)[Dividend Aristocrats 2026](https://www.gurufocus.com/screener?name=Dividend%20Aristocrats%202026&id=123161)[Dividend Growth Portfolio 1 New](https://www.gurufocus.com/screener?name=Dividend%20Growth%20Portfolio&id=77)[Dividend Income Portfolio](https://www.gurufocus.com/screener?name=Dividend%20Income%20Portfolio&id=78)[Fast Growers](https://www.gurufocus.com/screener?name=Fast%20Growers&id=79)[Good Companies](https://www.gurufocus.com/screener?name=Good%20Companies&id=103)[Hedge Fund Guru Top 10 Aggregated](https://www.gurufocus.com/screener?name=Hedge%20Fund%20Guru%20Top%2010%20Aggregated&id=80)[High Quality](https://www.gurufocus.com/screener?name=High%20Quality&id=81)[High Quality Low Capex w ROE ROC min](https://www.gurufocus.com/screener?name=High%20Quality%20Low%20Capex%20w%20ROE%20ROC%20min&id=84)[High Quality & Low Capex](https://www.gurufocus.com/screener?name=High%20Quality%20&%20Low%20Capex&id=87)[High Yield Insider Buys](https://www.gurufocus.com/screener?name=High%20Yield%20Insider%20Buys&id=88)[Historical High Dividend Yields 1 New](https://www.gurufocus.com/screener?name=Historical%20High%20Dividend%20Yields&id=89)[International Gurus' Top Holdings](https://www.gurufocus.com/screener?name=International%20Gurus%27%20Top%20Holdings&id=90)[James Montier Short Screen 20 New](https://www.gurufocus.com/screener?name=James%20Montier%20Short%20Screen&id=91)[Margin Decliners 20 New](https://www.gurufocus.com/screener?name=Margin%20Decliners&id=92)[Mega Caps 20 New](https://www.gurufocus.com/screener?name=Mega%20Caps&id=93)[Peter Lynch & Warren Buffett 3 New](https://www.gurufocus.com/screener?name=Peter%20Lynch%20&%20Warren%20Buffett&id=94)[Peter Lynch Growth w Lower Valuation 20 New](https://www.gurufocus.com/screener?name=Peter%20Lynch%20Growth%20w%20Lower%20Valuation&id=95)[Peter Lynch S&L Traded Below Book 20 New](https://www.gurufocus.com/screener?name=Peter%20Lynch%20S&L%20Traded%20Below%20Book&id=96)[PFCF Screener 20 New](https://www.gurufocus.com/screener?name=PFCF%20Screener&id=97)[Piotroski Score Screener](https://www.gurufocus.com/screener?name=Piotroski%20Score%20Screener&id=6724)[Predictable Growth Companies 20 New](https://www.gurufocus.com/screener?name=Predictable%20Companies&id=99)[Profitable predictable margin expanders](https://www.gurufocus.com/screener?name=Profitable%20predictable%20margin%20expanders&id=100)[Stocks Sold w less Cash](https://www.gurufocus.com/screener?name=Stocks%20Sold%20w%20less%20Cash&id=102)[The Stalwarts](https://www.gurufocus.com/screener?name=The%20Stalwarts&id=104)
+For the first time Rocket Lab revenue [ticked past] (ph) $100 million in the quarter.Revenue ultimately came at $106 million for Q2 which is a company record.
 
-[My Screeners](https://www.gurufocus.com/screener?manage=screen)
+We also achieved a 15% quarter-on-quarter increase and a whopping 71% year-on-year increase.This result demonstrates the continued strength of our end-to-end space company strategy in offering diversified products and services since the growth is driven by an increase in launches on last year as well as significant growth in our space systems business.
 
-[Create My Screener](https://www.gurufocus.com/screener)
+As of Q2 close, our backlog sits at over $1 billion.Now onto some Electron specific updates.
 
-[Value Screens](https://www.gurufocus.com/ideas)
+Before I get into some more Electron achievements in the quarter, it's worth spending a moment going back to basics on the Electron business model.[I rate] (ph) this because the most common metric we get held to is number of launches per quarter and the resulting point in time revenue recognition.
 
-[Stock Ideas](https://www.gurufocus.com/ideas)[S&P 500 Map](https://www.gurufocus.com/screener?view=map&show_header=false)[S&P 500 Bubble](https://www.gurufocus.com/screener?view=bubble&show_header=false)[S&P 500 Aggregate](https://www.gurufocus.com/screener?view=aggregate&show_header=false)[Top GF Score](https://www.gurufocus.com/screener/top-gf-score)[Top Profitability Rank](https://www.gurufocus.com/screener/top-profitability-rank)[Top Quality Rank](https://www.gurufocus.com/screener/top-quality-rank)[Top Momentum Rank](https://www.gurufocus.com/screener/top-momentum-rank)[Buffett-Munger Screener 1 New](https://www.gurufocus.com/screener/buffett-munger)[Industry Overview](https://www.gurufocus.com/industry#1)[Undervalued Predictable 2 New](https://www.gurufocus.com/screener/valuedcf)[Benjamin Graham Net-Net 2 New](https://www.gurufocus.com/screener/grahamncav)[52-week/3Y/5Y Lows 20 New](https://www.gurufocus.com/screener/52weeklow)[52-week/3Y/5Y Highs 20 New](https://www.gurufocus.com/screener/52weekhigh)[Magic Formula(Greenblatt) 8 New](https://www.gurufocus.com/screener/magic-formula)[Dividend Stocks 20 New](https://www.gurufocus.com/screener/dividend-stocks)[Peter Lynch Screen 1 New](https://www.gurufocus.com/screener/peter-lynch-stocks)[S&P500 Grid 20 New](https://www.gurufocus.com/screener/guru-sp-grid)[Predictable Companies 1 New](https://www.gurufocus.com/screener/predictable)[Spin Off List 20 New](https://www.gurufocus.com/screener/spinoff)[Merger and Acquisition List](https://www.gurufocus.com/screener/merger)[Historical Low P/B List 20 New](https://www.gurufocus.com/screener/lowpb)[Historical Low P/S List 20 New](https://www.gurufocus.com/screener/lowps)[High Short Interest 10 New](https://www.gurufocus.com/screener/short-stocks)[Upcoming Special Dividends 20 New](https://www.gurufocus.com/screener/upcoming-special-dividends)[Delisted Stocks](https://www.gurufocus.com/screener/delisted)
+Revenue recognition is guided by well-established GAAP principles but can at times fail to reflect the underlying strengths in our business given the constructive cash flow nature of the launch business where we collect cash well in advance of revenue recognition.Electron delivers what rideshares and other rockets can't.
 
-[Model Portfolios](https://www.gurufocus.com/model_portfolio.php)
+It's a dedicated launch service tailored to each customer's specific needs.What that means in practice is customers get to choose and change their launch date.
 
-[Performances Overview](https://www.gurufocus.com/model_portfolio.php)[Most Broadly Held Portfolio](https://www.gurufocus.com/model_portfolio.php?mp=largecap)[Most Weighted Portfolio](https://www.gurufocus.com/model_portfolio.php?mp=hr_largecap)[Buffett-Munger Top 25](https://www.gurufocus.com/model_portfolio.php?mp=midcap)[GF Score <= 100 Top 25](https://www.gurufocus.com/model_portfolio.php?mp=gfscore_91_100)[Top 25 Undervalued Predictable](https://www.gurufocus.com/model_portfolio.php?mp=smallcap)[Top 25 52-week Low Predictable](https://www.gurufocus.com/model_portfolio.php?mp=cap20)[Top 25 Historical Low P/S](https://www.gurufocus.com/model_portfolio.php?mp=cap40)
+They can choose their launch site and precisely where they want to be deployed in orbit and they can go -- and they can launch on incredibly short notice.We've demonstrated getting someone from contract signing to orbit in less than eight weeks.
 
-[Stock Comparison](https://www.gurufocus.com/ideas)
+If you're booked on a large rideshare or a bunch of other spacecraft, you simply don't get that flexibility.And you certainly can't expect to get a dedicated ride on a large rocket or a new entrance vehicle in just weeks noticed.
 
-[Airline Stocks](https://www.gurufocus.com/ideas/airline-stocks)[Artificial Intelligence Stocks](https://www.gurufocus.com/ideas/artificial-intelligence-stocks)[Bank Stocks](https://www.gurufocus.com/ideas/bank-stocks)[Biotech Stocks](https://www.gurufocus.com/ideas/biotech-stocks)[Blockchain Stocks](https://www.gurufocus.com/ideas/blockchain-stocks)[Chinese Stocks](https://www.gurufocus.com/ideas/chinese-stocks)[Dividend Stocks](https://www.gurufocus.com/ideas/dividend-stocks)[EV Stocks](https://www.gurufocus.com/ideas/ev-stocks)[Growth Stocks](https://www.gurufocus.com/ideas/growth-stocks)[Oil Stocks](https://www.gurufocus.com/ideas/oil-stocks)[Value Stocks](https://www.gurufocus.com/ideas/value-stocks)[Virtual Reality Stocks](https://www.gurufocus.com/ideas/virtual-reality-stocks)[Compare More Stocks…](https://www.gurufocus.com/ideas#compare-stocks)
+This flexibility does make it challenging to predict with high certainty exactly how many launches we'll do each year and exactly where they'll land in each quarter.That's not unexpected.
 
-[Gurus](https://www.gurufocus.com/guru/latest-picks)
+Rather, it's baked into our model and what sets us apart.Now fortunately, the surface level volatility represented by GAAP launch revenue recognition is disconnected from the underlying cash flow generation, in so much as we collect the vast majority of cash from our launch customers before launch day.
 
-[Guru Trades](https://www.gurufocus.com/guru/latest-picks)
+So if they shift out by a few days, weeks, or even months, it makes a negligible difference.On this side, you can see an example of a billing cycle for Electron.
 
-[Latest Guru Picks](https://www.gurufocus.com/guru/latest-picks)[Real Time Picks](https://www.gurufocus.com/guru/realtime-picks)[Guru Portfolio](https://www.gurufocus.com/guru/portfolio)[Score Board](https://www.gurufocus.com/guru/scoreboard)[Mutual Funds](https://www.gurufocus.com/guru/mutual-funds)[Top 10 Holdings](https://www.gurufocus.com/guru/top-holdings)[Sector Picks](https://www.gurufocus.com/guru/sector-picks)[International Picks](https://www.gurufocus.com/guru/international-picks)[Aggregated Portfolio](https://www.gurufocus.com/guru/aggregated-portfolio)[Consensus Picks](https://www.gurufocus.com/guru/consensus-picks)[Guru Bargains](https://www.gurufocus.com/guru/bargains)[Hot Picks](https://www.gurufocus.com/guru/hot-picks)[Download Guru Portfolios](https://www.gurufocus.com/guru/download-guru-portfolio)[Industry Trends](https://www.gurufocus.com/guru/industry-trends)[Geographic Trend](https://www.gurufocus.com/guru/geographic-trends)[ETFs](https://www.gurufocus.com/guru/etfs)[Options Holdings](https://www.gurufocus.com/guru/option-holdings)[European Shorting](https://www.gurufocus.com/guru/european-shortings)
+We typically do it one or two ways, time-based billing or milestone-based.Time-based is most used for our customers booked a year or more in advance of launch.
 
-[Guru Lists](https://www.gurufocus.com/guru/list)
+And as you will see, we build 10% on contract signing, then further installments until we get to the final 10%, which is payable on launch day as soon as we ignite the engines.Milestone based is more used for our customers who come to us with their hair on fire, say [our mind] (ph) is three months.
 
-[Complete Guru List](https://www.gurufocus.com/guru/list)[Warren Buffett](https://www.gurufocus.com/guru/warren%2Bbuffett/summary)[Bill Gates](https://www.gurufocus.com/guru/bill%2Bgates/summary)[Mohnish Pabrai](https://www.gurufocus.com/guru/mohnish%2Bpabrai/summary)[Carl Icahn](https://www.gurufocus.com/guru/carl%2Bicahn/summary)[George Soros](https://www.gurufocus.com/guru/george%2Bsoros/summary)[David Tepper](https://www.gurufocus.com/guru/david%2Btepper/summary)[Seth Klarman](https://www.gurufocus.com/guru/seth%2Bklarman/summary)[Bill Ackman](https://www.gurufocus.com/guru/bill%2Backman/summary)[Joel Greenblatt](https://www.gurufocus.com/guru/joel%2Bgreenblatt/summary)[Charlie Munger](https://www.gurufocus.com/guru/charlie%2Bmunger/summary)[Michael Price](https://www.gurufocus.com/guru/michael%2Bprice/summary)[Julian Robertson](https://www.gurufocus.com/guru/julian%2Brobertson/summary)[Chuck Akre](https://www.gurufocus.com/guru/chuck%2Bakre/summary)[David Einhorn](https://www.gurufocus.com/guru/david%2Beinhorn/summary)[Tom Gayner](https://www.gurufocus.com/guru/tom%2Bgayner/summary)
+Once again we'll take a 10% on signing and then we move swiftly through the key milestones like spacecraft fit checks and readiness reviews and then we collect the remaining installments until, again, we charge the final 10% when we ignite the engines.So as you can see, if a customer requires a launch date that pushes into the next quarter, we've likely already collected up to 90% of the contract value.
 
-[My Guru Lists](https://www.gurufocus.com/guru/list)
+We just don't recognize the revenue until launch day for accounting practices purposes.Okay, a quick overview of some Electron achievements.
 
-[Insiders](https://www.gurufocus.com/insider/summary)
+We've signed 17 new Electron launch contracts year-to-date with the total contract value of $141 million.We also reached an exciting new place in the global launch rankings.
 
-[Insider Trading Tracker](https://www.gurufocus.com/insider/summary)
+Electron is now the third most frequently launched rocket globally behind only Falcon 9 and the Chinese Long March.For a rocket that has only been flying for seven years, this is a monumental achievement and really highlights Electron's significance as a proven sought after capability.
 
-[Real-Time Insider Picks](https://www.gurufocus.com/insider/summary)[CEO Buys/Sells](https://www.gurufocus.com/insider/ceo)[CFO Buys/Sells](https://www.gurufocus.com/insider/cfo)[Insider Trends](https://www.gurufocus.com/insider/trend)[Insider Cluster](https://www.gurufocus.com/insider/cluster)[Guru + Insider Double Buys](https://www.gurufocus.com/insider/double)[Triple Buys/Sells](https://www.gurufocus.com/insider/triple)[Canadian Insider](https://www.gurufocus.com/insider/canadian)[Chinese Insider](https://www.gurufocus.com/insider/chinese)[German Insider](https://www.gurufocus.com/insider/german)[Complete Insider List](https://www.gurufocus.com/insiders)
+We've achieved 100% increase in launch rate for the first half of this year, as compared with the first half of 2023.Doubling rocket production and launch cadence in this year is far from the norm and really sets our team apart.
 
-[Politician Trading Tracker](https://www.gurufocus.com/politician/summary)
+As of today, Electron counts for 64% of all non-SpaceX US launches in 2024 so far.This really shows what an impact Electron has had on the industry and highlights just how constrained customers are right now with respect to launch options.
 
-[Real-Time Politician Picks](https://www.gurufocus.com/politician/summary)[Complete Politician List](https://www.gurufocus.com/politicians)[Nancy Pelosi](https://www.gurufocus.com/politician/7/nancy-pelosi)[Mitch Mcconnell](https://www.gurufocus.com/politician/45/mitch-mcconnell)[Tommy Tuberville](https://www.gurufocus.com/politician/4/tommy-tuberville)[Josh Gottheimer](https://www.gurufocus.com/politician/35/josh-gottheimer)[Kevin Hern](https://www.gurufocus.com/politician/36/kevin-hern)[Thomas R. Carper](https://www.gurufocus.com/politician/2/thomas-r.-carper)[Susie Lee](https://www.gurufocus.com/politician/90/susie-lee)[Lois Frankel](https://www.gurufocus.com/politician/28/lois-frankel)
+And, of course in a year plagued by launch anomalies and delays worldwide, Electron has continued to deliver trusted and reliable access to space with mission success throughout the year for all of our customers.Now, this approach has been a successful one for Electron, retaining its title of the most active small rocket globally and now, of course, third most frequently launched and flying rocket this year.
 
-[Market](https://www.gurufocus.com/economic_indicators)
+I won't go into the specifics of all nine launches we have completed this year-to-date, but if there is something that I'd like you to take away from looking at all of these missions, it's just how complex and tailored and customer-centric they are.We've taken dedicated missions 11 days apart to place climate change monitoring constellations in precise locations to monitor the poles, a rideshare mission that deployed two different customer satellites to entirely different orbits and altitudes on the same launch, swapped a customer mission out with the next one in queue within two weeks, when a customer required a later launch date.
 
-[US Market Valuation](https://www.gurufocus.com/stock-market-valuations.php)
+All of this is exactly why customers choose Electron.It delivers a flexible service that small sats have never had before.
 
-[Market Newsletter](https://www.gurufocus.com/market-newsletter)[Buffett Indicator](https://www.gurufocus.com/stock-market-valuations.php)[U.S. Treasury Yield Curve](https://www.gurufocus.com/yield_curve.php)[U.S. Inflation Rate](https://www.gurufocus.com/market/us-inflation-contributors)[Presidential Cycle and Stock Market](https://www.gurufocus.com/market/presidential-cycle)[Debt-to-GDP](https://www.gurufocus.com/market/debt-to-gdp/usa)[Shiller P/E](https://www.gurufocus.com/shiller-PE.php)[Shiller P/E by Sectors](https://www.gurufocus.com/sector_shiller_pe.php)[GF Value for S&P 500 Index](https://www.gurufocus.com/market/sp500-gf-value)[GF Value for NASDAQ 100 Index](https://www.gurufocus.com/market/nasdaq100-gf-value)[GF Value for DOW 30 Index](https://www.gurufocus.com/market/dow30-gf-value)[Gold/Silver Price Ratio](https://www.gurufocus.com/market/gold-silver-ratio)[Gold/Platinum Price Ratio](https://www.gurufocus.com/market/gold-platinum-ratio)[Gold/Palladium Price Ratio](https://www.gurufocus.com/market/gold-palladium-ratio)[Fed Net Liquidity](https://www.gurufocus.com/market/fed-net-liquidity-sp500)[Buffett Assets Allocation](https://www.gurufocus.com/buffett_assets_allocations.php?1)[Latest IPOs](https://www.gurufocus.com/ipos)
+Now onto contract wins.It was a few big months with the commercial sales team with a 10-launch deal signed with Synspective, a Japanese Earth observation constellation operator.
 
-[Global Market Valuation](https://www.gurufocus.com/global-market-valuation.php)
+We've been the sole launch provider for Synspective to-date with five successful missions, which has been a huge honour.We have also signed a four-launch deal with another commercial constellation operator who has asked to remain confidential at this time.
 
-[Major Stock Market Indices Performance](https://www.gurufocus.com/idx/%5EGSPC)[Global Market Overview](https://www.gurufocus.com/global-market-valuation.php)[USA](https://www.gurufocus.com/stock-market-valuations.php)[China](https://www.gurufocus.com/global-market-valuation.php?country=CHN)[Japan](https://www.gurufocus.com/global-market-valuation.php?country=JPN)[India](https://www.gurufocus.com/global-market-valuation.php?country=IND)[Canada](https://www.gurufocus.com/global-market-valuation.php?country=CAN)[UK](https://www.gurufocus.com/global-market-valuation.php?country=GBR)[France](https://www.gurufocus.com/global-market-valuation.php?country=FRA)[Germany](https://www.gurufocus.com/global-market-valuation.php?country=DEU)[Brazil](https://www.gurufocus.com/global-market-valuation.php?country=BRA)[Australia](https://www.gurufocus.com/global-market-valuation.php?country=AUS)[More...](https://www.gurufocus.com/global-market-valuation.php)
+Electron also continues to be a critical enabler to the Department of Defense.We recently signed three new launch deals that further strengthen our position as a trusted partner across launch and space systems.
 
-[Economic Indicators](https://www.gurufocus.com/economic_indicators)
+Those contracts include being selected by the Space Force -- Space Systems Command to do a demonstrate an end-to-end space mission.This means Rocket Lab will design, build a spacecraft and launch it and operated on short notice.
 
-[Economic Indicators Overview](https://www.gurufocus.com/economic_indicators)[Commitments of Traders Reports](https://www.gurufocus.com/cot_reports)[The Dow Jones Industrial Average (DJIA)](https://www.gurufocus.com/economic_indicators/229/the-dow-jones-industrial-average-djia)[SP 500 Index](https://www.gurufocus.com/economic_indicators/63/sp-500-index)[Nasdaq Composite Index](https://www.gurufocus.com/economic_indicators/232/nasdaq-composite-index)[Gross Domestic Product (GDP)](https://www.gurufocus.com/economic_indicators/20/gross-domestic-product-gdp)[Shiller PE](https://www.gurufocus.com/economic_indicators/56/shiller-pe)[Ratio of Wilshire 5000 over GNP](https://www.gurufocus.com/economic_indicators/60/ratio-of-wilshire-5000-over-gnp)[Civilian Unemployment Rate](https://www.gurufocus.com/economic_indicators/10/civilian-unemployment-rate)[Russell 2000 Index](https://www.gurufocus.com/economic_indicators/4448/russell-2000-index)[CBOE Volatility Index (VIX)](https://www.gurufocus.com/economic_indicators/234/cboe-volatility-index-the-vix)[Total Nonfarm Payrolls: All Employees](https://www.gurufocus.com/economic_indicators/14/total-nonfarm-payrolls-all-employees)[More...](https://www.gurufocus.com/economic_indicators)
+This is a clear validation of our model as an end-to-end space company.We were also awarded the STP-S30 launch contract, a $14.5 million mission for the Space Force.
 
-[Sector & Industry Performance](https://www.gurufocus.com/industry)
+And last but not least, HASTE continues to be a sought-after capability, with another hypersonic suborbital mission sold, we're immensely proud to have taken a proven product in electron and adapted it into a new use case, unlocking hypersonic test launch capability for the DoD, helping open up the bottleneck that has existed for so long.Thanks to the limited availability of wind tunnels and test flight opportunities.
 
-[Global Industry Overview](https://www.gurufocus.com/industry)[USA](https://www.gurufocus.com/industry/usa)[Asia](https://www.gurufocus.com/industry/asia)[Europe](https://www.gurufocus.com/industry/europe)[Canada](https://www.gurufocus.com/industry/canada)[UK/Ireland](https://www.gurufocus.com/industry/uk-ireland)[Oceania](https://www.gurufocus.com/industry/oceania)[Latin America](https://www.gurufocus.com/industry/latin-america)[Africa](https://www.gurufocus.com/industry/africa)[India/Pakistan](https://www.gurufocus.com/industry/india-pakistan)
+In the second quarter, we reached a significant company milestone, but also set a record for the wider launch industry.When we launched our 50th Electron mission, we reached this milestone faster than any other commercially developed rocket in history and we're on track to be the fastest to 100 also.
 
-[News](https://www.gurufocus.com/latest-news)
+This really just demonstrates our team's ability to execute in record time.We also demonstrated a pretty unique ability on our 50th mission, which was deploying a customer spacecraft within eight meters of the target.
 
-[News](https://www.gurufocus.com/latest-news)
+Now, for context the general accepted industry tolerance is 1,500 meters or 15 kilometers.So to deploy the spacecraft within single-digit meters, not kilometers, is a real differentiator.
 
-[Editors' Picks](https://www.gurufocus.com/latest-news/all/timeless)[Stock Analysis](https://www.gurufocus.com/latest-news/all/analysis)[Stock Market News](https://www.gurufocus.com/stock-market-news)[Q&A with Gurus](https://www.gurufocus.com/latest-news/all/qa)[Guru Stock Picks](https://www.gurufocus.com/latest-news/all/guru-stock-picks)[Insider Transaction](https://www.gurufocus.com/latest-news/all/insider)[Earning Reports](https://www.gurufocus.com/latest-news/all/earning-report)[Earnings Call Transcripts](https://www.gurufocus.com/latest-news/all/earnings-call-transcripts)[Software Stock News](https://www.gurufocus.com/latest-news/all/software)[Biotechnology Stock News](https://www.gurufocus.com/latest-news/all/biotechnology)[Hardware Stock News](https://www.gurufocus.com/latest-news/all/hardware)[Banks Stock News](https://www.gurufocus.com/latest-news/all/banks)[Metals & Mining Stock News](https://www.gurufocus.com/latest-news/all/metals-%26-mining)[Drug Manufacturers Stock News](https://www.gurufocus.com/latest-news/all/drug-manufacturers)[Instant Alerts](https://www.gurufocus.com/latest-news/all/instant-alerts)[Press Release](https://www.gurufocus.com/latest-news/all/press_release)[Crypto Press Release](https://www.gurufocus.com/latest-news/all/crypto_press_release)[All News](https://www.gurufocus.com/latest-news/all/all)
+Here's why that matters.It makes electron the clear launch vehicle of choice for some really complex missions and unique capabilities that are increasingly sought after like rendezvous and proximity operations, constellation replenishment and customized orbits.
 
-[Submit Articles](https://www.gurufocus.com/news/post)
+Right, moving on from small launch into updates on the Neutron development, I'm often asked how Neutron plans to compete and why we need to invest in a medium launch vehicle.So I'm going to go back to a little bit of [one-on-one] (ph) here.
 
-[Submit Article Online](https://www.gurufocus.com/news/post)[Contributor Guidelines](https://www.gurufocus.com/guidelines)[Stock-Picking Contest](https://www.gurufocus.com/stock-picking-contest)
+There is a practical monopoly in medium launch right now.There's no doubt about that.
 
- Tools 
+Demand is strong and growing for launch capability, particularly in the constellation space.With more than 10,000 satellites needing launch by the end of the decade, and that's viewed by many as a pretty conservative projection, Neutron is best placed to be the rocket that disrupts this monopoly.
 
- AI & Analysis 
+We have a proven track record of building and launching a reliable vehicle that became a market leader.Through this experience, we've been able to work incredibly closely with customers to design a new rocket that meets their needs.
 
-[GuruAI](https://www.gurufocus.com/guru-ai)[Stock Comparison Table](https://www.gurufocus.com/compare-table)[Interactive Chart](https://www.gurufocus.com/stock/AAPL/chart)[Manual of Stocks](https://www.gurufocus.com/manual-of-stocks)
+Resulting in a customer-led design, and we're on track to bring that to market at an incredibly rapid timeline.Across all of our launch and space systems businesses to-date, we've astutely assessed demand and opportunities and accurately allocated investment and effort where it makes the most business sense.
 
-[Financial Calculators](https://www.gurufocus.com/calculators)
+And that has produced undeniable successful results and Neutron will be no different.Now on to overall Neutron development progress and I'm pleased to confirm we've largely progressed past the design phase and we've moved swiftly into production and qualification of flight hardware for 100% of the vehicle.
 
-[DCF Calculator](https://www.gurufocus.com/dcf-calculator)[Peter Lynch Chart](https://www.gurufocus.com/peter-lynch-chart)[WACC Calculator](https://www.gurufocus.com/calculator/wacc-calculator)[Graham Number Calculator](https://www.gurufocus.com/calculators/graham-number)[Dividend Calculator](https://www.gurufocus.com/calculators/dividend)[ROE / EPS / ROIC Calculator](https://www.gurufocus.com/calculators/roic)[PE / PB / PS / PEG Ratio Calculators](https://www.gurufocus.com/calculators/pe-pb-ps-peg-ratios)[Enterprise Value Calculator](https://www.gurufocus.com/calculators/enterprise-value)[Sharpe Ratio Calculator](https://www.gurufocus.com/calculators/sharpe-ratio)[All Calculators →](https://www.gurufocus.com/calculators)
+With flight articles now coming together, we're on track to first launch for mid-next year.I've said this before, but it's a key point that I think a lot of people tend to miss, if they're not familiar with the launch vehicle development programs.
 
- Data & API 
+Developing a rocket is certainly a big piece of work but it's only about one-third of what you actually need to do.The remainder is launch and production infrastructure.
 
-[Excel Add-In](https://www.gurufocus.com/excel-add-in)[Google Sheets Add-On](https://www.gurufocus.com/google-sheets-add-on)[GuruFocus API](https://www.gurufocus.com/data-api)[Embed Widgets](https://www.gurufocus.com/widgets)[Mobile App](https://www.gurufocus.com/mobile-app)[Guru Portfolio Download](https://www.gurufocus.com/guru/download-guru-portfolio)[Insider Data Download](https://www.gurufocus.com/insider/data-export)
+That's the pad, the test cells, the production lines, the factories and all the processes and procedures to support them.A lot of organizations will focus their attention on their first rocket but we knew that --that would be very important to build up all the infrastructure and to support production, test and launch in the long term so that's what we've done in parallel.
 
- Calendar & Research 
+I'm really proud of the speed and progress that the team has achieved with Neutron so far in an incredibly short time frame, especially in the update I'm about to share next.Okay the update you've all been waiting for, the Archimedes engine test campaign.
 
-[Financial Calendar](https://www.gurufocus.com/calendar)[Earnings Calendar & Reports](https://www.gurufocus.com/earnings)[Analyst Ratings](https://www.gurufocus.com/ratings)[Fund Letters Archive](https://www.gurufocus.com/fund-letters)[Transcripts Search](https://www.gurufocus.com/search/transcripts)[Stock Market Holidays](https://www.gurufocus.com/stock-market-holidays)
+As we've said before, propulsion is always a long pole in the tent, when it comes to developing a rocket but thanks to having successfully designed, flown and built more than 500 Rutherford engines we have a pretty good chunk of experience how to do this.We use this to fast-track Archimedes development and this has certainly paid off.
 
-[Pricing](https://www.gurufocus.com/pricing)
+We also made a very conscious and strategic decision right from the outset to design a flight engine and put something on the engine test stand that was designed to be flight ready.It's fairly common to see downscaled engines or early stage prototypes used for a couple of years before companies actually move into putting something on the stand that could fly.
 
-[Reviews](https://www.gurufocus.com/reviews)
+But we didn't do that.In the past couple of months we put Archimedes through hundreds of tests to validate the design including Spin Primes, Ignition Tests, and well as understanding all the start-up and shut down transients.
 
-[Data Licensing](https://www.gurufocus.com/data-api/pricing)
+All of that work [commulated] (ph) recently in a successful Archimedes hot fire.We started off with a series of low power hot fires with great results then cranked it up to put the engine through its paces.
 
-[Pricing](https://www.gurufocus.com/data-api/pricing)[API Documentation](https://www.gurufocus.com/data-api/introduction)
+We've now reached main stage hot fire at 102% power.Now taking a new stage combustion liquid rocket engine from clean sheet design to hot fire in a flight configuration in just a couple of years is really industry leading stuff.
 
- Support 
+From here it is about dialing the engine in, building a bunch more of them and getting them rolling off the production line.Now the team has been pushing hard to get the first flight articles through qualification but like we've always said with Electron, bringing your first rocket is hard -- building your first rocket is hard, but building the tenth or the fiftieth is even harder.
 
- Chat Support [Create a ticket](https://www.gurufocus.com/user/ticket/open?ref=/stock/RKLB/transcripts/2548514)[User Engagement Meeting](https://www.gurufocus.com/meeting)[Status](https://status.gurufocus.com/)[Take Survey](https://www.gurufocus.com/surveys/4)[Give us your feedback](https://www.gurufocus.com/feedback)
+That's why we know it's just as important to build the machine behind the rocket and set it up for scale from day 1.The next Archimedes engine is coming off the production line right now, and while the assembly line for many more is also established.
 
- Education 
+Meanwhile, we've scaled avionics production line to support both Electron and Neutron, and all things that make it easier to roll into a launch cadence after flight one.While the propulsion team has been kicking goals, the composite team has been moving at pace 2.
 
-[Discussion](https://www.gurufocus.com/discussion)
+As you can see here, we have flight hardware in production, including the fairing panels for Neutron's fixed fairing.Remember, This fairing is pretty unique in that it remains attached to Neutron throughout the launch and landing, enabling us to reuse it across multiple missions.
 
-[All Topics](https://www.gurufocus.com/discussion)[Trending Stocks](https://www.gurufocus.com/discussion?category=8)[Hidden Gems](https://www.gurufocus.com/discussion?category=9)
+Meanwhile, we have flight hardware in production for all other Neutron composite structures, including Stage 1 and Stage 2 tanks and the Interstage.Since [Pitcher Paints 1,000 Words] (ph), here's a quick look at some of the composite production going on behind the scenes to bring Neutron to life.
 
-[Guru University](https://www.gurufocus.com/university)
+The progress in composites production is just about to accelerate even faster with the installation of our automated fibre placement machine in Middle River, Baltimore.Establishing this capacity and capability in parallel to manual layup of Neutron structures enables us to rapidly scale up production to the first flight and full operational cadence to follow.
 
-[Investing 101](https://www.gurufocus.com/university/investing-101)
+The custom-built 90-ton machine will automate the production of all large composite Neutron structures including the panels that make up 91 foot, the 91 foot interstage and fairing as well as the first and second stages.This machine is one of the largest of its kind in the world and will allow us to save thousands of hours on Stage 1 alone compared with hand labor.
 
-[Tutorials](https://www.gurufocus.com/tutorial)
+Speaking of infrastructure, progress is coming along nicely at Launch Complex 3, Virginia with fluid systems installation underway, and we've started receiving some of the critical long lead items like cryogenic systems and tanks.As you can see from the photo on the screen we've poured tons of concrete into Neutron's pad and ready to receive the launch mount.
 
-[Tutorials](https://www.gurufocus.com/tutorial)[Demo Center](https://www.gurufocus.com/demo-center)[Financial Glossary](https://www.gurufocus.com/term)[FAQ](https://www.gurufocus.com/faq)[Change Log](https://www.gurufocus.com/changelog)[Contact Us](https://www.gurufocus.com/user/ticket/open)
+This is a huge piece of infrastructure and a big milestone to tick off for the path the first flight.Just 10 minutes down the road from the pad is a Neutron assembly and integration facility where Neutron will undergo the final assembly before transportation to the pad.
 
-[Subscribe](https://www.gurufocus.com/pricing?ref=stock-name-transcripts-id&sel=premium&utm_source=webApp&utm_medium=userClick&utm_campaign=new_navbar_free_trial)
+Construction of this is progressing well and on track to receive the first Neutron early next year ahead of launch.Okay, that wraps up launch.
 
-[Free Trial](https://www.gurufocus.com/pricing?ref=stock-name-transcripts-id&sel=premium&utm_source=webApp&utm_medium=userClick&utm_campaign=new_navbar_free_trial_item)[Group Subscription](https://www.gurufocus.com/pricing?group=2)[Refer a Friend and Earn One Month of Free Membership](https://www.gurufocus.com/referral-program)
+On to the other half of our business now, space systems.Before I dig into the achievements on specific space systems items, I thought it worth a quick reminder of the scale of the programs we have underway.
 
-0
+Right now we have more than $720 million worth of spacecraft on contract and in development, including constellations to the Space Development Agency, Global Star, as well as bespoke spacecraft for NASA, the DoD and commercial customers.On any given day the team is working through design reviews, qualification campaigns, analysis and production for these programs.
 
- Site Overview 
+In many cases this work isn't very visible because the hardware build only comes at the very end and in some cases our customers request confidentiality, so we can't share images or too much detail in progress.What I will say is our team has earned a reputation for delivering high quality spacecraft on rapid timelines and these programs are tracking no differently.
 
-[7-Day Free Trial](https://www.gurufocus.com/pricing?ref=stock-name-transcripts-id&sel=premium&utm_source=webApp&utm_medium=userClick&utm_campaign=stock-name-transcripts-id_topMenuButton)
+Okay on to the more granular detail.We had a huge milestone recently by completing production and test of two identical spacecraft for the NASA Mars mission.
 
- / 
+It's not uncommon for an interplanetary mission to take a decade to go from design to flight ready so to design, build and test not one but two Mars spacecraft in around three years is pretty impressive.Once again it has been made possible in part by a vertical integration strategy which removes heavy reliance on suppliers since we produce many components in-house enabling us to control schedule and costs.
 
-[RKLB ▼5.32%](https://www.gurufocus.com/stock/RKLB/summary)
+And in the case of ESCAPADE, the spacecraft featured Rocket Lab’s, solar cells, reaction wheels, star tracker, separation systems, radio, flight software, structurally on [and on the go] (ph).The twin spacecraft are now packed up for shipping out to the Cape and ready for launch during the upcoming Mars transit window which extends through October.
 
-[GURUFOCUS.COM](https://www.gurufocus.com/)[STOCK LIST](https://www.gurufocus.com/stocks)[Industrials](https://www.gurufocus.com/stocks/sector/industrials)[Aerospace & Defense](https://www.gurufocus.com/stocks/sector/industrials/aerospace-%26-defense)[Rocket Lab Corp (NAS:RKLB)](https://www.gurufocus.com/stock/RKLB/summary)Transcripts Item
+Over to Albuquerque now where we've signed preliminary terms for $49.4 million in federal state and local funding including a portion under the CHIPS Act.The funding will enable us to expand production of our solar cells, which are important components for National Defense and security satellites.
 
- Rocket Lab Corp  (NAS:RKLB) 
+We expect to create around 100 new manufacturing jobs, as a direct result of this funding and expansion it enables.Another pair of spacecraft we have rolling down the production line are the next two set of satellites for Varda Space Industries.
 
- $ 76.73  -4.31 (-5.32%) [Market Cap: 47.94 Bil](https://www.gurufocus.com/term/mktcap/RKLB)[Enterprise Value: 46.70 Bil](https://www.gurufocus.com/term/enterprise-value/RKLB)[PE Ratio: 0](https://www.gurufocus.com/term/pe-ratio/RKLB)[PB Ratio: 21.07](https://www.gurufocus.com/term/pb-ratio/RKLB) GF Score: 71/100 
+These pioneer class satellites host Varda's in-space manufacturing capsules which enable the production of pharmaceuticals and other products that benefit from low gravity environments.We successfully operated one of these spacecraft for Varda last year, successfully setting it onto course for reentry and landing it in the Utah desert in February this year.
 
-*   [Summary](https://www.gurufocus.com/stock/RKLB/summary)
-*   [30-Y Financials](https://www.gurufocus.com/stock/RKLB/financials)
-*   [Valuation](https://www.gurufocus.com/stock/RKLB/valuation)
-*   [Forecast](https://www.gurufocus.com/stock/RKLB/forecast)
-*   [DCF](https://www.gurufocus.com/stock/RKLB/dcf)
-*   [Dividend](https://www.gurufocus.com/stock/RKLB/dividend)
-*   [Guru Trades](https://www.gurufocus.com/stock/RKLB/guru-trades)
-*   [Insider](https://www.gurufocus.com/stock/RKLB/insider)
-*   [Interactive Chart](https://www.gurufocus.com/stock/RKLB/chart)
-*   [Filings](https://www.gurufocus.com/stock/RKLB/filings)
-*   [Transcripts](https://www.gurufocus.com/stock/RKLB/transcripts)
-*   [News](https://www.gurufocus.com/stock/RKLB/article)
-*   [Compare](https://www.gurufocus.com/stock/RKLB/analysis)
-*   [Stock PDF](https://www.gurufocus.com/stock/RKLB/report)
-*   [Ownership](https://www.gurufocus.com/stock/RKLB/ownership)
-*   [Operating](https://www.gurufocus.com/stock/RKLB/operating)
-*   More 
+The spacecraft is nearing completion and preparing for launch in the coming months with a third following not far behind.Now onto Constellation spacecraft in development at the moment.
 
-    *   [Checklist](https://www.gurufocus.com/stock/RKLB/checklist)
-    *   [Vote](https://www.gurufocus.com/stock/RKLB/basket)
-    *   [Definitions](https://www.gurufocus.com/stock/RKLB/definition)
+Recently we completed successful systems requirements review for our $500 million Prime contract with SDA, to design and build 18 Tranche 2 transport layer beta satellites.From here we'll move into preliminary design review before hardware starts to take shape in clean rooms.
 
-[Transcripts List](https://www.gurufocus.com/stock/RKLB/transcripts)
+These spacecraft are scheduled to launch in 2027.So we're on track and kicking some of these critical design milestones off early in the program.
 
-Search
+17 spacecraft Thunder constellation for MDA and Globalstar.We've completed integration readiness review and hardware is in production, including the first delivery of a full flatsat to the customer.
 
-*   [![Image 4: Earning Transcript Icon](https://static.gurufocus.com/cdn-cgi/image/width=24,quality=100/earning_icon.jpg) Rocket Lab Corp Annual Shareholders Meeting Transcript May 20, 2026](https://www.gurufocus.com/stock/RKLB/transcripts/8873497)  
-*   [![Image 5: Earning Transcript Icon](https://static.gurufocus.com/cdn-cgi/image/width=24,quality=100/earning_icon.jpg) Q1 2026 Rocket Lab Corp Earnings Call Transcript May 07, 2026 $78.58 (-7.17%) Earnings](https://www.gurufocus.com/stock/RKLB/transcripts/8845235)  
-*   [![Image 6: Earning Transcript Icon](https://static.gurufocus.com/cdn-cgi/image/width=24,quality=100/earning_icon.jpg) Q4 2025 Rocket Lab Corp Earnings Call Transcript Feb 26, 2026 $72.65 (+3.49%) Earnings](https://www.gurufocus.com/stock/RKLB/transcripts/8659818)  
-*   [![Image 7: Earning Transcript Icon](https://static.gurufocus.com/cdn-cgi/image/width=24,quality=100/earning_icon.jpg) Q3 2025 Rocket Lab Corp Earnings Call Transcript Nov 10, 2025 $51.9 (+0.50%) Earnings](https://www.gurufocus.com/stock/RKLB/transcripts/3200499)  
-*   [![Image 8: Earning Transcript Icon](https://static.gurufocus.com/cdn-cgi/image/width=24,quality=100/earning_icon.jpg) Q1 2025 Rocket Lab USA Inc Earnings Call Transcript May 08, 2025 $23.1 (+3.63%) Earnings](https://www.gurufocus.com/stock/RKLB/transcripts/2847701)  
-*   [![Image 9: Earning Transcript Icon](https://static.gurufocus.com/cdn-cgi/image/width=24,quality=100/earning_icon.jpg) Q4 2024 Rocket Lab USA Inc Earnings Call Transcript Feb 27, 2025 $19.83 (-6.68%) Earnings](https://www.gurufocus.com/stock/RKLB/transcripts/2721156)  
-*   [![Image 10: Earning Transcript Icon](https://static.gurufocus.com/cdn-cgi/image/width=24,quality=100/earning_icon.jpg) Q3 2024 Rocket Lab USA Inc Earnings Call Transcript Nov 12, 2024 $14.66 (-0.81%) Earnings](https://www.gurufocus.com/stock/RKLB/transcripts/2599164)  
-*   [![Image 11: Earning Transcript Icon](https://static.gurufocus.com/cdn-cgi/image/width=24,quality=100/earning_icon.jpg) Q2 2024 Rocket Lab USA Inc Earnings Call Transcript Aug 08, 2024 $4.77 (+4.15%) Earnings](https://www.gurufocus.com/stock/RKLB/transcripts/2548514)  
-*   [![Image 12: Earning Transcript Icon](https://static.gurufocus.com/cdn-cgi/image/width=24,quality=100/earning_icon.jpg) Q1 2024 Rocket Lab USA Inc Earnings Call Transcript May 06, 2024 $4.06 (+1.50%) Earnings](https://www.gurufocus.com/stock/RKLB/transcripts/2429318)  
-*   [![Image 13: Earning Transcript Icon](https://static.gurufocus.com/cdn-cgi/image/width=24,quality=100/earning_icon.jpg) Q4 2023 Rocket Lab USA Inc Earnings Call Transcript Feb 27, 2024 $4.71 (+3.06%) Earnings](https://www.gurufocus.com/stock/RKLB/transcripts/2359071)  
-*   [![Image 14: Earning Transcript Icon](https://static.gurufocus.com/cdn-cgi/image/width=24,quality=100/earning_icon.jpg) Rocket Lab USA Inc Hosts Government Constellation Award Transcript Jan 08, 2024](https://www.gurufocus.com/stock/RKLB/transcripts/2217068)  
-*   [![Image 15: Earning Transcript Icon](https://static.gurufocus.com/cdn-cgi/image/width=24,quality=100/earning_icon.jpg) Rocket Lab USA Inc at Deutsche Bank Global Space Summit Transcript Nov 15, 2023](https://www.gurufocus.com/stock/RKLB/transcripts/2217067)  
-*   [![Image 16: Earning Transcript Icon](https://static.gurufocus.com/cdn-cgi/image/width=24,quality=100/earning_icon.jpg) Q3 2023 Rocket Lab USA Inc Earnings Call Transcript Nov 08, 2023 $4.36 (-3.11%) Earnings](https://www.gurufocus.com/stock/RKLB/transcripts/2217066)  
-*   [![Image 17: Earning Transcript Icon](https://static.gurufocus.com/cdn-cgi/image/width=24,quality=100/earning_icon.jpg) Rocket Lab USA Inc at Morgan Stanley Laguna Conference Transcript Sep 13, 2023](https://www.gurufocus.com/stock/RKLB/transcripts/2217065)  
-*   [![Image 18: Earning Transcript Icon](https://static.gurufocus.com/cdn-cgi/image/width=24,quality=100/earning_icon.jpg) Rocket Lab USA Inc at Bank of America SMID Cap Ideas Conference (Virtual) Transcript Aug 09, 2023](https://www.gurufocus.com/stock/RKLB/transcripts/2217064)  
-*   [![Image 19: Earning Transcript Icon](https://static.gurufocus.com/cdn-cgi/image/width=24,quality=100/earning_icon.jpg) Q2 2023 Rocket Lab USA Inc Earnings Call Transcript Aug 08, 2023 $6.66 (+1.06%) Earnings](https://www.gurufocus.com/stock/RKLB/transcripts/2217063)  
-*   [![Image 20: Earning Transcript Icon](https://static.gurufocus.com/cdn-cgi/image/width=24,quality=100/earning_icon.jpg) Q1 2023 Rocket Lab USA Inc Earnings Call Transcript May 09, 2023 $3.94 (+2.34%) Earnings](https://www.gurufocus.com/stock/RKLB/transcripts/2217062)  
-*   [![Image 21: Earning Transcript Icon](https://static.gurufocus.com/cdn-cgi/image/width=24,quality=100/earning_icon.jpg) Q4 2022 Rocket Lab USA Inc Earnings Call Transcript Feb 28, 2023 $4.5 (-1.96%) Earnings](https://www.gurufocus.com/stock/RKLB/transcripts/2217061)  
-*   [![Image 22: Earning Transcript Icon](https://static.gurufocus.com/cdn-cgi/image/width=24,quality=100/earning_icon.jpg) Rocket Lab USA Inc at Deutsche Bank Global Space Summit (Virtual) Transcript Nov 10, 2022](https://www.gurufocus.com/stock/RKLB/transcripts/2217060)  
-*   [![Image 23: Earning Transcript Icon](https://static.gurufocus.com/cdn-cgi/image/width=24,quality=100/earning_icon.jpg) Q3 2022 Rocket Lab USA Inc Earnings Call Transcript Nov 09, 2022 $4.74 (-7.24%) Earnings](https://www.gurufocus.com/stock/RKLB/transcripts/2217059)  
-*   [![Image 24: Earning Transcript Icon](https://static.gurufocus.com/cdn-cgi/image/width=24,quality=100/earning_icon.jpg) Rocket Lab USA Inc Investor Day Transcript Sep 21, 2022](https://www.gurufocus.com/stock/RKLB/transcripts/2217058)  
-*   [![Image 25: Earning Transcript Icon](https://static.gurufocus.com/cdn-cgi/image/width=24,quality=100/earning_icon.jpg) Q2 2022 Rocket Lab USA Inc Earnings Call Transcript Aug 11, 2022 $5.86 (+1.21%) Earnings](https://www.gurufocus.com/stock/RKLB/transcripts/2217057)  
-*   [![Image 26: Earning Transcript Icon](https://static.gurufocus.com/cdn-cgi/image/width=24,quality=100/earning_icon.jpg) Q1 2022 Rocket Lab USA Inc Earnings Call Transcript May 16, 2022 $5.41 (-7.68%) Earnings](https://www.gurufocus.com/stock/RKLB/transcripts/2217056)  
-*   [![Image 27: Earning Transcript Icon](https://static.gurufocus.com/cdn-cgi/image/width=24,quality=100/earning_icon.jpg) Q4 2021 Rocket Lab USA Inc Earnings Call Transcript Feb 28, 2022 $9.54 (+0.95%) Earnings](https://www.gurufocus.com/stock/RKLB/transcripts/2217055)  
-*   [![Image 28: Earning Transcript Icon](https://static.gurufocus.com/cdn-cgi/image/width=24,quality=100/earning_icon.jpg) Q3 2021 Rocket Lab USA Inc Earnings Call Transcript Nov 15, 2021 $14.29 (-0.56%) Earnings](https://www.gurufocus.com/stock/RKLB/transcripts/2217054)  
-*   [![Image 29: Earning Transcript Icon](https://static.gurufocus.com/cdn-cgi/image/width=24,quality=100/earning_icon.jpg) Q2 2021 Rocket Lab USA Inc Earnings Call Transcript Sep 08, 2021 $15.09 (+4.07%) Earnings](https://www.gurufocus.com/stock/RKLB/transcripts/2217053)  
+This program is moving at pace with spacecraft scheduled for completion and launch by the end of 2025.Our spacecraft programs tend to get the most of the attention in the space systems, but our Merchant Components business continues to kick goals too, including when it comes to innovating new products.
 
-# Q2 2024 Rocket Lab USA Inc Earnings Call Transcript
+At the smallsat conference in Utah this week the team introduced a new advanced satellite dispenser giving customers more choice for versatile and reliable spacecraft deployment.The ASD builds on the 11-year heritage of the containerized satellite dispenser, which has successfully deployed more than 60 satellites.
 
-Aug 08, 2024 / 09:00PM GMT 
+If I [labor] (ph) on about the achievements across our other components businesses, we'll be here all evening, so I'll try and keep it brief.Now to round out our business updates I just want to provide a quick update on our M&A strategy.
 
- Release Date Price: $4.77 (+4.15%) 
+We've had the privilege of being a launch provider, spacecraft developer and component supplier to scores of companies and organizations across the global space industry.Increasingly they want complete mission solutions and a mixed approach of organic and developed -- development and M&A aims to serve this.
 
-Key Points
+Right now we're managing a robust pipeline of targets while being selective and strategic about what we want to bring into our suite of capabilities.The focus is on targets that would fill gaps in our already extensive suite of solutions, while also enabling meaningful revenue scale and profit.
 
- Transcript  10-Q 8-K 
+We look forward to sharing more on this in due course.And last but not least, before we move into the financial highlights, I wanted to share some news about a documentary that recently came out which covers Rocket Lab in a way that many people may not have seen before.
 
- Ask GuruAI ![Image 30: GuruFocus Premium Icon](https://static.gurufocus.com/images/icons/premium.svg)
+Wild Space was released on HBO Max just a few weeks ago.It's a film version of the New York Times best-selling book, When the Heavens Went on Sale by Ashlee Vance and it's directed by Academy Award-winning director Ross Kauffman.
 
-### Key Points
+If you're interested in the history of Rocket Lab and how we got to where we are today and some insight into what drives us, this is a great place to start.Highly recommended if you go and check it out on HBO.
 
-Positve
-
-*    Rocket Lab USA Inc (RKLB) achieved a record revenue of $106 million in Q2 2024, marking a 71% year-on-year increase. 
-*    The company signed 17 new Electron launch contracts year-to-date, with a total contract value of $141 million. 
-*    Electron is now the third most frequently launched rocket globally, highlighting its significance in the industry. 
-*    The Neutron development is progressing well, with the design phase largely complete and production and qualification of flight hardware underway. 
-*    Rocket Lab USA Inc (RKLB) has a strong backlog of over $1 billion, indicating robust future demand for its services. 
-
-Negative
-
-*    The company faces challenges in predicting the exact number of launches per year due to customer readiness and scheduling flexibility. 
-*    Operating expenses increased in Q2 2024, driven by growth in headcount and Neutron development costs. 
-*    Cash consumed from operations increased to $13 million in Q2 2024, up from $2.6 million in Q1 2024. 
-*    The company anticipates a pickup in cash consumption in the second half of the year due to increased Neutron CapEx. 
-*    There is uncertainty regarding the exact timing of achieving cash flow breakeven, which is expected to occur two quarters after the first Neutron launch. 
-
- Operator 
-
-Hello, and thank you for standing by. My name is Regina, and I will be your conference operator today. At this time, I would like to welcome everyone to the Rocket Lab second-quarter 2024 financial results update and conference call. (Operator Instructions)
-
- I would now like to turn the conference over to Morgan Connaughton, Vice President of Communications at Rocket Lab. Please go ahead.
-
- Morgan Connaughton 
-
- Rocket Lab USA Inc - Vice President - Marketing and Communications 
-
-Thank you. Hello, and welcome to today's conference call to discuss Rocket Lab's second-quarter 2024 financial results. Before we begin the call, I would like to remind you that our remarks may contain forward-looking statements that relate to the future performance of the company. And these statements are intended to qualify for the Safe Harbor protection from liability established by the Private Securities Litigation Reform Act.
-
- Any such statements are not guarantees of future performance and factors that could influence our results are highlighted in today's press
-
- Already have an account?[Log in](https://www.gurufocus.com/login?ref=%2Fstock%2FRKLB%2Ftranscripts%2F2548514)
-
- Get the full story 
-
-[Subscribe Now](https://www.gurufocus.com/pricing?ref=stock-name-transcripts-id&sel=premium&utm_source=webApp&utm_medium=userClick&utm_campaign=transcript_paywall&pmc=PAYNOWTRANSCRIPTS)
-
-Access to All Earning Calls and Stock Analysis
-30-Year Financial on one screen
-All-in-one Stock Screener with unlimited filters
-Customizable Stock Dashboard
-Real Time Insider Trading Transactions
-8,000+ Institutional investors’ 13F holdings
-Powerful Excel Add-in and Google sheets Add-on
-All data downloadable
-Quick customer support
-And much more...
-
- 7-Day Free Trial · Cancel Anytime 
-
-Subscription fee may be tax deductible. 
-
-Excellent ![Image 31](https://static.gurufocus.com/trust_rating.png)
-
- 4.6 out of 5 ![Image 32](https://static.gurufocus.com/trust.png) Trustpilot 
-
- Research Tools 
-
-[All-In-One Screener](https://www.gurufocus.com/screener)[Stock Ideas](https://www.gurufocus.com/ideas)[Stock List](https://www.gurufocus.com/stocks)[Guru List](https://www.gurufocus.com/guru/list)[Guru Real-Time Picks](https://www.gurufocus.com/guru/realtime-picks)[Insider List](https://www.gurufocus.com/insiders)[Insider Trades](https://www.gurufocus.com/insider/summary)[Economic Indicators](https://www.gurufocus.com/economic_indicators)[Sector & Industry Performance](https://www.gurufocus.com/industry)[DCF Calculator](https://www.gurufocus.com/stock/AAPL/dcf)[Calculators](https://www.gurufocus.com/calculators)[Discussion Board](https://www.gurufocus.com/discussion)
-
- Product 
-
-[Pricing Plans](https://www.gurufocus.com/pricing)[Excel Add-In](https://www.gurufocus.com/excel-add-in)[Google Sheets Add-on](https://www.gurufocus.com/google-sheets-add-on)[Data API](https://www.gurufocus.com/data-api/pricing)[Stock Comparison Table](https://www.gurufocus.com/compare-table)[Manual of Stocks](https://www.gurufocus.com/manual-of-stocks)[Instant Alerts](https://www.gurufocus.com/latest-news/all/instant-alerts)[Mobile App](https://www.gurufocus.com/mobile-app)[Newsletters Signup](https://www.gurufocus.com/newsletters_signup)[中文](https://www.gurufocus.cn/)
-
- Education 
-
-[Financial Glossary](https://www.gurufocus.com/term)[Tutorials](https://www.gurufocus.com/tutorial)[FAQ](https://www.gurufocus.com/faq)[Buffett Indicator](https://www.gurufocus.com/stock-market-valuations.php)[Shiller P/E](https://www.gurufocus.com/shiller-PE.php)[Yield Curve Today](https://www.gurufocus.com/yield_curve.php)[U.S. Inflation Rate](https://www.gurufocus.com/market/us-inflation-contributors)[Global Market Valuation](https://www.gurufocus.com/global-market-valuation.php)[Fed Net Liquidity](https://www.gurufocus.com/market/fed-net-liquidity-sp500)[Buffett Assets Allocation](https://www.gurufocus.com/buffett_assets_allocations.php?1)
-
- Company 
-
-[About GuruFocus](https://www.gurufocus.com/about)[Career](https://www.gurufocus.com/jobs.php)[Contact Us](https://www.gurufocus.com/user/ticket/open)[Advertise](https://www.gurufocus.com/advertise)[Term of Use](https://www.gurufocus.com/term-of-use)[Privacy Policy](https://www.gurufocus.com/privacy-policy)[Referral Program](https://www.gurufocus.com/referral-program)[Partner Program](https://www.gurufocus.com/partner-program)
-
- Survey 
-
-We'd love to learn more about your experiences on GuruFocus.com and how we can improve!
-
-[Take Survey](https://www.gurufocus.com/surveys/4 "GuruFocus Survey")
-
- Follow Us 
-
-[![Image 33: download GuruFocus on Apple store](https://static.gurufocus.com/images/apple.svg)](https://itunes.apple.com/us/app/gurufocus/id1054144526)[![Image 34: download GuruFocus on Google Play](https://static.gurufocus.com/images/android.svg)](https://play.google.com/store/apps/details?id=com.gurufocus.app)
-
-[](https://twitter.com/gurufocus "Twitter")[](https://www.youtube.com/user/GuruFocusVideos "YouTube")[](https://www.facebook.com/GuruFocus/ "FaceBook")[](https://www.instagram.com/gurufocus/ "Instagram")
-
- Disclaimers 
-
- GuruFocus.com is not operated by a broker or a dealer. Under no circumstances does any information posted on GuruFocus.com represent a recommendation to buy or sell a security. The information on this site, and in its related newsletters, is not intended to be, nor does it constitute investment advice or recommendations. The individuals or entities selected as "gurus" may buy and sell securities before and after any particular article and report and information herein is published, with respect to the securities discussed in any article and report posted herein. Gurus may be added or dropped from the GuruFocus site at any time. In no event shall GuruFocus.com be liable to any member, guest or third party for any damages of any kind arising out of the use of any content or other material published or available on GuruFocus.com, or relating to the use of, or inability to use, GuruFocus.com or any content, including, without limitation, any investment losses, lost profits, lost opportunity, special, incidental, indirect, consequential or punitive damages. Past performance is a poor indicator of future performance. The information on this site, and in its related newsletters, is not intended to be, nor does it constitute investment advice or recommendations. The information on this site is in no way guaranteed for completeness, accuracy or in any other way. The gurus listed in this website are not affiliated with GuruFocus.com, LLC. Stock quotes are provided by QuoteMedia, Inc. (CSI). Company fundamental data is provided by Morningstar. Analyst estimates data is sourced from both Refinitiv and Morningstar, with priority given to Refinitiv data. Data is updated daily. 
-
- © 2004-2026 GuruFocus.com, LLC. All Rights Reserved. 
-
-![Image 35](https://www.gurufocus.com/stock/RKLB/transcripts/2548514)
+That wraps up the top-line business achievements.So with that, I'll hand it over to Adam to discuss our financial highlights and outlook.
