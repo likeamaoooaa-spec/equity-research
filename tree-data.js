@@ -39,6 +39,12 @@ const TREE_DATA = {
         "title": "investment audit",
         "date": "2026-07-12",
         "ticker": "RKLB"
+      },
+      {
+        "path": "research/RKLB/2026-07-14_competitor-macro-analysis.md",
+        "title": "competitor macro analysis",
+        "date": "2026-07-14",
+        "ticker": "RKLB"
       }
     ],
     "WOLF": [
