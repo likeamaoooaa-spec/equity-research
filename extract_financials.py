@@ -271,6 +271,13 @@ def collect_ticker_data(ticker: str, data_dir: str) -> list:
                     all_periods[period_key] = {'period': period_key}
                 period_dates = metric_filing_dates.setdefault(period_key, {})
                 filing_date = filing_info.get('filing_date', '')
+                if filing_date >= all_periods[period_key].get('_filing_date', ''):
+                    repo_root = Path(data_dir).parents[2]
+                    all_periods[period_key].update({
+                        '_filing_date': filing_date,
+                        '_filing_type': filing_info.get('type', 'unknown'),
+                        '_source_path': os.path.relpath(filepath, repo_root),
+                    })
                 for k, v in metrics.items():
                     if k != 'period':
                         # Prefer the latest filing for each metric. This
@@ -352,7 +359,7 @@ def main():
         # Convert values: actual dollars -> millions for readability
         for p in final_periods:
             for k, v in list(p.items()):
-                if k == 'period' or k in ('EPS_Basic', 'EPS_Diluted'):
+                if k == 'period' or k.startswith('_') or k in ('EPS_Basic', 'EPS_Diluted'):
                     continue
                 if isinstance(v, (int, float)):
                     p[k] = round(v / 1_000_000, 2)  # actual dollars -> millions
