@@ -36,9 +36,18 @@ BALANCE_SHEET_TAGS = {
     'Assets': 'TotalAssets',
     'AssetsCurrent': 'CurrentAssets',
     'Liabilities': 'TotalLiabilities',
+    'LiabilitiesAndStockholdersEquity': 'LiabilitiesAndStockholdersEquity',
     'LiabilitiesCurrent': 'CurrentLiabilities',
+    # Keep parent equity separate from consolidated equity.  These concepts
+    # are not interchangeable when a filer has noncontrolling interests.
     'StockholdersEquity': 'StockholdersEquity',
-    'StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest': 'StockholdersEquity',
+    'StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest': 'TotalEquity',
+    'MinorityInterest': 'NoncontrollingInterest',
+    'NoncontrollingInterestInConsolidatedEntity': 'NoncontrollingInterest',
+    # SPAC-era filings may present redeemable/temporary equity outside both
+    # liabilities and stockholders' equity.
+    'TemporaryEquityCarryingAmountAttributableToParent': 'TemporaryEquity',
+    'TemporaryEquityCarryingAmount': 'TemporaryEquity',
     'CashAndCashEquivalentsAtCarryingValue': 'Cash',
     'CashCashEquivalentsAndShortTermInvestments': 'CashAndShortTermInvestments',
     'AccountsReceivableNetCurrent': 'AccountsReceivable',
@@ -149,17 +158,18 @@ def determine_filing_period(filepath: str) -> dict:
     basename = os.path.basename(filepath)
 
     # PLTR format: 10-K_FY2025_2026-02-17.html or 10-Q_2025_03_31_2025-05-06.html
-    m_10k = re.match(r'10-K_FY(\d{4})_', basename)
+    m_10k = re.match(r'10-K_FY(\d{4})_(\d{4}-\d{2}-\d{2})', basename)
     if m_10k:
         fy = int(m_10k.group(1))
-        return {'type': '10-K', 'fiscal_year': fy, 'period_end': f'{fy}-12-31', 'label': f'FY{fy}'}
+        filing_date = m_10k.group(2)
+        return {'type': '10-K', 'fiscal_year': fy, 'period_end': f'{fy}-12-31', 'filing_date': filing_date, 'label': f'FY{fy}'}
 
-    m_10q = re.match(r'10-Q_(\d{4})_(\d{2})_(\d{2})_', basename)
+    m_10q = re.match(r'10-Q_(\d{4})_(\d{2})_(\d{2})_(\d{4}-\d{2}-\d{2})', basename)
     if m_10q:
-        y, m, d = m_10q.group(1), m_10q.group(2), m_10q.group(3)
+        y, m, d, filing_date = m_10q.group(1), m_10q.group(2), m_10q.group(3), m_10q.group(4)
         quarter_map = {'03': 'Q1', '06': 'Q2', '09': 'Q3'}
         q = quarter_map.get(m, f'Q?({m})')
-        return {'type': '10-Q', 'period_end': f'{y}-{m}-{d}', 'label': f'{y}{q}'}
+        return {'type': '10-Q', 'period_end': f'{y}-{m}-{d}', 'filing_date': filing_date, 'label': f'{y}{q}'}
 
     # RKLB format: 2026-02-26_10-K_000181999426000013.html or 2026-05-07_10-Q_000181999426000028.html
     m_rklb = re.match(r'(\d{4}-\d{2}-\d{2})_(10-[KQ])_', basename)
@@ -235,6 +245,7 @@ def resolve_period_for_data(raw_data: list, filing_info: dict) -> dict:
 def collect_ticker_data(ticker: str, data_dir: str) -> list:
     """Collect all financial data for a ticker from its filing directory."""
     all_periods = {}
+    metric_filing_dates = {}
 
     # Gather all HTML files
     html_files = []
@@ -258,12 +269,31 @@ def collect_ticker_data(ticker: str, data_dir: str) -> list:
             for period_key, metrics in periods.items():
                 if period_key not in all_periods:
                     all_periods[period_key] = {'period': period_key}
-                # Merge, keeping first (or latest filing if duplicate)
+                period_dates = metric_filing_dates.setdefault(period_key, {})
+                filing_date = filing_info.get('filing_date', '')
                 for k, v in metrics.items():
                     if k != 'period':
-                        all_periods[period_key][k] = v
+                        # Prefer the latest filing for each metric. This
+                        # preserves later restatements without mixing an old
+                        # temporary-equity disclosure into a newer balance
+                        # sheet snapshot.
+                        if filing_date >= period_dates.get(k, ''):
+                            all_periods[period_key][k] = v
+                            period_dates[k] = filing_date
         except Exception as e:
             print(f'    ERROR: {e}')
+
+    # Temporary and noncontrolling equity are only valid with the balance
+    # sheet snapshot that reported them. Do not carry an older disclosure
+    # forward after a later filing restates the same period.
+    for period_key, row in all_periods.items():
+        dates = metric_filing_dates.get(period_key, {})
+        balance_dates = [dates[k] for k in ('TotalAssets', 'TotalLiabilities', 'StockholdersEquity', 'TotalEquity') if dates.get(k)]
+        if balance_dates:
+            latest_balance_date = max(balance_dates)
+            for k in ('TemporaryEquity', 'NoncontrollingInterest'):
+                if dates.get(k) and dates[k] < latest_balance_date:
+                    row.pop(k, None)
 
     # Sort by period
     result = sorted(all_periods.values(), key=lambda x: x['period'])
