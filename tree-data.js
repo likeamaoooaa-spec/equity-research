@@ -73,6 +73,12 @@ const TREE_DATA = {
         "title": "bayesian intrinsic growth",
         "date": "2026-07-12",
         "ticker": "WOLF"
+      },
+      {
+        "path": "research/WOLF/2026-07-30_bayesian-intrinsic-growth-valuation.md",
+        "title": "bayesian intrinsic growth valuation",
+        "date": "2026-07-30",
+        "ticker": "WOLF"
       }
     ]
   },
