@@ -73,6 +73,14 @@ const TREE_DATA = {
         "ticker": "RKLB"
       }
     ],
+    "SPACEX": [
+      {
+        "path": "research/SPACEX/2026-08-08_buyside-memo.md",
+        "title": "buyside memo",
+        "date": "2026-08-08",
+        "ticker": "SPACEX"
+      }
+    ],
     "WOLF": [
       {
         "path": "research/WOLF/2026-07-12_bayesian-intrinsic-growth.md",
