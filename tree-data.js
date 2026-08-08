@@ -21,6 +21,12 @@ const TREE_DATA = {
         "title": "chronicle",
         "date": "2026-07-12",
         "ticker": "PLTR"
+      },
+      {
+        "path": "research/PLTR/2026-08-08_Q2-2026-earnings-update.md",
+        "title": "Q2 2026 earnings update",
+        "date": "2026-08-08",
+        "ticker": "PLTR"
       }
     ],
     "RKLB": [
