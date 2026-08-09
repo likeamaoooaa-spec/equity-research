@@ -87,6 +87,12 @@ const TREE_DATA = {
         "title": "buyside memo",
         "date": "2026-08-08",
         "ticker": "SPACEX"
+      },
+      {
+        "path": "research/SPACEX/2026-08-09_buyside-memo.md",
+        "title": "buyside memo",
+        "date": "2026-08-09",
+        "ticker": "SPACEX"
       }
     ],
     "WOLF": [
