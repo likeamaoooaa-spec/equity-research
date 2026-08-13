@@ -10,6 +10,7 @@
 <script src="https://cdn.jsdelivr.net/npm/marked@15.0.12/marked.min.js" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/dompurify@3.2.6/dist/purify.min.js" defer></script>
 <script src="tree-data.js" defer></script>
+<script src="research-state.js" defer></script>
 <script src="financial-data.js" defer></script>
 <style>
   /* ==========================================================
@@ -33,6 +34,7 @@
     --radius: 8px;
     --content-max: 720px;
     --toc-width: 200px;
+    --sidebar-width: 248px;
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -44,6 +46,35 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
+
+  /* ── Desktop research workspace shell ── */
+  .app-sidebar {
+    display: none; position: fixed; inset: 0 auto 0 0; width: var(--sidebar-width);
+    z-index: 220; background: #111722; color: #fff; padding: 22px 16px 18px;
+    flex-direction: column; border-right: 1px solid rgba(255,255,255,.07);
+  }
+  .app-brand { display: flex; align-items: center; gap: 10px; padding: 2px 8px 24px; }
+  .app-brand-mark { width: 30px; height: 30px; display: grid; place-items: center; border-radius: 8px; background: #e8f1ff; color: #245fa8; font-size: 12px; font-weight: 800; letter-spacing: -.5px; }
+  .app-brand-copy strong { display: block; font: 700 14px var(--font-serif); letter-spacing: -.2px; }
+  .app-brand-copy span { color: rgba(255,255,255,.48); font-size: 10px; letter-spacing: .55px; text-transform: uppercase; }
+  .app-nav-label { padding: 0 9px; margin: 10px 0 7px; color: rgba(255,255,255,.35); font-size: 9px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; }
+  .app-nav { display: grid; gap: 3px; }
+  .app-nav-button { width: 100%; display: flex; align-items: center; gap: 10px; padding: 9px 10px; border: 0; border-radius: 7px; background: transparent; color: rgba(255,255,255,.62); cursor: pointer; text-align: left; font: 500 13px var(--font-sans); transition: .14s; }
+  .app-nav-button:hover { color: #fff; background: rgba(255,255,255,.06); }
+  .app-nav-button.active { color: #fff; background: rgba(120,170,242,.15); box-shadow: inset 2px 0 #8cbcff; }
+  .app-nav-icon { width: 17px; text-align: center; color: currentColor; font-size: 13px; }
+  .app-coverage-list { overflow-y: auto; margin: 2px -4px 0; padding: 0 4px; }
+  .app-company-button { width: 100%; display: grid; grid-template-columns: 8px minmax(0,1fr) auto; align-items: center; gap: 8px; padding: 8px 10px; border: 0; border-radius: 7px; background: transparent; color: rgba(255,255,255,.65); cursor: pointer; text-align: left; font-family: var(--font-sans); }
+  .app-company-button:hover, .app-company-button.active { background: rgba(255,255,255,.06); color: #fff; }
+  .app-company-dot { width: 6px; height: 6px; border-radius: 50%; background: #83a9df; }
+  .app-company-dot.avoid { background: #db8c78; }
+  .app-company-dot.neutral { background: #c7aa6a; }
+  .app-company-ticker { font-size: 12px; font-weight: 700; }
+  .app-company-state { font-size: 9px; color: rgba(255,255,255,.36); }
+  .app-sidebar-foot { margin-top: auto; padding: 15px 9px 0; border-top: 1px solid rgba(255,255,255,.07); color: rgba(255,255,255,.36); font-size: 10px; line-height: 1.6; }
+  .mobile-primary-nav { display: grid; grid-template-columns: repeat(2, 1fr); gap: 6px; padding: 8px 16px 14px; border-bottom: 1px solid var(--border-light); }
+  .mobile-primary-nav .app-nav-button { color: var(--text-secondary); background: var(--bg-page); justify-content: center; padding: 8px; }
+  .mobile-primary-nav .app-nav-button.active { color: var(--accent); background: var(--accent-bg); box-shadow: none; }
 
   /* ── 顶部导航条 ── */
   .topbar {
@@ -77,6 +108,9 @@
     margin-left: 8px; flex: 1;
     overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
   }
+  .topbar-search-btn { display: flex; align-items: center; gap: 7px; min-width: 180px; padding: 6px 10px; border: 1px solid var(--border); border-radius: 7px; background: var(--bg-page); color: var(--text-tertiary); cursor: pointer; font: 400 12px var(--font-sans); text-align: left; }
+  .topbar-search-btn:hover { border-color: #c8d1dc; background: var(--bg); color: var(--text-secondary); }
+  .topbar-search-key { margin-left: auto; border: 1px solid var(--border); border-radius: 4px; padding: 0 5px; color: var(--text-tertiary); background: var(--bg); font-size: 10px; }
   .topbar-toc-btn {
     background: none; border: 1px solid var(--border);
     cursor: pointer; padding: 5px 12px; border-radius: 6px;
@@ -419,6 +453,11 @@
   }
   .content hr { margin: 40px 0; border: none; border-top: 1px solid var(--border-light); }
   .content strong { font-weight: 700; }
+  .article-context { display: flex; align-items: center; gap: 9px; margin: 0 0 26px; padding: 10px 0 14px; border-bottom: 1px solid var(--border-light); font-family: var(--font-sans); }
+  .article-context-tag { color: var(--accent); font-size: 11px; font-weight: 750; }
+  .article-context-meta { color: var(--text-tertiary); font-size: 11px; }
+  .article-context-back { margin-left: auto; padding: 0; border: 0; background: none; color: var(--accent); font: 600 11px var(--font-sans); cursor: pointer; }
+  .article-context-back:hover { text-decoration: underline; }
 
   /* ── 批注高亮 ── */
   .annotation-highlight {
@@ -535,6 +574,18 @@
     .content p, .content ul, .content ol { font-size: 16px; }
     .welcome { padding: 80px 16px; }
     .welcome h2 { font-size: 24px; }
+    .topbar-search-btn { min-width: 36px; width: 36px; height: 34px; padding: 0; justify-content: center; }
+    .topbar-search-copy, .topbar-search-key { display: none; }
+    #overview-btn, #fin-dashboard-btn { display: none; }
+  }
+
+  @media (min-width: 1100px) {
+    .app-sidebar { display: flex; }
+    .topbar { left: var(--sidebar-width); }
+    .topbar-menu-btn, .topbar-brand { display: none; }
+    .page-wrapper { margin-left: var(--sidebar-width); }
+    .mobile-primary-nav { display: none; }
+    #overview-btn, #fin-dashboard-btn { display: none; }
   }
 
   /* ── Financial Dashboard ── */
@@ -806,6 +857,69 @@
   .source-ladder li:nth-child(4)::before { background: #8c6ab2; }
   .decision-method strong { color: var(--text); }
   .coverage-status { display: inline-flex; padding: 3px 8px; border-radius: 99px; color: #245fa8; background: #edf5ff; font-size: 11px; font-weight: 650; }
+  .workspace-view { max-width: 1200px; margin: 0 auto; padding: 38px 0 80px; font-family: var(--font-sans); }
+  .view-header { display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; padding-bottom: 22px; border-bottom: 1px solid var(--border-light); margin-bottom: 24px; }
+  .view-kicker { color: var(--accent); text-transform: uppercase; font-size: 10px; letter-spacing: 1.1px; font-weight: 750; margin-bottom: 8px; }
+  .view-header h1 { margin: 0 0 7px; font: 700 29px/1.25 var(--font-serif); letter-spacing: -.5px; }
+  .view-header p { margin: 0; color: var(--text-secondary); font-size: 13px; line-height: 1.65; max-width: 660px; }
+  .view-asof { flex: none; color: var(--text-tertiary); font-size: 11px; }
+  .coverage-grid { display: grid; gap: 10px; }
+  .coverage-row { display: grid; grid-template-columns: 140px 150px minmax(220px,1fr) 140px 110px; align-items: center; gap: 18px; padding: 17px 18px; background: var(--bg); border: 1px solid var(--border-light); border-radius: 10px; cursor: pointer; transition: .15s; }
+  .coverage-row:hover { border-color: #c8d5e5; box-shadow: 0 4px 14px rgba(15,23,42,.045); }
+  .coverage-name strong { display: block; font-size: 15px; }
+  .coverage-name span, .coverage-cell-label { display: block; color: var(--text-tertiary); font-size: 10px; margin-top: 3px; }
+  .stance-pill { display: inline-flex; padding: 4px 8px; border-radius: 99px; background: #eef5ff; color: #245fa8; font-size: 11px; font-weight: 700; }
+  .stance-pill.avoid { background: #fff1ed; color: #a94f37; }
+  .stance-pill.neutral { background: #faf4e6; color: #88651c; }
+  .coverage-thesis { color: var(--text-secondary); font-size: 12px; line-height: 1.55; }
+  .coverage-value { font-size: 13px; font-weight: 650; }
+  .coverage-updated { color: var(--text-tertiary); font-size: 11px; text-align: right; }
+  .catalyst-board { display: grid; grid-template-columns: 150px minmax(0,1fr); gap: 0 22px; }
+  .catalyst-period { padding: 20px 0; color: var(--text-secondary); font-size: 12px; font-weight: 700; text-align: right; border-right: 1px solid var(--border); padding-right: 22px; }
+  .catalyst-item { position: relative; margin: 7px 0 7px 0; padding: 16px 18px; background: var(--bg); border: 1px solid var(--border-light); border-radius: 10px; cursor: pointer; }
+  .catalyst-item::before { content: ''; position: absolute; top: 22px; left: -28px; width: 9px; height: 9px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 4px var(--bg-page); }
+  .catalyst-item:hover { border-color: #c8d5e5; }
+  .catalyst-top { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+  .catalyst-title { font-size: 14px; font-weight: 700; color: var(--text); }
+  .catalyst-ticker { color: var(--accent); font-size: 11px; font-weight: 750; }
+  .catalyst-watch { margin-top: 7px; color: var(--text-secondary); font-size: 12px; line-height: 1.55; }
+  .library-toolbar { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-bottom: 18px; }
+  .library-filter { border: 1px solid var(--border); border-radius: 7px; padding: 7px 10px; color: var(--text-secondary); background: var(--bg); font: 500 12px var(--font-sans); cursor: pointer; }
+  .library-filter.active { color: var(--accent); border-color: #9bbbe4; background: var(--accent-bg); }
+  .library-count { margin-left: auto; color: var(--text-tertiary); font-size: 11px; }
+  .library-list { background: var(--bg); border: 1px solid var(--border-light); border-radius: 11px; overflow: hidden; }
+  .library-row { width: 100%; display: grid; grid-template-columns: 92px 116px minmax(0,1fr) 92px; gap: 12px; align-items: center; padding: 13px 16px; border: 0; border-bottom: 1px solid var(--border-light); background: var(--bg); cursor: pointer; text-align: left; font-family: var(--font-sans); }
+  .library-row:last-child { border-bottom: 0; }
+  .library-row:hover { background: #fafcff; }
+  .library-ticker { font-size: 11px; font-weight: 750; color: var(--accent); }
+  .library-type { font-size: 10px; color: var(--text-tertiary); }
+  .library-title { color: var(--text); font-size: 13px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .library-date { color: var(--text-tertiary); font-size: 11px; text-align: right; }
+  .company-hero { padding: 28px 30px; background: #171b25; color: #fff; border-radius: 14px; margin-bottom: 18px; }
+  .company-hero-top { display: flex; justify-content: space-between; gap: 18px; align-items: flex-start; }
+  .company-identity { display: flex; align-items: center; gap: 13px; }
+  .company-monogram { display: grid; place-items: center; width: 42px; height: 42px; border-radius: 10px; background: rgba(255,255,255,.1); color: #b9d5ff; font-size: 12px; font-weight: 800; }
+  .company-identity h1 { color: #fff; font: 700 27px/1.25 var(--font-serif); margin: 0; }
+  .company-identity p { color: rgba(255,255,255,.5); font-size: 11px; margin: 4px 0 0; }
+  .company-hero .stance-pill { margin-top: 2px; }
+  .company-thesis { max-width: 850px; margin: 24px 0 0; color: rgba(255,255,255,.76); font: 400 15px/1.75 var(--font-serif); }
+  .company-metrics { display: grid; grid-template-columns: repeat(4,1fr); background: rgba(255,255,255,.06); border-radius: 9px; margin-top: 22px; overflow: hidden; }
+  .company-metric { padding: 13px 15px; border-right: 1px solid rgba(255,255,255,.08); }
+  .company-metric:last-child { border-right: 0; }
+  .company-metric span { display: block; color: rgba(255,255,255,.42); font-size: 9px; text-transform: uppercase; letter-spacing: .7px; }
+  .company-metric strong { display: block; margin-top: 5px; color: #fff; font-size: 13px; }
+  .company-layout { display: grid; grid-template-columns: minmax(0,1.45fr) minmax(280px,.75fr); gap: 18px; }
+  .company-panel { background: var(--bg); border: 1px solid var(--border-light); border-radius: 11px; padding: 20px; }
+  .company-panel + .company-panel { margin-top: 14px; }
+  .company-panel h2 { margin: 0 0 14px; font: 700 17px var(--font-serif); }
+  .decision-question { padding: 13px 0; border-bottom: 1px solid var(--border-light); }
+  .decision-question:last-child { border-bottom: 0; padding-bottom: 0; }
+  .decision-question span { display: block; color: var(--text-tertiary); font-size: 10px; font-weight: 700; letter-spacing: .55px; text-transform: uppercase; margin-bottom: 5px; }
+  .decision-question p { margin: 0; color: var(--text-secondary); font-size: 13px; line-height: 1.65; }
+  .company-doc { width: 100%; display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; padding: 11px 0; border: 0; border-bottom: 1px solid var(--border-light); background: transparent; cursor: pointer; text-align: left; font-family: var(--font-sans); }
+  .company-doc:last-child { border-bottom: 0; }
+  .company-doc strong { color: var(--text); font-size: 12px; line-height: 1.5; }
+  .company-doc span { flex: none; color: var(--text-tertiary); font-size: 10px; }
   /* ── Topbar Financial Button ── */
   .topbar-fin-btn {
     background: none;
@@ -839,6 +953,23 @@
     .decision-section-heading { align-items: flex-start; flex-direction: column; gap: 6px; }
     .decision-feed-item { grid-template-columns: 62px minmax(0, 1fr); gap: 9px; }
     .decision-feed-date { display: none; }
+    .workspace-view { padding: 22px 0 60px; }
+    .view-header, .company-hero-top { align-items: flex-start; flex-direction: column; }
+    .view-header h1 { font-size: 25px; }
+    .coverage-row { grid-template-columns: 1fr auto; gap: 10px; }
+    .coverage-thesis { grid-column: 1 / -1; }
+    .coverage-value { display: none; }
+    .coverage-updated { text-align: left; }
+    .catalyst-board { grid-template-columns: 82px minmax(0,1fr); gap: 0 15px; }
+    .catalyst-period { padding-right: 14px; }
+    .catalyst-item::before { left: -21px; }
+    .library-row { grid-template-columns: 58px minmax(0,1fr) 76px; }
+    .library-type { display: none; }
+    .company-hero { padding: 23px 20px; }
+    .company-metrics { grid-template-columns: repeat(2,1fr); }
+    .company-metric:nth-child(2) { border-right: 0; }
+    .company-metric:nth-child(-n+2) { border-bottom: 1px solid rgba(255,255,255,.08); }
+    .company-layout { grid-template-columns: 1fr; }
   }
   @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after {
@@ -853,6 +984,24 @@
 </head>
 <body>
 
+<aside class="app-sidebar" aria-label="投研工作台导航">
+  <div class="app-brand">
+    <div class="app-brand-mark">ER</div>
+    <div class="app-brand-copy"><strong>Equity Research</strong><span>Decision workspace</span></div>
+  </div>
+  <div class="app-nav-label">Workspace</div>
+  <nav class="app-nav">
+    <button class="app-nav-button" type="button" data-view-nav="home"><span class="app-nav-icon">⌂</span>决策台</button>
+    <button class="app-nav-button" type="button" data-view-nav="coverage"><span class="app-nav-icon">◎</span>覆盖池</button>
+    <button class="app-nav-button" type="button" data-view-nav="catalysts"><span class="app-nav-icon">◇</span>催化剂</button>
+    <button class="app-nav-button" type="button" data-view-nav="library"><span class="app-nav-icon">≡</span>研究库</button>
+    <button class="app-nav-button" type="button" data-view-nav="financial"><span class="app-nav-icon">⌁</span>财务数据</button>
+  </nav>
+  <div class="app-nav-label">Coverage</div>
+  <div class="app-coverage-list" id="app-coverage-list"></div>
+  <div class="app-sidebar-foot">研究状态以报告日期为准<br>不构成实时投资建议</div>
+</aside>
+
 <!-- ── 顶部导航 ── -->
 <div class="topbar">
   <button class="topbar-menu-btn" id="menu-btn" title="目录" aria-label="打开报告目录" aria-controls="drawer" aria-expanded="false">
@@ -860,6 +1009,9 @@
   </button>
   <button class="topbar-brand" id="home-btn" title="返回决策面板">Equity Research</button>
   <div class="topbar-breadcrumb" id="breadcrumb"></div>
+  <button class="topbar-search-btn" id="global-search-btn" type="button" aria-label="打开研究搜索">
+    <span aria-hidden="true">⌕</span><span class="topbar-search-copy">搜索公司、报告与正文</span><span class="topbar-search-key">/</span>
+  </button>
   <button class="topbar-toc-btn" id="toc-mobile-btn" title="大纲" aria-controls="toc-mobile-panel" aria-expanded="false">
     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
     目录
@@ -888,6 +1040,13 @@
       <input class="drawer-search" id="drawer-search" type="search" aria-label="搜索报告正文" placeholder="搜索报告 / 正文…">
       <div class="drawer-search-status" id="drawer-search-status" role="status" aria-live="polite"></div>
     </div>
+  </div>
+  <div class="mobile-primary-nav">
+    <button class="app-nav-button" type="button" data-view-nav="home">决策台</button>
+    <button class="app-nav-button" type="button" data-view-nav="coverage">覆盖池</button>
+    <button class="app-nav-button" type="button" data-view-nav="catalysts">催化剂</button>
+    <button class="app-nav-button" type="button" data-view-nav="library">研究库</button>
+    <button class="app-nav-button" type="button" data-view-nav="financial">财务数据</button>
   </div>
   <nav class="drawer-nav" id="sidebar-nav"></nav>
 </aside>
@@ -924,6 +1083,7 @@
 
 // ── Globals ──
 const TREE = typeof TREE_DATA !== 'undefined' ? TREE_DATA : {};
+const STATE = typeof RESEARCH_STATE !== 'undefined' ? RESEARCH_STATE : { asOf: '', companies: {} };
 let SEARCH = typeof SEARCH_DATA !== 'undefined' ? SEARCH_DATA : [];
 let searchIndexPromise = null;
 
@@ -982,6 +1142,7 @@ const menuBtn = document.getElementById("menu-btn");
 const drawerClose = document.getElementById("drawer-close");
 const drawerSearch = document.getElementById("drawer-search");
 const drawerSearchStatus = document.getElementById("drawer-search-status");
+const globalSearchBtn = document.getElementById('global-search-btn');
 let lastFocusedElement = null;
 
 function openDrawer() {
@@ -1010,7 +1171,12 @@ drawer.inert = true;
 menuBtn.addEventListener("click", openDrawer);
 drawerClose.addEventListener("click", closeDrawer);
 drawerOverlay.addEventListener("click", closeDrawer);
+globalSearchBtn.addEventListener('click', openDrawer);
 document.addEventListener('keydown', (e) => {
+  if (e.key === '/' && !['INPUT', 'TEXTAREA'].includes(document.activeElement?.tagName)) {
+    e.preventDefault();
+    openDrawer();
+  }
   if (e.key === 'Escape') {
     if (drawer.classList.contains('open')) closeDrawer();
     tocMobilePanel.classList.remove('show');
@@ -1103,6 +1269,9 @@ function createTree() {
         a.dataset.path = f.path;
         a.href = `?doc=${encodeURIComponent(f.path)}`;
         a.dataset.ticker = f.ticker || '';
+        a.dataset.date = f.date || '';
+        a.dataset.type = f.type || '';
+        a.dataset.title = f.title || '';
         a.dataset.searchText = (f.title + ' ' + (f.ticker || '') + ' ' + (f.date || '') + ' ' + (f.type || '')).toLowerCase();
         a.addEventListener('click', (e) => {
           e.preventDefault();
@@ -1269,7 +1438,7 @@ function clearTOC() {
 function setView(view) {
   const isFinancial = view === 'financial';
   const isArticle = view === 'article';
-  const isWide = isFinancial || view === 'overview' || view === 'welcome';
+  const isWide = ['financial', 'overview', 'welcome', 'catalysts', 'library', 'company'].includes(view);
   document.querySelector('.main-layout').style.maxWidth = isWide ? '1400px' : '';
   document.querySelector('.article-column').style.maxWidth = isWide ? '100%' : '';
   document.getElementById('toc-column').style.display = isWide ? 'none' : '';
@@ -1278,6 +1447,10 @@ function setView(view) {
   finDashboardBtn.setAttribute('aria-pressed', String(isFinancial));
   overviewBtn.classList.toggle('active', view === 'overview');
   overviewBtn.setAttribute('aria-pressed', String(view === 'overview'));
+  const navView = view === 'welcome' ? 'home' : view === 'overview' ? 'coverage' : view;
+  document.querySelectorAll('[data-view-nav]').forEach(button => {
+    button.classList.toggle('active', button.dataset.viewNav === navView);
+  });
   if (!isArticle) {
     clearAnnotations();
     clearTOC();
@@ -1341,6 +1514,8 @@ async function loadFile(el, { updateHistory = true } = {}) {
 
   document.querySelectorAll(".file-link").forEach(e => e.classList.remove("active"));
   el.classList.add("active");
+  const activeTicker = path.startsWith('research/') ? path.split('/')[1] : '';
+  document.querySelectorAll('[data-company]').forEach(button => button.classList.toggle('active', button.dataset.company === activeTicker));
 
   // Breadcrumb
   const pathParts = el.dataset.path.split('/');
@@ -1359,6 +1534,24 @@ async function loadFile(el, { updateHistory = true } = {}) {
     if (requestId !== loadSequence) return;
     content.className = "content";
     content.innerHTML = renderMarkdown(md);
+    const contextBar = document.createElement('div');
+    contextBar.className = 'article-context';
+    const contextTag = document.createElement('span');
+    contextTag.className = 'article-context-tag';
+    contextTag.textContent = el.dataset.ticker || reportTypeLabel(el.dataset.type);
+    const contextMeta = document.createElement('span');
+    contextMeta.className = 'article-context-meta';
+    contextMeta.textContent = [reportTypeLabel(el.dataset.type), el.dataset.date].filter(Boolean).join(' · ');
+    contextBar.append(contextTag, contextMeta);
+    if (activeTicker && STATE.companies[activeTicker]) {
+      const back = document.createElement('button');
+      back.type = 'button';
+      back.className = 'article-context-back';
+      back.textContent = '返回标的档案';
+      back.addEventListener('click', () => showCompany(activeTicker));
+      contextBar.appendChild(back);
+    }
+    content.insertBefore(contextBar, content.firstChild);
     enhanceRenderedContent(content);
     document.title = `${content.querySelector('h1, h2')?.textContent || path} · Equity Research`;
 
@@ -1839,19 +2032,41 @@ function reportTypeLabel(type) {
   return labels[type] || '研究笔记';
 }
 
-function coverageState(item) {
-  const type = item?.type || '';
-  if (type === 'earnings-update') return '财报后复核';
-  if (type.includes('valuation')) return '估值待验证';
-  if (type.includes('audit')) return '假设待验证';
-  if (type.includes('chronicle')) return '持续跟踪';
-  return '已形成观点';
-}
-
 function openDocument(path) {
   const target = [...document.querySelectorAll('.file-link')].find(el => el.dataset.path === path);
   if (target) loadFile(target);
 }
+
+function companyDocs(ticker) {
+  return newestFirst(allResearchDocs().filter(doc => doc.ticker === ticker));
+}
+
+function stanceClass(company) {
+  return company?.tone === 'avoid' ? 'avoid' : company?.tone === 'neutral' ? 'neutral' : '';
+}
+
+function renderWorkspaceNavigation() {
+  const container = document.getElementById('app-coverage-list');
+  container.innerHTML = Object.entries(STATE.companies).map(([ticker, company]) => `
+    <button class="app-company-button" type="button" data-company="${escapeHTML(ticker)}">
+      <span class="app-company-dot ${stanceClass(company)}"></span>
+      <span class="app-company-ticker">${escapeHTML(ticker)}</span>
+      <span class="app-company-state">${company.tone === 'avoid' ? '回避' : company.tone === 'neutral' ? '等待' : '观察'}</span>
+    </button>`).join('');
+  container.querySelectorAll('[data-company]').forEach(button => button.addEventListener('click', () => showCompany(button.dataset.company)));
+}
+
+function runViewNavigation(view) {
+  if (view === 'home') showWelcome();
+  if (view === 'coverage') showOverview();
+  if (view === 'catalysts') showCatalysts();
+  if (view === 'library') showLibrary();
+  if (view === 'financial') showFinancialDashboard();
+  if (drawer.classList.contains('open')) closeDrawer();
+}
+
+renderWorkspaceNavigation();
+document.querySelectorAll('[data-view-nav]').forEach(button => button.addEventListener('click', () => runViewNavigation(button.dataset.viewNav)));
 
 overviewBtn.addEventListener('click', () => {
   if (!overviewBtn.classList.contains('active')) showOverview();
@@ -1876,19 +2091,18 @@ function showWelcome({ updateHistory = true } = {}) {
   content.className = 'content decision-dashboard';
   const docs = newestFirst(allResearchDocs());
   const equityDocs = docs.filter(doc => doc.ticker);
-  const tickers = [...new Set(equityDocs.map(doc => doc.ticker))].sort();
+  const companies = Object.entries(STATE.companies).sort((a, b) => b[1].updated.localeCompare(a[1].updated));
+  const tickers = companies.map(([ticker]) => ticker);
   const latestDate = docs[0]?.date || '—';
-  const latestByTicker = tickers.map(ticker => newestFirst(equityDocs.filter(doc => doc.ticker === ticker))[0]);
-  const spotlight = newestFirst(latestByTicker).slice(0, 6);
   const updates = docs.slice(0, 6);
-  const memoCount = equityDocs.filter(doc => ['buyside-memo', 'earnings-update', 'investment-audit'].includes(doc.type)).length;
+  const avoidCount = companies.filter(([, company]) => company.tone === 'avoid').length;
 
-  const cards = spotlight.map(item => `
+  const cards = companies.map(([ticker, company]) => `
     <article class="decision-card">
-      <div class="decision-card-top"><span class="decision-ticker">${escapeHTML(item.ticker)}</span><span class="decision-state">${coverageState(item)}</span></div>
-      <h3>${escapeHTML(item.title)}</h3>
-      <p class="decision-card-meta">${escapeHTML(reportTypeLabel(item.type))} · ${escapeHTML(item.date || '日期待补')}</p>
-      <button type="button" class="decision-open" data-open-doc="${escapeHTML(item.path)}">查看最新判断 →</button>
+      <div class="decision-card-top"><span class="decision-ticker">${escapeHTML(ticker)}</span><span class="stance-pill ${stanceClass(company)}">${escapeHTML(company.stance)}</span></div>
+      <h3>${escapeHTML(company.thesis)}</h3>
+      <p class="decision-card-meta">${escapeHTML(company.value)} · 更新于 ${escapeHTML(company.updated)}</p>
+      <button type="button" class="decision-open" data-open-company="${escapeHTML(ticker)}">进入标的档案 →</button>
     </article>`).join('');
 
   const feed = updates.map(item => `
@@ -1901,24 +2115,24 @@ function showWelcome({ updateHistory = true } = {}) {
   content.innerHTML = `
     <section class="decision-hero" aria-labelledby="decision-title">
       <div class="decision-eyebrow">Independent Equity Research</div>
-      <h1 id="decision-title">先看结论，再回到证据。</h1>
-      <p>把公司披露、管理层指引、市场共识与研究推断放在同一套决策框架中；每一项判断都应能被后续数据验证或推翻。</p>
+      <h1 id="decision-title">把研究变成可验证的投资判断。</h1>
+      <p>从立场、估值锚和核心争议出发，沿着催化剂与证伪条件持续更新。所有结论都保留来源与日期，不把历史判断伪装成实时建议。</p>
       <div class="decision-hero-actions">
-        <button type="button" class="decision-button primary" data-home-action="open-menu">浏览研究库</button>
-        <button type="button" class="decision-button" data-home-action="overview">查看覆盖状态</button>
-        <button type="button" class="decision-button" data-home-action="financial">打开财务数据</button>
+        <button type="button" class="decision-button primary" data-home-action="overview">审阅覆盖池</button>
+        <button type="button" class="decision-button" data-home-action="catalysts">查看催化剂</button>
+        <button type="button" class="decision-button" data-home-action="library">进入研究库</button>
       </div>
     </section>
 
     <section class="decision-stats" aria-label="研究库状态">
       <div class="decision-stat"><div class="decision-stat-label">覆盖标的</div><div class="decision-stat-value">${tickers.length}</div><div class="decision-stat-note">持续跟踪公司</div></div>
       <div class="decision-stat"><div class="decision-stat-label">研究文档</div><div class="decision-stat-value">${docs.length}</div><div class="decision-stat-note">含行业与市场笔记</div></div>
-      <div class="decision-stat"><div class="decision-stat-label">决策型报告</div><div class="decision-stat-value">${memoCount}</div><div class="decision-stat-note">备忘录、财报与审计</div></div>
+      <div class="decision-stat"><div class="decision-stat-label">回避 / 等待</div><div class="decision-stat-value">${avoidCount}</div><div class="decision-stat-note">当前不具安全边际</div></div>
       <div class="decision-stat"><div class="decision-stat-label">最近更新</div><div class="decision-stat-value">${escapeHTML(latestDate)}</div><div class="decision-stat-note">以研究文件日期为准</div></div>
     </section>
 
     <section class="decision-section">
-      <div class="decision-section-heading"><div><h2>重点跟踪</h2><p>每个标的优先打开最新研究，再回溯历史判断与原始证据。</p></div><button class="decision-link" type="button" data-home-action="overview">全部覆盖 →</button></div>
+      <div class="decision-section-heading"><div><h2>当前判断</h2><p>先看行动倾向与估值锚，再进入标的档案核对论据。</p></div><button class="decision-link" type="button" data-home-action="overview">完整覆盖池 →</button></div>
       <div class="decision-watchlist">${cards || '<p class="coverage-note">尚未建立个股研究。</p>'}</div>
     </section>
 
@@ -1927,10 +2141,12 @@ function showWelcome({ updateHistory = true } = {}) {
       <aside class="decision-method"><h3>研究纪律</h3><p>结论必须能被拆回证据，数字必须说明它属于什么类型。</p><ul class="source-ladder"><li><strong>已披露事实</strong>：公司文件、SEC 申报与原始材料</li><li><strong>管理层指引</strong>：预测、目标与表态，非既成事实</li><li><strong>市场共识</strong>：外部预期的坐标，不等于内在价值</li><li><strong>分析师推断</strong>：情景、估值与行动判断，必须可证伪</li></ul></aside>
     </section>`;
   content.querySelectorAll('[data-open-doc]').forEach(button => button.addEventListener('click', () => openDocument(button.dataset.openDoc)));
+  content.querySelectorAll('[data-open-company]').forEach(button => button.addEventListener('click', () => showCompany(button.dataset.openCompany)));
   content.querySelectorAll('[data-home-action]').forEach(button => button.addEventListener('click', () => {
     const action = button.dataset.homeAction;
-    if (action === 'open-menu') openDrawer();
     if (action === 'overview') showOverview();
+    if (action === 'catalysts') showCatalysts();
+    if (action === 'library') showLibrary();
     if (action === 'financial') showFinancialDashboard();
   }));
   document.getElementById('breadcrumb').textContent = '';
@@ -1944,30 +2160,125 @@ function showOverview({ updateHistory = true } = {}) {
   if (activeLoadController) activeLoadController.abort();
   setView('overview');
   const content = document.getElementById('content');
-  content.className = 'content';
-  document.getElementById('breadcrumb').textContent = '研究总览';
+  content.className = 'content workspace-view';
+  document.getElementById('breadcrumb').textContent = '覆盖池';
   document.querySelectorAll('.file-link').forEach(e => e.classList.remove('active'));
-  document.title = '研究总览 · Equity Research';
-  if (updateHistory) updateRoute({ view: 'overview' });
+  document.title = '覆盖池 · Equity Research';
+  if (updateHistory) updateRoute({ view: 'coverage' });
 
-  const docs = allResearchDocs();
-  const tickers = [...new Set(docs.map(d => d.ticker).filter(Boolean))].sort();
-  const rows = tickers.map(ticker => {
-    const items = docs.filter(d => d.ticker === ticker).sort((a, b) => (b.date || '').localeCompare(a.date || ''));
-    const latest = items[0];
-    return `<tr><td><strong>${escapeHTML(ticker)}</strong></td><td><span class="coverage-status">${coverageState(latest)}</span></td><td>${items.length}</td><td>${escapeHTML(latest.date || '—')}</td><td>${escapeHTML(latest.title)}</td><td><a href="?doc=${encodeURIComponent(latest.path)}" data-overview-path="${escapeHTML(latest.path)}">打开</a></td></tr>`;
-  }).join('');
+  const rows = Object.entries(STATE.companies).map(([ticker, company]) => `
+    <button type="button" class="coverage-row" data-open-company="${escapeHTML(ticker)}">
+      <span class="coverage-name"><strong>${escapeHTML(ticker)}</strong><span>${escapeHTML(company.name)} · ${escapeHTML(company.sector)}</span></span>
+      <span><span class="stance-pill ${stanceClass(company)}">${escapeHTML(company.stance)}</span></span>
+      <span class="coverage-thesis">${escapeHTML(company.thesis)}</span>
+      <span class="coverage-value">${escapeHTML(company.value)}<span class="coverage-cell-label">估值锚</span></span>
+      <span class="coverage-updated">${escapeHTML(company.updated)}<span class="coverage-cell-label">研究日期</span></span>
+    </button>`).join('');
 
-  content.innerHTML = `<div class="fin-dashboard">
-    <div class="fin-dashboard-header"><h2>覆盖状态面板</h2><p>用最新研究确定当前阶段，再进入报告核对具体假设、催化剂与证伪条件。</p></div>
-    <p class="coverage-note">“覆盖状态”只描述研究进度，不代表实际持仓或投资评级；行动判断与目标价请以各标的最新报告为准。</p>
-    <div class="fin-table-wrap"><table class="fin-table"><thead><tr><th>标的</th><th>研究状态</th><th>报告数</th><th>最近更新</th><th>最新研究</th><th>操作</th></tr></thead><tbody>${rows || '<tr><td colspan="6">暂无公司研究</td></tr>'}</tbody></table></div>
-  </div>`;
-  content.querySelectorAll('[data-overview-path]').forEach(link => link.addEventListener('click', e => {
-    e.preventDefault();
-    const target = [...document.querySelectorAll('.file-link')].find(el => el.dataset.path === link.dataset.overviewPath);
-    if (target) loadFile(target);
+  content.innerHTML = `
+    <header class="view-header"><div><div class="view-kicker">Coverage universe</div><h1>覆盖池</h1><p>把公司质量、价格与研究置信度放到同一个平面。点击标的进入档案，核对核心争议、下一步动作和证伪条件。</p></div><span class="view-asof">判断层截至 ${escapeHTML(STATE.asOf)}</span></header>
+    <div class="coverage-grid">${rows || '<p>暂无覆盖标的。</p>'}</div>`;
+  content.querySelectorAll('[data-open-company]').forEach(button => button.addEventListener('click', () => showCompany(button.dataset.openCompany)));
+  content.scrollIntoView({ behavior: 'instant', block: 'start' });
+}
+
+function showCatalysts({ updateHistory = true } = {}) {
+  ++loadSequence;
+  if (activeLoadController) activeLoadController.abort();
+  setView('catalysts');
+  const content = document.getElementById('content');
+  content.className = 'content workspace-view';
+  document.getElementById('breadcrumb').textContent = '催化剂';
+  document.querySelectorAll('.file-link').forEach(el => el.classList.remove('active'));
+  document.title = '催化剂 · Equity Research';
+  if (updateHistory) updateRoute({ view: 'catalysts' });
+  const entries = Object.entries(STATE.companies).sort((a, b) => a[1].catalyst.window.localeCompare(b[1].catalyst.window));
+  const items = entries.map(([ticker, company]) => `
+    <div class="catalyst-period">${escapeHTML(company.catalyst.window)}</div>
+    <button class="catalyst-item" type="button" data-open-company="${escapeHTML(ticker)}">
+      <span class="catalyst-top"><span class="catalyst-title">${escapeHTML(company.catalyst.event)}</span><span class="catalyst-ticker">${escapeHTML(ticker)}</span></span>
+      <span class="catalyst-watch">需要验证：${escapeHTML(company.catalyst.watch)}</span>
+    </button>`).join('');
+  content.innerHTML = `
+    <header class="view-header"><div><div class="view-kicker">Catalyst calendar</div><h1>催化剂与验证节点</h1><p>这里记录研究报告中已经定义的事件窗口。日期过后仍未更新，意味着需要复核，而不是默认原判断继续有效。</p></div><span class="view-asof">来自各标的最新决策报告</span></header>
+    <div class="catalyst-board">${items}</div>`;
+  content.querySelectorAll('[data-open-company]').forEach(button => button.addEventListener('click', () => showCompany(button.dataset.openCompany)));
+  content.scrollIntoView({ behavior: 'instant', block: 'start' });
+}
+
+function showLibrary({ updateHistory = true } = {}) {
+  ++loadSequence;
+  if (activeLoadController) activeLoadController.abort();
+  setView('library');
+  const content = document.getElementById('content');
+  content.className = 'content workspace-view';
+  document.getElementById('breadcrumb').textContent = '研究库';
+  document.querySelectorAll('.file-link').forEach(el => el.classList.remove('active'));
+  document.title = '研究库 · Equity Research';
+  if (updateHistory) updateRoute({ view: 'library' });
+  const docs = newestFirst(allResearchDocs());
+  const filters = [
+    ['all', '全部'], ['decision', '决策报告'], ['updates', '财报与日报'], ['background', '背景研究']
+  ];
+  content.innerHTML = `
+    <header class="view-header"><div><div class="view-kicker">Research archive</div><h1>研究库</h1><p>按用途浏览报告。需要搜索正文时，使用顶部搜索或按下 “/”。</p></div><span class="view-asof">共 ${docs.length} 篇公开文档</span></header>
+    <div class="library-toolbar">${filters.map(([key, label], index) => `<button class="library-filter ${index === 0 ? 'active' : ''}" type="button" data-library-filter="${key}">${label}</button>`).join('')}<span class="library-count" id="library-count"></span></div>
+    <div class="library-list" id="library-list"></div>`;
+  const list = content.querySelector('#library-list');
+  const count = content.querySelector('#library-count');
+  const category = doc => {
+    if (['buyside-memo', 'investment-audit', 'bayesian-intrinsic-growth', 'bayesian-intrinsic-growth-valuation'].includes(doc.type)) return 'decision';
+    if (['earnings-update', 'daily-report'].includes(doc.type)) return 'updates';
+    return 'background';
+  };
+  const render = filter => {
+    const visible = filter === 'all' ? docs : docs.filter(doc => category(doc) === filter);
+    count.textContent = `${visible.length} 篇`;
+    list.innerHTML = visible.map(doc => `
+      <button class="library-row" type="button" data-open-doc="${escapeHTML(doc.path)}">
+        <span class="library-ticker">${escapeHTML(doc.ticker || 'NOTE')}</span><span class="library-type">${escapeHTML(reportTypeLabel(doc.type))}</span><span class="library-title">${escapeHTML(doc.title)}</span><span class="library-date">${escapeHTML(doc.date || '—')}</span>
+      </button>`).join('');
+    list.querySelectorAll('[data-open-doc]').forEach(button => button.addEventListener('click', () => openDocument(button.dataset.openDoc)));
+  };
+  content.querySelectorAll('[data-library-filter]').forEach(button => button.addEventListener('click', () => {
+    content.querySelectorAll('[data-library-filter]').forEach(item => item.classList.remove('active'));
+    button.classList.add('active');
+    render(button.dataset.libraryFilter);
   }));
+  render('all');
+  content.scrollIntoView({ behavior: 'instant', block: 'start' });
+}
+
+function showCompany(ticker, { updateHistory = true } = {}) {
+  const company = STATE.companies[ticker];
+  if (!company) return showOverview({ updateHistory });
+  ++loadSequence;
+  if (activeLoadController) activeLoadController.abort();
+  setView('company');
+  const content = document.getElementById('content');
+  content.className = 'content workspace-view';
+  document.getElementById('breadcrumb').textContent = `${ticker} · 标的档案`;
+  document.querySelectorAll('.file-link').forEach(el => el.classList.remove('active'));
+  document.querySelectorAll('[data-company]').forEach(button => button.classList.toggle('active', button.dataset.company === ticker));
+  document.title = `${ticker} 标的档案 · Equity Research`;
+  if (updateHistory) updateRoute({ company: ticker });
+  const docs = companyDocs(ticker);
+  const documentList = docs.map(doc => `
+    <button type="button" class="company-doc" data-open-doc="${escapeHTML(doc.path)}"><strong>${escapeHTML(doc.title)}</strong><span>${escapeHTML(doc.date || '—')}</span></button>`).join('');
+  content.innerHTML = `
+    <section class="company-hero">
+      <div class="company-hero-top"><div class="company-identity"><span class="company-monogram">${escapeHTML(ticker.slice(0, 4))}</span><div><h1>${escapeHTML(company.name)}</h1><p>${escapeHTML(ticker)} · ${escapeHTML(company.sector)}</p></div></div><span class="stance-pill ${stanceClass(company)}">${escapeHTML(company.stance)}</span></div>
+      <p class="company-thesis">${escapeHTML(company.thesis)}</p>
+      <div class="company-metrics"><div class="company-metric"><span>报告价格</span><strong>${escapeHTML(company.price)}</strong></div><div class="company-metric"><span>估值锚</span><strong>${escapeHTML(company.value)}</strong></div><div class="company-metric"><span>情景区间</span><strong>${escapeHTML(company.valueRange)}</strong></div><div class="company-metric"><span>研究日期</span><strong>${escapeHTML(company.updated)}</strong></div></div>
+    </section>
+    <div class="company-layout">
+      <div>
+        <section class="company-panel"><h2>决策框架</h2><div class="decision-question"><span>核心争议</span><p>${escapeHTML(company.debate)}</p></div><div class="decision-question"><span>下一步动作</span><p>${escapeHTML(company.nextMove)}</p></div><div class="decision-question"><span>论点破坏条件</span><p>${escapeHTML(company.invalidation)}</p></div></section>
+        <section class="company-panel"><h2>催化剂</h2><div class="decision-question"><span>${escapeHTML(company.catalyst.window)} · ${escapeHTML(company.catalyst.event)}</span><p>重点观察：${escapeHTML(company.catalyst.watch)}</p></div></section>
+      </div>
+      <aside><section class="company-panel"><h2>研究档案 · ${docs.length}</h2>${documentList || '<p>暂无研究文档。</p>'}</section><section class="company-panel"><h2>来源纪律</h2><div class="decision-question"><span>当前判断依据</span><p>以上结论来自 ${escapeHTML(company.updated)} 的研究报告。价格与事件窗口均可能已经变化，做决定前应先打开原报告并复核最新披露。</p></div><button type="button" class="decision-open" data-open-doc="${escapeHTML(company.source)}">打开决策来源 →</button></section></aside>
+    </div>`;
+  content.querySelectorAll('[data-open-doc]').forEach(button => button.addEventListener('click', () => openDocument(button.dataset.openDoc)));
   content.scrollIntoView({ behavior: 'instant', block: 'start' });
 }
 
@@ -2524,8 +2835,21 @@ function restoreRoute() {
     showFinancialDashboard({ updateHistory: false });
     return;
   }
-  if (params.get('view') === 'overview') {
+  if (['overview', 'coverage'].includes(params.get('view'))) {
     showOverview({ updateHistory: false });
+    return;
+  }
+  if (params.get('view') === 'catalysts') {
+    showCatalysts({ updateHistory: false });
+    return;
+  }
+  if (params.get('view') === 'library') {
+    showLibrary({ updateHistory: false });
+    return;
+  }
+  const company = params.get('company');
+  if (company && STATE.companies[company]) {
+    showCompany(company, { updateHistory: false });
     return;
   }
   showWelcome({ updateHistory: false });

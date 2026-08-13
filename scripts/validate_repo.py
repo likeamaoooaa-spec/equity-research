@@ -5,6 +5,8 @@ from __future__ import annotations
 
 import ast
 import json
+import re
+import shutil
 import subprocess
 import sys
 from datetime import date
@@ -82,6 +84,34 @@ def check_financial_data() -> None:
     print(f"OK: financial provenance checked for {len(data)} tickers")
 
 
+def check_research_state() -> None:
+    path = ROOT / "research-state.js"
+    if not path.exists():
+        fail("research-state.js is missing")
+    text = path.read_text(encoding="utf-8")
+    if shutil.which("node"):
+        result = subprocess.run(
+            ["node", "--check", str(path)], capture_output=True, text=True
+        )
+        if result.returncode:
+            fail("research-state.js syntax check failed: " + result.stderr.strip())
+    source_paths = re.findall(r'\bsource:\s*"([^"]+)"', text)
+    if not source_paths:
+        fail("research-state.js contains no decision sources")
+    missing = [source for source in source_paths if not (ROOT / source).exists()]
+    if missing:
+        fail("research state points to missing sources: " + ", ".join(missing))
+    invalid_dates = []
+    for value in re.findall(r'\bupdated:\s*"([^"]+)"', text):
+        try:
+            date.fromisoformat(value)
+        except ValueError:
+            invalid_dates.append(value)
+    if invalid_dates:
+        fail("research state contains invalid update dates: " + ", ".join(invalid_dates))
+    print(f"OK: decision layer checked for {len(source_paths)} covered companies")
+
+
 def check_metadata() -> None:
     from build_tree import content_files, parse_front_matter
 
@@ -145,6 +175,7 @@ def check_data_manifest() -> None:
 if __name__ == "__main__":
     check_tree_data()
     check_metadata()
+    check_research_state()
     check_financial_data()
     check_python_syntax()
     check_tracked_virtualenv()
