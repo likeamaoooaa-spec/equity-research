@@ -71,6 +71,18 @@ git config core.hooksPath .githooks
 
 `research-state.js` 是人工维护的决策层。新增覆盖标的或完成关键复核后，需要同步更新其中的立场、报告价格、估值锚、核心争议、下一步动作、证伪条件、催化剂、来源报告和研究日期。它不是实时行情文件，任何数字都必须保留口径与日期。
 
+## 新增报告与更新结论
+
+从 [templates/research-report-template.md](templates/research-report-template.md) 复制报告模板，并按以下规则处理：
+
+1. 报告放入 `research/[TICKER]/YYYY-MM-DD_type.md`，填写完整 front matter。
+2. 如果报告改变或重新确认评级、估值锚、行动建议、催化剂或证伪条件，设置 `decision_update: true`；纯背景研究设置为 `false`。
+3. 当 `decision_update: true` 时，在同一提交中更新 `research-state.js`：至少同步 `stance`、`price`、`value`、`valueRange`、`thesis`、`debate`、`nextMove`、`invalidation`、`catalyst`、`updated` 和 `source`，并把顶层 `asOf` 更新到最新复核日。
+4. 运行 `python3 build_tree.py` 和 `python3 scripts/validate_repo.py`。如果决策报告已经新增但结论层没有同步，校验会失败并指出具体 ticker。
+5. 检查网站的标的档案和催化剂页面，再提交并推送。GitHub Pages 会从 `master` 自动发布。
+
+判断层不应机械复制报告摘要。它只保存做决策所需的最小状态；完整证据、模型和来源仍留在报告中。
+
 ## 来源纪律
 
 研究报告应区分已披露事实、管理层指引、市场共识和分析师推断，并尽量记录文件类型、发布日期与查阅日期。无法核验的数字标记为“未核验”。

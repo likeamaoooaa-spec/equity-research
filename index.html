@@ -864,7 +864,7 @@
   .view-header p { margin: 0; color: var(--text-secondary); font-size: 13px; line-height: 1.65; max-width: 660px; }
   .view-asof { flex: none; color: var(--text-tertiary); font-size: 11px; }
   .coverage-grid { display: grid; gap: 10px; }
-  .coverage-row { display: grid; grid-template-columns: 140px 150px minmax(220px,1fr) 140px 110px; align-items: center; gap: 18px; padding: 17px 18px; background: var(--bg); border: 1px solid var(--border-light); border-radius: 10px; cursor: pointer; transition: .15s; }
+  .coverage-row { display: grid; grid-template-columns: 140px 150px minmax(220px,1fr) 140px 110px; align-items: center; gap: 18px; padding: 17px 18px; background: var(--bg); border: 1px solid var(--border-light); border-radius: 10px; cursor: pointer; transition: .15s; text-align: left; font-family: var(--font-sans); }
   .coverage-row:hover { border-color: #c8d5e5; box-shadow: 0 4px 14px rgba(15,23,42,.045); }
   .coverage-name strong { display: block; font-size: 15px; }
   .coverage-name span, .coverage-cell-label { display: block; color: var(--text-tertiary); font-size: 10px; margin-top: 3px; }
@@ -874,6 +874,7 @@
   .coverage-thesis { color: var(--text-secondary); font-size: 12px; line-height: 1.55; }
   .coverage-value { font-size: 13px; font-weight: 650; }
   .coverage-updated { color: var(--text-tertiary); font-size: 11px; text-align: right; }
+  .coverage-updated .catalyst-status { display: inline-flex; margin-left: 6px; }
   .catalyst-board { display: grid; grid-template-columns: 150px minmax(0,1fr); gap: 0 22px; }
   .catalyst-period { padding: 20px 0; color: var(--text-secondary); font-size: 12px; font-weight: 700; text-align: right; border-right: 1px solid var(--border); padding-right: 22px; }
   .catalyst-item { position: relative; margin: 7px 0 7px 0; padding: 16px 18px; background: var(--bg); border: 1px solid var(--border-light); border-radius: 10px; cursor: pointer; }
@@ -882,6 +883,10 @@
   .catalyst-top { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
   .catalyst-title { font-size: 14px; font-weight: 700; color: var(--text); }
   .catalyst-ticker { color: var(--accent); font-size: 11px; font-weight: 750; }
+  .catalyst-tags { display: flex; align-items: center; gap: 8px; }
+  .catalyst-status { padding: 3px 7px; border-radius: 99px; background: #eef5ff; color: #245fa8; font-size: 9px; font-weight: 750; }
+  .catalyst-status.overdue { background: #fff1ed; color: #a94f37; }
+  .catalyst-status.current { background: #faf4e6; color: #88651c; }
   .catalyst-watch { margin-top: 7px; color: var(--text-secondary); font-size: 12px; line-height: 1.55; }
   .library-toolbar { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-bottom: 18px; }
   .library-filter { border: 1px solid var(--border); border-radius: 7px; padding: 7px 10px; color: var(--text-secondary); background: var(--bg); font: 500 12px var(--font-sans); cursor: pointer; }
@@ -902,7 +907,7 @@
   .company-identity h1 { color: #fff; font: 700 27px/1.25 var(--font-serif); margin: 0; }
   .company-identity p { color: rgba(255,255,255,.5); font-size: 11px; margin: 4px 0 0; }
   .company-hero .stance-pill { margin-top: 2px; }
-  .company-thesis { max-width: 850px; margin: 24px 0 0; color: rgba(255,255,255,.76); font: 400 15px/1.75 var(--font-serif); }
+  .company-hero .company-thesis { max-width: 850px; margin: 24px 0 0; color: rgba(255,255,255,.76); font: 400 15px/1.75 var(--font-serif); }
   .company-metrics { display: grid; grid-template-columns: repeat(4,1fr); background: rgba(255,255,255,.06); border-radius: 9px; margin-top: 22px; overflow: hidden; }
   .company-metric { padding: 13px 15px; border-right: 1px solid rgba(255,255,255,.08); }
   .company-metric:last-child { border-right: 0; }
@@ -953,6 +958,7 @@
     .decision-section-heading { align-items: flex-start; flex-direction: column; gap: 6px; }
     .decision-feed-item { grid-template-columns: 62px minmax(0, 1fr); gap: 9px; }
     .decision-feed-date { display: none; }
+    .decision-stat-value { font-size: 20px; white-space: nowrap; }
     .workspace-view { padding: 22px 0 60px; }
     .view-header, .company-hero-top { align-items: flex-start; flex-direction: column; }
     .view-header h1 { font-size: 25px; }
@@ -960,6 +966,7 @@
     .coverage-thesis { grid-column: 1 / -1; }
     .coverage-value { display: none; }
     .coverage-updated { text-align: left; }
+    .coverage-updated { grid-column: 1 / -1; }
     .catalyst-board { grid-template-columns: 82px minmax(0,1fr); gap: 0 15px; }
     .catalyst-period { padding-right: 14px; }
     .catalyst-item::before { left: -21px; }
@@ -1973,8 +1980,9 @@ function highlightTextInDOM(root, searchStr) {
 
 // ── Financial Dashboard ──────────────────────────────────────────
 const FIN = typeof FINANCIAL_DATA !== 'undefined' ? FINANCIAL_DATA : {};
+const FIN_TICKERS = Object.keys(FIN).filter(ticker => Array.isArray(FIN[ticker]) && FIN[ticker].length > 0);
 let finCharts = [];
-let finCurrentTicker = Object.keys(FIN)[0] || '';
+let finCurrentTicker = FIN_TICKERS[0] || '';
 let finPeriodMode = 'quarterly'; // 'quarterly' | 'annual'
 let chartLibraryPromise = null;
 
@@ -2045,14 +2053,42 @@ function stanceClass(company) {
   return company?.tone === 'avoid' ? 'avoid' : company?.tone === 'neutral' ? 'neutral' : '';
 }
 
+function catalystSortKey(windowLabel) {
+  if (/^\d{4}-\d{2}-\d{2}$/.test(windowLabel)) return windowLabel;
+  if (/^\d{4}-\d{2}$/.test(windowLabel)) return `${windowLabel}-31`;
+  const quarter = windowLabel.match(/^(\d{4}) Q([1-4])$/);
+  if (quarter) return `${quarter[1]}-${String(Number(quarter[2]) * 3).padStart(2, '0')}-31`;
+  return '9999-12-31';
+}
+
+function catalystStatus(windowLabel) {
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  if (/^\d{4}-\d{2}-\d{2}$/.test(windowLabel)) {
+    const eventDate = new Date(`${windowLabel}T00:00:00`);
+    const days = Math.round((eventDate - today) / 86400000);
+    if (days < 0) return { label: '待复核', className: 'overdue' };
+    if (days <= 14) return { label: '近期', className: 'current' };
+  }
+  const month = windowLabel.match(/^(\d{4})-(\d{2})$/);
+  if (month && Number(month[1]) === today.getFullYear() && Number(month[2]) === today.getMonth() + 1) return { label: '本月', className: 'current' };
+  const quarter = windowLabel.match(/^(\d{4}) Q([1-4])$/);
+  if (quarter && Number(quarter[1]) === today.getFullYear() && Number(quarter[2]) === Math.floor(today.getMonth() / 3) + 1) return { label: '本季', className: 'current' };
+  return { label: '跟踪', className: '' };
+}
+
 function renderWorkspaceNavigation() {
   const container = document.getElementById('app-coverage-list');
-  container.innerHTML = Object.entries(STATE.companies).map(([ticker, company]) => `
+  container.innerHTML = Object.entries(STATE.companies).map(([ticker, company]) => {
+    const eventStatus = catalystStatus(company.catalyst.window);
+    const shortState = eventStatus.className === 'overdue' ? '复核' : company.tone === 'avoid' ? '回避' : company.tone === 'neutral' ? '等待' : '观察';
+    return `
     <button class="app-company-button" type="button" data-company="${escapeHTML(ticker)}">
-      <span class="app-company-dot ${stanceClass(company)}"></span>
+      <span class="app-company-dot ${eventStatus.className === 'overdue' ? 'avoid' : stanceClass(company)}"></span>
       <span class="app-company-ticker">${escapeHTML(ticker)}</span>
-      <span class="app-company-state">${company.tone === 'avoid' ? '回避' : company.tone === 'neutral' ? '等待' : '观察'}</span>
-    </button>`).join('');
+      <span class="app-company-state">${shortState}</span>
+    </button>`;
+  }).join('');
   container.querySelectorAll('[data-company]').forEach(button => button.addEventListener('click', () => showCompany(button.dataset.company)));
 }
 
@@ -2095,7 +2131,7 @@ function showWelcome({ updateHistory = true } = {}) {
   const tickers = companies.map(([ticker]) => ticker);
   const latestDate = docs[0]?.date || '—';
   const updates = docs.slice(0, 6);
-  const avoidCount = companies.filter(([, company]) => company.tone === 'avoid').length;
+  const avoidCount = companies.filter(([, company]) => ['avoid', 'neutral'].includes(company.tone)).length;
 
   const cards = companies.map(([ticker, company]) => `
     <article class="decision-card">
@@ -2166,14 +2202,17 @@ function showOverview({ updateHistory = true } = {}) {
   document.title = '覆盖池 · Equity Research';
   if (updateHistory) updateRoute({ view: 'coverage' });
 
-  const rows = Object.entries(STATE.companies).map(([ticker, company]) => `
+  const rows = Object.entries(STATE.companies).map(([ticker, company]) => {
+    const eventStatus = catalystStatus(company.catalyst.window);
+    return `
     <button type="button" class="coverage-row" data-open-company="${escapeHTML(ticker)}">
       <span class="coverage-name"><strong>${escapeHTML(ticker)}</strong><span>${escapeHTML(company.name)} · ${escapeHTML(company.sector)}</span></span>
       <span><span class="stance-pill ${stanceClass(company)}">${escapeHTML(company.stance)}</span></span>
       <span class="coverage-thesis">${escapeHTML(company.thesis)}</span>
       <span class="coverage-value">${escapeHTML(company.value)}<span class="coverage-cell-label">估值锚</span></span>
-      <span class="coverage-updated">${escapeHTML(company.updated)}<span class="coverage-cell-label">研究日期</span></span>
-    </button>`).join('');
+      <span class="coverage-updated">${escapeHTML(company.updated)}${eventStatus.className === 'overdue' ? '<span class="catalyst-status overdue">催化剂待复核</span>' : ''}<span class="coverage-cell-label">研究日期</span></span>
+    </button>`;
+  }).join('');
 
   content.innerHTML = `
     <header class="view-header"><div><div class="view-kicker">Coverage universe</div><h1>覆盖池</h1><p>把公司质量、价格与研究置信度放到同一个平面。点击标的进入档案，核对核心争议、下一步动作和证伪条件。</p></div><span class="view-asof">判断层截至 ${escapeHTML(STATE.asOf)}</span></header>
@@ -2192,13 +2231,16 @@ function showCatalysts({ updateHistory = true } = {}) {
   document.querySelectorAll('.file-link').forEach(el => el.classList.remove('active'));
   document.title = '催化剂 · Equity Research';
   if (updateHistory) updateRoute({ view: 'catalysts' });
-  const entries = Object.entries(STATE.companies).sort((a, b) => a[1].catalyst.window.localeCompare(b[1].catalyst.window));
-  const items = entries.map(([ticker, company]) => `
+  const entries = Object.entries(STATE.companies).sort((a, b) => catalystSortKey(a[1].catalyst.window).localeCompare(catalystSortKey(b[1].catalyst.window)));
+  const items = entries.map(([ticker, company]) => {
+    const status = catalystStatus(company.catalyst.window);
+    return `
     <div class="catalyst-period">${escapeHTML(company.catalyst.window)}</div>
     <button class="catalyst-item" type="button" data-open-company="${escapeHTML(ticker)}">
-      <span class="catalyst-top"><span class="catalyst-title">${escapeHTML(company.catalyst.event)}</span><span class="catalyst-ticker">${escapeHTML(ticker)}</span></span>
+      <span class="catalyst-top"><span class="catalyst-title">${escapeHTML(company.catalyst.event)}</span><span class="catalyst-tags"><span class="catalyst-status ${status.className}">${status.label}</span><span class="catalyst-ticker">${escapeHTML(ticker)}</span></span></span>
       <span class="catalyst-watch">需要验证：${escapeHTML(company.catalyst.watch)}</span>
-    </button>`).join('');
+    </button>`;
+  }).join('');
   content.innerHTML = `
     <header class="view-header"><div><div class="view-kicker">Catalyst calendar</div><h1>催化剂与验证节点</h1><p>这里记录研究报告中已经定义的事件窗口。日期过后仍未更新，意味着需要复核，而不是默认原判断继续有效。</p></div><span class="view-asof">来自各标的最新决策报告</span></header>
     <div class="catalyst-board">${items}</div>`;
@@ -2263,6 +2305,7 @@ function showCompany(ticker, { updateHistory = true } = {}) {
   document.title = `${ticker} 标的档案 · Equity Research`;
   if (updateHistory) updateRoute({ company: ticker });
   const docs = companyDocs(ticker);
+  const eventStatus = catalystStatus(company.catalyst.window);
   const documentList = docs.map(doc => `
     <button type="button" class="company-doc" data-open-doc="${escapeHTML(doc.path)}"><strong>${escapeHTML(doc.title)}</strong><span>${escapeHTML(doc.date || '—')}</span></button>`).join('');
   content.innerHTML = `
@@ -2274,7 +2317,7 @@ function showCompany(ticker, { updateHistory = true } = {}) {
     <div class="company-layout">
       <div>
         <section class="company-panel"><h2>决策框架</h2><div class="decision-question"><span>核心争议</span><p>${escapeHTML(company.debate)}</p></div><div class="decision-question"><span>下一步动作</span><p>${escapeHTML(company.nextMove)}</p></div><div class="decision-question"><span>论点破坏条件</span><p>${escapeHTML(company.invalidation)}</p></div></section>
-        <section class="company-panel"><h2>催化剂</h2><div class="decision-question"><span>${escapeHTML(company.catalyst.window)} · ${escapeHTML(company.catalyst.event)}</span><p>重点观察：${escapeHTML(company.catalyst.watch)}</p></div></section>
+        <section class="company-panel"><h2>催化剂 <span class="catalyst-status ${eventStatus.className}">${eventStatus.label}</span></h2><div class="decision-question"><span>${escapeHTML(company.catalyst.window)} · ${escapeHTML(company.catalyst.event)}</span><p>重点观察：${escapeHTML(company.catalyst.watch)}</p></div></section>
       </div>
       <aside><section class="company-panel"><h2>研究档案 · ${docs.length}</h2>${documentList || '<p>暂无研究文档。</p>'}</section><section class="company-panel"><h2>来源纪律</h2><div class="decision-question"><span>当前判断依据</span><p>以上结论来自 ${escapeHTML(company.updated)} 的研究报告。价格与事件窗口均可能已经变化，做决定前应先打开原报告并复核最新披露。</p></div><button type="button" class="decision-open" data-open-doc="${escapeHTML(company.source)}">打开决策来源 →</button></section></aside>
     </div>`;
@@ -2299,7 +2342,7 @@ async function showFinancialDashboard({ updateHistory = true } = {}) {
   finCharts.forEach(c => c.destroy());
   finCharts = [];
 
-  if (!Object.keys(FIN).length) {
+  if (!FIN_TICKERS.length) {
     content.innerHTML = '<div class="fin-dashboard"><div class="fin-dashboard-header"><h2>暂无财务数据</h2><p>请先运行 python3 extract_financials.py 生成数据</p></div></div>';
     return;
   }
@@ -2321,8 +2364,7 @@ async function showFinancialDashboard({ updateHistory = true } = {}) {
 }
 
 function buildDashboardHTML() {
-  const tickers = Object.keys(FIN);
-  const tickerTabs = tickers.map(t =>
+  const tickerTabs = FIN_TICKERS.map(t =>
     `<button class="fin-ticker-tab${t === finCurrentTicker ? ' active' : ''}" data-ticker="${t}" aria-pressed="${t === finCurrentTicker}">${t}</button>`
   ).join('');
 

@@ -85,6 +85,8 @@ def check_financial_data() -> None:
 
 
 def check_research_state() -> None:
+    from build_tree import content_files, parse_front_matter
+
     path = ROOT / "research-state.js"
     if not path.exists():
         fail("research-state.js is missing")
@@ -95,21 +97,92 @@ def check_research_state() -> None:
         )
         if result.returncode:
             fail("research-state.js syntax check failed: " + result.stderr.strip())
-    source_paths = re.findall(r'\bsource:\s*"([^"]+)"', text)
-    if not source_paths:
+    records = {}
+    current_ticker = None
+    for line in text.splitlines():
+        company_match = re.match(r"^    ([A-Z][A-Z0-9]*): \{$", line)
+        if company_match:
+            current_ticker = company_match.group(1)
+            records[current_ticker] = {}
+            continue
+        if current_ticker:
+            field_match = re.match(r'^      (updated|source): "([^"]+)"', line)
+            if field_match:
+                records[current_ticker][field_match.group(1)] = field_match.group(2)
+
+    if not records:
         fail("research-state.js contains no decision sources")
+    incomplete = [ticker for ticker, record in records.items() if not {"updated", "source"} <= record.keys()]
+    if incomplete:
+        fail("research state is missing updated/source fields for: " + ", ".join(incomplete))
+
+    public_files = content_files()
+    covered_tickers = {
+        metadata.get("ticker")
+        for public_path in public_files
+        for metadata, _ in [parse_front_matter(public_path)]
+        if metadata.get("ticker")
+    }
+    missing_state = sorted(covered_tickers - records.keys())
+    if missing_state:
+        fail("research state is missing covered tickers: " + ", ".join(missing_state))
+
+    source_paths = [record["source"] for record in records.values()]
     missing = [source for source in source_paths if not (ROOT / source).exists()]
     if missing:
         fail("research state points to missing sources: " + ", ".join(missing))
+
     invalid_dates = []
-    for value in re.findall(r'\bupdated:\s*"([^"]+)"', text):
+    for value in (record["updated"] for record in records.values()):
         try:
             date.fromisoformat(value)
         except ValueError:
             invalid_dates.append(value)
     if invalid_dates:
         fail("research state contains invalid update dates: " + ", ".join(invalid_dates))
-    print(f"OK: decision layer checked for {len(source_paths)} covered companies")
+
+    for ticker, record in records.items():
+        source_metadata, _ = parse_front_matter(ROOT / record["source"])
+        if source_metadata.get("ticker") != ticker:
+            fail(f"{ticker} decision source has mismatched ticker: {record['source']}")
+        source_date = source_metadata.get("date")
+        if source_date and record["updated"] < source_date:
+            fail(f"{ticker} decision state predates its source report")
+
+    decision_updates = {}
+    for public_path in public_files:
+        metadata, _ = parse_front_matter(public_path)
+        if str(metadata.get("decision_update", "false")).lower() != "true":
+            continue
+        ticker = metadata.get("ticker")
+        if not ticker:
+            fail(f"decision_update report has no ticker: {public_path}")
+        entry = (metadata.get("date", ""), str(public_path.relative_to(ROOT)))
+        if ticker not in decision_updates or entry > decision_updates[ticker]:
+            decision_updates[ticker] = entry
+
+    for ticker, (report_date, report_path) in decision_updates.items():
+        record = records.get(ticker)
+        if not record:
+            fail(f"decision update has no research state entry: {ticker}")
+        if report_date > record["updated"]:
+            fail(f"{ticker} conclusion is stale; update research-state.js for {report_path}")
+        if record["source"] != report_path:
+            fail(f"{ticker} decision source must point to latest decision update: {report_path}")
+
+    as_of_match = re.search(r'\basOf:\s*"([^"]+)"', text)
+    if not as_of_match:
+        fail("research-state.js is missing asOf")
+    as_of = as_of_match.group(1)
+    try:
+        date.fromisoformat(as_of)
+    except ValueError:
+        fail(f"research-state.js has invalid asOf date: {as_of}")
+    latest_state_date = max(record["updated"] for record in records.values())
+    if as_of < latest_state_date:
+        fail("research-state.js asOf predates a company decision update")
+
+    print(f"OK: decision layer checked for {len(records)} covered companies")
 
 
 def check_metadata() -> None:
@@ -145,6 +218,30 @@ def check_python_syntax() -> None:
     print(f"OK: Python syntax checked for {len(files)} files")
 
 
+def check_frontend_syntax() -> None:
+    if not shutil.which("node"):
+        print("SKIP: Node.js unavailable; frontend syntax not checked")
+        return
+    index_path = ROOT / "index.html"
+    text = index_path.read_text(encoding="utf-8")
+    module_match = re.search(r'<script type="module">\s*(.*?)\s*</script>', text, re.DOTALL)
+    if not module_match:
+        fail("index.html is missing its module script")
+    result = subprocess.run(
+        ["node", "--check", "-"],
+        input=module_match.group(1),
+        capture_output=True,
+        text=True,
+    )
+    if result.returncode:
+        fail("index.html JavaScript syntax check failed: " + result.stderr.strip())
+    required_views = {"showWelcome", "showOverview", "showCatalysts", "showLibrary", "showCompany", "showFinancialDashboard"}
+    missing_views = sorted(name for name in required_views if f"function {name}" not in module_match.group(1))
+    if missing_views:
+        fail("index.html is missing workspace views: " + ", ".join(missing_views))
+    print("OK: frontend syntax and workspace views checked")
+
+
 def check_tracked_virtualenv() -> None:
     result = subprocess.run(
         ["git", "ls-files"], cwd=ROOT, check=True, capture_output=True, text=True
@@ -177,6 +274,7 @@ if __name__ == "__main__":
     check_metadata()
     check_research_state()
     check_financial_data()
+    check_frontend_syntax()
     check_python_syntax()
     check_tracked_virtualenv()
     check_data_manifest()
