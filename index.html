@@ -1144,6 +1144,11 @@ function renderMarkdown(md) {
   return window.DOMPurify.sanitize(window.marked.parse(md));
 }
 
+function stripMarkdownFrontMatter(md) {
+  // YAML metadata is used by the build pipeline, not displayed as article text.
+  return md.replace(/^---\s*\n[\s\S]*?\n---\s*(?:\n|$)/, '');
+}
+
 // ── Load file ──
 async function loadFile(el, { updateHistory = true } = {}) {
   const requestId = ++loadSequence;
@@ -1174,7 +1179,7 @@ async function loadFile(el, { updateHistory = true } = {}) {
   try {
     const resp = await fetch(path, { signal: activeLoadController.signal });
     if (!resp.ok) throw new Error("Not found");
-    const md = await resp.text();
+    const md = stripMarkdownFrontMatter(await resp.text());
     if (requestId !== loadSequence) return;
     content.className = "content";
     content.innerHTML = renderMarkdown(md);
@@ -1384,8 +1389,13 @@ const SUPABASE_URL = 'https://ddhlcxsyryfsyjdswxkp.supabase.co';
 // Supabase anon key — safe to expose in frontend.
 // Security is enforced via Row Level Security (RLS) policies on the database.
 const SUPABASE_ANON_KEY = 'sb_publishable_1hA038g0-fMBXjHn-hoyxA_jqoAY-pA';
-let supabasePromise = null;
 const ANNOTATION_COOLDOWN_MS = 60 * 1000;
+
+function describeAnnotationError(error) {
+  if (!error) return '未知错误';
+  const parts = [error.message, error.details, error.hint, error.code].filter(Boolean);
+  return parts.length ? parts.join(' · ') : String(error);
+}
 
 function canWriteAnnotation() {
   const key = 'eq-last-annotation-write';
@@ -1395,36 +1405,72 @@ function canWriteAnnotation() {
   return true;
 }
 
-async function getSupabase() {
-  if (!supabasePromise) {
-    supabasePromise = import('https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.49.8/+esm')
-      .then(({ createClient }) => createClient(SUPABASE_URL, SUPABASE_ANON_KEY));
+async function supabaseRequest(table, { method = 'GET', query = {}, body } = {}) {
+  const url = new URL(`${SUPABASE_URL}/rest/v1/${table}`);
+  Object.entries(query).forEach(([key, value]) => url.searchParams.set(key, value));
+  const options = {
+    method,
+    headers: {
+      apikey: SUPABASE_ANON_KEY,
+      Authorization: `Bearer ${SUPABASE_ANON_KEY}`
+    }
+  };
+  if (body !== undefined) {
+    options.headers['Content-Type'] = 'application/json';
+    options.headers.Prefer = 'return=minimal';
+    options.body = JSON.stringify(body);
   }
-  return supabasePromise;
+  let response;
+  try {
+    response = await fetch(url, options);
+  } catch (error) {
+    throw new Error(`批注接口网络请求失败：${describeAnnotationError(error)}`);
+  }
+  const raw = await response.text();
+  let payload = null;
+  try { payload = raw ? JSON.parse(raw) : null; } catch(e) { payload = raw; }
+  if (!response.ok) {
+    const message = payload?.message || payload?.error || payload?.hint || response.statusText;
+    throw new Error(`批注接口 ${response.status}：${message}`);
+  }
+  return payload;
 }
 
 const DB = {
   async get(path) {
-    const supabase = await getSupabase();
-    const { data, error } = await supabase
-      .from('annotations').select('*, replies(*)')
-      .eq('path', path).order('created_at', { ascending: true });
-    if (error) throw error;
-    return data || [];
+    const annotations = await supabaseRequest('annotations', {
+      query: { select: '*', path: `eq.${path}`, order: 'created_at.asc' }
+    }) || [];
+    if (!annotations.length) return annotations;
+
+    const ids = annotations.map(item => item.id).filter(Boolean);
+    if (!ids.length) return annotations.map(item => ({ ...item, replies: [] }));
+    let replies;
+    try {
+      replies = await supabaseRequest('replies', {
+        query: { select: '*', annotation_id: `in.(${ids.join(',')})`, order: 'created_at.asc' }
+      }) || [];
+    } catch (error) {
+      console.warn('Replies unavailable; showing annotations without replies', describeAnnotationError(error));
+      return annotations.map(item => ({ ...item, replies: [] }));
+    }
+    const repliesByAnnotation = {};
+    replies.forEach(reply => {
+      (repliesByAnnotation[reply.annotation_id] ||= []).push(reply);
+    });
+    return annotations.map(item => ({ ...item, replies: repliesByAnnotation[item.id] || [] }));
   },
   async add(path, quote, text, author) {
     if (path.length > 500 || quote.length > 1000 || text.length > 5000) throw new Error('批注内容超限');
-    const supabase = await getSupabase();
-    const { error } = await supabase
-      .from('annotations').insert([{ path, quote, text, author }]);
-    if (error) throw error;
+    await supabaseRequest('annotations', {
+      method: 'POST', body: [{ path, quote, text, author }]
+    });
   },
   async addReply(annotation_id, text, author) {
     if (text.length > 5000) throw new Error('回复内容超限');
-    const supabase = await getSupabase();
-    const { error } = await supabase
-      .from('replies').insert([{ annotation_id, text, author }]);
-    if (error) throw error;
+    await supabaseRequest('replies', {
+      method: 'POST', body: [{ annotation_id, text, author }]
+    });
   }
 };
 
@@ -1438,7 +1484,8 @@ async function loadAnnotations(path, requestId = loadSequence) {
     comments = await DB.get(path);
   } catch (error) {
     if (requestId !== loadSequence) return;
-    header.textContent = '批注暂时无法加载';
+    console.error('Annotation service unavailable:', describeAnnotationError(error), error);
+    header.textContent = '批注服务未连接';
     header.classList.add('has-items');
     return;
   }
