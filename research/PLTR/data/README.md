@@ -10,12 +10,12 @@ SEC filings downloaded via [edgartools](https://github.com/dgunning/edgartools) 
 | **10-Q** | Q3 2020 – Q1 2026 | 17 | Quarterly reports |
 | **8-K** | 2024 – 2026 | 10 | Material event disclosures |
 
-**Total**: 33 filings, ~43 MB
+**Total**: 51 files, approximately 45 MB on disk. This includes 33 SEC filings and 18 earnings-call / press-release text files.
 
 ## Directory Structure
 
 ```
-data/PLTR_SEC/
+research/PLTR/data/
 ├── 10-K/
 │   ├── 10-K_FY2020_2021-02-26.html
 │   ├── 10-K_FY2021_2022-02-24.html
@@ -51,5 +51,5 @@ data/PLTR_SEC/
 ## Related Research
 
 See `research/PLTR/` for analysis reports:
-- `2026-07-11_PLTR_buyside-memo.md` — Buy-side equity research memo
-- `2026-07-12_PLTR_chronicle.md` — Company chronicle (2003–2026)
+- `2026-07-11_buyside-memo.md` — Buy-side equity research memo
+- `2026-07-12_chronicle.md` — Company chronicle (2003–2026)
