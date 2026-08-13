@@ -1,3 +1,12 @@
+---
+schema_version: 1
+title: "Palantir Technologies (PLTR) — Buy-Side Equity Research Memo"
+date: "2026-07-11"
+type: "buyside-memo"
+ticker: "PLTR"
+language: "en"
+---
+
 # Palantir Technologies (PLTR) — Buy-Side Equity Research Memo
 
 > **撰写日期**: 2026-07-11  

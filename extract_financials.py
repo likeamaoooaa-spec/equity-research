@@ -218,6 +218,7 @@ def resolve_period_for_data(raw_data: list, filing_info: dict) -> dict:
                 quarter_map = {3: 1, 6: 2, 9: 3, 12: 4}
                 quarter = quarter_map.get(end_m, (end_m + 2) // 3)
                 period_key = f'{end_y}Q{quarter}'
+            period_end = end
         elif ctx.get('type') == 'instant':
             inst = ctx['instant']
             inst_y = int(inst[:4])
@@ -229,11 +230,14 @@ def resolve_period_for_data(raw_data: list, filing_info: dict) -> dict:
                 period_key = f'FY{inst_y}'
             else:
                 period_key = f'{inst_y}Q{q}'
+            period_end = inst
         else:
             continue
 
         if period_key not in periods:
-            periods[period_key] = {'period': period_key}
+            periods[period_key] = {'period': period_key, '_period_end': period_end}
+        elif period_end > periods[period_key].get('_period_end', ''):
+            periods[period_key]['_period_end'] = period_end
 
         # Only keep the first value for each metric per period (avoid duplicates)
         if metric not in periods[period_key]:
@@ -246,6 +250,7 @@ def collect_ticker_data(ticker: str, data_dir: str) -> list:
     """Collect all financial data for a ticker from its filing directory."""
     all_periods = {}
     metric_filing_dates = {}
+    metric_filing_sources = {}
 
     # Gather all HTML files
     html_files = []
@@ -260,6 +265,9 @@ def collect_ticker_data(ticker: str, data_dir: str) -> list:
     for filepath in html_files:
         basename = os.path.basename(filepath)
         filing_info = determine_filing_period(filepath)
+        if filing_info.get('type') == 'unknown':
+            print(f'    Skipping unrecognized HTML: {basename}')
+            continue
         print(f'    Processing: {basename} ({filing_info["type"]})')
 
         try:
@@ -270,16 +278,20 @@ def collect_ticker_data(ticker: str, data_dir: str) -> list:
                 if period_key not in all_periods:
                     all_periods[period_key] = {'period': period_key}
                 period_dates = metric_filing_dates.setdefault(period_key, {})
+                period_sources = metric_filing_sources.setdefault(period_key, {})
                 filing_date = filing_info.get('filing_date', '')
+                repo_root = Path(data_dir).parents[2]
+                source_path = os.path.relpath(filepath, repo_root)
+                if metrics.get('_period_end'):
+                    all_periods[period_key]['_period_end'] = metrics['_period_end']
                 if filing_date >= all_periods[period_key].get('_filing_date', ''):
-                    repo_root = Path(data_dir).parents[2]
                     all_periods[period_key].update({
                         '_filing_date': filing_date,
                         '_filing_type': filing_info.get('type', 'unknown'),
-                        '_source_path': os.path.relpath(filepath, repo_root),
+                        '_source_path': source_path,
                     })
                 for k, v in metrics.items():
-                    if k != 'period':
+                    if k not in ('period', '_period_end'):
                         # Prefer the latest filing for each metric. This
                         # preserves later restatements without mixing an old
                         # temporary-equity disclosure into a newer balance
@@ -287,6 +299,11 @@ def collect_ticker_data(ticker: str, data_dir: str) -> list:
                         if filing_date >= period_dates.get(k, ''):
                             all_periods[period_key][k] = v
                             period_dates[k] = filing_date
+                            period_sources[k] = {
+                                'path': source_path,
+                                'filing_date': filing_date,
+                                'filing_type': filing_info.get('type', 'unknown'),
+                            }
         except Exception as e:
             print(f'    ERROR: {e}')
 
@@ -301,6 +318,7 @@ def collect_ticker_data(ticker: str, data_dir: str) -> list:
             for k in ('TemporaryEquity', 'NoncontrollingInterest'):
                 if dates.get(k) and dates[k] < latest_balance_date:
                     row.pop(k, None)
+        row['_metric_sources'] = metric_filing_sources.get(period_key, {})
 
     # Sort by period
     result = sorted(all_periods.values(), key=lambda x: x['period'])

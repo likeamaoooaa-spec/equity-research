@@ -1,7 +1,10 @@
 ---
+schema_version: 1
 title: "Rocket Lab (RKLB) 历史基本面演进与管理层底牌分析"
 date: "2026-07-14"
 type: "buyside-memo"
+ticker: "RKLB"
+language: "zh-CN"
 author: "Antigravity AI (Codex) - Earnings Call Orchestrator"
 ---
 

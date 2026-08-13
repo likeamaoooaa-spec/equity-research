@@ -35,6 +35,14 @@ python3 extract_financials.py
 python3 scripts/validate_repo.py
 ```
 
+安装财务数据提取依赖：
+
+```bash
+python3 -m venv .venv
+. .venv/bin/activate
+python3 -m pip install -r requirements.txt
+```
+
 如果使用本地 Git hook，先执行：
 
 ```bash
@@ -49,9 +57,17 @@ git config core.hooksPath .githooks
 
 日期由文件名承载，股票代码由父目录承载，避免重复命名。
 
+每篇公开 Markdown 还应包含 YAML front matter：`schema_version`、`title`、`date`、`type`；个股研究额外填写 `ticker`。侧边栏和全文搜索均从这些字段生成。
+
+`search-data.js`、`tree-data.js` 和 `financial-data.js` 都是生成文件，不要手工编辑。
+
 ## 来源纪律
 
 研究报告应区分已披露事实、管理层指引、市场共识和分析师推断，并尽量记录文件类型、发布日期与查阅日期。无法核验的数字标记为“未核验”。
+
+财务数据的期间结束日、申报日期和指标级来源由 `extract_financials.py` 写入；仓库校验会检查来源路径和期间重复。原始 SEC 文件的长期归档边界见 [DATA_ARCHIVE.md](DATA_ARCHIVE.md)。
+
+网站提供全文搜索、研究总览、财务仪表盘和读者批注。Supabase 批注的 RLS 配置模板见 [supabase/rls.sql](supabase/rls.sql)；应用前请按实际表结构复核。
 
 ## 免责声明
 

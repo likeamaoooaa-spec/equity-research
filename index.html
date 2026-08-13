@@ -8,6 +8,7 @@
 <script src="https://cdn.jsdelivr.net/npm/marked@15.0.12/marked.min.js" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/dompurify@3.2.6/dist/purify.min.js" defer></script>
 <script src="tree-data.js" defer></script>
+<script src="search-data.js" defer></script>
 <script src="financial-data.js" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js" defer></script>
 <style>
@@ -724,6 +725,7 @@
   .fin-table tr:hover td { background: var(--bg-hover); }
   .fin-table .negative { color: #dc2626; }
   .fin-table .positive { color: #16a34a; }
+  .coverage-note { max-width: 760px; margin: -16px auto 28px; text-align: center; color: var(--text-tertiary); font-size: 13px; line-height: 1.6; }
   /* ── Topbar Financial Button ── */
   .topbar-fin-btn {
     background: none;
@@ -773,6 +775,9 @@
     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
     目录
   </button>
+  <button class="topbar-fin-btn" id="overview-btn" title="研究总览" aria-pressed="false">
+    <span class="fin-btn-text">研究总览</span>
+  </button>
   <button class="topbar-fin-btn" id="fin-dashboard-btn" title="财务数据" aria-pressed="false">
     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
     <span class="fin-btn-text">财务数据</span>
@@ -791,7 +796,7 @@
     </div>
     <div class="drawer-search-wrap">
       <svg class="drawer-search-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-      <input class="drawer-search" id="drawer-search" type="search" aria-label="搜索报告" placeholder="搜索报告…">
+      <input class="drawer-search" id="drawer-search" type="search" aria-label="搜索报告正文" placeholder="搜索报告 / 正文…">
     </div>
   </div>
   <nav class="drawer-nav" id="sidebar-nav"></nav>
@@ -833,6 +838,7 @@
 
 // ── Globals ──
 const TREE = typeof TREE_DATA !== 'undefined' ? TREE_DATA : {};
+const SEARCH = typeof SEARCH_DATA !== 'undefined' ? SEARCH_DATA : [];
 
 // ── Count files ──
 let total = 0;
@@ -987,7 +993,7 @@ function createTree() {
         a.dataset.path = f.path;
         a.href = `?doc=${encodeURIComponent(f.path)}`;
         a.dataset.ticker = f.ticker || '';
-        a.dataset.searchText = (f.title + ' ' + (f.ticker || '') + ' ' + (f.date || '')).toLowerCase();
+        a.dataset.searchText = (f.title + ' ' + (f.ticker || '') + ' ' + (f.date || '') + ' ' + (f.type || '')).toLowerCase();
         a.addEventListener('click', (e) => {
           e.preventDefault();
           loadFile(a);
@@ -1051,9 +1057,13 @@ drawerSearch.addEventListener('input', () => {
     return;
   }
 
-  // Filter
+  // Search metadata and the generated full-text index.
+  const fullTextMatches = new Set(
+    SEARCH.filter(item => `${item.title} ${item.ticker || ''} ${item.date || ''} ${item.type || ''} ${item.text || ''}`.toLowerCase().includes(q))
+      .map(item => item.path)
+  );
   links.forEach(l => {
-    const match = l.dataset.searchText.includes(q);
+    const match = l.dataset.searchText.includes(q) || fullTextMatches.has(l.dataset.path);
     l.style.display = match ? '' : 'none';
   });
   // Show parent groups that have visible children
@@ -1103,12 +1113,15 @@ function clearTOC() {
 function setView(view) {
   const isFinancial = view === 'financial';
   const isArticle = view === 'article';
-  document.querySelector('.main-layout').style.maxWidth = isFinancial ? '1400px' : '';
-  document.querySelector('.article-column').style.maxWidth = isFinancial ? '100%' : '';
-  document.getElementById('toc-column').style.display = isFinancial ? 'none' : '';
+  const isWide = isFinancial || view === 'overview';
+  document.querySelector('.main-layout').style.maxWidth = isWide ? '1400px' : '';
+  document.querySelector('.article-column').style.maxWidth = isWide ? '100%' : '';
+  document.getElementById('toc-column').style.display = isWide ? 'none' : '';
   document.getElementById('annotations-section').hidden = !isArticle;
   finDashboardBtn.classList.toggle('active', isFinancial);
   finDashboardBtn.setAttribute('aria-pressed', String(isFinancial));
+  overviewBtn.classList.toggle('active', view === 'overview');
+  overviewBtn.setAttribute('aria-pressed', String(view === 'overview'));
   if (!isArticle) {
     clearAnnotations();
     clearTOC();
@@ -1331,6 +1344,15 @@ function showAnnotationInput(quoteText, path) {
   const submitBtn = card.querySelector('.btn-primary');
   submitBtn.addEventListener('click', async () => {
     const text = card.querySelector('textarea').value.trim();
+    if (!text) return;
+    if (quoteText.length > 1000 || text.length > 5000) {
+      showToast('批注过长，请缩短后再提交', true);
+      return;
+    }
+    if (!canWriteAnnotation()) {
+      showToast('提交过于频繁，请稍后再试', true);
+      return;
+    }
     if (text) {
       submitBtn.disabled = true;
       submitBtn.textContent = '提交中...';
@@ -1363,6 +1385,15 @@ const SUPABASE_URL = 'https://ddhlcxsyryfsyjdswxkp.supabase.co';
 // Security is enforced via Row Level Security (RLS) policies on the database.
 const SUPABASE_ANON_KEY = 'sb_publishable_1hA038g0-fMBXjHn-hoyxA_jqoAY-pA';
 let supabasePromise = null;
+const ANNOTATION_COOLDOWN_MS = 60 * 1000;
+
+function canWriteAnnotation() {
+  const key = 'eq-last-annotation-write';
+  const previous = Number(localStorage.getItem(key) || 0);
+  if (Date.now() - previous < ANNOTATION_COOLDOWN_MS) return false;
+  localStorage.setItem(key, String(Date.now()));
+  return true;
+}
 
 async function getSupabase() {
   if (!supabasePromise) {
@@ -1382,12 +1413,14 @@ const DB = {
     return data || [];
   },
   async add(path, quote, text, author) {
+    if (path.length > 500 || quote.length > 1000 || text.length > 5000) throw new Error('批注内容超限');
     const supabase = await getSupabase();
     const { error } = await supabase
       .from('annotations').insert([{ path, quote, text, author }]);
     if (error) throw error;
   },
   async addReply(annotation_id, text, author) {
+    if (text.length > 5000) throw new Error('回复内容超限');
     const supabase = await getSupabase();
     const { error } = await supabase
       .from('replies').insert([{ annotation_id, text, author }]);
@@ -1528,6 +1561,12 @@ let finCurrentTicker = Object.keys(FIN)[0] || '';
 let finPeriodMode = 'quarterly'; // 'quarterly' | 'annual'
 
 const finDashboardBtn = document.getElementById('fin-dashboard-btn');
+const overviewBtn = document.getElementById('overview-btn');
+
+overviewBtn.addEventListener('click', () => {
+  if (!overviewBtn.classList.contains('active')) showOverview();
+  else showWelcome();
+});
 
 finDashboardBtn.addEventListener('click', () => {
   if (!finDashboardBtn.classList.contains('active')) {
@@ -1546,12 +1585,49 @@ function showWelcome({ updateHistory = true } = {}) {
   content.innerHTML = `
     <h2>Equity Research</h2>
     <p class="tagline">独立 · 深度 · 长期主义</p>
-    <p class="hint">点击左上角菜单选择研究报告</p>
+    <p class="hint">点击左上角菜单搜索报告，或查看研究总览</p>
   `;
   document.getElementById('breadcrumb').textContent = '';
   document.querySelectorAll('.file-link').forEach(e => e.classList.remove('active'));
   document.title = 'Equity Research';
   if (updateHistory) updateRoute({});
+}
+
+function showOverview({ updateHistory = true } = {}) {
+  ++loadSequence;
+  if (activeLoadController) activeLoadController.abort();
+  setView('overview');
+  const content = document.getElementById('content');
+  content.className = 'content';
+  document.getElementById('breadcrumb').textContent = '研究总览';
+  document.querySelectorAll('.file-link').forEach(e => e.classList.remove('active'));
+  document.title = '研究总览 · Equity Research';
+  if (updateHistory) updateRoute({ view: 'overview' });
+
+  const docs = [];
+  for (const category of Object.values(TREE)) {
+    for (const group of Object.values(category)) {
+      for (const doc of group) docs.push(doc);
+    }
+  }
+  const tickers = [...new Set(docs.map(d => d.ticker).filter(Boolean))].sort();
+  const rows = tickers.map(ticker => {
+    const items = docs.filter(d => d.ticker === ticker).sort((a, b) => (b.date || '').localeCompare(a.date || ''));
+    const latest = items[0];
+    return `<tr><td>${ticker}</td><td>${items.length}</td><td>${latest.date || '—'}</td><td>${latest.title}</td><td><a href="?doc=${encodeURIComponent(latest.path)}" data-overview-path="${latest.path}">打开</a></td></tr>`;
+  }).join('');
+
+  content.innerHTML = `<div class="fin-dashboard">
+    <div class="fin-dashboard-header"><h2>研究总览</h2><p>当前覆盖公司的报告数量、最近更新时间和最新研究主题</p></div>
+    <p class="coverage-note">这是研究覆盖总览，不代表实际持仓或投资评级；评级和目标价请以各公司最新报告为准。</p>
+    <div class="fin-table-wrap"><table class="fin-table"><thead><tr><th>标的</th><th>报告数</th><th>最近更新</th><th>最新主题</th><th>操作</th></tr></thead><tbody>${rows || '<tr><td colspan="5">暂无公司研究</td></tr>'}</tbody></table></div>
+  </div>`;
+  content.querySelectorAll('[data-overview-path]').forEach(link => link.addEventListener('click', e => {
+    e.preventDefault();
+    const target = [...document.querySelectorAll('.file-link')].find(el => el.dataset.path === link.dataset.overviewPath);
+    if (target) loadFile(target);
+  }));
+  content.scrollIntoView({ behavior: 'instant', block: 'start' });
 }
 
 function showFinancialDashboard({ updateHistory = true } = {}) {
@@ -1695,7 +1771,7 @@ function renderSource(data) {
   if (!source || !data.length) return;
   const latest = data[data.length - 1];
   source.replaceChildren();
-  source.append(`${latest.period} 来源：${latest._filing_type || 'SEC filing'}`);
+  source.append(`${latest.period}（期间结束 ${latest._period_end || '未标注'}）来源：${latest._filing_type || 'SEC filing'}`);
   if (latest._filing_date) source.append(`，申报于 ${latest._filing_date}`);
   if (latest._source_path) {
     source.append(' · ');
@@ -2094,6 +2170,10 @@ function restoreRoute() {
   }
   if (params.get('view') === 'financial') {
     showFinancialDashboard({ updateHistory: false });
+    return;
+  }
+  if (params.get('view') === 'overview') {
+    showOverview({ updateHistory: false });
     return;
   }
   showWelcome({ updateHistory: false });

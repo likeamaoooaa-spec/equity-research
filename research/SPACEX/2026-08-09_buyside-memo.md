@@ -1,3 +1,12 @@
+---
+schema_version: 1
+title: "SpaceX（NASDAQ: SPCX）深度买方投资研究"
+date: "2026-08-09"
+type: "buyside-memo"
+ticker: "SPACEX"
+language: "zh-CN"
+---
+
 # SpaceX（NASDAQ: SPCX）深度买方投资研究
 
 > **研究日期**：2026-08-09｜**报告语言**：中文｜**研究深度**：Deep｜**主要周期**：12 个月，兼顾 3—5 年

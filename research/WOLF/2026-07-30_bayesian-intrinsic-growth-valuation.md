@@ -1,3 +1,12 @@
+---
+schema_version: 1
+title: "Wolfspeed (WOLF) 贝叶斯内在增长估值更新"
+date: "2026-07-30"
+type: "bayesian-intrinsic-growth-valuation"
+ticker: "WOLF"
+language: "zh-CN"
+---
+
 ## Wolfspeed (WOLF) 贝叶斯内在增长估值
 
 > 分析日期：2026-07-30 | 数据来源：SEC 10-K (2025-08-26)、10-Q (2026-05-07)、8-K (2026-07-29) | 股价约 $35（未核验，基于 7 月 10 日收盘 $35.29）

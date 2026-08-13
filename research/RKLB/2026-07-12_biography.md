@@ -1,3 +1,12 @@
+---
+schema_version: 1
+title: "彼得·贝克传：一个拒绝上大学、吃下自己帽子的火箭之王"
+date: "2026-07-12"
+type: "biography"
+ticker: "RKLB"
+language: "zh-CN"
+---
+
 # 彼得·贝克传：一个拒绝上大学、吃下自己帽子的火箭之王
 
 > *"I'll eat my hat if rockets ever become reusable."* —— 这句话后来成了彼得·贝克（Sir Peter Beck）最广为人知的名场面之一。他确实吃了那顶帽子——在 Electron 火箭首次成功回收助推器之后。不过，他吃的是一顶做成帽子形状的蛋糕。

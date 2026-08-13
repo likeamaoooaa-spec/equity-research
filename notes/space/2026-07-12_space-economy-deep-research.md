@@ -1,3 +1,11 @@
+---
+schema_version: 1
+title: "太空经济上市企业深度产业链研究"
+date: "2026-07-12"
+type: "sector-note"
+language: "zh-CN"
+---
+
 # 太空经济上市企业深度产业链研究
 
 **日期**：2026-07-12

@@ -1,0 +1,3 @@
+# Keep source archives out of GitHub language statistics.
+research/**/data/** linguist-generated=true
+research/**/data/**/*.pdf binary

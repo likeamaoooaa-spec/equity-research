@@ -1,3 +1,12 @@
+---
+schema_version: 1
+title: "Rocket Lab (RKLB) Buy-Side Equity Research Memo"
+date: "2026-07-11"
+type: "buyside-memo"
+ticker: "RKLB"
+language: "en"
+---
+
 # Rocket Lab (RKLB) Buy-Side Equity Research Memo
 
 **Date:** 2026-07-11（已更新 Iridium 收购） | **Analyst:** Codex Agent | **Rating Bias:** 看多（Long）

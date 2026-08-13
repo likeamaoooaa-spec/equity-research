@@ -1,3 +1,11 @@
+---
+schema_version: 1
+title: "全球太空产业投研报告"
+date: "2026-07-12"
+type: "sector-note"
+language: "zh-CN"
+---
+
 # 全球太空产业投研报告
 
 **日期**：2026-07-12  

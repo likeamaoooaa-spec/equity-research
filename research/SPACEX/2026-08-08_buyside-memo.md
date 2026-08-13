@@ -1,3 +1,12 @@
+---
+schema_version: 1
+title: "SpaceX Q2 2026 买方研究备忘录"
+date: "2026-08-08"
+type: "buyside-memo"
+ticker: "SPACEX"
+language: "en"
+---
+
 ## 0. Executive Investment View
 
 - **评级倾向**: Hold（等待更好的入场点）

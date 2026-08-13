@@ -4,189 +4,258 @@ const TREE_DATA = {
     "AMAT": [
       {
         "path": "research/AMAT/2026-08-09_buyside-memo.md",
-        "title": "buyside memo",
+        "title": "Applied Materials (AMAT) 买方股票研究备忘录",
         "date": "2026-08-09",
+        "type": "buyside-memo",
+        "schema_version": "1",
         "ticker": "AMAT"
       }
     ],
     "LITE": [
       {
         "path": "research/LITE/2026-07-16_buyside-memo.md",
-        "title": "buyside memo",
+        "title": "Lumentum（NASDAQ: LITE）近期表现与投资判断",
         "date": "2026-07-16",
+        "type": "buyside-memo",
+        "schema_version": "1",
         "ticker": "LITE"
       }
     ],
     "PLTR": [
       {
-        "path": "research/PLTR/2026-07-11_buyside-memo.md",
-        "title": "buyside memo",
-        "date": "2026-07-11",
+        "path": "research/PLTR/2026-08-08_Q2-2026-earnings-update.md",
+        "title": "Palantir Q2 2026 财报更新",
+        "date": "2026-08-08",
+        "type": "earnings-update",
+        "schema_version": "1",
         "ticker": "PLTR"
       },
       {
         "path": "research/PLTR/2026-07-12_chronicle.md",
-        "title": "chronicle",
+        "title": "Palantir Technologies 编年史 (2003–2026)",
         "date": "2026-07-12",
+        "type": "chronicle",
+        "schema_version": "1",
         "ticker": "PLTR"
       },
       {
-        "path": "research/PLTR/2026-08-08_Q2-2026-earnings-update.md",
-        "title": "Q2 2026 earnings update",
-        "date": "2026-08-08",
+        "path": "research/PLTR/2026-07-11_buyside-memo.md",
+        "title": "Palantir Technologies (PLTR) — Buy-Side Equity Research Memo",
+        "date": "2026-07-11",
+        "type": "buyside-memo",
+        "schema_version": "1",
         "ticker": "PLTR"
       }
     ],
     "RKLB": [
       {
-        "path": "research/RKLB/2026-07-11_buyside-memo.md",
-        "title": "buyside memo",
-        "date": "2026-07-11",
-        "ticker": "RKLB"
-      },
-      {
-        "path": "research/RKLB/2026-07-12_biography.md",
-        "title": "biography",
-        "date": "2026-07-12",
-        "ticker": "RKLB"
-      },
-      {
-        "path": "research/RKLB/2026-07-12_corporate-chronicle.md",
-        "title": "corporate chronicle",
-        "date": "2026-07-12",
-        "ticker": "RKLB"
-      },
-      {
-        "path": "research/RKLB/2026-07-12_investment-audit.md",
-        "title": "investment audit",
-        "date": "2026-07-12",
-        "ticker": "RKLB"
-      },
-      {
-        "path": "research/RKLB/2026-07-14_buyside-memo.md",
-        "title": "buyside memo",
-        "date": "2026-07-14",
+        "path": "research/RKLB/2026-07-15_earnings-call-chronicle.md",
+        "title": "RKLB 历年电话会议整理：管理层到底透露了什么",
+        "date": "2026-07-15",
+        "type": "earnings-call-chronicle",
+        "schema_version": "1",
         "ticker": "RKLB"
       },
       {
         "path": "research/RKLB/2026-07-14_competitor-macro-analysis.md",
-        "title": "competitor macro analysis",
+        "title": "Rocket Lab (RKLB) 竞争格局与宏观环境演进深度分析报告（2023-2026）",
         "date": "2026-07-14",
+        "type": "competitor-macro-analysis",
+        "schema_version": "1",
         "ticker": "RKLB"
       },
       {
-        "path": "research/RKLB/2026-07-15_earnings-call-chronicle.md",
-        "title": "earnings call chronicle",
-        "date": "2026-07-15",
+        "path": "research/RKLB/2026-07-14_buyside-memo.md",
+        "title": "Rocket Lab (RKLB) 历史基本面演进与管理层底牌分析",
+        "date": "2026-07-14",
+        "type": "buyside-memo",
+        "schema_version": "1",
+        "ticker": "RKLB"
+      },
+      {
+        "path": "research/RKLB/2026-07-12_biography.md",
+        "title": "彼得·贝克传：一个拒绝上大学、吃下自己帽子的火箭之王",
+        "date": "2026-07-12",
+        "type": "biography",
+        "schema_version": "1",
+        "ticker": "RKLB"
+      },
+      {
+        "path": "research/RKLB/2026-07-12_corporate-chronicle.md",
+        "title": "Rocket Lab 公司编年史：从新西兰车库到太空巨头的二十年",
+        "date": "2026-07-12",
+        "type": "corporate-chronicle",
+        "schema_version": "1",
+        "ticker": "RKLB"
+      },
+      {
+        "path": "research/RKLB/2026-07-12_investment-audit.md",
+        "title": "RKLB 买入持有投资审计 | 2026-07-12",
+        "date": "2026-07-12",
+        "type": "investment-audit",
+        "schema_version": "1",
+        "ticker": "RKLB"
+      },
+      {
+        "path": "research/RKLB/2026-07-11_buyside-memo.md",
+        "title": "Rocket Lab (RKLB) Buy-Side Equity Research Memo",
+        "date": "2026-07-11",
+        "type": "buyside-memo",
+        "schema_version": "1",
         "ticker": "RKLB"
       }
     ],
     "SPACEX": [
       {
-        "path": "research/SPACEX/2026-08-08_buyside-memo.md",
-        "title": "buyside memo",
-        "date": "2026-08-08",
+        "path": "research/SPACEX/2026-08-09_buyside-memo.md",
+        "title": "SpaceX（NASDAQ: SPCX）深度买方投资研究",
+        "date": "2026-08-09",
+        "type": "buyside-memo",
+        "schema_version": "1",
         "ticker": "SPACEX"
       },
       {
-        "path": "research/SPACEX/2026-08-09_buyside-memo.md",
-        "title": "buyside memo",
-        "date": "2026-08-09",
+        "path": "research/SPACEX/2026-08-08_buyside-memo.md",
+        "title": "SpaceX Q2 2026 买方研究备忘录",
+        "date": "2026-08-08",
+        "type": "buyside-memo",
+        "schema_version": "1",
         "ticker": "SPACEX"
       }
     ],
     "WOLF": [
       {
-        "path": "research/WOLF/2026-07-12_bayesian-intrinsic-growth.md",
-        "title": "bayesian intrinsic growth",
-        "date": "2026-07-12",
+        "path": "research/WOLF/2026-07-30_bayesian-intrinsic-growth-valuation.md",
+        "title": "Wolfspeed (WOLF) 贝叶斯内在增长估值更新",
+        "date": "2026-07-30",
+        "type": "bayesian-intrinsic-growth-valuation",
+        "schema_version": "1",
         "ticker": "WOLF"
       },
       {
-        "path": "research/WOLF/2026-07-30_bayesian-intrinsic-growth-valuation.md",
-        "title": "bayesian intrinsic growth valuation",
-        "date": "2026-07-30",
+        "path": "research/WOLF/2026-07-12_bayesian-intrinsic-growth.md",
+        "title": "Wolfspeed (WOLF) 贝叶斯内在增长估值",
+        "date": "2026-07-12",
+        "type": "bayesian-intrinsic-growth",
+        "schema_version": "1",
         "ticker": "WOLF"
       }
     ]
   },
   "📝 行业笔记": {
+    "meta": [
+      {
+        "path": "notes/meta/2026-08-13_research-changelog.md",
+        "title": "研究变更记录与 Thesis Tracker",
+        "date": "2026-08-13",
+        "type": "research-changelog",
+        "schema_version": "1"
+      }
+    ],
     "太空产业": [
       {
-        "path": "notes/space/2026-07-11_space-economy-moat.md",
-        "title": "space economy moat",
-        "date": "2026-07-11"
+        "path": "notes/space/2026-07-12_space-economy-vision.md",
+        "title": "太空经济成熟后的世界：一个设想",
+        "date": "2026-07-12",
+        "type": "sector-note",
+        "schema_version": "1"
       },
       {
         "path": "notes/space/2026-07-12_space-economy-deep-research.md",
-        "title": "space economy deep research",
-        "date": "2026-07-12"
-      },
-      {
-        "path": "notes/space/2026-07-12_space-economy-vision.md",
-        "title": "space economy vision",
-        "date": "2026-07-12"
+        "title": "太空经济上市企业深度产业链研究",
+        "date": "2026-07-12",
+        "type": "sector-note",
+        "schema_version": "1"
       },
       {
         "path": "notes/space/2026-07-12_space-industry-investment-report.md",
-        "title": "space industry investment report",
-        "date": "2026-07-12"
+        "title": "全球太空产业投研报告",
+        "date": "2026-07-12",
+        "type": "sector-note",
+        "schema_version": "1"
+      },
+      {
+        "path": "notes/space/2026-07-11_space-economy-moat.md",
+        "title": "太空经济价值链护城河分析",
+        "date": "2026-07-11",
+        "type": "sector-note",
+        "schema_version": "1"
       }
     ]
   },
   "📰 美股收盘日报": {
     "2026年08月": [
       {
-        "path": "notes/美股收盘日报/美股收盘日报_2026-08-06.md",
-        "title": "美股收盘日报",
-        "date": "2026-08-06"
+        "path": "notes/美股收盘日报/美股收盘日报_2026-08-12.md",
+        "title": "美股收盘日报｜2026-08-12",
+        "date": "2026-08-12",
+        "type": "daily-report",
+        "schema_version": "1"
       },
       {
-        "path": "notes/美股收盘日报/美股收盘日报_2026-08-12.md",
-        "title": "美股收盘日报",
-        "date": "2026-08-12"
+        "path": "notes/美股收盘日报/美股收盘日报_2026-08-06.md",
+        "title": "美股收盘日报｜2026-08-06",
+        "date": "2026-08-06",
+        "type": "daily-report",
+        "schema_version": "1"
       }
     ],
     "2026年07月": [
       {
-        "path": "notes/美股收盘日报/美股收盘日报_2026-07-10.md",
-        "title": "美股收盘日报",
-        "date": "2026-07-10"
-      },
-      {
-        "path": "notes/美股收盘日报/美股收盘日报_2026-07-13.md",
-        "title": "美股收盘日报",
-        "date": "2026-07-13"
-      },
-      {
-        "path": "notes/美股收盘日报/美股收盘日报_2026-07-14.md",
-        "title": "美股收盘日报",
-        "date": "2026-07-14"
-      },
-      {
-        "path": "notes/美股收盘日报/美股收盘日报_2026-07-15.md",
-        "title": "美股收盘日报",
-        "date": "2026-07-15"
-      },
-      {
-        "path": "notes/美股收盘日报/美股收盘日报_2026-07-16.md",
-        "title": "美股收盘日报",
-        "date": "2026-07-16"
-      },
-      {
-        "path": "notes/美股收盘日报/美股收盘日报_2026-07-24.md",
-        "title": "美股收盘日报",
-        "date": "2026-07-24"
+        "path": "notes/美股收盘日报/美股收盘日报_2026-07-30.md",
+        "title": "美股收盘日报｜2026-07-30",
+        "date": "2026-07-30",
+        "type": "daily-report",
+        "schema_version": "1"
       },
       {
         "path": "notes/美股收盘日报/美股收盘日报_2026-07-29.md",
-        "title": "美股收盘日报",
-        "date": "2026-07-29"
+        "title": "美股收盘日报｜2026-07-29",
+        "date": "2026-07-29",
+        "type": "daily-report",
+        "schema_version": "1"
       },
       {
-        "path": "notes/美股收盘日报/美股收盘日报_2026-07-30.md",
-        "title": "美股收盘日报",
-        "date": "2026-07-30"
+        "path": "notes/美股收盘日报/美股收盘日报_2026-07-24.md",
+        "title": "美股收盘日报｜2026-07-24",
+        "date": "2026-07-24",
+        "type": "daily-report",
+        "schema_version": "1"
+      },
+      {
+        "path": "notes/美股收盘日报/美股收盘日报_2026-07-16.md",
+        "title": "美股收盘日报｜2026-07-16",
+        "date": "2026-07-16",
+        "type": "daily-report",
+        "schema_version": "1"
+      },
+      {
+        "path": "notes/美股收盘日报/美股收盘日报_2026-07-15.md",
+        "title": "美股收盘日报｜2026-07-15",
+        "date": "2026-07-15",
+        "type": "daily-report",
+        "schema_version": "1"
+      },
+      {
+        "path": "notes/美股收盘日报/美股收盘日报_2026-07-14.md",
+        "title": "美股收盘日报｜2026-07-14",
+        "date": "2026-07-14",
+        "type": "daily-report",
+        "schema_version": "1"
+      },
+      {
+        "path": "notes/美股收盘日报/美股收盘日报_2026-07-13.md",
+        "title": "美股收盘日报｜2026-07-13",
+        "date": "2026-07-13",
+        "type": "daily-report",
+        "schema_version": "1"
+      },
+      {
+        "path": "notes/美股收盘日报/美股收盘日报_2026-07-10.md",
+        "title": "美股收盘日报｜2026-07-10",
+        "date": "2026-07-10",
+        "type": "daily-report",
+        "schema_version": "1"
       }
     ]
   }

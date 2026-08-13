@@ -1,0 +1,2 @@
+# Runtime dependency for SEC inline-XBRL extraction.
+beautifulsoup4>=4.12,<5

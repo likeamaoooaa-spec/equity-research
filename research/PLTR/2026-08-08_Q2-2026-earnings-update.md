@@ -1,3 +1,12 @@
+---
+schema_version: 1
+title: "Palantir Q2 2026 财报更新"
+date: "2026-08-08"
+type: "earnings-update"
+ticker: "PLTR"
+language: "zh-CN"
+---
+
 # Palantir Q2 2026 财报更新
 
 > **撰写日期**: 2026-08-08  

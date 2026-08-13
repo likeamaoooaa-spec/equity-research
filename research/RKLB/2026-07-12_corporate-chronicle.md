@@ -1,3 +1,12 @@
+---
+schema_version: 1
+title: "Rocket Lab 公司编年史：从新西兰车库到太空巨头的二十年"
+date: "2026-07-12"
+type: "corporate-chronicle"
+ticker: "RKLB"
+language: "zh-CN"
+---
+
 # Rocket Lab 公司编年史：从新西兰车库到太空巨头的二十年
 
 > 2006—2026，一家拒绝遵循"航天工业规则"的公司，如何在一个被政府承包商和科技巨头垄断的行业里，找到自己的轨道。

@@ -1,3 +1,12 @@
+---
+schema_version: 1
+title: "Palantir Technologies 编年史 (2003–2026)"
+date: "2026-07-12"
+type: "chronicle"
+ticker: "PLTR"
+language: "zh-CN"
+---
+
 # Palantir Technologies 编年史 (2003–2026)
 
 > **撰写日期**: 2026-07-12  

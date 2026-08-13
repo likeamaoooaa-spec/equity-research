@@ -1,3 +1,11 @@
+---
+schema_version: 1
+title: "太空经济价值链护城河分析"
+date: "2026-07-11"
+type: "sector-note"
+language: "zh-CN"
+---
+
 # 太空经济价值链护城河分析
 
 **日期**：2026-07-11

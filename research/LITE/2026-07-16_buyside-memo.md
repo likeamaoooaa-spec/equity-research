@@ -1,3 +1,12 @@
+---
+schema_version: 1
+title: "Lumentum（NASDAQ: LITE）近期表现与投资判断"
+date: "2026-07-16"
+type: "buyside-memo"
+ticker: "LITE"
+language: "zh-CN"
+---
+
 # Lumentum（NASDAQ: LITE）近期表现与投资判断
 
 > 研究日期：2026-07-16（北京时间）  

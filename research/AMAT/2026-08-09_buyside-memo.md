@@ -1,3 +1,12 @@
+---
+schema_version: 1
+title: "Applied Materials (AMAT) 买方股票研究备忘录"
+date: "2026-08-09"
+type: "buyside-memo"
+ticker: "AMAT"
+language: "zh-CN"
+---
+
 # Applied Materials (AMAT) 买方股票研究备忘录
 
 ## 0. 核心投资观点

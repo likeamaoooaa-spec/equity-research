@@ -1,0 +1,458 @@
+{
+  "generated_at": "2026-08-13T14:36:28.517218+00:00",
+  "root": "research/*/data/",
+  "file_count": 90,
+  "total_bytes": 113246932,
+  "files": [
+    {
+      "path": "research/PLTR/data/10-K/10-K_FY2020_2021-02-26.html",
+      "size_bytes": 1856426,
+      "sha256": "d5043b76c6b8b08980b3a491fa043767d51e889f7b9195fbd736363bf21b496d"
+    },
+    {
+      "path": "research/PLTR/data/10-K/10-K_FY2021_2022-02-24.html",
+      "size_bytes": 3162536,
+      "sha256": "1cb381f02ea478d218c21f3354111eede0a4547cf36c717c68b010d0c67a161d"
+    },
+    {
+      "path": "research/PLTR/data/10-K/10-K_FY2022_2023-02-21.html",
+      "size_bytes": 2748602,
+      "sha256": "7de472699308930b201d2b437f2bb986fbb8aecaa155a75866026366e94e2b0f"
+    },
+    {
+      "path": "research/PLTR/data/10-K/10-K_FY2023_2024-02-20.html",
+      "size_bytes": 2202607,
+      "sha256": "f48ab6cfc012bae5aebfb8270d8923c32bbedfb512bb76341b31b12c7eb53466"
+    },
+    {
+      "path": "research/PLTR/data/10-K/10-K_FY2024_2025-02-18.html",
+      "size_bytes": 2279903,
+      "sha256": "bde486fc30cef22547dc36665a935faa62ad772acbd94f153b7af1de6dbd38d9"
+    },
+    {
+      "path": "research/PLTR/data/10-K/10-K_FY2025_2026-02-17.html",
+      "size_bytes": 2192014,
+      "sha256": "a4fef9542c4d1a99a9265df88948e5a115223940db01a0bd01f1d8b6c00acd46"
+    },
+    {
+      "path": "research/PLTR/data/10-Q/10-Q_2020_09_30_2020-11-13.html",
+      "size_bytes": 1457072,
+      "sha256": "bfd2e3c9f30a996cb2684ccb9ae3952040bcf7e1ddcd567c64731b089179e98a"
+    },
+    {
+      "path": "research/PLTR/data/10-Q/10-Q_2021_03_31_2021-05-12.html",
+      "size_bytes": 1033269,
+      "sha256": "dd7fa70709a56a4c665208e239cbf357394fe49a4e4c7f6faf4b25db64fa81f6"
+    },
+    {
+      "path": "research/PLTR/data/10-Q/10-Q_2021_06_30_2021-08-12.html",
+      "size_bytes": 2570942,
+      "sha256": "ac6637d3157c3b0c3a2d6ddf0377d12a0f4a3deac50fe58a13ac5d22d74e036c"
+    },
+    {
+      "path": "research/PLTR/data/10-Q/10-Q_2021_09_30_2021-11-09.html",
+      "size_bytes": 2557671,
+      "sha256": "e51d13ab85e843726140fde874d49aed147e86c7fe0bcd22f86e8a8f2dc68a5d"
+    },
+    {
+      "path": "research/PLTR/data/10-Q/10-Q_2022_03_31_2022-05-09.html",
+      "size_bytes": 1571466,
+      "sha256": "f0aaea0ddc69c17542522b7169a503cc878043956328a6b2aba8a07173489162"
+    },
+    {
+      "path": "research/PLTR/data/10-Q/10-Q_2022_06_30_2022-08-08.html",
+      "size_bytes": 1936922,
+      "sha256": "8a0b34ff417cd618887bce6fa3c12e090c0ab184ef2e55b08f350c8892ac84ec"
+    },
+    {
+      "path": "research/PLTR/data/10-Q/10-Q_2022_09_30_2022-11-07.html",
+      "size_bytes": 1965150,
+      "sha256": "e20d0dbf4f9a409eea1253ea52deb03c9571bfcfcf0428464d377d5c6cc82359"
+    },
+    {
+      "path": "research/PLTR/data/10-Q/10-Q_2023_03_31_2023-05-09.html",
+      "size_bytes": 1713117,
+      "sha256": "ce3e1e79f3589740695229bf288d0c0d1cec380381dce4b470bae210c75774d8"
+    },
+    {
+      "path": "research/PLTR/data/10-Q/10-Q_2023_06_30_2023-08-08.html",
+      "size_bytes": 1808067,
+      "sha256": "9abb3a52101f962dfbd8606df70493f36467700a0013fb7f15b8c4a2d91a8647"
+    },
+    {
+      "path": "research/PLTR/data/10-Q/10-Q_2023_09_30_2023-11-03.html",
+      "size_bytes": 1829867,
+      "sha256": "7e707b2d802ce795c616789f98c395f1a5e69b9ae1e1f473cc0fb3cca48d1a07"
+    },
+    {
+      "path": "research/PLTR/data/10-Q/10-Q_2024_03_31_2024-05-07.html",
+      "size_bytes": 1535259,
+      "sha256": "5028c04a52f315f62e117c4de9136e18dd2465bc3d1d87a6e68a1a58bf8a18cf"
+    },
+    {
+      "path": "research/PLTR/data/10-Q/10-Q_2024_06_30_2024-08-06.html",
+      "size_bytes": 1905688,
+      "sha256": "ff6b785a1679bea006e67c82bcbfdd0de9e11be663319402cb1120cf523cfd45"
+    },
+    {
+      "path": "research/PLTR/data/10-Q/10-Q_2024_09_30_2024-11-05.html",
+      "size_bytes": 1931632,
+      "sha256": "0121b0510d7c08e3b4139d94d98cdf17950917e389b67f89387cd1515582b9b6"
+    },
+    {
+      "path": "research/PLTR/data/10-Q/10-Q_2025_03_31_2025-05-06.html",
+      "size_bytes": 1524193,
+      "sha256": "9343e74dcdecb8892a41dabc21e7ab4b054b4efb6a8da07f38bb4ae19e3cd558"
+    },
+    {
+      "path": "research/PLTR/data/10-Q/10-Q_2025_06_30_2025-08-05.html",
+      "size_bytes": 1841065,
+      "sha256": "b6ed612bff8d34c5cedeb56a070de7dd3d3cb5aa5665650094feefcf97302ca3"
+    },
+    {
+      "path": "research/PLTR/data/10-Q/10-Q_2025_09_30_2025-11-04.html",
+      "size_bytes": 1858237,
+      "sha256": "5b1a78ff4ecf3e8867ffc8c4c1b5522d73485ed04fd28517577aff898d7e78f3"
+    },
+    {
+      "path": "research/PLTR/data/10-Q/10-Q_2026_03_31_2026-05-05.html",
+      "size_bytes": 1457434,
+      "sha256": "7e7fc66795c66881af41d491aca1a6b8a6a0559109bd68c44ec100a063a32b70"
+    },
+    {
+      "path": "research/PLTR/data/2026-08-03_Q2-2026_8K-earnings-release.txt",
+      "size_bytes": 5966,
+      "sha256": "57e953ce5b3724928e09ea037a6bbdfdb61ef9a5d65fd977047e96f3ca6e56be"
+    },
+    {
+      "path": "research/PLTR/data/2026-08-03_Q2-2026_EX-99.1-press-release.htm",
+      "size_bytes": 231522,
+      "sha256": "6f9f63ea7846f2a33710e5fad73699b5cb556b9d7d25b130e8b797eb6618af37"
+    },
+    {
+      "path": "research/PLTR/data/2026-08-03_Q2-2026_EX-99.1-press-release.txt",
+      "size_bytes": 231397,
+      "sha256": "cecf1870eade48142912627a0ba445fe947305ed9266a94230e60b789514c0d5"
+    },
+    {
+      "path": "research/PLTR/data/2026-08-03_Q2-2026_earnings-call-transcript.txt",
+      "size_bytes": 39782,
+      "sha256": "28c1efd477e7a23413c56fb29f78a2b6feea41ebc8585879ed78a423876e40b3"
+    },
+    {
+      "path": "research/PLTR/data/2026-08-04_Q2-2026_10Q.txt",
+      "size_bytes": 495456,
+      "sha256": "56ca81e2e7a06749df53f69bc7ea85200b35553c8061f8eeb6c8167e113c76f0"
+    },
+    {
+      "path": "research/PLTR/data/8-K/8-K_2024-11-14.html",
+      "size_bytes": 31280,
+      "sha256": "9bf9faf091b2cc81fdadfc2cf23083a4dc0a95ccffbeeab42fccadf8bcbacf7b"
+    },
+    {
+      "path": "research/PLTR/data/8-K/8-K_2025-02-03.html",
+      "size_bytes": 30919,
+      "sha256": "398e052c76cd3cc1092ba582828ae8bc184231443b7d7621ec87bf4703506905"
+    },
+    {
+      "path": "research/PLTR/data/8-K/8-K_2025-02-28.html",
+      "size_bytes": 28402,
+      "sha256": "b8720d9bf2a96ebb552a745b6a9457531c823299a310ac8e2061057790612772"
+    },
+    {
+      "path": "research/PLTR/data/8-K/8-K_2025-05-05.html",
+      "size_bytes": 29872,
+      "sha256": "2db682e2f174366e6069e4ba9cb3476cc3ec9dec14961eb40353af963b3e4d33"
+    },
+    {
+      "path": "research/PLTR/data/8-K/8-K_2025-06-09.html",
+      "size_bytes": 38049,
+      "sha256": "977192cd4ec235a9b69bb1ca29aac128b5ba145cef762d0e755544d8094884f3"
+    },
+    {
+      "path": "research/PLTR/data/8-K/8-K_2025-08-04.html",
+      "size_bytes": 29947,
+      "sha256": "126c157567cf5bca851625ca94239a40c20c8feec64bf1a67903ec5f0b16333d"
+    },
+    {
+      "path": "research/PLTR/data/8-K/8-K_2025-11-03.html",
+      "size_bytes": 30191,
+      "sha256": "6558cbfb16f12286e64267d659faded2a0893592504860f7f648d0d031c5c05c"
+    },
+    {
+      "path": "research/PLTR/data/8-K/8-K_2026-02-02.html",
+      "size_bytes": 32007,
+      "sha256": "8147206d7bbc1f5d8ab66f492519b82aa2eb80ae565687f2daa50dccd5631e58"
+    },
+    {
+      "path": "research/PLTR/data/8-K/8-K_2026-05-04.html",
+      "size_bytes": 28919,
+      "sha256": "b4bf8a30806a005f91efc837c2fe81131bde6ac5ae5c84fbfbdde0078ada4809"
+    },
+    {
+      "path": "research/PLTR/data/8-K/8-K_2026-06-09.html",
+      "size_bytes": 50995,
+      "sha256": "cc2d756e862ca2d4781c13f37fc6e10bf65811cfe204d7bd1bb42aff6f81a851"
+    },
+    {
+      "path": "research/PLTR/data/README.md",
+      "size_bytes": 1876,
+      "sha256": "3fcd30e6c42cea7a4e0a4b7cbb675590fa8a858f30ce540fb445560ebc4aea8e"
+    },
+    {
+      "path": "research/PLTR/data/transcripts/2023-03-01_PLTR-earnings-call.md",
+      "size_bytes": 43238,
+      "sha256": "a856f1bf9ed1a72aac917c369136e95fa87db13eeb20861ab1abf65d5902db18"
+    },
+    {
+      "path": "research/PLTR/data/transcripts/2023-04-01_PLTR-earnings-call.md",
+      "size_bytes": 52229,
+      "sha256": "fa5e83491b53e2c53a10af3f34ee83b7dd62ea418ef3a59fc0c43bec1d2b5d1a"
+    },
+    {
+      "path": "research/PLTR/data/transcripts/2024-01-01_PLTR-earnings-call.md",
+      "size_bytes": 41379,
+      "sha256": "a2a0712a5ead467d6803e54319c92765ce2def2b7ebd59ef094b9791483f081e"
+    },
+    {
+      "path": "research/PLTR/data/transcripts/2024-02-01_PLTR-earnings-call.md",
+      "size_bytes": 43186,
+      "sha256": "485fcb1527900b02ae8ac6ababdcded0ea45c32d8f60d0273f8b85d2ccfb0418"
+    },
+    {
+      "path": "research/PLTR/data/transcripts/2024-03-01_PLTR-earnings-call.md",
+      "size_bytes": 43713,
+      "sha256": "886b9d12dbbf7d47f2c93d303ec0d4e780b6b15a05345e6bd774d4191b8d79cd"
+    },
+    {
+      "path": "research/PLTR/data/transcripts/2024-04-01_PLTR-earnings-call.md",
+      "size_bytes": 49643,
+      "sha256": "3fdf1dccece60cfc34fd567220874c62384c9e9b7797a0e2aab1e1924e1ce90f"
+    },
+    {
+      "path": "research/PLTR/data/transcripts/2025-01-01_PLTR-earnings-call.md",
+      "size_bytes": 37795,
+      "sha256": "3512c260c751c838894c0833f26f205f7a077195987e33bd0ef291c287994925"
+    },
+    {
+      "path": "research/PLTR/data/transcripts/2025-02-01_PLTR-earnings-call.md",
+      "size_bytes": 46518,
+      "sha256": "e56cb07b437d7bcf283f4cc05fd6cd810f8fecd02e554d643c426525b6fe03b7"
+    },
+    {
+      "path": "research/PLTR/data/transcripts/2025-03-01_PLTR-earnings-call.md",
+      "size_bytes": 53922,
+      "sha256": "d0a39a940450eb9e1e1074f345e2fdd41bf5fb0658c603233da05166d6fdef1b"
+    },
+    {
+      "path": "research/PLTR/data/transcripts/2025-04-01_PLTR-earnings-call.md",
+      "size_bytes": 49216,
+      "sha256": "1869893f1b1c6e8d4176b2203c3ba7eec4e8959ecf408026ea457d0280558922"
+    },
+    {
+      "path": "research/PLTR/data/transcripts/2026-01-01_PLTR-earnings-call.md",
+      "size_bytes": 48332,
+      "sha256": "a2aa3facd9d40c8ab08fec0c03433798d28f8f5ad933e9653f2b422678df79e8"
+    },
+    {
+      "path": "research/RKLB/data/2021-03-31_10-K_000119312521100852.html",
+      "size_bytes": 813975,
+      "sha256": "56ae4fc72616c07159bfed9ccf9218ed4848093e3a5296f9cf3a29a9d6ceb4ed"
+    },
+    {
+      "path": "research/RKLB/data/2021-05-24_10-Q_000121390021028778.html",
+      "size_bytes": 370136,
+      "sha256": "f4f579bb4bcf42988f7eef4276f69cb762dfc890e0eb6eb462b2104434bd8a73"
+    },
+    {
+      "path": "research/RKLB/data/2021-08-03_10-Q_000119312521234954.html",
+      "size_bytes": 574594,
+      "sha256": "5134b94f81d0409458a6da14933e7c495ce2d6d6675a94f965f36cc71095c290"
+    },
+    {
+      "path": "research/RKLB/data/2021-11-15_10-Q_000119312521330184.html",
+      "size_bytes": 1831316,
+      "sha256": "875b81370be4ad27fdaa5f0d752ad01ee1cb99e84129d0ec8773d53f2ec64319"
+    },
+    {
+      "path": "research/RKLB/data/2022-03-24_10-K_000095017022004458.html",
+      "size_bytes": 4436004,
+      "sha256": "31b23aa9215b9a11ea74fd4b36d8945f7c60f5b70086dc8fd8cddf9bb2641e21"
+    },
+    {
+      "path": "research/RKLB/data/2022-05-16_10-Q_000095017022010114.html",
+      "size_bytes": 2513346,
+      "sha256": "f0a0d37320427d1f2f8919572838bb262551fe17322270e5e8cd333bc2d93bd8"
+    },
+    {
+      "path": "research/RKLB/data/2022-08-11_10-Q_000095017022016921.html",
+      "size_bytes": 3395357,
+      "sha256": "9e27ef891f2d818f3d20ee71f6534bf187aa75f2a29f727fba639b58e84baec6"
+    },
+    {
+      "path": "research/RKLB/data/2022-11-09_10-Q_000095017022023923.html",
+      "size_bytes": 4269113,
+      "sha256": "e560a21731eea2ee310677313812c23050a9ce653ef85bcb9e60b1d47005965c"
+    },
+    {
+      "path": "research/RKLB/data/2023-03-07_10-K_000095017023006499.html",
+      "size_bytes": 6186733,
+      "sha256": "03fb1c1d0f2c79253691154d373482b25c808e8cfe6fa3cccf4ebe4f066c3607"
+    },
+    {
+      "path": "research/RKLB/data/2023-05-09_10-Q_000095017023019756.html",
+      "size_bytes": 2796745,
+      "sha256": "b502bfd5e2440cc1be074f272b1c477d3f2724d7b17320914eed3f4b81806478"
+    },
+    {
+      "path": "research/RKLB/data/2023-08-08_10-Q_000095017023039896.html",
+      "size_bytes": 3550465,
+      "sha256": "ac64827d9336affbb989f6673cf59c6d3b6127d7c3829436c36fc2f88e4d37fd"
+    },
+    {
+      "path": "research/RKLB/data/2023-11-08_10-Q_000095017023061189.html",
+      "size_bytes": 3276432,
+      "sha256": "f943acf640b3e2e2c87eaeaf1aed20664a82a119b20276d69a8722319e767991"
+    },
+    {
+      "path": "research/RKLB/data/2024-02-28_10-K_000095017024022160.html",
+      "size_bytes": 4225204,
+      "sha256": "a98c59d6313aaf450ed845d96f9f3174ff39e9d108cb482c2537d701e8031c70"
+    },
+    {
+      "path": "research/RKLB/data/2024-05-06_10-Q_000095017024053646.html",
+      "size_bytes": 1824302,
+      "sha256": "4f30059b2bfa108127f678ce40eba2a2b7547fa6bbb39f3ed2b7ec147bba5a43"
+    },
+    {
+      "path": "research/RKLB/data/2024-08-08_10-Q_000095017024094122.html",
+      "size_bytes": 2236270,
+      "sha256": "21defb9b2f3a997045f1524b9493e3f5893bab288dc999fb93841832fb70f024"
+    },
+    {
+      "path": "research/RKLB/data/2024-11-12_10-Q_000095017024125529.html",
+      "size_bytes": 2339332,
+      "sha256": "6a1c660df06b7bc571b2672d8edc6c474bb957e236d7f1adf623f53e0eaac819"
+    },
+    {
+      "path": "research/RKLB/data/2025-02-27_10-K_000162828025008724.html",
+      "size_bytes": 2336074,
+      "sha256": "fd12797e8f82ad9d1b2894bab2c8a2833f26bdf69902cdc5f872ce218f0cc8c7"
+    },
+    {
+      "path": "research/RKLB/data/2025-05-08_10-Q_000162828025023857.html",
+      "size_bytes": 1162397,
+      "sha256": "b3d9d8a91a4debd73dbc8afbb54c70b90281590bfdee68f157c5c9687b3366b4"
+    },
+    {
+      "path": "research/RKLB/data/2025-08-07_10-Q_000162828025038936.html",
+      "size_bytes": 1448458,
+      "sha256": "358d3a936adf0922fbe7268c10393999a20b3fb20217b706cfd9d570c8d45963"
+    },
+    {
+      "path": "research/RKLB/data/2025-11-10_10-Q_000181999425000021.html",
+      "size_bytes": 1625885,
+      "sha256": "a4739909c510ce243625b7c95a3f4ef371555ad5c086c2f5a7719dda90fb4090"
+    },
+    {
+      "path": "research/RKLB/data/2026-02-26_10-K_000181999426000013.html",
+      "size_bytes": 2429179,
+      "sha256": "d03bf99c05985d74c1dce444098addaf8b74205a857b4b954ebffbb42d0a43cc"
+    },
+    {
+      "path": "research/RKLB/data/2026-05-07_10-Q_000181999426000028.html",
+      "size_bytes": 1223590,
+      "sha256": "ed5d194eea341036c3624c5916b9c97d9dc78987c773d358ef5089f9c4aebaa2"
+    },
+    {
+      "path": "research/RKLB/data/transcripts/2023-03-01_RKLB-earnings-call.md",
+      "size_bytes": 21149,
+      "sha256": "d7817033f447746da007a09fed80a0a7592980d93393819d2af3718457dab001"
+    },
+    {
+      "path": "research/RKLB/data/transcripts/2023-04-01_RKLB-earnings-call.md",
+      "size_bytes": 76566,
+      "sha256": "71351b82bf105a830319b174c7440211617035fc85b11accdf178d60ec7c50f4"
+    },
+    {
+      "path": "research/RKLB/data/transcripts/2024-01-01_RKLB-earnings-call.md",
+      "size_bytes": 71232,
+      "sha256": "3ab6132e3a429a11b262092ee0b427e4b337fc70ea8281c0e500323722cf9b4e"
+    },
+    {
+      "path": "research/RKLB/data/transcripts/2024-02-01_RKLB-earnings-call.md",
+      "size_bytes": 23413,
+      "sha256": "740dd5e08c72505d635dd12477f07610253ceec9471e7223b60ba427af220966"
+    },
+    {
+      "path": "research/RKLB/data/transcripts/2024-03-01_RKLB-earnings-call.md",
+      "size_bytes": 79775,
+      "sha256": "a0f10cc9dd30c9f87708d86fb7942e860a24778d6514a59d0df1fc6f691cfda5"
+    },
+    {
+      "path": "research/RKLB/data/transcripts/2024-04-01_RKLB-earnings-call.md",
+      "size_bytes": 68133,
+      "sha256": "0c401c385268fe13bb30cbb7ff92b3460978e567012089d091e5b4c2aa72319f"
+    },
+    {
+      "path": "research/RKLB/data/transcripts/2025-01-01_RKLB-earnings-call.md",
+      "size_bytes": 72986,
+      "sha256": "29e6a88e0ad6f65d007fb42d37d0744a2562e12286d271e2bb4531e5d2f27a10"
+    },
+    {
+      "path": "research/RKLB/data/transcripts/2025-02-01_RKLB-earnings-call.md",
+      "size_bytes": 80411,
+      "sha256": "bc944fabea091347d22bf70b5ffe31cdc5fc767f83562564ba98ed42e78fa105"
+    },
+    {
+      "path": "research/RKLB/data/transcripts/2025-03-01_RKLB-earnings-call.md",
+      "size_bytes": 75031,
+      "sha256": "0a04d53f8655a5e452592915a6e8817ec084a603929a28aaefd36ec6aa30a97b"
+    },
+    {
+      "path": "research/RKLB/data/transcripts/2025-04-01_RKLB-earnings-call.md",
+      "size_bytes": 87683,
+      "sha256": "d24a6223be26ca49d47abfbe349b2fe3c1a73bffa1f90dbd00702b9c785568be"
+    },
+    {
+      "path": "research/RKLB/data/transcripts/2026-01-01_RKLB-earnings-call.md",
+      "size_bytes": 75340,
+      "sha256": "f1ebf7dabd708755ed20b917835957c22cebfca4fa92b5a8c7f89825e915bda1"
+    },
+    {
+      "path": "research/SPACEX/data/2026-08-04_earnings-call-transcript.md",
+      "size_bytes": 46473,
+      "sha256": "a3a7f5eeb04958ae276f5673f8431e3482fdf2356b861cbfd0ab1c16bd3eda68"
+    },
+    {
+      "path": "research/SPACEX/data/2026-08-04_earnings-release.md",
+      "size_bytes": 46256,
+      "sha256": "26d9d4bebbd17859e82ed7398421146d0d31a44993d6d874e3254afd27276c10"
+    },
+    {
+      "path": "research/SPACEX/data/2026-08-04_earnings-release_SEC-8K.md",
+      "size_bytes": 30583,
+      "sha256": "8e25e619b0656763c5806a7b8cde89aecb7a19d271c73943bc2e0ff3c9b2eb8b"
+    },
+    {
+      "path": "research/SPACEX/data/2026-08-04_form-10Q.md",
+      "size_bytes": 202977,
+      "sha256": "ad9cd9bc9ece496a243537bc816884132fbaa0c38113d8a3d2e22ea157a41f62"
+    },
+    {
+      "path": "research/SPACEX/data/SpaceX-Q2-2026-10Q.pdf",
+      "size_bytes": 1069477,
+      "sha256": "fe0d0dd274a812fdb703637add918c3ab1645fb9085d072bd2e52bf672676405"
+    },
+    {
+      "path": "research/SPACEX/data/SpaceX-Q2-2026-Earnings_Transcript-FINAL.pdf",
+      "size_bytes": 3847284,
+      "sha256": "226801d4638121fe0e612e0e19daa7f3dc9b220bad9b24cca2db20181b49159f"
+    },
+    {
+      "path": "research/SPACEX/data/SpaceX-Reports-Second-Quarter-2026-Results.pdf",
+      "size_bytes": 5622366,
+      "sha256": "4829f4b93d366f14b19fb5912e91a781166b7208b5ad76212d825466910f7f79"
+    }
+  ]
+}

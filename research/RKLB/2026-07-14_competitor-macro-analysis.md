@@ -1,3 +1,12 @@
+---
+schema_version: 1
+title: "Rocket Lab (RKLB) 竞争格局与宏观环境演进深度分析报告（2023-2026）"
+date: "2026-07-14"
+type: "competitor-macro-analysis"
+ticker: "RKLB"
+language: "zh-CN"
+---
+
 # Rocket Lab (RKLB) 竞争格局与宏观环境演进深度分析报告（2023-2026）
 
 本报告基于 Rocket Lab 在 2023 年至 2026 年期间共 11 个季度的财报电话会议纪要（Transcripts），对其**竞争格局监测**和**宏观及行业敏感度**两大核心维度进行深度拆解。

@@ -1,3 +1,12 @@
+---
+schema_version: 1
+title: "Wolfspeed (WOLF) 贝叶斯内在增长估值"
+date: "2026-07-12"
+type: "bayesian-intrinsic-growth"
+ticker: "WOLF"
+language: "zh-CN"
+---
+
 # Wolfspeed (WOLF) 贝叶斯内在增长估值
 
 > 分析日期：2026-07-12

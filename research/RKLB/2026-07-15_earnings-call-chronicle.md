@@ -1,6 +1,9 @@
 ---
+schema_version: 1
+title: "RKLB 历年电话会议整理：管理层到底透露了什么"
 ticker: RKLB
 type: earnings-call-chronicle
+date: "2026-07-15"
 as_of: 2026-07-15
 language: zh-CN
 scope: 2023 Q3 - 2026 Q1
