@@ -67,6 +67,11 @@
     font-family: var(--font-serif); font-size: 16px; font-weight: 700;
     color: var(--text); letter-spacing: -0.3px;
   }
+  button.topbar-brand {
+    background: none; border: none; cursor: pointer; padding: 6px 2px;
+    border-radius: 4px;
+  }
+  button.topbar-brand:hover { color: var(--accent); }
   .topbar-breadcrumb {
     font-size: 13px; color: var(--text-tertiary);
     margin-left: 8px; flex: 1;
@@ -737,6 +742,70 @@
   .fin-table .negative { color: #dc2626; }
   .fin-table .positive { color: #16a34a; }
   .coverage-note { max-width: 760px; margin: -16px auto 28px; text-align: center; color: var(--text-tertiary); font-size: 13px; line-height: 1.6; }
+
+  /* ── Investment decision dashboard ── */
+  .decision-dashboard {
+    max-width: 1200px; margin: 0 auto; padding: 36px 0 80px;
+    font-family: var(--font-sans);
+  }
+  .decision-hero {
+    position: relative; overflow: hidden; padding: 38px 40px 34px;
+    background: #171b25; color: #fff; border-radius: 16px;
+    box-shadow: 0 18px 42px rgba(20, 27, 42, 0.14);
+  }
+  .decision-hero::after {
+    content: ''; position: absolute; width: 330px; height: 330px; right: -90px; top: -180px;
+    border: 1px solid rgba(255,255,255,.16); border-radius: 50%;
+    box-shadow: 0 0 0 52px rgba(255,255,255,.035), 0 0 0 104px rgba(255,255,255,.025);
+  }
+  .decision-eyebrow { font-size: 11px; font-weight: 700; letter-spacing: 1.1px; color: #9dc4ff; text-transform: uppercase; margin-bottom: 14px; }
+  .decision-hero h1 { position: relative; z-index: 1; max-width: 710px; font-family: var(--font-serif); font-size: 34px; letter-spacing: -.7px; line-height: 1.3; margin: 0 0 10px; color: #fff; }
+  .decision-hero p { position: relative; z-index: 1; max-width: 650px; color: rgba(255,255,255,.72); font-size: 15px; line-height: 1.75; margin: 0; }
+  .decision-hero-actions { position: relative; z-index: 1; display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
+  .decision-button { border: 1px solid rgba(255,255,255,.22); border-radius: 7px; padding: 8px 13px; background: rgba(255,255,255,.08); color: #fff; font: 600 13px var(--font-sans); cursor: pointer; }
+  .decision-button:hover { background: rgba(255,255,255,.16); }
+  .decision-button.primary { border-color: #fff; background: #fff; color: #171b25; }
+  .decision-button.primary:hover { background: #e6efff; }
+  .decision-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; margin: 16px 0 32px; background: var(--border-light); border: 1px solid var(--border-light); border-radius: 12px; overflow: hidden; }
+  .decision-stat { background: var(--bg); padding: 17px 18px; }
+  .decision-stat-label { font-size: 11px; color: var(--text-tertiary); font-weight: 600; letter-spacing: .4px; text-transform: uppercase; }
+  .decision-stat-value { font-size: 24px; line-height: 1.2; color: var(--text); font-weight: 700; letter-spacing: -.5px; margin-top: 5px; }
+  .decision-stat-note { color: var(--text-tertiary); font-size: 12px; margin-top: 3px; }
+  .decision-section { margin-top: 34px; }
+  .decision-section-heading { display: flex; align-items: flex-end; justify-content: space-between; gap: 16px; margin-bottom: 14px; }
+  .decision-section-heading h2 { font-family: var(--font-serif); font-size: 22px; line-height: 1.3; margin: 0; color: var(--text); }
+  .decision-section-heading p { color: var(--text-tertiary); font-size: 13px; margin: 0; line-height: 1.5; }
+  .decision-link { background: none; border: none; padding: 2px 0; color: var(--accent); cursor: pointer; font: 600 13px var(--font-sans); }
+  .decision-link:hover { text-decoration: underline; }
+  .decision-watchlist { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+  .decision-card { background: var(--bg); border: 1px solid var(--border-light); border-radius: 12px; padding: 19px; min-width: 0; transition: transform .16s, box-shadow .16s, border-color .16s; }
+  .decision-card:hover { transform: translateY(-2px); border-color: #cbd5e1; box-shadow: 0 8px 20px rgba(15, 23, 42, .06); }
+  .decision-card-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 10px; }
+  .decision-ticker { font-size: 18px; font-weight: 750; letter-spacing: -.3px; color: var(--text); }
+  .decision-state { flex: none; padding: 3px 7px; border-radius: 99px; color: #245fa8; background: #edf5ff; font-size: 11px; font-weight: 650; }
+  .decision-card h3 { margin: 16px 0 7px; color: var(--text); font-size: 14px; line-height: 1.5; font-weight: 650; }
+  .decision-card-meta { font-size: 12px; color: var(--text-tertiary); }
+  .decision-open { border: 0; padding: 0; margin-top: 17px; color: var(--accent); background: none; cursor: pointer; font: 600 13px var(--font-sans); }
+  .decision-open:hover { text-decoration: underline; }
+  .decision-columns { display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(280px, .8fr); gap: 24px; align-items: start; }
+  .decision-feed { background: var(--bg); border: 1px solid var(--border-light); border-radius: 12px; overflow: hidden; }
+  .decision-feed-item { width: 100%; border: 0; border-bottom: 1px solid var(--border-light); padding: 15px 17px; display: grid; grid-template-columns: 88px minmax(0, 1fr) auto; gap: 13px; align-items: center; background: var(--bg); text-align: left; cursor: pointer; font-family: var(--font-sans); }
+  .decision-feed-item:last-child { border-bottom: 0; }
+  .decision-feed-item:hover { background: #fafcff; }
+  .decision-feed-ticker { font-size: 12px; color: var(--text-secondary); font-weight: 700; }
+  .decision-feed-title { min-width: 0; color: var(--text); font-size: 13px; line-height: 1.45; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .decision-feed-date { color: var(--text-tertiary); font-size: 12px; }
+  .decision-method { border: 1px solid var(--border-light); border-radius: 12px; background: var(--bg); padding: 20px; }
+  .decision-method h3 { color: var(--text); font-size: 15px; margin: 0 0 13px; }
+  .decision-method p { font-size: 13px; line-height: 1.65; color: var(--text-secondary); margin: 0 0 13px; }
+  .source-ladder { list-style: none; padding: 0; margin: 0; }
+  .source-ladder li { position: relative; padding: 0 0 11px 21px; color: var(--text-secondary); font-size: 12px; line-height: 1.45; }
+  .source-ladder li::before { content: ''; position: absolute; top: 5px; left: 0; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); }
+  .source-ladder li:nth-child(2)::before { background: #4f9f65; }
+  .source-ladder li:nth-child(3)::before { background: #bd8c2d; }
+  .source-ladder li:nth-child(4)::before { background: #8c6ab2; }
+  .decision-method strong { color: var(--text); }
+  .coverage-status { display: inline-flex; padding: 3px 8px; border-radius: 99px; color: #245fa8; background: #edf5ff; font-size: 11px; font-weight: 650; }
   /* ── Topbar Financial Button ── */
   .topbar-fin-btn {
     background: none;
@@ -762,6 +831,14 @@
     .fin-dashboard { padding: 0 12px 60px; }
     .fin-chart-wrap { height: 220px; }
     .topbar-fin-btn span.fin-btn-text { display: none; }
+    .decision-dashboard { padding: 20px 0 60px; }
+    .decision-hero { padding: 28px 22px; border-radius: 12px; }
+    .decision-hero h1 { font-size: 27px; }
+    .decision-stats { grid-template-columns: repeat(2, 1fr); }
+    .decision-watchlist, .decision-columns { grid-template-columns: 1fr; }
+    .decision-section-heading { align-items: flex-start; flex-direction: column; gap: 6px; }
+    .decision-feed-item { grid-template-columns: 62px minmax(0, 1fr); gap: 9px; }
+    .decision-feed-date { display: none; }
   }
   @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after {
@@ -781,14 +858,14 @@
   <button class="topbar-menu-btn" id="menu-btn" title="目录" aria-label="打开报告目录" aria-controls="drawer" aria-expanded="false">
     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
   </button>
-  <div class="topbar-brand">Equity Research</div>
+  <button class="topbar-brand" id="home-btn" title="返回决策面板">Equity Research</button>
   <div class="topbar-breadcrumb" id="breadcrumb"></div>
   <button class="topbar-toc-btn" id="toc-mobile-btn" title="大纲" aria-controls="toc-mobile-panel" aria-expanded="false">
     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
     目录
   </button>
   <button class="topbar-fin-btn" id="overview-btn" title="研究总览" aria-pressed="false">
-    <span class="fin-btn-text">研究总览</span>
+    <span class="fin-btn-text">覆盖面板</span>
   </button>
   <button class="topbar-fin-btn" id="fin-dashboard-btn" title="财务数据" aria-pressed="false">
     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
@@ -826,11 +903,7 @@
 <div class="page-wrapper">
   <div class="main-layout">
     <div class="article-column">
-      <div class="content welcome" id="content">
-        <h2>Equity Research</h2>
-        <p class="tagline">独立 · 深度 · 长期主义</p>
-        <p class="hint">点击左上角菜单选择研究报告</p>
-      </div>
+      <div class="content welcome" id="content" aria-live="polite"></div>
       <!-- 批注区 (文章下方) -->
       <div class="annotations-section" id="annotations-section" hidden>
         <div class="annotations-header" id="annotations-header">批注</div>
@@ -1196,7 +1269,7 @@ function clearTOC() {
 function setView(view) {
   const isFinancial = view === 'financial';
   const isArticle = view === 'article';
-  const isWide = isFinancial || view === 'overview';
+  const isWide = isFinancial || view === 'overview' || view === 'welcome';
   document.querySelector('.main-layout').style.maxWidth = isWide ? '1400px' : '';
   document.querySelector('.article-column').style.maxWidth = isWide ? '100%' : '';
   document.getElementById('toc-column').style.display = isWide ? 'none' : '';
@@ -1732,11 +1805,60 @@ function loadChartLibrary() {
 
 const finDashboardBtn = document.getElementById('fin-dashboard-btn');
 const overviewBtn = document.getElementById('overview-btn');
+const homeBtn = document.getElementById('home-btn');
+
+function escapeHTML(value) {
+  return String(value ?? '').replace(/[&<>'"]/g, char => ({
+    '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;'
+  })[char]);
+}
+
+function allResearchDocs() {
+  const docs = [];
+  for (const category of Object.values(TREE)) {
+    for (const group of Object.values(category)) {
+      for (const doc of group) docs.push(doc);
+    }
+  }
+  return docs;
+}
+
+function newestFirst(docs) {
+  return [...docs].sort((a, b) => (b.date || '').localeCompare(a.date || '') || a.title.localeCompare(b.title));
+}
+
+function reportTypeLabel(type) {
+  const labels = {
+    'buyside-memo': '买方备忘录', 'earnings-update': '财报更新',
+    'earnings-call-chronicle': '电话会追踪', 'investment-audit': '投资审计',
+    'competitor-macro-analysis': '竞争与宏观', 'corporate-chronicle': '公司编年史',
+    'bayesian-intrinsic-growth': '内在增长估值',
+    'bayesian-intrinsic-growth-valuation': '内在增长估值',
+    'sector-note': '行业笔记', 'daily-report': '市场日报'
+  };
+  return labels[type] || '研究笔记';
+}
+
+function coverageState(item) {
+  const type = item?.type || '';
+  if (type === 'earnings-update') return '财报后复核';
+  if (type.includes('valuation')) return '估值待验证';
+  if (type.includes('audit')) return '假设待验证';
+  if (type.includes('chronicle')) return '持续跟踪';
+  return '已形成观点';
+}
+
+function openDocument(path) {
+  const target = [...document.querySelectorAll('.file-link')].find(el => el.dataset.path === path);
+  if (target) loadFile(target);
+}
 
 overviewBtn.addEventListener('click', () => {
   if (!overviewBtn.classList.contains('active')) showOverview();
   else showWelcome();
 });
+
+homeBtn.addEventListener('click', () => showWelcome());
 
 finDashboardBtn.addEventListener('click', () => {
   if (!finDashboardBtn.classList.contains('active')) {
@@ -1751,15 +1873,69 @@ function showWelcome({ updateHistory = true } = {}) {
   if (activeLoadController) activeLoadController.abort();
   setView('welcome');
   const content = document.getElementById('content');
-  content.className = 'content welcome';
+  content.className = 'content decision-dashboard';
+  const docs = newestFirst(allResearchDocs());
+  const equityDocs = docs.filter(doc => doc.ticker);
+  const tickers = [...new Set(equityDocs.map(doc => doc.ticker))].sort();
+  const latestDate = docs[0]?.date || '—';
+  const latestByTicker = tickers.map(ticker => newestFirst(equityDocs.filter(doc => doc.ticker === ticker))[0]);
+  const spotlight = newestFirst(latestByTicker).slice(0, 6);
+  const updates = docs.slice(0, 6);
+  const memoCount = equityDocs.filter(doc => ['buyside-memo', 'earnings-update', 'investment-audit'].includes(doc.type)).length;
+
+  const cards = spotlight.map(item => `
+    <article class="decision-card">
+      <div class="decision-card-top"><span class="decision-ticker">${escapeHTML(item.ticker)}</span><span class="decision-state">${coverageState(item)}</span></div>
+      <h3>${escapeHTML(item.title)}</h3>
+      <p class="decision-card-meta">${escapeHTML(reportTypeLabel(item.type))} · ${escapeHTML(item.date || '日期待补')}</p>
+      <button type="button" class="decision-open" data-open-doc="${escapeHTML(item.path)}">查看最新判断 →</button>
+    </article>`).join('');
+
+  const feed = updates.map(item => `
+    <button type="button" class="decision-feed-item" data-open-doc="${escapeHTML(item.path)}">
+      <span class="decision-feed-ticker">${escapeHTML(item.ticker || reportTypeLabel(item.type))}</span>
+      <span class="decision-feed-title">${escapeHTML(item.title)}</span>
+      <span class="decision-feed-date">${escapeHTML(item.date || '—')}</span>
+    </button>`).join('');
+
   content.innerHTML = `
-    <h2>Equity Research</h2>
-    <p class="tagline">独立 · 深度 · 长期主义</p>
-    <p class="hint">点击左上角菜单搜索报告，或查看研究总览</p>
-  `;
+    <section class="decision-hero" aria-labelledby="decision-title">
+      <div class="decision-eyebrow">Independent Equity Research</div>
+      <h1 id="decision-title">先看结论，再回到证据。</h1>
+      <p>把公司披露、管理层指引、市场共识与研究推断放在同一套决策框架中；每一项判断都应能被后续数据验证或推翻。</p>
+      <div class="decision-hero-actions">
+        <button type="button" class="decision-button primary" data-home-action="open-menu">浏览研究库</button>
+        <button type="button" class="decision-button" data-home-action="overview">查看覆盖状态</button>
+        <button type="button" class="decision-button" data-home-action="financial">打开财务数据</button>
+      </div>
+    </section>
+
+    <section class="decision-stats" aria-label="研究库状态">
+      <div class="decision-stat"><div class="decision-stat-label">覆盖标的</div><div class="decision-stat-value">${tickers.length}</div><div class="decision-stat-note">持续跟踪公司</div></div>
+      <div class="decision-stat"><div class="decision-stat-label">研究文档</div><div class="decision-stat-value">${docs.length}</div><div class="decision-stat-note">含行业与市场笔记</div></div>
+      <div class="decision-stat"><div class="decision-stat-label">决策型报告</div><div class="decision-stat-value">${memoCount}</div><div class="decision-stat-note">备忘录、财报与审计</div></div>
+      <div class="decision-stat"><div class="decision-stat-label">最近更新</div><div class="decision-stat-value">${escapeHTML(latestDate)}</div><div class="decision-stat-note">以研究文件日期为准</div></div>
+    </section>
+
+    <section class="decision-section">
+      <div class="decision-section-heading"><div><h2>重点跟踪</h2><p>每个标的优先打开最新研究，再回溯历史判断与原始证据。</p></div><button class="decision-link" type="button" data-home-action="overview">全部覆盖 →</button></div>
+      <div class="decision-watchlist">${cards || '<p class="coverage-note">尚未建立个股研究。</p>'}</div>
+    </section>
+
+    <section class="decision-section decision-columns">
+      <div><div class="decision-section-heading"><div><h2>最新变化</h2><p>按研究发布日期排序，不等同于实时市场资讯。</p></div></div><div class="decision-feed">${feed || '<p class="coverage-note">暂无研究更新。</p>'}</div></div>
+      <aside class="decision-method"><h3>研究纪律</h3><p>结论必须能被拆回证据，数字必须说明它属于什么类型。</p><ul class="source-ladder"><li><strong>已披露事实</strong>：公司文件、SEC 申报与原始材料</li><li><strong>管理层指引</strong>：预测、目标与表态，非既成事实</li><li><strong>市场共识</strong>：外部预期的坐标，不等于内在价值</li><li><strong>分析师推断</strong>：情景、估值与行动判断，必须可证伪</li></ul></aside>
+    </section>`;
+  content.querySelectorAll('[data-open-doc]').forEach(button => button.addEventListener('click', () => openDocument(button.dataset.openDoc)));
+  content.querySelectorAll('[data-home-action]').forEach(button => button.addEventListener('click', () => {
+    const action = button.dataset.homeAction;
+    if (action === 'open-menu') openDrawer();
+    if (action === 'overview') showOverview();
+    if (action === 'financial') showFinancialDashboard();
+  }));
   document.getElementById('breadcrumb').textContent = '';
   document.querySelectorAll('.file-link').forEach(e => e.classList.remove('active'));
-  document.title = 'Equity Research';
+  document.title = '投资决策面板 · Equity Research';
   if (updateHistory) updateRoute({});
 }
 
@@ -1774,23 +1950,18 @@ function showOverview({ updateHistory = true } = {}) {
   document.title = '研究总览 · Equity Research';
   if (updateHistory) updateRoute({ view: 'overview' });
 
-  const docs = [];
-  for (const category of Object.values(TREE)) {
-    for (const group of Object.values(category)) {
-      for (const doc of group) docs.push(doc);
-    }
-  }
+  const docs = allResearchDocs();
   const tickers = [...new Set(docs.map(d => d.ticker).filter(Boolean))].sort();
   const rows = tickers.map(ticker => {
     const items = docs.filter(d => d.ticker === ticker).sort((a, b) => (b.date || '').localeCompare(a.date || ''));
     const latest = items[0];
-    return `<tr><td>${ticker}</td><td>${items.length}</td><td>${latest.date || '—'}</td><td>${latest.title}</td><td><a href="?doc=${encodeURIComponent(latest.path)}" data-overview-path="${latest.path}">打开</a></td></tr>`;
+    return `<tr><td><strong>${escapeHTML(ticker)}</strong></td><td><span class="coverage-status">${coverageState(latest)}</span></td><td>${items.length}</td><td>${escapeHTML(latest.date || '—')}</td><td>${escapeHTML(latest.title)}</td><td><a href="?doc=${encodeURIComponent(latest.path)}" data-overview-path="${escapeHTML(latest.path)}">打开</a></td></tr>`;
   }).join('');
 
   content.innerHTML = `<div class="fin-dashboard">
-    <div class="fin-dashboard-header"><h2>研究总览</h2><p>当前覆盖公司的报告数量、最近更新时间和最新研究主题</p></div>
-    <p class="coverage-note">这是研究覆盖总览，不代表实际持仓或投资评级；评级和目标价请以各公司最新报告为准。</p>
-    <div class="fin-table-wrap"><table class="fin-table"><thead><tr><th>标的</th><th>报告数</th><th>最近更新</th><th>最新主题</th><th>操作</th></tr></thead><tbody>${rows || '<tr><td colspan="5">暂无公司研究</td></tr>'}</tbody></table></div>
+    <div class="fin-dashboard-header"><h2>覆盖状态面板</h2><p>用最新研究确定当前阶段，再进入报告核对具体假设、催化剂与证伪条件。</p></div>
+    <p class="coverage-note">“覆盖状态”只描述研究进度，不代表实际持仓或投资评级；行动判断与目标价请以各标的最新报告为准。</p>
+    <div class="fin-table-wrap"><table class="fin-table"><thead><tr><th>标的</th><th>研究状态</th><th>报告数</th><th>最近更新</th><th>最新研究</th><th>操作</th></tr></thead><tbody>${rows || '<tr><td colspan="6">暂无公司研究</td></tr>'}</tbody></table></div>
   </div>`;
   content.querySelectorAll('[data-overview-path]').forEach(link => link.addEventListener('click', e => {
     e.preventDefault();
