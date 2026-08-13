@@ -4,13 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Equity Research</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/marked@15.0.12/marked.min.js" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/dompurify@3.2.6/dist/purify.min.js" defer></script>
 <script src="tree-data.js" defer></script>
-<script src="search-data.js" defer></script>
 <script src="financial-data.js" defer></script>
-<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js" defer></script>
 <style>
   /* ==========================================================
      Equity Research — sspai-inspired clean reading layout
@@ -132,6 +132,10 @@
     margin-bottom: 8px;
   }
   .drawer-search:focus { border-color: var(--accent); background: var(--bg); box-shadow: 0 0 0 3px var(--accent-bg); }
+  .drawer-search-status {
+    min-height: 16px; padding: 0 2px 6px;
+    color: var(--text-tertiary); font-size: 11px;
+  }
   .drawer-search-wrap {
     position: relative;
   }
@@ -307,6 +311,7 @@
   .content {
     font-family: var(--font-serif);
     animation: contentIn 0.3s ease;
+    scroll-margin-top: 72px;
   }
   @keyframes contentIn {
     from { opacity: 0; transform: translateY(8px); }
@@ -353,6 +358,7 @@
     font-size: 16px; margin: 24px 0 8px; font-weight: 600;
     color: var(--text-secondary);
   }
+  .content h2, .content h3 { scroll-margin-top: 72px; }
   .content p {
     font-size: 17px; line-height: 1.9; margin: 0 0 18px;
     color: var(--text);
@@ -681,6 +687,11 @@
     position: relative;
     height: 280px;
   }
+  .fin-chart-load-error {
+    grid-column: 1 / -1;
+    padding: 28px; text-align: center; color: var(--text-tertiary);
+    font-size: 14px; background: var(--bg-page); border-radius: 8px;
+  }
   /* ── Data Table ── */
   .fin-table-wrap {
     background: var(--bg);
@@ -760,6 +771,7 @@
       transition-duration: 0.01ms !important;
     }
   }
+  body.drawer-open { overflow: hidden; }
 </style>
 </head>
 <body>
@@ -797,6 +809,7 @@
     <div class="drawer-search-wrap">
       <svg class="drawer-search-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
       <input class="drawer-search" id="drawer-search" type="search" aria-label="搜索报告正文" placeholder="搜索报告 / 正文…">
+      <div class="drawer-search-status" id="drawer-search-status" role="status" aria-live="polite"></div>
     </div>
   </div>
   <nav class="drawer-nav" id="sidebar-nav"></nav>
@@ -838,7 +851,8 @@
 
 // ── Globals ──
 const TREE = typeof TREE_DATA !== 'undefined' ? TREE_DATA : {};
-const SEARCH = typeof SEARCH_DATA !== 'undefined' ? SEARCH_DATA : [];
+let SEARCH = typeof SEARCH_DATA !== 'undefined' ? SEARCH_DATA : [];
+let searchIndexPromise = null;
 
 // ── Count files ──
 let total = 0;
@@ -894,9 +908,14 @@ const drawerOverlay = document.getElementById("drawer-overlay");
 const menuBtn = document.getElementById("menu-btn");
 const drawerClose = document.getElementById("drawer-close");
 const drawerSearch = document.getElementById("drawer-search");
+const drawerSearchStatus = document.getElementById("drawer-search-status");
+let lastFocusedElement = null;
 
 function openDrawer() {
+  lastFocusedElement = document.activeElement;
+  drawer.inert = false;
   drawer.classList.add("open"); drawerOverlay.classList.add("show");
+  document.body.classList.add('drawer-open');
   drawer.setAttribute('aria-hidden', 'false');
   drawerOverlay.setAttribute('aria-hidden', 'false');
   menuBtn.setAttribute('aria-expanded', 'true');
@@ -904,11 +923,17 @@ function openDrawer() {
 }
 function closeDrawer({ restoreFocus = true } = {}) {
   drawer.classList.remove("open"); drawerOverlay.classList.remove("show");
+  drawer.inert = true;
+  document.body.classList.remove('drawer-open');
   drawer.setAttribute('aria-hidden', 'true');
   drawerOverlay.setAttribute('aria-hidden', 'true');
   menuBtn.setAttribute('aria-expanded', 'false');
-  if (restoreFocus) menuBtn.focus();
+  if (restoreFocus) {
+    const target = lastFocusedElement?.isConnected ? lastFocusedElement : menuBtn;
+    target.focus();
+  }
 }
+drawer.inert = true;
 menuBtn.addEventListener("click", openDrawer);
 drawerClose.addEventListener("click", closeDrawer);
 drawerOverlay.addEventListener("click", closeDrawer);
@@ -918,6 +943,18 @@ document.addEventListener('keydown', (e) => {
     tocMobilePanel.classList.remove('show');
     tocMobileBtn.classList.remove('active');
     tocMobileBtn.setAttribute('aria-expanded', 'false');
+  }
+  if (e.key === 'Tab' && drawer.classList.contains('open')) {
+    const focusable = [...drawer.querySelectorAll('button, input, a[href]')]
+      .filter(el => !el.disabled && !el.hidden && el.offsetParent !== null);
+    if (!focusable.length) return;
+    const first = focusable[0];
+    const last = focusable[focusable.length - 1];
+    if (e.shiftKey && document.activeElement === first) {
+      e.preventDefault(); last.focus();
+    } else if (!e.shiftKey && document.activeElement === last) {
+      e.preventDefault(); first.focus();
+    }
   }
 });
 
@@ -1039,32 +1076,52 @@ function createTree() {
 createTree();
 
 // ── Search filter ──
-drawerSearch.addEventListener('input', () => {
-  const q = drawerSearch.value.trim().toLowerCase();
+function resetSearchResults() {
+  const links = nav.querySelectorAll('.file-link');
+  const groups = nav.querySelectorAll('.tree-group');
+  const categories = nav.querySelectorAll('.tree-category');
+  links.forEach(l => l.style.display = '');
+  groups.forEach(g => g.style.display = '');
+  categories.forEach(c => c.style.display = '');
+  nav.querySelectorAll('.tree-children').forEach(c => c.style.display = '');
+  drawerSearchStatus.textContent = '';
+}
+
+function loadSearchIndex() {
+  if (SEARCH.length) return Promise.resolve(SEARCH);
+  if (!searchIndexPromise) {
+    searchIndexPromise = new Promise((resolve, reject) => {
+      const script = document.createElement('script');
+      script.src = 'search-data.js';
+      script.onload = () => {
+        SEARCH = typeof SEARCH_DATA !== 'undefined' ? SEARCH_DATA : [];
+        resolve(SEARCH);
+      };
+      script.onerror = () => {
+        searchIndexPromise = null;
+        reject(new Error('搜索索引加载失败'));
+      };
+      document.head.appendChild(script);
+    });
+  }
+  return searchIndexPromise;
+}
+
+function applySearchFilter(q, searchIndex) {
   const links = nav.querySelectorAll('.file-link');
   const groups = nav.querySelectorAll('.tree-group');
   const categories = nav.querySelectorAll('.tree-category');
 
-  if (!q) {
-    // Reset: show everything, restore collapse state
-    links.forEach(l => l.style.display = '');
-    groups.forEach(g => g.style.display = '');
-    categories.forEach(c => c.style.display = '');
-    nav.querySelectorAll('.tree-children').forEach(c => {
-      // Restore from localStorage
-      c.style.display = '';
-    });
-    return;
-  }
-
   // Search metadata and the generated full-text index.
   const fullTextMatches = new Set(
-    SEARCH.filter(item => `${item.title} ${item.ticker || ''} ${item.date || ''} ${item.type || ''} ${item.text || ''}`.toLowerCase().includes(q))
+    searchIndex.filter(item => `${item.title} ${item.ticker || ''} ${item.date || ''} ${item.type || ''} ${item.text || ''}`.toLowerCase().includes(q))
       .map(item => item.path)
   );
+  let visibleCount = 0;
   links.forEach(l => {
     const match = l.dataset.searchText.includes(q) || fullTextMatches.has(l.dataset.path);
     l.style.display = match ? '' : 'none';
+    if (match) visibleCount++;
   });
   // Show parent groups that have visible children
   nav.querySelectorAll('.tree-children').forEach(c => {
@@ -1086,6 +1143,32 @@ drawerSearch.addEventListener('input', () => {
     }
     c.style.display = anyVisible ? '' : 'none';
   });
+  drawerSearchStatus.textContent = visibleCount ? `找到 ${visibleCount} 篇报告` : '未找到匹配报告';
+}
+
+let searchTimer = null;
+drawerSearch.addEventListener('input', () => {
+  window.clearTimeout(searchTimer);
+  const q = drawerSearch.value.trim().toLowerCase();
+  if (!q) {
+    resetSearchResults();
+    return;
+  }
+  drawerSearchStatus.textContent = '正在搜索…';
+  searchTimer = window.setTimeout(async () => {
+    const currentQuery = drawerSearch.value.trim().toLowerCase();
+    if (!currentQuery) return resetSearchResults();
+    try {
+      const searchIndex = await loadSearchIndex();
+      if (currentQuery === drawerSearch.value.trim().toLowerCase()) {
+        applySearchFilter(currentQuery, searchIndex);
+      }
+    } catch (error) {
+      console.error('Search index unavailable', error);
+      applySearchFilter(currentQuery, []);
+      drawerSearchStatus.textContent = '全文索引暂时不可用';
+    }
+  }, 120);
 });
 
 // ── Views and routing ──
@@ -1149,6 +1232,26 @@ function stripMarkdownFrontMatter(md) {
   return md.replace(/^---\s*\n[\s\S]*?\n---\s*(?:\n|$)/, '');
 }
 
+function enhanceRenderedContent(contentEl) {
+  contentEl.querySelectorAll('a[href]').forEach(link => {
+    const href = link.getAttribute('href');
+    if (!href || href.startsWith('#')) return;
+    try {
+      const url = new URL(href, window.location.href);
+      if (url.origin !== window.location.origin && /^https?:$/.test(url.protocol)) {
+        link.target = '_blank';
+        link.rel = 'noopener noreferrer';
+      }
+    } catch (e) {
+      // Leave malformed or relative links untouched; Markdown rendering can continue.
+    }
+  });
+  contentEl.querySelectorAll('img').forEach(img => {
+    img.loading = 'lazy';
+    img.decoding = 'async';
+  });
+}
+
 // ── Load file ──
 async function loadFile(el, { updateHistory = true } = {}) {
   const requestId = ++loadSequence;
@@ -1183,6 +1286,7 @@ async function loadFile(el, { updateHistory = true } = {}) {
     if (requestId !== loadSequence) return;
     content.className = "content";
     content.innerHTML = renderMarkdown(md);
+    enhanceRenderedContent(content);
     document.title = `${content.querySelector('h1, h2')?.textContent || path} · Equity Research`;
 
     // Wrap tables
@@ -1196,7 +1300,7 @@ async function loadFile(el, { updateHistory = true } = {}) {
     // Build TOC
     buildTOC(content);
 
-    content.scrollIntoView({ behavior: 'instant', block: 'start' });
+    content.scrollIntoView({ behavior: 'auto', block: 'start' });
 
     // Annotations
     loadAnnotations(path, requestId);
@@ -1606,6 +1710,25 @@ const FIN = typeof FINANCIAL_DATA !== 'undefined' ? FINANCIAL_DATA : {};
 let finCharts = [];
 let finCurrentTicker = Object.keys(FIN)[0] || '';
 let finPeriodMode = 'quarterly'; // 'quarterly' | 'annual'
+let chartLibraryPromise = null;
+
+function loadChartLibrary() {
+  if (window.Chart) return Promise.resolve(window.Chart);
+  if (!chartLibraryPromise) {
+    chartLibraryPromise = new Promise((resolve, reject) => {
+      const script = document.createElement('script');
+      script.src = 'https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js';
+      script.async = true;
+      script.onload = () => window.Chart ? resolve(window.Chart) : reject(new Error('Chart.js 加载失败'));
+      script.onerror = () => {
+        chartLibraryPromise = null;
+        reject(new Error('Chart.js 网络请求失败'));
+      };
+      document.head.appendChild(script);
+    });
+  }
+  return chartLibraryPromise;
+}
 
 const finDashboardBtn = document.getElementById('fin-dashboard-btn');
 const overviewBtn = document.getElementById('overview-btn');
@@ -1677,8 +1800,9 @@ function showOverview({ updateHistory = true } = {}) {
   content.scrollIntoView({ behavior: 'instant', block: 'start' });
 }
 
-function showFinancialDashboard({ updateHistory = true } = {}) {
+async function showFinancialDashboard({ updateHistory = true } = {}) {
   ++loadSequence;
+  const dashboardRequestId = loadSequence;
   if (activeLoadController) activeLoadController.abort();
   setView('financial');
   const content = document.getElementById('content');
@@ -1700,8 +1824,18 @@ function showFinancialDashboard({ updateHistory = true } = {}) {
 
   content.innerHTML = buildDashboardHTML();
   bindDashboardEvents();
-  renderDashboard();
-  content.scrollIntoView({ behavior: 'instant', block: 'start' });
+  renderDashboard({ charts: false });
+  content.scrollIntoView({ behavior: 'auto', block: 'start' });
+  try {
+    await loadChartLibrary();
+    if (dashboardRequestId !== loadSequence || !finDashboardBtn.classList.contains('active')) return;
+    renderCharts(getFilteredData(finCurrentTicker));
+  } catch (error) {
+    if (dashboardRequestId !== loadSequence) return;
+    console.error('Financial chart library unavailable', error);
+    const chartGrid = document.getElementById('fin-chart-grid');
+    if (chartGrid) chartGrid.innerHTML = '<div class="fin-chart-load-error">图表暂时无法加载，但下方财务表格仍可查看。</div>';
+  }
 }
 
 function buildDashboardHTML() {
@@ -1805,11 +1939,11 @@ function fmtPct(val) {
   return `${val >= 0 ? '+' : ''}${val.toFixed(1)}%`;
 }
 
-function renderDashboard() {
+function renderDashboard({ charts = true } = {}) {
   const data = getFilteredData(finCurrentTicker);
   renderSource(data);
   renderKPIs(data);
-  renderCharts(data);
+  if (charts) renderCharts(data);
   renderTable(data);
 }
 
@@ -1878,7 +2012,7 @@ function renderCharts(data) {
   finCharts.forEach(c => c.destroy());
   finCharts = [];
 
-  if (!data.length) return;
+  if (!data.length || !window.Chart) return;
 
   const labels = data.map(d => d.period);
   const chartFont = { family: "'Inter', sans-serif" };
